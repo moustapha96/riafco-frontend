@@ -239,6 +239,7 @@ export default function IndexCourse() {
                     </div>
                 </div>
             </section>
+
             <section className="relative md:py-24 py-16 overflow-hidden">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center">

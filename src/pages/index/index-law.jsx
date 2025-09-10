@@ -84,6 +84,8 @@ export default function IndexLaw() {
                     </div>
                 </div>
             </section>
+
+            
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 overflow-hidden">
                 <div className="container relative">
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
@@ -215,6 +217,9 @@ export default function IndexLaw() {
                     </div>
                 </div>
             </section>
+
+
+
             <section className="pt-20 pb-32 w-full table relative bg-[url('../../assets/images/business/bg02.jpg')] bg-center bg-no-repeat bg-cover">
                 <div className="absolute inset-0 bg-slate-900/70"></div>
                 <div className="container relative">

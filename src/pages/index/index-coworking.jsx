@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../../assets/images/logoN.png';
 import shape_image from '../../assets/images/shape-image.png';
 import cta from '../../assets/images/digital/cta.jpg';
 

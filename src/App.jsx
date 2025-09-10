@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import Index from './pages/index/index'
+
 import UserSocial from './pages/accounts/user-social'
 import ShopAccount from './pages/ecommerce/shop-account'
 import ShopCart from './pages/ecommerce/shop-cart'
@@ -173,6 +173,18 @@ import IndexCleaner from './pages/index/index-cleaner';
 import PageServiceDetail from './pages/company/page-service-detail';
 import IndexSolar from './pages/index/index-solar';
 import IndexItSolution from './pages/index/index-it-solution';
+import Accueil from './pages/accueil';
+import RessourcePage from './pages/ressources';
+
+import MembrePage from './pages/membre';
+import EvenementPage from './pages/evenement';
+import AproposPage from './pages/a-propos';
+import BlogPage from './pages/blogs';
+import ActivitePage from './pages/activites';
+import ActiviteDetailPage from './pages/activites/details';
+import ActualitesPage from './pages/actualite';
+import ActualitesDetails from './pages/actualite/details';
+import ContactPage from './pages/contact';
 
 
 function App() {
@@ -181,7 +193,21 @@ function App() {
         <>
             <Switch/>
             <Routes>
-                <Route exact path="/" element={<Index />} />
+                {/* <Route exact path="/" element={<Index />} /> */}
+                <Route exact path="/" element={<Accueil />} />
+                <Route exact path="/ressources" element={<RessourcePage />} />
+                <Route exact path="/membres" element={<MembrePage />} />
+                <Route exact path="/évènements" element={<EvenementPage />} />
+                <Route exact path="/a-propos" element={<AproposPage />} />
+                <Route exact path="/blog-page" element={<BlogPage />} />
+                <Route exact path="/activités" element={<ActivitePage />} />
+                <Route exact path="/activités/:id/détails" element={<ActiviteDetailPage />} />
+                <Route exact path="/actualités" element={<ActualitesPage />} />
+                <Route exact path="/actualités/:id/détails" element={<ActualitesDetails />} />
+                <Route exact path="/contact" element={<ContactPage />} />
+
+
+
                 <Route exact path="/user-social" element={<UserSocial />} />
                 <Route exact path="/shop-account" element={<ShopAccount/>} />
                 <Route exact path="/shop-cart" element={<ShopCart/>} />

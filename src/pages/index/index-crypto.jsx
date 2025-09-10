@@ -2,7 +2,7 @@ import {useEffect,useState} from 'react'
 import { Link } from 'react-router-dom'
 
 import image from '../../assets/images/crypto/01.png';
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../../assets/images/logoN.png';
 import hand_with_mobile from '../../assets/images/crypto/hand-with-mobile.png';
 
 import Navbar from '../../component/Navbar/navbar'

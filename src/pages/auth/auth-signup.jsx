@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../../assets/images/logoN.png';
 import { useEffect } from 'react';
 
 export default function AuthSignup() {

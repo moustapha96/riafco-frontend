@@ -65,6 +65,7 @@ export default function IndexMarketing() {
                     </div>
                 </div>
             </section>
+
             {isOpen && 
                 <div className="flex bg-[#00000099] overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div className="relative p-1 w-full max-w-2xl max-h-full">
@@ -282,6 +283,8 @@ export default function IndexMarketing() {
                                 </div>
                             </div>
                         </div>
+
+
 
                         <div className="lg:col-span-7 md:col-span-6">
                             <div className="lg:ms-5">

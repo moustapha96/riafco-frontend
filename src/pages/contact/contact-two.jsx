@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../../assets/images/logoN.png';
 import { Link } from 'react-router-dom';
 import * as Icon from 'react-feather';
 

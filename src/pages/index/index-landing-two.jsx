@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../../assets/images/logoN.png';
 
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
