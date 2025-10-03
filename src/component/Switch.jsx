@@ -49,7 +49,7 @@ export default function Switcher() {
     }
     return (
         <>
-            <div className="fixed top-1/4 -right-3 z-50">
+            {/* <div className="fixed top-1/4 -right-3 z-50">
                 <span className="relative inline-block rotate-90">
                     <input type="checkbox" className="checkbox opacity-0 absolute" id="chk" onClick={(event) => changeMode('mode', event)} />
                     <label className="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" htmlFor="chk">
@@ -58,7 +58,7 @@ export default function Switcher() {
                         <span className="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
                     </label>
                 </span>
-            </div>
+            </div> */}
 
             <div className="fixed top-[40%] -right-3 z-50">
                 <Link to="#" id="switchRtl" className="cursor-pointer">
@@ -68,7 +68,7 @@ export default function Switcher() {
             </div>
 
             <Link  to="#" onClick={scrollToTop}
-                id="back-to-top" className={`${!scrollToTops ? "hidden":"back-to-top fixed  text-lg rounded-full z-10 bottom-5 end-2 size-9 text-center bg-indigo-600 text-white leading-9 flex items-center justify-center"}`}><FiArrowUp width={18}/></Link>
+                id="back-to-top" className={`${!scrollToTops ? "hidden" : "back-to-top fixed  text-lg rounded-full z-10 bottom-5 end-2 size-9 text-center bg-[var(--riafco-blue)] text-white leading-9 flex items-center justify-center"}`}><FiArrowUp width={18} /></Link>
          
         </>
     )

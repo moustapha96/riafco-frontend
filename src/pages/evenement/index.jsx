@@ -1,315 +1,46 @@
-// import { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom';
-
-// import imageP from '../../assets/images/event/1.jpg';
-// import image1 from '../../assets/images/event/2.jpg';
-
-// import Navbar from '../../component/Navbar/navbar'
-// import Footer from '../../component/Footer/footer';
-// import Blog2 from '../../component/blog2';
-// import CookieModal from '../../component/cookieModal';
-
-// import * as Icon from 'react-feather'
-
-// import { team } from '../../data/data';
-// import { eventOne,eventTwo, eventThree } from '../../data/dataThree';
-// import { FaArrowRight, FaRegEnvelope } from 'react-icons/fa';
-// import { PiMapPinLight } from 'react-icons/pi';
-// import { GoClock } from 'react-icons/go';
-// import { BsCheckCircle } from 'react-icons/bs';
-// import HeaderBreakdumb from "../components/hearder-breakdumb";
-// import eventService from '../../services/eventService';
-// export default function EvenementPage() {
-//     const [isOpen, setOpen] = useState(false);
-//     let [days,setDays] = useState();
-//     let [hours,setHours] = useState();
-//     let [minutes,setMinutes] = useState();
-//     let [seconds,setSeconds] = useState();
-
-//     let deadline = "December, 31, 2025";
-  
-//     let getTime = () => {
-//       let time = Date.parse(deadline) - Date.now();
-  
-//       setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
-//       setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
-//       setMinutes(Math.floor((time / 1000 / 60) % 60));
-//       setSeconds(Math.floor((time / 1000) % 60));
-//     };
-
-//     useEffect(() => {
-//     let interval = setInterval(() => getTime(deadline), 1000);
-//       return () => clearInterval(interval);
-//       }, []);
-//      const [isOpenTab, setisOpen] = useState(0);
-
-//     const handleTabClick = (index) => {
-//         setisOpen(index);
-//     };
-
-//     useEffect(() => {
-//         document.documentElement.setAttribute("dir", "ltr");
-//         document.documentElement.classList.add('light')
-//         document.documentElement.classList.remove('dark')
-
-//         fetchEvenement()
-//     }, []);
-    
-//     const fetchEvenement = async () => {
-//         try {
-//             const response = await eventService.getAll();
-//             console.log(response)
-            
-//         } catch (error) {
-//             console.error("Erreur lors de la récupération des pays :", error);
-//         }
-//     }
-//     return (
-//         <>
-//             <Navbar navClass="nav-light" />
-
-//               <HeaderBreakdumb title="Evenements" />
-
-      
-
-         
-
-            
-
-//             <section className="relative table w-full py-36 bg-[url('../../assets/images/event/bg3.jpg')] bg-no-repeat bg-bottom bg-cover">
-//                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-600/90 to-fuchsia-600/90"></div>
-//                 <div className="container relative">
-//                     <div className="grid grid-cols-1 text-center">
-                      
-//                         <div id="countdown">
-//                             <ul className="count-down list-none inline-block text-white text-center mt-8">
-//                                 <li id="days" className="text-[40px] leading-[110px] size-[130px] rounded-full shadow-md bg-white/10 backdrop-opacity-30 inline-block m-2">{days} <p className="count-head">Days</p></li>
-//                                 <li id="hours" className="text-[40px] leading-[110px] size-[130px] rounded-full shadow-md bg-white/10 backdrop-opacity-30 inline-block m-2">{hours}<p className="count-head">Hours</p></li>
-//                                 <li id="mins" className="text-[40px] leading-[110px] size-[130px] rounded-full shadow-md bg-white/10 backdrop-opacity-30 inline-block m-2">{minutes}<p className="count-head">Mins</p></li>
-//                                 <li id="secs" className="text-[40px] leading-[110px] size-[130px] rounded-full shadow-md bg-white/10 backdrop-opacity-30 inline-block m-2">{seconds}<p className="count-head">Secs</p></li>
-//                                 <li id="end" className="h1"></li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </section>
-
-            
-
-
-//             <section className="relative md:py-24 py-16">
-//                 <div className="container relative">
-//                     <div className="grid grid-cols-1 pb-8 text-center">
-//                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Event Schedules</h3>
-//                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
-//                     </div>
-
-//                     <div className="grid grid-cols-1 mt-8">
-//                         <ul className="md:w-fit w-full mx-auto flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#StarterContent" role="tablist">
-//                             <li role="presentation" className="md:inline-block block md:w-fit w-full">
-//                                 <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Tuesday</button>
-//                             </li>
-//                             <li role="presentation" className="md:inline-block block md:w-fit w-full">
-//                                 <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Wednesday</button>
-//                             </li>
-//                             <li role="presentation" className="md:inline-block block md:w-fit w-full">
-//                                 <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Thursday</button>
-//                             </li>
-//                             <li role="presentation" className="md:inline-block block md:w-fit w-full">
-//                                 <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Friday</button>
-//                             </li>
-//                         </ul>
-
-//                         <div id="StarterContent" className="mt-1">
-//                             {isOpenTab === 0 ?
-//                                 <div>
-//                                     <div className="grid grid-cols-1">
-//                                         <div className="relative overflow-x-auto block w-full bg-white dark:bg-slate-900">
-//                                             <table className="w-full text-start">
-//                                                 <tbody>
-//                                                     {eventOne.map((item,index)=>{
-//                                                         return(
-//                                                         <tr key={index}>
-//                                                             <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400">{item.time}</td>
-//                                                             <td className="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5">
-//                                                                 <div className="flex items-center">
-//                                                                     <img src={item.image} width={96} height={96} className="rounded-full size-24 shadow-md dark:shadow-gray-700" alt="" />
-//                                                                     <div className="ms-4">
-//                                                                         <Link to="#" className="hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
-//                                                                         <p className="text-slate-400 mt-2">{item.desc}</p>
-//                                                                     </div>
-//                                                                 </div>
-//                                                             </td>
-//                                                             <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400">
-//                                                                 <span className="block">Speaker</span>
-//                                                                 <span className="block text-black dark:text-white text-md mt-1">{item.speaker}</span>
-//                                                             </td>
-//                                                             <td className="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]">
-//                                                                 <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Buy Ticket <FaArrowRight className='ms-2 text-xs'/></Link>
-//                                                             </td>
-//                                                         </tr>
-//                                                         )
-//                                                     })}
-//                                                 </tbody>
-//                                             </table>
-//                                         </div>
-//                                     </div>
-//                                 </div>:""
-//                             }
-//                             {isOpenTab === 1 ?
-//                                 <div>
-//                                     <div className="grid grid-cols-1">
-//                                         <div className="relative overflow-x-auto block w-full bg-white dark:bg-slate-900">
-//                                             <table className="w-full text-start">
-//                                                 <tbody>
-//                                                     {eventTwo.map((item,index)=>{
-//                                                             return(
-//                                                             <tr key={index}>
-//                                                                 <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400">{item.time}</td>
-//                                                                 <td className="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5">
-//                                                                     <div className="flex items-center">
-//                                                                         <img src={item.image} width={96} height={96} className="rounded-full size-24 shadow-md dark:shadow-gray-700" alt="" />
-//                                                                         <div className="ms-4">
-//                                                                             <Link to="#" className="hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
-//                                                                             <p className="text-slate-400 mt-2">{item.desc}</p>
-//                                                                         </div>
-//                                                                     </div>
-//                                                                 </td>
-//                                                                 <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400">
-//                                                                     <span className="block">Speaker</span>
-//                                                                     <span className="block text-black dark:text-white text-md mt-1">{item.speaker}</span>
-//                                                                 </td>
-//                                                                 <td className="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]">
-//                                                                     <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Buy Ticket <FaArrowRight className='ms-2 text-xs'/></Link>
-//                                                                 </td>
-//                                                             </tr>
-//                                                             )
-//                                                         })}
-//                                                 </tbody>
-//                                             </table>
-//                                         </div>
-//                                     </div>
-//                                 </div>:""
-//                             }
-//                             {isOpenTab === 2 ?
-//                                 <div>
-//                                     <div className="grid grid-cols-1">
-//                                         <div className="relative overflow-x-auto block w-full bg-white dark:bg-slate-900">
-//                                             <table className="w-full text-start">
-//                                                 <tbody>
-//                                                     {eventThree.map((item,index)=>{
-//                                                             return(
-//                                                             <tr key={index}>
-//                                                                 <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400">{item.time}</td>
-//                                                                 <td className="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5">
-//                                                                     <div className="flex items-center">
-//                                                                         <img src={item.image} width={96} height={96} className="rounded-full size-24 shadow-md dark:shadow-gray-700" alt="" />
-//                                                                         <div className="ms-4">
-//                                                                             <Link to="#" className="hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
-//                                                                             <p className="text-slate-400 mt-2">{item.desc}</p>
-//                                                                         </div>
-//                                                                     </div>
-//                                                                 </td>
-//                                                                 <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400">
-//                                                                     <span className="block">Speaker</span>
-//                                                                     <span className="block text-black dark:text-white text-md mt-1">{item.speaker}</span>
-//                                                                 </td>
-//                                                                 <td className="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]">
-//                                                                     <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Buy Ticket <FaArrowRight/></Link>
-//                                                                 </td>
-//                                                             </tr>
-//                                                             )
-//                                                         })}
-//                                                 </tbody>
-//                                             </table>
-//                                         </div>
-//                                     </div>
-//                                 </div>:""
-//                             }
-//                             {isOpenTab === 3 ?
-//                                 <div>
-//                                     <div className="grid grid-cols-1">
-//                                         <div className="relative overflow-x-auto block w-full bg-white dark:bg-slate-900">
-//                                             <table className="w-full text-start">
-//                                                 <tbody>
-//                                                 {eventTwo.map((item,index)=>{
-//                                                     return(
-//                                                     <tr key={index}>
-//                                                         <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400">{item.time}</td>
-//                                                         <td className="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5">
-//                                                             <div className="flex items-center">
-//                                                                 <img src={item.image} width={96} height={96} className="rounded-full size-24 shadow-md dark:shadow-gray-700" alt="" />
-//                                                                 <div className="ms-4">
-//                                                                     <Link to="#" className="hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
-//                                                                     <p className="text-slate-400 mt-2">{item.desc}</p>
-//                                                                 </div>
-//                                                             </div>
-//                                                         </td>
-//                                                         <td className="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400">
-//                                                             <span className="block">Speaker</span>
-//                                                             <span className="block text-black dark:text-white text-md mt-1">{item.speaker}</span>
-//                                                         </td>
-//                                                         <td className="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]">
-//                                                             <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Buy Ticket <FaArrowRight/></Link>
-//                                                         </td>
-//                                                     </tr>
-//                                                     )
-//                                                 })}
-//                                                 </tbody>
-//                                             </table>
-//                                         </div>
-//                                     </div>
-//                                 </div>:""
-//                             }
-//                         </div>
-//                     </div>
-//                 </div>
-//             </section>
 
 
 
-       
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 
-            
-
-         
-
-//             <Footer />
-//             <CookieModal />
-//         </>
-//     )
-// }
-
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from '../../component/Navbar/navbar';
-import Footer from '../../component/Footer/footer';
-import CookieModal from '../../component/cookieModal';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../../component/Navbar/navbar";
+import Footer from "../../component/Footer/footer";
+import CookieModal from "../../component/cookieModal";
 import HeaderBreakdumb from "../components/hearder-breakdumb";
-import eventService from '../../services/eventService';
-import { FaArrowRight } from 'react-icons/fa';
-import { PiMapPinLight } from 'react-icons/pi';
-import { GoClock } from 'react-icons/go';
-import { BsCheckCircle } from 'react-icons/bs';
+import eventService from "../../services/eventService";
+import { FaArrowRight, FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
+import { PiMapPinLight } from "react-icons/pi";
+import { GoClock } from "react-icons/go";
+import { BsCheckCircle } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
+import riafcoAbout from "../../assets/images/riafco-about.jpg";
 
 export default function EvenementPage() {
+    const { t, i18n } = useTranslation();
+
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [isOpenTab, setIsOpenTab] = useState(0);
+    const [selectedDate, setSelectedDate] = useState(new Date());
+    const [currentMonth, setCurrentMonth] = useState(new Date());
+    const [selectedEvent, setSelectedEvent] = useState(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     useEffect(() => {
         document.documentElement.setAttribute("dir", "ltr");
-        document.documentElement.classList.add('light');
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
         fetchEvents();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const fetchEvents = async () => {
         try {
             const response = await eventService.getAll();
-            console.log(response)
             if (response && response.events) {
-                setEvents(response.events.filter(event => event.status === "PUBLISHED"));
+                setEvents(response.events.filter((event) => event.status === "PUBLISHED"));
             }
         } catch (error) {
             console.error("Erreur lors de la récupération des événements :", error);
@@ -318,192 +49,409 @@ export default function EvenementPage() {
         }
     };
 
-    const handleTabClick = (index) => {
-        setIsOpenTab(index);
+    // --- Utils i18n date ---
+    const locale = i18n.language === "fr" ? "fr-FR" : "en-US";
+
+    const getDaysInMonth = (date) => new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+
+    const getFirstDayOfMonth = (date) => {
+        // Make Monday index 0
+        const firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay(); // 0..6 (Sun..Sat)
+        return firstDay === 0 ? 6 : firstDay - 1;
     };
 
-    // Fonction pour formater la date
-    const formatDate = (dateString) => {
-        const options = { day: 'numeric', month: 'long', year: 'numeric' };
-        return new Date(dateString).toLocaleDateString('fr-FR', options);
+    const isSameDay = (d1, d2) =>
+        d1.getDate() === d2.getDate() && d1.getMonth() === d2.getMonth() && d1.getFullYear() === d2.getFullYear();
+
+    const hasEventOnDate = (date) =>
+        events.some((event) => isSameDay(new Date(event.startDate), date));
+
+    const getEventsForDate = (date) =>
+        events.filter((event) => isSameDay(new Date(event.startDate), date));
+
+    const navigateMonth = (direction) => {
+        const newMonth = new Date(currentMonth);
+        newMonth.setMonth(currentMonth.getMonth() + direction);
+        setCurrentMonth(newMonth);
     };
 
-    // Fonction pour formater l'heure
-    const formatTime = (dateString) => {
-        const options = { hour: '2-digit', minute: '2-digit' };
-        return new Date(dateString).toLocaleTimeString('fr-FR', options);
+    // Build localized weekday headers starting Monday
+    const dayHeaders = (() => {
+        const base = new Date(2025, 0, 6); // Monday
+        return Array.from({ length: 7 }, (_, i) =>
+            new Date(base.getFullYear(), base.getMonth(), base.getDate() + i).toLocaleDateString(locale, {
+                weekday: "short",
+            })
+        );
+    })();
+
+    const monthLabel = (date) =>
+        `${date.toLocaleDateString(locale, { month: "long" })} ${date.getFullYear()}`;
+
+    const formatDateLong = (dateString) =>
+        new Date(dateString).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" });
+
+    const formatTime = (dateString) =>
+        new Date(dateString).toLocaleTimeString(locale, { hour: "2-digit", minute: "2-digit" });
+
+    const filteredEvents = selectedDate ? getEventsForDate(selectedDate) : events;
+
+    const openEventDetails = (event) => {
+        setSelectedEvent(event);
+        setIsPopupOpen(true);
     };
 
-    // Grouper les événements par jour
-    const eventsByDay = events.reduce((acc, event) => {
-        const day = new Date(event.startDate).toLocaleDateString('fr-FR', { weekday: 'long' });
-        if (!acc[day]) acc[day] = [];
-        acc[day].push(event);
-        return acc;
-    }, {});
-
-    // Jours de la semaine en français
-    const daysOfWeek = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+    const closeEventDetails = () => {
+        setSelectedEvent(null);
+        setIsPopupOpen(false);
+    };
 
     return (
         <>
             <Navbar navClass="nav-light" />
-            <HeaderBreakdumb title="Événements" />
 
-            {/* Section Hero avec compte à rebours (optionnel) */}
-            {events.length > 0 && (
-                <section className="relative table w-full py-36 bg-[url('../../assets/images/event/bg3.jpg')] bg-no-repeat bg-bottom bg-cover">
-                    <div className="absolute inset-0 bg-gradient-to-t from-[--riafco-blue]/90 to-[--riafco-orange]/90"></div>
-                    <div className="container relative">
-                        <div className="grid grid-cols-1 text-center">
-                            <h1 className="text-white font-bold text-4xl mb-4">Prochain événement</h1>
-                            <h2 className="text-white text-2xl mb-8">{events[0].title}</h2>
-                            <div className="text-white text-lg mb-4">
-                                <p className="flex items-center justify-center mb-2">
-                                    <PiMapPinLight className="mr-2" /> {events[0].location}
-                                </p>
-                                <p className="flex items-center justify-center">
-                                    <GoClock className="mr-2" />
-                                    {formatDate(events[0].startDate)} • {formatTime(events[0].startDate)} - {formatTime(events[0].endDate)}
-                                </p>
-                            </div>
-                            {events[0].registrationLink && (
-                                <Link
-                                    to={events[0].registrationLink}
-                                    target="_blank"
-                                    className="py-3 px-6 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[--riafco-orange] hover:bg-[--riafco-orange-hover] border-[--riafco-orange] text-white rounded-md mt-6"
-                                >
-                                    S'inscrire <FaArrowRight className="ms-2 text-[10px]" />
-                                </Link>
-                            )}
-                        </div>
-                    </div>
-                </section>
-            )}
+            <HeaderBreakdumb
+                title={t("events.header.title")}
+                description={t("events.header.description")}
+                background={riafcoAbout}
+            />
 
-            {/* Section Planning des Événements */}
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="mb-4 text-base font-medium text-[--riafco-orange]">Calendrier RIAFCO</h6>
-                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-                            Planning des <span className="text-[--riafco-blue]">Événements</span>
-                        </h3>
-                        <p className="text-slate-600 max-w-xl mx-auto">
-                            Découvrez nos événements à venir et participez aux initiatives de RIAFCO pour le développement en Afrique.
-                        </p>
+                        <h6 className="mb-4 text-base font-medium text-(--riafco-orange)">{t("events.intro.kicker")}</h6>
+                        <h3
+                            className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"
+                            dangerouslySetInnerHTML={{ __html: t("events.intro.title") }}
+                        />
+                        <p className="text-slate-600 max-w-xl mx-auto">{t("events.intro.desc")}</p>
                     </div>
 
-                    {/* Onglets par jour */}
-                    <div className="grid grid-cols-1 mt-8">
-                        <ul className="md:w-fit w-full mx-auto flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
-                            {daysOfWeek.map((day, index) => (
-                                <li role="presentation" className="md:inline-block block md:w-fit w-full" key={index}>
+                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-8">
+                        {/* Calendar */}
+                        <div className="lg:col-span-1">
+                            <div className="bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md p-6">
+                                <div className="flex items-center justify-between mb-4">
                                     <button
-                                        onClick={() => handleTabClick(index)}
-                                        className={`${isOpenTab === index ? 'text-white bg-[--riafco-blue] hover:text-white' : ''}
-                                            px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-[--riafco-blue] transition-all duration-500 ease-in-out`}
+                                        onClick={() => navigateMonth(-1)}
+                                        className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                        aria-label="Previous month"
                                     >
-                                        {day}
+                                        <FaChevronLeft className="text-(--riafco-blue)" />
                                     </button>
-                                </li>
-                            ))}
-                        </ul>
+                                    <h4 className="text-lg font-semibold text-(--riafco-blue)">{monthLabel(currentMonth)}</h4>
+                                    <button
+                                        onClick={() => navigateMonth(1)}
+                                        className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                        aria-label="Next month"
+                                    >
+                                        <FaChevronRight className="text-(--riafco-blue)" />
+                                    </button>
+                                </div>
 
-                        {/* Contenu des onglets */}
-                        <div className="mt-6">
-                            {daysOfWeek.map((day, dayIndex) => (
-                                <div key={dayIndex} className={isOpenTab === dayIndex ? 'block' : 'hidden'}>
-                                    {eventsByDay[day] && eventsByDay[day].length > 0 ? (
-                                        <div className="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
-                                            <table className="w-full text-start">
-                                                <tbody>
-                                                    {eventsByDay[day].map((event, eventIndex) => (
-                                                        <tr key={eventIndex} className="border-b border-gray-100 dark:border-gray-700">
-                                                            <td className="text-center py-6 px-5 min-w-[180px]">
-                                                                <div className="text-[--riafco-orange] font-medium">
-                                                                    {formatTime(event.startDate)} - {formatTime(event.endDate)}
-                                                                </div>
-                                                                <div className="text-slate-600 text-sm mt-1">
-                                                                    {formatDate(event.startDate)}
-                                                                </div>
-                                                            </td>
-                                                            <td className="py-6 px-5 min-w-[400px]">
-                                                                <div className="flex items-start">
-                                                                    <div className="hidden md:block w-20 h-20 bg-[--riafco-blue]/10 rounded-full flex-shrink-0 flex items-center justify-center text-[--riafco-blue] font-bold text-xl">
-                                                                        {new Date(event.startDate).getDate()}
-                                                                        <span className="block text-xs font-normal">
-                                                                            {new Date(event.startDate).toLocaleDateString('fr-FR', { month: 'short' })}
-                                                                        </span>
-                                                                    </div>
-                                                                    <div className="ms-0 md:ms-4">
-                                                                        <Link
-                                                                            to={`/events/${event.id}`}
-                                                                            className="hover:text-[--riafco-blue] text-lg font-semibold block"
-                                                                        >
-                                                                            {event.title}
-                                                                        </Link>
-                                                                        <p className="text-slate-600 mt-2">{event.description}</p>
-                                                                        <div className="flex flex-wrap items-center mt-3 text-sm text-slate-500">
-                                                                            <span className="flex items-center mr-4">
-                                                                                <PiMapPinLight className="mr-1 text-[--riafco-orange]" /> {event.location}
-                                                                            </span>
-                                                                            {event.isVirtual && (
-                                                                                <span className="flex items-center text-[--riafco-blue]">
-                                                                                    <BsCheckCircle className="mr-1" /> Événement en ligne
-                                                                                </span>
-                                                                            )}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td className="text-center py-6 px-5 min-w-[180px]">
-                                                                <div className="flex items-center justify-center">
-                                                                    {event.author?.profilePic && (
+                                <div className="grid grid-cols-7 gap-1 mb-2">
+                                    {dayHeaders.map((day) => (
+                                        <div key={day} className="text-center text-sm font-medium text-slate-600 p-2">
+                                            {day}
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <div className="grid grid-cols-7 gap-1">
+                                    {Array.from({ length: getFirstDayOfMonth(currentMonth) }).map((_, i) => (
+                                        <div key={`empty-${i}`} className="p-2" />
+                                    ))}
+
+                                    {Array.from({ length: getDaysInMonth(currentMonth) }).map((_, index) => {
+                                        const day = index + 1;
+                                        const date = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), day);
+                                        const isSelected = selectedDate && isSameDay(date, selectedDate);
+                                        const hasEvent = hasEventOnDate(date);
+                                        const isToday = isSameDay(date, new Date());
+
+                                        return (
+                                            <button
+                                                key={day}
+                                                onClick={() => setSelectedDate(date)}
+                                                className={`
+                          p-2 text-sm rounded-md transition-all duration-200 relative
+                          ${isSelected ? "bg-(--riafco-blue) text-white"
+                                                        : isToday ? "bg-(--riafco-orange) text-white"
+                                                            : "hover:bg-gray-100 dark:hover:bg-slate-800"}
+                          ${hasEvent ? "font-bold" : ""}
+                        `}
+                                                aria-pressed={isSelected}
+                                            >
+                                                {day}
+                                                {hasEvent && (
+                                                    <div
+                                                        className={`absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isSelected || isToday ? "bg-white" : "bg-(--riafco-orange)"
+                                                            }`}
+                                                    />
+                                                )}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="mt-4 text-xs text-slate-600">
+                                    <div className="flex items-center mb-1">
+                                        <div className="w-3 h-3 bg-(--riafco-orange) rounded-full mr-2" />
+                                        <span>{t("events.calendar.today")}</span>
+                                    </div>
+                                    <div className="flex items-center mb-1">
+                                        <div className="w-3 h-3 bg-(--riafco-blue) rounded-full mr-2" />
+                                        <span>{t("events.calendar.selected")}</span>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <div className="w-1 h-1 bg-(--riafco-orange) rounded-full mr-2 ml-1" />
+                                        <span>{t("events.calendar.hasEvent")}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* List */}
+                        <div className="lg:col-span-2">
+                            <div className="bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
+                                <div className="p-6 border-b border-gray-100 dark:border-gray-700">
+                                    <h4 className="text-lg font-semibold text-(--riafco-blue)">
+                                        {selectedDate
+                                            ? t("events.calendar.monthOf", { date: selectedDate.toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" }) })
+                                            : t("events.calendar.allEvents")}
+                                    </h4>
+                                    {selectedDate && (
+                                        <button
+                                            onClick={() => setSelectedDate(null)}
+                                            className="text-sm text-(--riafco-orange) hover:underline mt-1"
+                                        >
+                                            {t("events.calendar.seeAll")}
+                                        </button>
+                                    )}
+                                </div>
+
+                                <div className="max-h-96 overflow-y-auto">
+                                    {loading ? (
+                                        <div className="p-8 text-center text-slate-600">...</div>
+                                    ) : filteredEvents.length > 0 ? (
+                                        filteredEvents.map((event, index) => (
+                                            <div key={index} className="p-6 border-b border-gray-100 dark:border-gray-700 last:border-b-0">
+                                                <div className="flex items-start space-x-4">
+                                                    <div className="flex-shrink-0 w-16 h-16 bg-(--riafco-blue)/10 rounded-lg flex flex-col items-center justify-center text-(--riafco-blue)">
+                                                        <span className="text-lg font-bold">{new Date(event.startDate).getDate()}</span>
+                                                        <span className="text-xs">
+                                                            {new Date(event.startDate).toLocaleDateString(locale, { month: "short" })}
+                                                        </span>
+                                                    </div>
+
+                                                    <div className="flex-1 min-w-0">
+                                                        <button
+                                                            onClick={() => openEventDetails(event)}
+                                                            className="hover:text-(--riafco-blue) text-lg font-semibold block mb-2 text-left transition-colors"
+                                                        >
+                                                            {i18n.language === "fr" ? (event.title_fr || event.title) : (event.title_en || event.title_fr || event.title)}
+                                                        </button>
+
+                                                        <p className="text-slate-600 text-sm mb-3 line-clamp-2">
+                                                            {i18n.language === "fr" ? (event.description_fr || event.description) : (event.description_en || event.description_fr || event.description)}
+                                                        </p>
+
+                                                        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 mb-3">
+                                                            <span className="flex items-center">
+                                                                <GoClock className="mr-1 text-(--riafco-orange)" />
+                                                                {formatTime(event.startDate)} - {formatTime(event.endDate)}
+                                                            </span>
+                                                            <span className="flex items-center">
+                                                                <PiMapPinLight className="mr-1 text-(--riafco-orange)" />
+                                                                {event.location}
+                                                            </span>
+                                                            {event.isVirtual && (
+                                                                <span className="flex items-center text-(--riafco-blue)">
+                                                                    <BsCheckCircle className="mr-1" />
+                                                                    {t("events.modal.online")}
+                                                                </span>
+                                                            )}
+                                                        </div>
+
+                                                        <div className="flex items-center justify-between">
+                                                            {event.author && (
+                                                                <div className="flex items-center">
+                                                                    {event.author.profilePic && (
                                                                         <img
-                                                                            src={event.author.profilePic}
+                                                                            src={event.author.profilePic || "/placeholder.svg"}
                                                                             alt={event.author.firstName}
-                                                                            className="size-12 rounded-full mr-2"
+                                                                            className="w-8 h-8 rounded-full mr-2"
                                                                         />
                                                                     )}
-                                                                    <div className="text-start">
-                                                                        <span className="block text-black dark:text-white font-medium">
-                                                                            {event.author?.firstName} {event.author?.lastName}
+                                                                    <div>
+                                                                        <span className="text-sm font-medium">
+                                                                            {event.author.firstName} {event.author.lastName}
                                                                         </span>
-                                                                        <span className="text-slate-500 text-xs">Organisateur</span>
+                                                                        <span className="text-xs text-slate-500 block">{t("events.list.organizer")}</span>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                            <td className="text-center py-6 px-5 min-w-[180px]">
+                                                            )}
+
+                                                            <div className="flex items-center gap-3">
+                                                                <button
+                                                                    onClick={() => openEventDetails(event)}
+                                                                    className="inline-flex items-center text-sm font-medium text-(--riafco-orange) hover:text-(--riafco-orange)/80 transition-colors"
+                                                                >
+                                                                    {t("events.list.details")} <FaArrowRight className="ml-1 text-xs" />
+                                                                </button>
+
                                                                 {event.registrationLink ? (
                                                                     <Link
                                                                         to={event.registrationLink}
                                                                         target="_blank"
-                                                                        className="relative inline-flex items-center font-medium tracking-wide align-middle text-base text-center border-none
-                                    after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto
-                                    after:bottom-0 after:start-0 after:transition-all after:duration-500
-                                    text-[--riafco-blue] hover:text-[--riafco-blue] after:bg-[--riafco-blue] duration-500 ease-in-out"
+                                                                        className="inline-flex items-center text-sm font-medium text-(--riafco-blue) hover:text-(--riafco-blue)/80 transition-colors"
                                                                     >
-                                                                        S'inscrire <FaArrowRight className="ms-2 text-[10px]" />
+                                                                        {t("events.list.register")} <FaArrowRight className="ml-1 text-xs" />
                                                                     </Link>
                                                                 ) : (
-                                                                    <span className="text-slate-500">Inscription fermée</span>
+                                                                        <span className="text-sm text-slate-500">{t("events.list.closed")}</span>
                                                                 )}
-                                                            </td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))
                                     ) : (
-                                        <p className="text-center text-slate-600 py-8">Aucun événement prévu ce {day}.</p>
+                                                <div className="p-8 text-center text-slate-600">
+                                                    <p>{selectedDate ? t("events.calendar.emptyForDate") : t("events.calendar.emptyAll")}</p>
+                                                </div>
                                     )}
                                 </div>
-                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* Modal */}
+            {isPopupOpen && selectedEvent && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white dark:bg-slate-900 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                        <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+                            <h2 className="text-2xl font-bold text-(--riafco-blue)">
+                                {i18n.language === "fr" ? (selectedEvent.title_fr || selectedEvent.title) : (selectedEvent.title_en || selectedEvent.title_fr || selectedEvent.title)}
+                            </h2>
+                            <button
+                                onClick={closeEventDetails}
+                                className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-full transition-colors"
+                                aria-label={t("events.modal.close")}
+                            >
+                                <FaTimes className="text-gray-500" />
+                            </button>
+                        </div>
+
+                        <div className="p-6">
+                            {selectedEvent.image && (
+                                <img
+                                    src={selectedEvent.image || "/placeholder.svg"}
+                                    alt={i18n.language === "fr" ? (selectedEvent.title_fr || selectedEvent.title) : (selectedEvent.title_en || selectedEvent.title_fr || selectedEvent.title)}
+                                    className="w-full h-48 object-cover rounded-lg mb-6"
+                                />
+                            )}
+
+                            <div className="space-y-4 mb-6">
+                                <div className="flex items-center text-gray-600">
+                                    <GoClock className="mr-3 text-(--riafco-orange)" />
+                                    <div>
+                                        <p className="font-medium">{t("events.modal.dateTime")}</p>
+                                        <p>{formatDateLong(selectedEvent.startDate)}</p>
+                                        <p>
+                                            {formatTime(selectedEvent.startDate)} - {formatTime(selectedEvent.endDate)}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center text-gray-600">
+                                    <PiMapPinLight className="mr-3 text-(--riafco-orange)" />
+                                    <div>
+                                        <p className="font-medium">{t("events.modal.place")}</p>
+                                        <p>{selectedEvent.location}</p>
+                                        {selectedEvent.isVirtual && (
+                                            <span className="inline-flex items-center text-(--riafco-blue) text-sm mt-1">
+                                                <BsCheckCircle className="mr-1" />
+                                                {t("events.modal.online")}
+                                            </span>
+                                        )}
+                                    </div>
+                                </div>
+
+                                {selectedEvent.author && (
+                                    <div className="flex items-center text-gray-600">
+                                        <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                                            {selectedEvent.author.profilePic ? (
+                                                <img
+                                                    src={selectedEvent.author.profilePic || "/placeholder.svg"}
+                                                    alt={selectedEvent.author.firstName}
+                                                    className="w-6 h-6 rounded-full"
+                                                />
+                                            ) : (
+                                                <div className="w-6 h-6 bg-(--riafco-blue) rounded-full flex items-center justify-center text-white text-xs">
+                                                    {selectedEvent.author.firstName[0]}
+                                                </div>
+                                            )}
+                                        </div>
+                                        <div>
+                                            <p className="font-medium">{t("events.modal.organizer")}</p>
+                                            <p>
+                                                {selectedEvent.author.firstName} {selectedEvent.author.lastName}
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="mb-6">
+                                <h3 className="text-lg font-semibold text-(--riafco-blue) mb-3">{t("events.modal.description")}</h3>
+                                <p className="text-gray-600 leading-relaxed">
+                                    {i18n.language === "fr"
+                                        ? (selectedEvent.description_fr || selectedEvent.description)
+                                        : (selectedEvent.description_en || selectedEvent.description_fr || selectedEvent.description)}
+                                </p>
+                            </div>
+
+                            {selectedEvent.additionalInfo && (
+                                <div className="mb-6">
+                                    <h3 className="text-lg font-semibold text-(--riafco-blue) mb-3">{t("events.modal.moreInfo")}</h3>
+                                    <p className="text-gray-600 leading-relaxed">
+                                        {i18n.language === "fr"
+                                            ? (selectedEvent.additionalInfo_fr || selectedEvent.additionalInfo)
+                                            : (selectedEvent.additionalInfo_en || selectedEvent.additionalInfo_fr || selectedEvent.additionalInfo)}
+                                    </p>
+                                </div>
+                            )}
+
+                            <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                {selectedEvent.registrationLink ? (
+                                    <Link
+                                        to={selectedEvent.registrationLink}
+                                        target="_blank"
+                                        className="flex-1 py-3 px-6 bg-(--riafco-blue) hover:bg-(--riafco-blue)/90 text-white font-semibold rounded-md text-center transition-colors"
+                                    >
+                                        {t("events.modal.registerCta")}
+                                    </Link>
+                                ) : (
+                                    <div className="flex-1 py-3 px-6 bg-gray-200 text-gray-500 font-semibold rounded-md text-center">
+                                        {t("events.modal.closed")}
+                                    </div>
+                                )}
+
+                                <button
+                                    onClick={closeEventDetails}
+                                    className="py-3 px-6 border border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-slate-800 text-gray-700 dark:text-gray-300 font-semibold rounded-md transition-colors"
+                                >
+                                    {t("events.modal.close")}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <Footer />
             <CookieModal />

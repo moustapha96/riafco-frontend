@@ -24,11 +24,11 @@ export default function PageServiceDetail() {
                 <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-semibold">Business Consultation</h3>
 
                 <ul className="tracking-[0.5px] mb-0 inline-flex items-center mt-4 justify-center">
-                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out  hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                          <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out  hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                     <li className="inline-block text-base  mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out  hover:text-indigo-600"><Link to="/page-services">Services</Link></li>
+                          <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out  hover:text-[var(--riafco-orange)] "><Link to="/page-services">Services</Link></li>
                     <li className="inline-block text-base  mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Business Consultation</li>
+                          <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Business Consultation</li>
                 </ul>
             </div>
         </div>
@@ -53,13 +53,13 @@ export default function PageServiceDetail() {
                         <h4 className="mb-4 text-2xl leading-normal font-medium">Great Product Analytics <br/> With Real Problem</h4>
                         <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
                         <ul className="list-none text-slate-400 mt-4">
-                            <li className="mb-2 flex ms-0"><MdOutlineCheckCircle  className="text-indigo-600 text-xl me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                            <li className="mb-2 flex ms-0"><MdOutlineCheckCircle  className="text-indigo-600 text-xl me-2"/> Our Talented & Experienced Marketing Agency</li>
-                            <li className="mb-2 flex ms-0"><MdOutlineCheckCircle  className="text-indigo-600 text-xl me-2"/> Create your own skin to match your brand</li>
+                              <li className="mb-2 flex ms-0"><MdOutlineCheckCircle className="text-[var(--riafco-orange)]  text-xl me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                              <li className="mb-2 flex ms-0"><MdOutlineCheckCircle className="text-[var(--riafco-orange)]  text-xl me-2" /> Our Talented & Experienced Marketing Agency</li>
+                              <li className="mb-2 flex ms-0"><MdOutlineCheckCircle className="text-[var(--riafco-orange)]  text-xl me-2" /> Create your own skin to match your brand</li>
                         </ul>
 
                         <div className="mt-4">
-                            <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find Out More <FiChevronRight className="align-middle"/></Link>
+                              <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Find Out More <FiChevronRight className="align-middle" /></Link>
                         </div>
                     </div>
                 </div>
@@ -71,16 +71,16 @@ export default function PageServiceDetail() {
                         let Icon = item.icon
                         return(
                             <div className={`p-6  duration-500 rounded-2xl mt-6 text-center ${item.id === 2 ? 'shadow-xl shadow-gray-100 dark:shadow-gray-800' : 'hover:shadow-xl hover:shadow-gray-100 dark:hover:shadow-gray-800'}`} key={index}>
-                                <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                     <Icon className=""/>
                                 </div>
 
                                 <div className="content mt-7">
-                                    <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                    <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                     <p className="text-slate-400 mt-3">{item.desc}</p>
                                     
                                     <div className="mt-5">
-                                        <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight className=""/></Link>
+                                        <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight className="" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ export default function PageServiceDetail() {
                                                 <label htmlFor="name" className="font-semibold">Your Name:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <FiUser className="size-4 absolute top-3 start-4"/>
-                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :"/>
+                                                      <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@ export default function PageServiceDetail() {
                                                 <label htmlFor="email" className="font-semibold">Your Email:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <FiMail className="size-4 absolute top-3 start-4"/>
-                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :"/>
+                                                      <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@ export default function PageServiceDetail() {
                                                 <label htmlFor="subject" className="font-semibold">Your Question:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <FiBook className="size-4 absolute top-3 start-4"/>
-                                                    <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Subject :"/>
+                                                      <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Subject :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -139,12 +139,12 @@ export default function PageServiceDetail() {
                                                 <label htmlFor="comments" className="font-semibold">Your Comment:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <FiMessageCircle className="size-4 absolute top-3 start-4"/>
-                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                      <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Send Message</button>
+                                      <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md justify-center flex items-center">Send Message</button>
                                 </form>
                             </div>
                         </div>

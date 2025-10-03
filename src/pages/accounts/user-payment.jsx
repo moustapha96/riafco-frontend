@@ -13,6 +13,7 @@ import Footer from '../../component/Footer/footer';
 import AccpontTab from '../../component/accountTab';
 
 import * as Icon from 'react-feather'
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function UserPayment() {
     let [isModal, setIsmodal] = useState(false)
@@ -77,7 +78,7 @@ export default function UserPayment() {
                                     <div className="mb-4 md:mb-0">
                                         <h5 className="text-xl font-semibold">Current Plan</h5>
                                     </div>
-                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Switch to Annual Plan</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Switch to Annual Plan</Link>
                                 </div>
 
                                 <div className="p-6">
@@ -155,7 +156,7 @@ export default function UserPayment() {
                                         </li>
 
                                         <li className="py-6 border-t border-gray-100 dark:border-gray-700">
-                                            <Link onClick={()=>setIsmodal(!isModal)} data-modal-toggle="paymentMethod" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Add Payment Method</Link>
+                                            <Link onClick={() => setIsmodal(!isModal)} data-modal-toggle="paymentMethod" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Add Payment Method</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -180,7 +181,7 @@ export default function UserPayment() {
                                         <div className="lg:col-span-6 mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="name" className="font-semibold">Your Name :</label>
-                                                <input name="name" id="name" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" required placeholder="Name :" />
+                                                <input name="name" id="name" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" required placeholder="Name :" />
                                             </div>
                                         </div>
                                     </div>
@@ -189,7 +190,7 @@ export default function UserPayment() {
                                         <div className="lg:col-span-6 mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="ex_month" className="form-label font-medium">Month :</label>
-                                                <select id="ex_month" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                                <select id="ex_month" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
 
                                                     {month.map((data, index) => {
                                                         return (
@@ -203,7 +204,7 @@ export default function UserPayment() {
                                         <div className="lg:col-span-6 mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="ex_year" className="form-label font-medium">Year :</label>
-                                                <select id="ex_year" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                                <select id="ex_year" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                     <option>2022</option>
                                                     <option>2023</option>
                                                     <option>2024</option>
@@ -215,14 +216,14 @@ export default function UserPayment() {
                                         <div className="lg:col-span-6 mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="name" className="font-semibold">Card no. :</label>
-                                                <input name="number" id="card_number" type="number" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" required placeholder="number :" />
+                                                <input name="number" id="card_number" type="number" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" required placeholder="number :" />
                                             </div>
                                         </div>
 
                                         <div className="lg:col-span-6 mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="name" className="font-semibold">CVV :</label>
-                                                <input name="number" id="cvv_number" type="number" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" required placeholder="number :" />
+                                                <input name="number" id="cvv_number" type="number" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" required placeholder="number :" />
                                             </div>
                                         </div>
                                     </div>
@@ -231,7 +232,7 @@ export default function UserPayment() {
                                         <div className="mb-5">
                                             <div className="text-start">
                                                 <label htmlFor="card_names" className="form-label font-medium">Cards :</label>
-                                                <select id="card_names" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                                <select id="card_names" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                     <option>Visa</option>
                                                     <option>Ame. Express</option>
                                                     <option>Master</option>
@@ -239,7 +240,7 @@ export default function UserPayment() {
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" id="submit" name="send" className="py-2 px-5  font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Add Card</button>
+                                    <button type="submit" id="submit" name="send" className="py-2 px-5  font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md justify-center flex items-center">Add Card</button>
                                 </form>
                             </div>
                         </div>
@@ -247,7 +248,7 @@ export default function UserPayment() {
                 </div>:""
             }
 
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

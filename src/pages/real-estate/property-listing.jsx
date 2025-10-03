@@ -79,14 +79,14 @@ export default function PropertyListing() {
                                         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6 lg:divide-x-[1px] lg:divide-gray-200 lg:dark:divide-gray-700">
                                     <div>
                                         <div className="filter-search-form relative">
-                                            <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                            <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <input name="name" type="text" id="job-keyword" className="form-input lg:rounded-t-sm lg:rounded-e-none lg:rounded-b-none lg:rounded-s-sm lg:outline-0 w-full filter-input-box bg-gray-50 dark:bg-slate-800 border-0 focus:ring-0" placeholder="Search your Keywords" />
                                         </div>
                                     </div>
 
                                     <div>                                                      
                                         <div className="filter-search-form relative">
-                                            <AiOutlineHome className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                            <AiOutlineHome className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={project} />
 
                                         </div>
@@ -94,7 +94,7 @@ export default function PropertyListing() {
 
                                     <div>                                                       
                                         <div className="filter-search-form relative">
-                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={minPrice} />
 
                                         </div>
@@ -102,14 +102,14 @@ export default function PropertyListing() {
 
                                     <div>                                                       
                                         <div className="filter-search-form relative">
-                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={maxPrice} />
 
                                         </div>
                                     </div>
 
                                     <div className="lg:mt-6">
-                                        <input type="submit" id="search-buy" name="search" className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
+                                        <input type="submit" id="search-buy" name="search" className="btn bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
                                     </div>
                                 </div>
                             </div>
@@ -135,22 +135,22 @@ export default function PropertyListing() {
 
                                     <div className="p-6">
                                         <div className="pb-6">
-                                            <Link to={`/property-detail/${data.id}`} className="text-lg hover:text-indigo-600 font-medium ease-in-out duration-500">{data.address}</Link>
+                                            <Link to={`/property-detail/${data.id}`} className="text-lg hover:text-[var(--riafco-orange)]  font-medium ease-in-out duration-500">{data.address}</Link>
                                         </div>
 
                                         <ul className="py-6 border-y border-gray-100 dark:border-gray-800 flex items-center list-none">
                                             <li className="flex items-center me-4">
-                                                <LiaCompressArrowsAltSolid className=" text-2xl me-2 text-indigo-600"/>
+                                                <LiaCompressArrowsAltSolid className=" text-2xl me-2 text-[var(--riafco-orange)] " />
                                                 <span>{data.sqrt}</span>
                                             </li>
 
                                             <li className="flex items-center me-4">
-                                                <LuBedDouble className="text-2xl me-2 text-indigo-600"/>
+                                                <LuBedDouble className="text-2xl me-2 text-[var(--riafco-orange)] " />
                                                 <span>{data.beds}</span>
                                             </li>
 
                                             <li className="flex items-center">
-                                                <LuBath className="text-2xl me-2 text-indigo-600"/>
+                                                <LuBath className="text-2xl me-2 text-[var(--riafco-orange)] " />
                                                 <span>{data.bath}</span>
                                             </li>
                                         </ul>
@@ -184,27 +184,27 @@ export default function PropertyListing() {
                             <nav>
                                 <ul className="inline-flex items-center -space-x-px">
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                             <MdOutlineKeyboardArrowLeft className="text-[20px] rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">1</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">2</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</Link>
+                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]">3</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">4</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">5</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                             <MdKeyboardArrowRight className="text-xl rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>

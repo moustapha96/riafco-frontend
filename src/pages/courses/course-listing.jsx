@@ -70,8 +70,8 @@ export default function CourseListing() {
                                         </div>
 
                                         <div className="content p-6 relative">
-                                            <Link to={`/course-detail/${data.id}`} className="font-medium block text-indigo-600">{data.field}</Link>
-                                            <Link to={`/course-detail/${data.id}`} className="text-lg font-medium block hover:text-indigo-600 duration-500 ease-in-out mt-2">{data.desc}</Link>
+                                            <Link to={`/course-detail/${data.id}`} className="font-medium block text-[var(--riafco-orange)] ">{data.field}</Link>
+                                            <Link to={`/course-detail/${data.id}`} className="text-lg font-medium block hover:text-[var(--riafco-orange)]  duration-500 ease-in-out mt-2">{data.desc}</Link>
                                             <p className="text-slate-400 mt-3 mb-4">The phrasal sequence of the is now so that many campaign and benefit</p>
 
                                             <ul className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center list-none text-slate-400">
@@ -92,7 +92,7 @@ export default function CourseListing() {
                                             </ul>
 
                                             <div className="absolute -top-7 end-6 z-1 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
-                                                <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-indigo-600 dark:text-white">
+                                                <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-[var(--riafco-orange)]  dark:text-white">
                                                     <span className="font-semibold">$11</span>
                                                 </div>
                                             </div>
@@ -109,27 +109,27 @@ export default function CourseListing() {
                             <nav aria-label="Page navigation example">
                                 <ul className="inline-flex items-center -space-x-px">
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                              <MdOutlineKeyboardArrowLeft className=" text-[20px] rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">1</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">2</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</Link>
+                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]">3</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">4</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">5</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                             <MdKeyboardArrowRight className="text-xl rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>
@@ -150,7 +150,7 @@ export default function CourseListing() {
                                 <div className="text-center subcribe-form">
                                     <form className="relative mx-auto max-w-xl">
                                         <input type="email" id="subemail" name="name" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-gray-100 dark:border-gray-700" placeholder="Enter your email id.." />
-                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subcribe Now</button>
+                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Subcribe Now</button>
                                     </form>
                                 </div>
                             </div>

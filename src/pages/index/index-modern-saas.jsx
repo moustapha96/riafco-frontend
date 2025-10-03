@@ -42,22 +42,22 @@ export default function IndexModernSaas() {
     return (
         <>
             <Navbar />
-            <section className="relative table w-full py-36 overflow-hidden bg-gradient-to-b to-transparent from-indigo-600/20 dark:from-indigo-600/40">
+            <section className="relative table w-full py-36 overflow-hidden bg-gradient-to-b to-transparent from-[var(--riafco-blue)]/20 dark:from-[var(--riafco-blue)]/40">
                 <div className="container relative">
                     <div className="relative grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-6">
                             <div className="md:me-8">
-                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative">Easy way to <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-indigo-600 relative inline-block"><span className="relative text-white">manage</span></span> your over work</h4>
+                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative">Easy way to <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[var(--riafco-blue)] relative inline-block"><span className="relative text-white">manage</span></span> your over work</h4>
                                 <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                 <div className="subcribe-form mt-6 mb-3">
                                     <form className="relative max-w-xl">
                                         <input type="email" id="subcribe" name="email" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" placeholder="Your Email Address :" />
-                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Try it for free <FaArrowRight className="ms-2 text-[10px]"/></button>
+                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Try it for free <FaArrowRight className="ms-2 text-[10px]" /></button>
                                     </form>
                                 </div>
 
-                                <span className="text-slate-400 font-medium">Looking for help? <Link to="#" className="text-indigo-600">Get in touch with us</Link></span>
+                                <span className="text-slate-400 font-medium">Looking for help? <Link to="#" className="text-[var(--riafco-orange)] ">Get in touch with us</Link></span>
                             </div>
                         </div>
 
@@ -69,7 +69,7 @@ export default function IndexModernSaas() {
 
                                 <div className="absolute flex justify-between items-center md:bottom-10 bottom-5 md:-start-16 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
                                     <div className="flex items-center">
-                                        <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-indigo-600/5 text-indigo-600 text-center rounded-full me-3">
+                                        <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                                             <Icon.Monitor className="size-6"></Icon.Monitor>
                                         </div>
                                         <div className="flex-1">
@@ -88,7 +88,7 @@ export default function IndexModernSaas() {
                                         <span className="text-slate-400">84%</span>
                                     </div>
                                     <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                        <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "84%" }}></div>
+                                        <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "84%" }}></div>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@ export default function IndexModernSaas() {
                         <div className="flex items-center justify-center rounded-full mx-auto bg-gray-50 dark:bg-slate-800 shadow-sm dark:shadow-gray-800 size-[110px]">
                             <img src={logo_icon_40} className="block mx-auto" alt="" />
                         </div>
-                        <h3 className="mb-6 mt-8 md:text-4xl text-3xl md:leading-normal leading-normal font-bold">The best customer relationship <br /> management platform for just <br /> about <span className="after:absolute after:end-0  after:start-0  after:bottom-1 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-indigo-600/30 relative text-indigo-600">everything.</span></h3>
+                        <h3 className="mb-6 mt-8 md:text-4xl text-3xl md:leading-normal leading-normal font-bold">The best customer relationship <br /> management platform for just <br /> about <span className="after:absolute after:end-0  after:start-0  after:bottom-1 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-[var(--riafco-blue)]/30 relative text-[var(--riafco-orange)] ">everything.</span></h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
@@ -116,7 +116,7 @@ export default function IndexModernSaas() {
                             </video>
 
                             <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox lg:h-20 h-16 lg:w-20 w-16 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 hover:bg-indigo-600 dark:hover:bg-indigo-600 text-indigo-600 hover:text-white duration-500 ease-in-out mx-auto">
+                                <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox lg:h-20 h-16 lg:w-20 w-16 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white duration-500 ease-in-out mx-auto">
                                     <i className="mdi mdi-play inline-flex items-center justify-center text-3xl"></i>
                                 </Link>
                             </div>
@@ -183,7 +183,7 @@ export default function IndexModernSaas() {
                                 {accordionData.slice(0,5).map((item, index) => (
                                     <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                         <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                                 <span>{item.title}</span>
                                                 <svg data-accordion-icon className={`${activeIndex === index ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>

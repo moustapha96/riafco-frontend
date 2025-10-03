@@ -45,11 +45,11 @@ export default function LandingSix(){
                         <div className="subcribe-form mt-6 mb-3">
                             <form className="relative max-w-xl mx-auto">
                                 <input type="email" id="emailid" name="email" className="py-4 pe-40 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/60 dark:bg-slate-900/60 shadow-sm dark:shadow-gray-800" placeholder="yourname@domain.com"/>
-                                <button type="submit" className="absolute top-[2px] end-[3px] h-[46px] py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subscribe Now</button>
+                                    <button type="submit" className="absolute top-[2px] end-[3px] h-[46px] py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Subscribe Now</button>
                             </form>
                         </div>
 
-                        <span className="font-medium">Looking for help? <Link to="" className="text-indigo-600">Get in touch with us</Link></span>
+                            <span className="font-medium">Looking for help? <Link to="" className="text-[var(--riafco-orange)] ">Get in touch with us</Link></span>
                     </div>
 
                     <div className="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 mx-auto mt-8 items-center">
@@ -113,10 +113,10 @@ export default function LandingSix(){
                     {aboutFive.map((item,index) =>{
                         let Icon = item.icon
                         return(
-                            <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 duration-500 rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                            <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] duration-500 rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                 <div className="relative overflow-hidden text-transparent -m-3">
-                                    <FiHexagon className="size-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></FiHexagon>
-                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                                    <FiHexagon className="size-24 fill-[var(--riafco-blue)]/5 group-hover:fill-white/10 mx-auto"></FiHexagon>
+                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
                                         <Icon className=""></Icon>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@ export default function LandingSix(){
                                     <img src={Cta} className="rounded-md shadow-lg" alt=""/>
                                     <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                         <Link to="#!" onClick={() => setOpen(true)} 
-                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -193,7 +193,7 @@ export default function LandingSix(){
                 </div>
             </div>
             
-            <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
         </section>
 
         <section className="relative md:py-24 py-16">

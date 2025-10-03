@@ -152,14 +152,14 @@ export default function IndexService() {
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-7">
                             <div className="md:me-6">
-                                <h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Find the perfect <br /> <span className="text-indigo-600">Professional</span> for you</h4>
+                                <h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Find the perfect <br /> <span className="text-[var(--riafco-orange)] ">Professional</span> for you</h4>
                                 <p className="text-slate-400 text-xl max-w-xl">Get free quotes within minutes</p>
 
                                 <div className="subcribe-form z-1 mt-8">
                                     <form className="relative mx-auto max-w-2xl">
                                         <Icon.Search className="size-5 absolute top-[47%] -translate-y-1/2 start-4"></Icon.Search>
                                         <input type="text" id="search_name" name="name" className="pt-4 pe-40 pb-4 w-full h-[50px] outline-none text-black dark:text-white rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 ps-12" placeholder="What service are you looking for?" />
-                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Search</button>
+                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Search</button>
                                     </form>
                                     <p className="text-slate-400 max-w-xl mt-3"><span className="font-semibold">Popular:</span> House Cleaning, Web Design, Personal Trainers</p>
                                 </div>
@@ -190,11 +190,11 @@ export default function IndexService() {
                             let Icons = item.icon
                             return(
                                 <div key={index} className="group transition-all duration-500 ease-in-out text-center">
-                                    <div className="flex align-middle mx-auto justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                                    <div className="flex align-middle mx-auto justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                                         <Icons className="size-6"/>
                                     </div>
                                     <div className="mt-4">
-                                        <Link  className="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                        <Link className="text-xl font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                         <p className="text-slate-400 mt-2">{item.desc}</p>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@ export default function IndexService() {
                         {accordionData1.map((item, index) => (
                                 <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                     <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                        <button type="button" onClick={() => toggleAccordion(item.id)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === item.id ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                    <button type="button" onClick={() => toggleAccordion(item.id)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === item.id ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                             <span>{item.title}</span>
                                             <svg data-accordion-icon className={`${activeIndex === item.id ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -309,7 +309,7 @@ export default function IndexService() {
                         {accordionData2.map((item, index) => (
                                 <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                     <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                        <button type="button" onClick={() => toggleAccordion(item.id)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === item.id ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                    <button type="button" onClick={() => toggleAccordion(item.id)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === item.id ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                             <span>{item.title}</span>
                                             <svg data-accordion-icon className={`${activeIndex === item.id ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>

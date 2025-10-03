@@ -15,6 +15,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import { portfolioTwo, portfolioImageTwo,experienceData } from '../../data/portfolio';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function UserProfile() {
   const [isOpen, setisOpen] = useState(false);
@@ -86,14 +87,14 @@ export default function UserProfile() {
                     <div className="flex items-center">
                       <Icon.Mail className="fea icon-ex-md text-slate-400 me-3"></Icon.Mail>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Email :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Email :</h6>
                         <Link to="#" className="text-slate-400">jennyhot@hotmail.com</Link>
                       </div>
                     </div>
                     <div className="flex items-center mt-3">
                       <Icon.Bookmark className="fea icon-ex-md text-slate-400 me-3"></Icon.Bookmark>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Skills :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Skills :</h6>
                         <Link to="#" className="text-slate-400">html</Link>,
                          <Link to="#" className="text-slate-400">css</Link>,
                           <Link to="#" className="text-slate-400">js</Link>, 
@@ -103,35 +104,35 @@ export default function UserProfile() {
                     <div className="flex items-center mt-3">
                       <Icon.Italic className="fea icon-ex-md text-slate-400 me-3"></Icon.Italic>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Language :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Language :</h6>
                         <Link to='#' className="text-slate-400">English</Link>, <Link className="text-slate-400">Japanese</Link>, <Link className="text-slate-400">Chinese</Link>
                       </div>
                     </div>
                     <div className="flex items-center mt-3">
                       <Icon.Globe className="fea icon-ex-md text-slate-400 me-3"></Icon.Globe>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Website :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Website :</h6>
                         <Link to="#" className="text-slate-400">www.kristajoseph.com</Link>
                       </div>
                     </div>
                     <div className="flex items-center mt-3">
                       <Icon.Gift className="fea icon-ex-md text-slate-400 me-3"></Icon.Gift>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Birthday :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Birthday :</h6>
                         <p className="text-slate-400 mb-0">2nd March, 1996</p>
                       </div>
                     </div>
                     <div className="flex items-center mt-3">
                       <Icon.MapPin className="fea icon-ex-md text-slate-400 me-3"></Icon.MapPin>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Location :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Location :</h6>
                         <Link to="#" className="text-slate-400">Beijing, China</Link>
                       </div>
                     </div>
                     <div className="flex items-center mt-3">
                       <Icon.Phone className="fea icon-ex-md text-slate-400 me-3"></Icon.Phone>
                       <div className="flex-1">
-                        <h6 className="text-indigo-600 dark:text-white font-medium mb-0">Cell No :</h6>
+                        <h6 className="text-[var(--riafco-orange)]  dark:text-white font-medium mb-0">Cell No :</h6>
                         <Link to="#" className="text-slate-400">(+12) 1254-56-4896</Link>
                       </div>
                     </div>
@@ -147,7 +148,7 @@ export default function UserProfile() {
                         <div className="flex-1 content ms-4">
                           <h4 className="text-lg text-medium">{item.title}</h4>
                           <p className="text-slate-400 mb-0">{item.time}</p>
-                          <p className="text-slate-400 mb-0"><Link className="text-indigo-600">{item.name}</Link> {item.location}</p>
+                          <p className="text-slate-400 mb-0"><Link className="text-[var(--riafco-orange)] ">{item.name}</Link> {item.location}</p>
                         </div>
                       </div>
                     )
@@ -169,11 +170,11 @@ export default function UserProfile() {
 
                         <div className="content transition-all duration-500">
                           <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-6 end-6 transition-all duration-500">
-                            <Link onClick={() => handleImageClick(index)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                            <Link onClick={() => handleImageClick(index)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                           </div>
 
                           <div className="absolute z-10 opacity-0 group-hover:opacity-100 bottom-6 start-6 transition-all duration-500">
-                            <Link to="/portfolio-detail-three" className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">Mockup Collection</Link>
+                            <Link to="/portfolio-detail-three" className="h6 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">Mockup Collection</Link>
                             <p className="text-slate-400 mb-0">Abstract</p>
                           </div>
                         </div>
@@ -193,7 +194,7 @@ export default function UserProfile() {
         </div>
       </section>
 
-      <Footer />
+      <TransparentFooter />
     </>
   )
 }

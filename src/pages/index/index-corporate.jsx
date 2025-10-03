@@ -64,7 +64,7 @@ export default function IndexCorporate() {
                                                 <p className="text-white/70 text-lg max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                                 <div className="mt-6">
-                                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact us</Link>
+                                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Contact us</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,7 +83,7 @@ export default function IndexCorporate() {
                                                 <p className="text-white/70 text-lg max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                                 <div className="mt-6">
-                                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Get Started</Link>
+                                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Get Started</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,17 +105,17 @@ export default function IndexCorporate() {
                                     return(
                                         <div className="group p-6 md:px-4 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out" key={index}>
                                         <div
-                                            className="size-16 bg-indigo-600/5 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                                className="size-16 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                             <Icons className="size-7"/>
                                         </div>
     
                                         <div className="content mt-7">
-                                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                             <p className="text-slate-400 mt-3">{item.desc}</p>
     
                                             <div className="mt-5">
                                                 <Link
-                                                    className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                     More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@ export default function IndexCorporate() {
                                 <img src={about2} className="mx-auto" alt="" />
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                     <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -145,7 +145,7 @@ export default function IndexCorporate() {
                             <div className="lg:ms-4">
                                 <h4 className="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-medium">We are the largest <br /> Business expert </h4>
                                 <p className="text-slate-400 max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with &apos;real&apos; content. This is required when, for example, the final text is not yet available. Dummy texts have been in use by typesetters since the 16th century.</p>
-                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-3">Buy Now <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-3">Buy Now <i className="mdi mdi-chevron-right align-middle"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@ export default function IndexCorporate() {
                    <KeyFeature/>
                     <div className="grid grid-cols-1 justify-center">
                         <div className="mt-6 text-center">
-                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">See More<FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2">See More<FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function IndexCorporate() {
                                         <img src={cta_bg} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -227,7 +227,7 @@ export default function IndexCorporate() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
 
             <section className="relative md:py-24 py-16">

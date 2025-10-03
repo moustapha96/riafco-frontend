@@ -9,6 +9,7 @@ import TinySlider from 'tiny-slider-react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { FiPhone } from 'react-icons/fi';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 const settings = {
@@ -137,13 +138,13 @@ export default function PortfolioDetailFour() {
                         <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Do you have designing project? <br /> Let&apos;s talk.</h3>
 
                         <div className="mt-6">
-                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full"><FiPhone className="me-1 text-lg"/> Contact us</Link>
+                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full"><FiPhone className="me-1 text-lg" /> Contact us</Link>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

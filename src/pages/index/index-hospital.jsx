@@ -51,7 +51,7 @@ export default function IndexHospital() {
                         <p className="text-white/60 text-lg max-w-xl">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
 
                         <div className="mt-8">
-                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Make Appointment</Link>
+                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Make Appointment</Link>
 
                             <p className="text-white/60 text-base mt-2">T&C apply. Please read <Link  className="text-white inline-flex items-center">Terms and Conditions <FaArrowRight className="ms-2 text-[10px]"/></Link></p>
                         </div>
@@ -73,7 +73,7 @@ export default function IndexHospital() {
                             <div className="grid md:grid-cols-3 grid-cols-1 gap-[24px]">
                                 <div>
                                     <div
-                                        className="size-16 bg-indigo-600/5 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                        className="size-16 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                        <RiHospitalLine className ="size-6"/>
                                     </div>
 
@@ -83,14 +83,14 @@ export default function IndexHospital() {
 
                                         <div className="mt-5">
                                             <Link 
-                                                className="relative inline-flex items-center  font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                className="relative inline-flex items-center  font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                 More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div
-                                        className="size-16 bg-indigo-600/5 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                        className="size-16 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                         <IoMedkitOutline className='size-6'/>
                                     </div>
 
@@ -100,7 +100,7 @@ export default function IndexHospital() {
 
                                         <div className="mt-5">
                                             <Link 
-                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                 More  <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ export default function IndexHospital() {
 
                                 <div>
                                     <div
-                                        className="size-16 bg-indigo-600/5 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                        className="size-16 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                        <AiOutlineClockCircle className="size-6"/>
                                     </div>
 
@@ -118,21 +118,21 @@ export default function IndexHospital() {
                                         <ul className="list-none mt-3 space-x-1">
                                             <li className="flex justify-between">
                                                 <p className="text-slate-400">Monday - Friday</p>
-                                                <p className="text-indigo-600">8.00 - 20.00</p>
+                                                <p className="text-[var(--riafco-orange)] ">8.00 - 20.00</p>
                                             </li>
                                             <li className="flex justify-between">
                                                 <p className="text-slate-400">Saturday</p>
-                                                <p className="text-indigo-600">8.00 - 18.00</p>
+                                                <p className="text-[var(--riafco-orange)] ">8.00 - 18.00</p>
                                             </li>
                                             <li className="flex justify-between">
                                                 <p className="text-slate-400">Sunday</p>
-                                                <p className="text-indigo-600">8.00 - 14.00</p>
+                                                <p className="text-[var(--riafco-orange)] ">8.00 - 14.00</p>
                                             </li>
                                         </ul>
 
                                         <div className="mt-5">
                                             <Link 
-                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                 More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                         </div>
                                     </div>
@@ -149,7 +149,7 @@ export default function IndexHospital() {
                                 <img src={about_2} className="rounded-md" alt="" />
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                     <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
                                     </Link>
                                 </div>
@@ -180,7 +180,7 @@ export default function IndexHospital() {
                                 <h4 className="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-medium">About Our Treatments</h4>
                                 <p className="text-slate-400 max-w-xl">Great doctor if you need your family member to get effective immediate assistance, examination, emergency treatment or a simple consultation. Thank you.</p>
                                 <p className="text-slate-400 max-w-xl mt-3">The most well-known dummy text is the &apos;Lorem Ipsum&apos;, which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to &apos;proper&apos; Latin. It contains a series of real Latin words.</p>
-                                <Link  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-3">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-3">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -198,12 +198,12 @@ export default function IndexHospital() {
                             let Icons = item.icon
                             return(
                                 <div className="text-center md:px-6" key={index}>
-                                    <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-3xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                    <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-3xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                         <Icons className='size-7'/>
                                     </div>
         
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Eye Care</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00AM - 10:00AM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00AM - 10:00AM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
@@ -262,7 +262,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Psychotherapy</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00AM - 01:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00AM - 01:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
@@ -279,7 +279,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Gynecology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">11:00AM - 04:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">11:00AM - 04:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -290,7 +290,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Cardiology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">11:00AM - 12:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">11:00AM - 12:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -301,7 +301,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Orthopedic</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00AM - 10:00AM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00AM - 10:00AM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                     </tr>
@@ -318,7 +318,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Neurology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">02:00PM - 04:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">02:00PM - 04:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -329,7 +329,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Cardiology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">11:00AM - 12:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">11:00AM - 12:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
@@ -348,7 +348,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Neurology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">04:00PM - 05:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">04:00PM - 05:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
@@ -360,7 +360,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Neurology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">04:30PM - 06:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">04:30PM - 06:00PM</span>
                                         </td>
                                     </tr>
 
@@ -374,7 +374,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Psychotherapy</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">06:00PM - 09:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">06:00PM - 09:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -385,7 +385,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Orthopedic</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">07:00PM - 08:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">07:00PM - 08:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -396,7 +396,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Cardiology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">06:00PM - 07:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">06:00PM - 07:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -407,7 +407,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Psychotherapy</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">06:00PM - 07:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">06:00PM - 07:00PM</span>
                                         </td>
                                     </tr>
 
@@ -422,7 +422,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Orthopedic</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00PM - 10:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00PM - 10:00PM</span>
                                         </td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
                                             <div className="flex items-center mb-3">
@@ -432,7 +432,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Cardiology</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00PM - 10:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00PM - 10:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="p-3 border border-gray-100 dark:border-gray-700">
@@ -443,7 +443,7 @@ export default function IndexHospital() {
                                                     <span className="text-slate-400">Orthopedic</span>
                                                 </div>
                                             </div>
-                                            <span className="py-2 px-4 bg-indigo-600/5 text-indigo-600 rounded-md block text-center">09:00PM - 10:00PM</span>
+                                            <span className="py-2 px-4 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-md block text-center">09:00PM - 10:00PM</span>
                                         </td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
                                         <td className="border border-gray-100 dark:border-gray-700"></td>
@@ -470,16 +470,16 @@ export default function IndexHospital() {
                                     <img src={item.image} className="size-24 rounded-full shadow-md dark:shadow-gray-800" alt="" />
     
                                     <div className="content mt-4">
-                                        <Link  className="text-lg font-medium hover:text-indigo-600 block">{item.name}</Link>
+                                            <Link className="text-lg font-medium hover:text-[var(--riafco-orange)]  block">{item.name}</Link>
                                         <span className="text-slate-400 block">{item.title}</span>
     
                                         <p className="text-slate-400 mt-4">{item.desc}</p>
     
                                         <ul className="list-none  space-x-1 mt-4 flex">
-                                            <li><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
-                                            <li><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
-                                            <li><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
-                                            <li><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -499,7 +499,7 @@ export default function IndexHospital() {
                                         <img src={bg} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -538,7 +538,7 @@ export default function IndexHospital() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
@@ -564,11 +564,11 @@ export default function IndexHospital() {
                                     <img src={item.image} alt="" />
 
                                     <div className="content p-6">
-                                        <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                        <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
 
                                         <div className="mt-4">
-                                            <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className='ms-2 text-xs'/></Link>
+                                            <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className='ms-2 text-xs' /></Link>
                                         </div>
                                     </div>
                                 </div>

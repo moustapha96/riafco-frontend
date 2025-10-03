@@ -50,13 +50,13 @@ export default function PageJobCompanies() {
                         {
                             jobGrid.map((data,index) => {
                                 return (
-                                    <Link key={index} to={`/page-job-company-detail/${data.id}`} className="group bg-white dark:bg-slate-900 p-6 rounded shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 border-4 border-white dark:border-slate-900 hover:border-b-indigo-600 dark:hover:border-b-indigo-600 text-center duration-500 ease-in-out">
+                                    <Link key={index} to={`/page-job-company-detail/${data.id}`} className="group bg-white dark:bg-slate-900 p-6 rounded shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 border-4 border-white dark:border-slate-900 hover:border-b-[var(--riafco-blue)] dark:hover:border-b-[var(--riafco-blue)] text-center duration-500 ease-in-out">
                                         <img src={data.image} className="size-16 mx-auto p-3 rounded-full bg-gray-50 dark:bg-slate-800 shadow-md dark:shadow-gray-800" alt="" />
 
                                         <div className="content mt-3">
-                                            <span className="text-lg font-semibold group-hover:text-indigo-600 transition duration-500 block">{data.company}</span>
+                                            <span className="text-lg font-semibold group-hover:text-[var(--riafco-orange)]  transition duration-500 block">{data.company}</span>
 
-                                            <span className="text-base text-slate-400 inline-flex items-center"><RiMapPinLine className="text-indigo-600 me-1"/>{data.place}</span>
+                                            <span className="text-base text-slate-400 inline-flex items-center"><RiMapPinLine className="text-[var(--riafco-orange)]  me-1" />{data.place}</span>
                                         </div>
                                     </Link>
                                 )

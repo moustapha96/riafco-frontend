@@ -44,7 +44,7 @@ export default function NftAuction() {
     return (
         <>
             <NftNavbar />
-            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-indigo-600/20">
+            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-[var(--riafco-blue)]/20">
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <h3 className="text-3xl leading-normal font-medium">Auction</h3>
@@ -53,11 +53,11 @@ export default function NftAuction() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex items-center space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="index-nft">NFT</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="index-nft">NFT</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Auction</li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Auction</li>
                     </ul>
                 </div>
             </section>
@@ -83,21 +83,21 @@ export default function NftAuction() {
                                             </div>
             
                                             <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
-                                                <Link to={`/nft-detail/${item.id}`} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Place Bid</Link>
+                                             <Link to={`/nft-detail/${item.id}`} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Place Bid</Link>
                                             </div>
-                                            {item.auction ?  <div className="absolute bottom-0 start-0 ms-6 mb-6 text-lg ltr:bg-gradient-to-r rtl:bg-gradient-to-l to-indigo-600 from-fuchsia-600 text-white rounded-full px-3 inline-flex items-center">
+                                         {item.auction ? <div className="absolute bottom-0 start-0 ms-6 mb-6 text-lg ltr:bg-gradient-to-r rtl:bg-gradient-to-l to-[var(--riafco-blue)] from-fuchsia-600 text-white rounded-full px-3 inline-flex items-center">
                                             <GoClock className="me-1"/> <small id="auction-item-1" className="font-semibold"> {item.remaining?.days} : {item.remaining?.hours}: {item.remaining?.minutes}: {item.remaining?.seconds}</small>
                                             </div> :''}
                                            
                                         </div>
             
                                         <div className="p-6 relative">
-                                            <Link to={`/nft-detail/${item.id}`} className="text-lg font-semibold hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                         <Link to={`/nft-detail/${item.id}`} className="text-lg font-semibold hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
             
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center">
-                                                    <i className="mdi mdi-ethereum text-xl leading-none text-indigo-600 me-1"></i>
-                                                    <span className="block font-semibold text-indigo-600">{item.amount}</span>
+                                                 <i className="mdi mdi-ethereum text-xl leading-none text-[var(--riafco-orange)]  me-1"></i>
+                                                 <span className="block font-semibold text-[var(--riafco-orange)] ">{item.amount}</span>
                                                 </div>
             
                                                 <div>
@@ -112,7 +112,7 @@ export default function NftAuction() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 mt-6">
                         <div className="md:col-span-12 text-center">
-                            <Link to="/" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"><MdOutlineRestartAlt className="mdi-spin me-1 animate-[spin_10s_linear_infinite] size-5"/> Load More</Link>
+                            <Link to="/" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md"><MdOutlineRestartAlt className="mdi-spin me-1 animate-[spin_10s_linear_infinite] size-5" /> Load More</Link>
                         </div>
                     </div>
                 </div>

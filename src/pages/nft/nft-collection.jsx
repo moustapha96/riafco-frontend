@@ -16,7 +16,7 @@ export default function NftCollection() {
     return (
         <>
             <NftNavbar />
-            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-indigo-600/20">
+            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-[var(--riafco-blue)]/20">
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <h3 className="text-3xl leading-normal font-medium">Collection</h3>
@@ -25,11 +25,11 @@ export default function NftCollection() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex items-center space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/index-nft">NFT</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/index-nft">NFT</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Collection</li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Collection</li>
                     </ul>
                 </div>
             </section>
@@ -49,7 +49,7 @@ export default function NftCollection() {
                                 return (
 
                                     <div key={index} className="group relative overflow-hidden bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800">
-                                        <div className="p-2 rounded-md shadow-sm dark:shadow-gray-800 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-indigo-600/20">
+                                        <div className="p-2 rounded-md shadow-sm dark:shadow-gray-800 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-[var(--riafco-blue)]/20">
                                             <div className="flex items-center">
                                                 <div className="w-full p-1">
                                                     <img src={data.image1} className="rounded-md" alt="" />
@@ -71,7 +71,7 @@ export default function NftCollection() {
                                             <img src={data.image5} className="size-20 rounded-full shadow-lg dark:shadow-gray-800 mx-auto" alt="" />
 
                                             <div className="mt-4">
-                                                <Link to="/" className="text-xl leading-none font-semibold hover:text-indigo-600 duration-500 ease-in-out block">{data.name}</Link>
+                                                <Link to="/" className="text-xl leading-none font-semibold hover:text-[var(--riafco-orange)]  duration-500 ease-in-out block">{data.name}</Link>
                                             </div>
                                         </div>
                                     </div>

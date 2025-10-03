@@ -74,7 +74,7 @@ export default function PageJobDetail() {
                                 {
                                     jobDuties.map((data , index) => {
                                         return (
-                                            <li className="text-slate-400 flex mt-2 ml-0" key={index}><Icon.ArrowRight width={16} className="text-indigo-600 h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
+                                            <li className="text-slate-400 flex mt-2 ml-0" key={index}><Icon.ArrowRight width={16} className="text-[var(--riafco-orange)]  h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
                                         )
                                     })
                                 }
@@ -86,7 +86,7 @@ export default function PageJobDetail() {
                                 {
                                     jobRequirements.map((data , index) => {
                                         return (
-                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-indigo-600 h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
+                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-[var(--riafco-orange)]  h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
                                         )
                                     })
                                 }
@@ -98,7 +98,7 @@ export default function PageJobDetail() {
                                 {
                                     jobNice.map((data,index) => {
                                         return (
-                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-indigo-600 h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
+                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-[var(--riafco-orange)]  h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
                                         )
                                     })
                                 }
@@ -112,7 +112,7 @@ export default function PageJobDetail() {
                                 {
                                     jobBenefits.map((data, index) => {
                                         return (
-                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-indigo-600 h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
+                                            <li key={index} className="text-slate-400 flex mt-2 ml-0"><Icon.ArrowRight width={16} className="text-[var(--riafco-orange)]  h5 mb-0 me-2"></Icon.ArrowRight> {data.desc}</li>
                                         )
                                     })
                                 }
@@ -123,7 +123,7 @@ export default function PageJobDetail() {
                             <p className="text-slate-400 mb-4">Employees residing outside of Japan are classified as Independent Contractors and are paid in the cryptocurrency of their choice.</p>
 
                             <div className="mt-6">
-                                <Link to="page-job-apply" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Apply now</Link>
+                                <Link to="page-job-apply" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Apply now</Link>
                             </div>
                         </div>
                     </div>

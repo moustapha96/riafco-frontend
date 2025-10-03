@@ -74,7 +74,7 @@ export default function IndexCleaner() {
                         <div className="relative">
                             <img src={about1} className="lg:w-[400px] w-[280px] rounded-md" alt=""/>
                             <div className="absolute top-0 translate-y-2/4 end-0 text-center">
-                                <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                      <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                     <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                 </Link>
                             </div>
@@ -111,7 +111,7 @@ export default function IndexCleaner() {
 
                         <div className="grid lg:grid-cols-2 gap-6 mt-6">
                             <div className="group flex duration-500 xl:p-3">
-                                <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl shadow-sm dark:shadow-gray-800 duration-500">
+                                      <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl shadow-sm dark:shadow-gray-800 duration-500">
                                     <FiUserCheck className="size-5"/>
                                 </div>
                                 <div className="flex-1 ms-4">
@@ -121,7 +121,7 @@ export default function IndexCleaner() {
                             </div>
 
                             <div className="group flex duration-500 xl:p-3">
-                                <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl shadow-sm dark:shadow-gray-800 duration-500">
+                                      <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl shadow-sm dark:shadow-gray-800 duration-500">
                                     <FiThumbsUp className="size-5"/>
                                 </div>
                                 <div className="flex-1 ms-4">
@@ -132,12 +132,12 @@ export default function IndexCleaner() {
                         </div>
 
                         <div className="relative mt-4">
-                            <div className="relative p-6 border-2 border-indigo-600 rounded-[30px] before:content-[''] before:absolute before:w-28 before:border-[6px] before:border-white dark:before:border-slate-900 before:-bottom-1 before:start-16 before:z-2 after:content-[''] after:absolute after:border-2 after:border-indigo-600 after:rounded-none after:rounded-e-[50px] after:w-20 after:h-20 after:-bottom-[80px] after:start-[60px] after:z-3 after:border-s-0 after:border-b-0">
+                                  <div className="relative p-6 border-2 border-[var(--riafco-blue)] rounded-[30px] before:content-[''] before:absolute before:w-28 before:border-[6px] before:border-white dark:before:border-slate-900 before:-bottom-1 before:start-16 before:z-2 after:content-[''] after:absolute after:border-2 after:border-[var(--riafco-blue)] after:rounded-none after:rounded-e-[50px] after:w-20 after:h-20 after:-bottom-[80px] after:start-[60px] after:z-3 after:border-s-0 after:border-b-0">
                                 <span className="font-semibold text-2xl leading-normal">
                                     Cleanliness is a state of purity, clarity, and precision.
                                 </span>
 
-                                <div className="absolute text-8xl -top-0 start-4 text-indigo-600/10 dark:text-indigo-600/20 -z-1">
+                                      <div className="absolute text-8xl -top-0 start-4 text-[var(--riafco-orange)] /10 dark:text-[var(--riafco-orange)] /20 -z-1">
                                     <i className="mdi mdi-format-quote-open"></i>
                                 </div>
                             </div>
@@ -163,14 +163,14 @@ export default function IndexCleaner() {
                     let Icon = item.icon
                     return(
                         <div key={index} className="group relative overflow-hidden px-6 py-10 shadow-sm hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                            <Icon className="size-12 stroke-1 text-indigo-600"/>
+                            <Icon className="size-12 stroke-1 text-[var(--riafco-orange)] " />
 
                             <div className="content mt-7">
-                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                 <p className="text-slate-400 mt-3">{item.desc}</p>
                                 
                                 <div className="mt-5">
-                                    <Link to="/page-services" className="relative inline-flex font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out items-center">Read More <FiArrowRight className=""/></Link>
+                                    <Link to="/page-services" className="relative inline-flex font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out items-center">Read More <FiArrowRight className="" /></Link>
                                 </div>
                             </div>
 
@@ -220,18 +220,18 @@ export default function IndexCleaner() {
 
                             <div className="relative -mt-6 px-6">
                                 <div className="rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 p-6">
-                                    <Link to="#" className="title h5 text-lg font-semibold hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                    <Link to="#" className="title h5 text-lg font-semibold hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
 
                                     <ul className="list-none mt-4">
                                         {item.feature.map((el,index)=>{
                                             return(
-                                                <li key={index} className="flex text-slate-400 ms-0"><i className="mdi mdi-check text-indigo-600 align-middle me-2"></i> {el}</li>
+                                                <li key={index} className="flex text-slate-400 ms-0"><i className="mdi mdi-check text-[var(--riafco-orange)]  align-middle me-2"></i> {el}</li>
                                             )
                                         })}
                                     </ul>
 
                                     <div className="mt-4">
-                                        <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight className="ms-1"/></Link>
+                                        <Link to="#" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight className="ms-1" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -258,14 +258,14 @@ export default function IndexCleaner() {
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black size-52 rounded-full opacity-0 group-hover:opacity-100 duration-500"></div>
 
                                     <ul className="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500">
-                                        <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><FiFacebook className="size-4"/></Link></li>
-                                        <li className="inline mx-1"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><FiInstagram className="size-4"/></Link></li>
-                                        <li className="inline"><Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><FiLinkedin className="size-4"/></Link></li>
+                                        <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><FiFacebook className="size-4" /></Link></li>
+                                        <li className="inline mx-1"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><FiInstagram className="size-4" /></Link></li>
+                                        <li className="inline"><Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><FiLinkedin className="size-4" /></Link></li>
                                     </ul>
                                 </div>
 
                                 <div className="content mt-3">
-                                    <Link to="#" className="text-lg font-semibold hover:text-indigo-600 duration-500">{item.name}</Link>
+                                    <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  duration-500">{item.name}</Link>
                                     <p className="text-slate-400">{item.desc}</p>
                                 </div>
                             </div>
@@ -289,11 +289,11 @@ export default function IndexCleaner() {
                             <img src={item.image} alt=""/>
 
                             <div className="content p-6">
-                                <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                 <p className="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
                                 
                                 <div className="mt-4">
-                                    <Link to="/blog-detail" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight className="ms-1"/></Link>
+                                    <Link to="/blog-detail" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight className="ms-1" /></Link>
                                 </div>
                             </div>
                         </div>

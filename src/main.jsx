@@ -9,6 +9,9 @@ import "./assets/css/style.css";
 
 import 'react-toastify/dist/ReactToastify.css';
 
+import './context/i18n';
+
+
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <App />

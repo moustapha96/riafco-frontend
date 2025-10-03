@@ -73,16 +73,16 @@ export default function PageJobCandidateDetail() {
                                         </ul>
 
                                         <ul className="list-none mt-5 space-x-1 space-y-1">
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.GitHub className="size-4"></Icon.GitHub></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Youtube className="size-4"></Icon.Youtube></Link></li>
-                                            <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Gitlab className="size-4"></Icon.Gitlab></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.GitHub className="size-4"></Icon.GitHub></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Youtube className="size-4"></Icon.Youtube></Link></li>
+                                            <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Gitlab className="size-4"></Icon.Gitlab></Link></li>
                                         </ul>
 
-                                        <Link to="/contact-one" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-6">Contact Me</Link>
+                                        <Link to="/contact-one" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-6">Contact Me</Link>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export default function PageJobCandidateDetail() {
                                     <span className="text-slate-400">84%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "84%" }}></div>
+                                    <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "84%" }}></div>
                                 </div>
                             </div>
 
@@ -110,7 +110,7 @@ export default function PageJobCandidateDetail() {
                                     <span className="text-slate-400">79%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "79%" }}></div>
+                                    <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "79%" }}></div>
                                 </div>
                             </div>
 
@@ -120,7 +120,7 @@ export default function PageJobCandidateDetail() {
                                     <span className="text-slate-400">95%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "95%" }}></div>
+                                    <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "95%" }}></div>
                                 </div>
                             </div>
 
@@ -161,11 +161,11 @@ export default function PageJobCandidateDetail() {
 
                                             <div className="content">
                                                 <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-4 end-4 transition-all duration-500">
-                                                    <Link to="#"  onClick={() => handleImageClick(index)}  className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera/></Link>
+                                                    <Link to="#" onClick={() => handleImageClick(index)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera /></Link>
                                                 </div>
 
                                                 <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                                                    <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                                                    <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.name}</Link>
                                                     <p className="text-slate-100 tag mb-0">{item.category}</p>
                                                 </div>
                                             </div>

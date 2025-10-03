@@ -59,7 +59,7 @@ export default function IndexLandingTwo() {
                         <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
 
                         <div className="relative mt-8">
-                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Get Started</Link>
+                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function IndexLandingTwo() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Services</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Services</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What we offer ?</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Obviously Im a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
@@ -94,16 +94,16 @@ export default function IndexLandingTwo() {
                             let Icons = item.icon
                             return(
                                 <div key={index} className={item.shadow}>
-                                    <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                    <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                         <Icons className='size-7'/>
                                     </div>
         
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
         
                                         <div className="mt-5">
-                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ export default function IndexLandingTwo() {
 
                                 <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
-                                <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
+                                <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  mx-auto mt-10">
                                     <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                 </Link>
                             </div>
@@ -149,7 +149,7 @@ export default function IndexLandingTwo() {
                 </div>
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Portfolio</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Portfolio</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Works & Projects</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Obviously I&apos;m a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
@@ -164,11 +164,11 @@ export default function IndexLandingTwo() {
         
                                     <div className="content">
                                         <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-4 end-4 transition-all duration-500">
-                                            <Link onClick={() => handleImageClick(index)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                            <Link onClick={() => handleImageClick(index)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                         </div>
         
                                         <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                                            <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                                            <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.name}</Link>
                                             <p className="text-slate-100 tag mb-0">{item.title}</p>
                                         </div>
                                     </div>

@@ -41,9 +41,9 @@ export default function ShopAccount() {
 
                     <div className="relative mt-3">
                         <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/index-shop">Techwind</Link></li>
+                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/index-shop">Techwind</Link></li>
                             <li className="inline-block text-base text-slate-950 dark:text-white mx-0.5"><MdKeyboardArrowRight className="text-xl"/></li>
-                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600"aria-current="page">My Account</li>
+                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">My Account</li>
                         </ul>
                     </div>
                 </div>
@@ -70,22 +70,22 @@ export default function ShopAccount() {
                             <div className="sticky top-20">
                                 <ul className="flex-column p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><AiOutlineDashboard className="text-[20px] me-2 align-middle"/>Dashboard</button>
+                                        <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><AiOutlineDashboard className="text-[20px] me-2 align-middle" />Dashboard</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><HiOutlineListBullet className="text-[20px] me-2 align-middle"/>Orders</button>
+                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><HiOutlineListBullet className="text-[20px] me-2 align-middle" />Orders</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><BsArrowDownCircle className="text-[18px] me-2 align-middle"/>Download</button>
+                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><BsArrowDownCircle className="text-[18px] me-2 align-middle" />Download</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><RiMapPinLine className="text-[20px] me-2 align-middle" />Addresses</button>
+                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><RiMapPinLine className="text-[20px] me-2 align-middle" />Addresses</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(4)} className={`${isOpenTab === 4 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><AiOutlineUser className="text-[20px] me-2 align-middle"/>account Detail</button>
+                                        <button onClick={() => handleTabClick(4)} className={`${isOpenTab === 4 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><AiOutlineUser className="text-[20px] me-2 align-middle" />account Detail</button>
                                     </li>
                                     <li role="presentation">
-                                        <Link to = "/auth-login" onClick={() => handleTabClick(5)} className={`${isOpenTab === 5 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><LiaSignOutAltSolid className="text-[20px] me-2 align-middle" />Logout</Link>
+                                        <Link to="/auth-login" onClick={() => handleTabClick(5)} className={`${isOpenTab === 5 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out flex items-center`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><LiaSignOutAltSolid className="text-[20px] me-2 align-middle" />Logout</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -117,7 +117,7 @@ export default function ShopAccount() {
                                                     <td className="px-2 py-3 text-start">1st November 2021</td>
                                                     <td className="px-2 py-3 text-start text-green-600">Delivered</td>
                                                     <td className="px-2 py-3 text-start">$ 320 <span className="text-slate-400">for 2items</span></td>
-                                                    <td className="px-2 py-3 text-start"><Link className="text-indigo-600 flex items-center">View <FaArrowRight className="ms-2 text-[10px]"/></Link></td>
+                                                    <td className="px-2 py-3 text-start"><Link className="text-[var(--riafco-orange)]  flex items-center">View <FaArrowRight className="ms-2 text-[10px]" /></Link></td>
                                                 </tr>
 
                                                 <tr className="bg-white dark:bg-slate-900 text-start border-t border-gray-100 dark:border-gray-700">
@@ -125,7 +125,7 @@ export default function ShopAccount() {
                                                     <td className="px-2 py-3 text-start">4th November 2021</td>
                                                     <td className="px-2 py-3 text-start text-slate-400">Processing</td>
                                                     <td className="px-2 py-3 text-start">$ 800 <span className="text-slate-400">for 1item</span></td>
-                                                    <td className="px-2 py-3 text-start"><Link className="text-indigo-600 flex items-center">View <FaArrowRight className="ms-2 text-[10px]"/></Link></td>
+                                                    <td className="px-2 py-3 text-start"><Link className="text-[var(--riafco-orange)]  flex items-center">View <FaArrowRight className="ms-2 text-[10px]" /></Link></td>
                                                 </tr>
 
                                                 <tr className="bg-white dark:bg-slate-900 text-start border-t border-gray-100 dark:border-gray-700">
@@ -133,7 +133,7 @@ export default function ShopAccount() {
                                                     <td className="px-2 py-3 text-start">4th November 2021</td>
                                                     <td className="px-2 py-3 text-start text-red-600">Canceled</td>
                                                     <td className="px-2 py-3 text-start">$ 800 <span className="text-slate-400">for 1item</span></td>
-                                                    <td className="px-2 py-3 text-start"><Link className="text-indigo-600 flex items-center">View <FaArrowRight className="ms-2 text-[10px]"/></Link></td>
+                                                    <td className="px-2 py-3 text-start"><Link className="text-[var(--riafco-orange)]  flex items-center">View <FaArrowRight className="ms-2 text-[10px]" /></Link></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -167,7 +167,7 @@ export default function ShopAccount() {
                                         <div className="md:w-1/2 md:px-3">
                                             <div className="flex items-center mb-4 justify-between">
                                                 <h5 className="text-xl font-semibold">Billing Address:</h5>
-                                                <Link to="/#" className="text-indigo-600 text-lg"><FiEdit/></Link>
+                                                <Link to="/#" className="text-[var(--riafco-orange)]  text-lg"><FiEdit /></Link>
                                             </div>
                                             <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
                                                 <p className="text-lg font-semibold mb-2">Cally Joseph</p>
@@ -189,7 +189,7 @@ export default function ShopAccount() {
                                         <div className="md:w-1/2 md:px-3 mt-[30] md:mt-0">
                                             <div className="flex items-center mb-4 justify-between">
                                                 <h5 className="text-xl font-semibold">Shipping Address:</h5>
-                                                <Link to="/#" className="text-indigo-600 text-lg"><FiEdit/></Link>
+                                                <Link to="/#" className="text-[var(--riafco-orange)]  text-lg"><FiEdit /></Link>
                                             </div>
                                             <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
                                                 <p className="text-lg font-semibold mb-2">Cally Joseph</p>
@@ -218,28 +218,28 @@ export default function ShopAccount() {
                                                 <label className="form-label font-medium">First Name : <span className="text-red-600">*</span></label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                    <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="First Name:" id="firstname" name="name" required="" />
+                                                    <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="First Name:" id="firstname" name="name" required="" />
                                                 </div>
                                             </div>
                                             <div>
                                                 <label className="form-label font-medium">Last Name : <span className="text-red-600">*</span></label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.UserCheck className="size-4 absolute top-3 start-4"></Icon.UserCheck>
-                                                    <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Last Name:" id="lastname" name="name" required="" />
+                                                    <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Last Name:" id="lastname" name="name" required="" />
                                                 </div>
                                             </div>
                                             <div>
                                                 <label className="form-label font-medium">Your Email : <span className="text-red-600">*</span></label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                    <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email" name="email" required="" />
+                                                    <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email" name="email" required="" />
                                                 </div>
                                             </div>
                                             <div>
                                                 <label className="form-label font-medium">Occupation : </label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.Bookmark className="size-4 absolute top-3 start-4"></Icon.Bookmark>
-                                                    <input name="name" id="occupation" type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Occupation :" />
+                                                    <input name="name" id="occupation" type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Occupation :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -249,12 +249,12 @@ export default function ShopAccount() {
                                                 <label className="form-label font-medium">Description : </label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <input type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5" value="Save Changes" />
+                                        <input type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5" value="Save Changes" />
                                     </form>
 
                                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-6">
@@ -267,7 +267,7 @@ export default function ShopAccount() {
                                                         <label className="form-label font-medium">Phone No. :</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Phone className="size-4 absolute top-3 start-4"></Icon.Phone>
-                                                            <input name="number" id="number" type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Phone :" />
+                                                            <input name="number" id="number" type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Phone :" />
                                                         </div>
                                                     </div>
 
@@ -275,12 +275,12 @@ export default function ShopAccount() {
                                                         <label className="form-label font-medium">Website :</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Globe className="size-4 absolute top-3 start-4"></Icon.Globe>
-                                                            <input name="url" id="url" type="url" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Url :" />
+                                                            <input name="url" id="url" type="url" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Url :" />
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Add</button>
+                                                <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5">Add</button>
                                             </form>
                                         </div>
 
@@ -292,7 +292,7 @@ export default function ShopAccount() {
                                                         <label className="form-label font-medium">Old password :</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Old password" required="" />
+                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Old password" required="" />
                                                         </div>
                                                     </div>
 
@@ -300,7 +300,7 @@ export default function ShopAccount() {
                                                         <label className="form-label font-medium">New password :</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="New password" required="" />
+                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="New password" required="" />
                                                         </div>
                                                     </div>
 
@@ -308,12 +308,12 @@ export default function ShopAccount() {
                                                         <label className="form-label font-medium">Re-type New password :</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Re-type New password" required="" />
+                                                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Re-type New password" required="" />
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Save password</button>
+                                                <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5">Save password</button>
                                             </form>
                                         </div>
                                     </div>

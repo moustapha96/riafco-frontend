@@ -55,17 +55,17 @@ export default function PageJobPost() {
                                     <div className="grid grid-cols-12 gap-4 mt-4">
                                         <div className="col-span-12 text-start">
                                             <label className="font-semibold" htmlFor="RegisterName">Job Title:</label>
-                                            <input id="RegisterName" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Web Developer" />
+                                            <input id="RegisterName" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Web Developer" />
                                         </div>
 
                                         <div className="col-span-12 text-start">
                                             <label htmlFor="comments" className="font-semibold">Job Description:</label>
-                                            <textarea name="comments" id="comments" className="form-input mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Write Job Description :"></textarea>
+                                            <textarea name="comments" id="comments" className="form-input mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Write Job Description :"></textarea>
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold">Job Categories:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="WD">Web Designer</option>
                                                 <option value="WD">Web Developer</option>
                                                 <option value="UI">UI / UX Desinger</option>
@@ -74,7 +74,7 @@ export default function PageJobPost() {
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold">Job Type:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="FT">Full Time</option>
                                                 <option value="PT">Part Time</option>
                                                 <option value="WFH">Work From Home</option>
@@ -84,7 +84,7 @@ export default function PageJobPost() {
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold">Salary:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="HOURL">Hourly</option>
                                                 <option value="MONTH">Monthly</option>
                                             </select>
@@ -94,9 +94,9 @@ export default function PageJobPost() {
                                             <label className="font-semibold md:invisible md:block hidden">Min:</label>
                                             <div className="relative mt-1">
                                                 <span className="absolute top-0.5 start-0.5 size-9 text-xl bg-gray-100 dark:bg-slate-800 inline-flex justify-center items-center text-dark dark:text-white rounded">
-                                                    <i className="mdi mdi-currency-usd text-indigo-600"></i>
+                                                    <i className="mdi mdi-currency-usd text-[var(--riafco-orange)] "></i>
                                                 </span>
-                                                <input type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Min" name="minsalary" />
+                                                <input type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Min" name="minsalary" />
                                             </div>
                                         </div>
 
@@ -104,9 +104,9 @@ export default function PageJobPost() {
                                             <label className="font-semibold md:invisible md:block hidden">Max:</label>
                                             <div className="relative mt-1">
                                                 <span className="absolute top-0.5 start-0.5 size-9 text-xl bg-gray-100 dark:bg-slate-800 inline-flex justify-center items-center text-dark dark:text-white rounded">
-                                                    <i className="mdi mdi-currency-usd text-indigo-600"></i>
+                                                    <i className="mdi mdi-currency-usd text-[var(--riafco-orange)] "></i>
                                                 </span>
-                                                <input type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Max" name="maxsalary" />
+                                                <input type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Max" name="maxsalary" />
                                             </div>
                                         </div>
                                     </div>
@@ -118,22 +118,22 @@ export default function PageJobPost() {
                                     <div className="grid grid-cols-12 gap-4 mt-4">
                                         <div className="col-span-12 text-start">
                                             <label className="font-semibold" htmlFor="Skillname">Skills:</label>
-                                            <input id="Skillname" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Web Developer" />
+                                            <input id="Skillname" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Web Developer" />
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold" htmlFor="Qualificationname">Qualifications:</label>
-                                            <input id="Qualificationname" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Qualifications" />
+                                            <input id="Qualificationname" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Qualifications" />
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold" htmlFor="Experiencename">Experience:</label>
-                                            <input id="Experiencename" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Experience" />
+                                            <input id="Experiencename" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Experience" />
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12 text-start">
                                             <label className="font-semibold">Industry:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="BANK">Banking</option>
                                                 <option value="BIO">Biotechnology</option>
                                                 <option value="AVI">Aviation</option>
@@ -148,12 +148,12 @@ export default function PageJobPost() {
                                     <div className="grid grid-cols-12 gap-4 mt-4">
                                         <div className="col-span-12 text-start">
                                             <label className="font-semibold" htmlFor="Address">Address:</label>
-                                            <input id="Address" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Address" />
+                                            <input id="Address" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Address" />
                                         </div>
 
                                         <div className="md:col-span-4 col-span-12 text-start">
                                             <label className="font-semibold">Country:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="USA">USA</option>
                                                 <option value="CAD">Canada</option>
                                                 <option value="CHINA">China</option>
@@ -162,7 +162,7 @@ export default function PageJobPost() {
 
                                         <div className="md:col-span-4 col-span-12 text-start">
                                             <label className="font-semibold">State:</label>
-                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option value="CAL">California</option>
                                                 <option value="TEX">Texas</option>
                                                 <option value="FLOR">Florida</option>
@@ -178,7 +178,7 @@ export default function PageJobPost() {
 
                                     <div className="grid grid-cols-1 gap-4 mt-4">
                                         <div>
-                                            <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white">Post Now</button>
+                                            <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white">Post Now</button>
                                         </div>
                                     </div>
                                 </form>

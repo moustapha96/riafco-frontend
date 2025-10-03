@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import PortfolioClassicFilter from '../../component/portfolioClassicFilter';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 export default function PortfolioClassicTwo() {
@@ -44,7 +45,7 @@ export default function PortfolioClassicTwo() {
                 </div>
             </div>
             <PortfolioClassicFilter  className="grid lg:w-3/4 mx-auto lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 mt-4 gap-[30px]"/>
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

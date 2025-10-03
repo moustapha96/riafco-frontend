@@ -122,8 +122,8 @@ export default function IndexFoodBlog() {
     
                                                 <div className="absolute bottom-0 start-0 end-0 p-6 -mb-96 group-hover:mb-0 duration-500 ease-in-out">
                                                     <div className="text-center">
-                                                        <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.title}</Link>
-                                                        <Link to="/food-recipe" className="text-white font-semibold hover:text-indigo-600 block text-lg mt-4 duration-500 ease-in-out">{item.description}</Link>
+                                                        <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.title}</Link>
+                                                        <Link to="/food-recipe" className="text-white font-semibold hover:text-[var(--riafco-orange)]  block text-lg mt-4 duration-500 ease-in-out">{item.description}</Link>
     
                                                         <div className="flex items-center justify-center mt-4">
                                                             <img src={item.imageList} className="size-10 rounded-full shadow-md dark:shadow-gray-800" alt="" />
@@ -176,12 +176,12 @@ export default function IndexFoodBlog() {
                                     <div className="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
                                         <img src={item.image} className="group-hover:scale-105 duration-500 ease-in-out" alt="" />
                                         <div className="absolute top-0 start-0 pt-3 ps-3">
-                                            <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.tag}</Link>
+                                                <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.tag}</Link>
                                         </div>
                                     </div>
 
                                     <div className="p-3">
-                                        <Link to={`/food-recipe/${item.id}`} className="block hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
+                                            <Link to={`/food-recipe/${item.id}`} className="block hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.title}</Link>
 
                                         <ul className="list-none space-x-1 flex items-center justify-between mt-2">
                                             <li>
@@ -205,27 +205,27 @@ export default function IndexFoodBlog() {
                             <nav aria-label="Page navigation example">
                                 <ul className="inline-flex items-center -space-x-px">
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                             <MdOutlineKeyboardArrowLeft className="text-[20px] rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">1</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">2</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</Link>
+                                        <Link to="/#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]">3</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">4</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</Link>
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">5</Link>
                                     </li>
                                     <li>
-                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                        <Link to="/#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                             <MdKeyboardArrowRight className="text-xl rtl:rotate-180 rtl:-mt-1"/>
                                         </Link>
                                     </li>
@@ -249,8 +249,8 @@ export default function IndexFoodBlog() {
 
                             <div className="absolute bottom-0 start-0 end-0 p-6 -mb-96 group-hover:mb-0 duration-500 ease-in-out">
                                 <div className="text-center">
-                                    <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Eggs</Link>
-                                    <Link to="/food-recipe" className="text-white font-semibold hover:text-indigo-600 block text-lg mt-4 duration-500 ease-in-out">Spicy Cauliflower Burgers and Salad Recipe</Link>
+                                    <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Eggs</Link>
+                                    <Link to="/food-recipe" className="text-white font-semibold hover:text-[var(--riafco-orange)]  block text-lg mt-4 duration-500 ease-in-out">Spicy Cauliflower Burgers and Salad Recipe</Link>
 
                                     <div className="flex items-center justify-center mt-4">
                                         <img src={imageP} className="size-10 rounded-full shadow-md dark:shadow-gray-800" alt="" />
@@ -276,8 +276,8 @@ export default function IndexFoodBlog() {
                                     </div>
 
                                     <div className="md:w-[60%] md:ps-4 pt-4 md:pt-0">
-                                        <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
-                                        <Link to="/food-recipe" className="block hover:text-indigo-600 text-lg font-semibold mt-3">Change Your Strategy: Find a Business Consultant</Link>
+                                        <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
+                                        <Link to="/food-recipe" className="block hover:text-[var(--riafco-orange)]  text-lg font-semibold mt-3">Change Your Strategy: Find a Business Consultant</Link>
 
                                         <span className="text-slate-400 items-center flex mt-3"><MdOutlineCalendarMonth /> 14th July 2022</span>
                                     </div>
@@ -293,8 +293,8 @@ export default function IndexFoodBlog() {
                                     </div>
 
                                     <div className="md:w-[60%] md:ps-4 pt-4 md:pt-0">
-                                        <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
-                                        <Link to="/food-recipe" className="block hover:text-indigo-600 text-lg font-semibold mt-3">Creamy Garlic Parmesan Chicken Salad</Link>
+                                        <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
+                                        <Link to="/food-recipe" className="block hover:text-[var(--riafco-orange)]  text-lg font-semibold mt-3">Creamy Garlic Parmesan Chicken Salad</Link>
 
                                         <span className="text-slate-400 flex items-center mt-3"><MdOutlineCalendarMonth /> 14th July 2022</span>
                                     </div>
@@ -310,8 +310,8 @@ export default function IndexFoodBlog() {
                                     </div>
 
                                     <div className="md:w-[60%] md:ps-4 pt-4 md:pt-0">
-                                        <Link className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
-                                        <Link to="/food-recipe" className="block hover:text-indigo-600 text-lg font-semibold mt-3">Bourbon Street Rib-Eye Steak With Cheese</Link>
+                                        <Link className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food</Link>
+                                        <Link to="/food-recipe" className="block hover:text-[var(--riafco-orange)]  text-lg font-semibold mt-3">Bourbon Street Rib-Eye Steak With Cheese</Link>
 
                                         <span className="text-slate-400 flex items-center mt-3"><MdOutlineCalendarMonth/> 14th July 2022</span>
                                     </div>
@@ -335,7 +335,7 @@ export default function IndexFoodBlog() {
                                 <div className="text-center subcribe-form">
                                     <form className="relative mx-auto max-w-xl">
                                         <input type="email" id="subemail" name="name" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-gray-100 dark:border-gray-700" placeholder="Enter your email id.." />
-                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subcribe Now</button>
+                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Subcribe Now</button>
                                     </form>
                                 </div>
                             </div>
@@ -372,7 +372,7 @@ export default function IndexFoodBlog() {
                         index={currentImageIndex} 
                     />
                     <div className="absolute top-2/4 -translate-y-2/4 start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 text-center hidden md:block">
-                        <Link to="https://www.instagram.com/shreethemes/" target="_blank"className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Follow Now</Link>
+                        <Link to="https://www.instagram.com/shreethemes/" target="_blank" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Follow Now</Link>
                     </div>
                 </div>
             </div>

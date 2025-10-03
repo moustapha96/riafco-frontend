@@ -37,7 +37,7 @@ export default function IndexSaas() {
     return (
         <>
             <Navbar />
-            <section className="relative before:content-[''] before:absolute xl:before:-top-[30%] lg:before:-top-[50%] sm:before:-top-[80%] before:-top-[90%] before:-start-80 before:end-0 before:w-[140rem] before:h-[65rem] ltr:before:-rotate-12 rtl:before:rotate-12 before:bg-indigo-600/5 dark:before:bg-indigo-600/10 before:z-1 items-center overflow-hidden">
+            <section className="relative before:content-[''] before:absolute xl:before:-top-[30%] lg:before:-top-[50%] sm:before:-top-[80%] before:-top-[90%] before:-start-80 before:end-0 before:w-[140rem] before:h-[65rem] ltr:before:-rotate-12 rtl:before:rotate-12 before:bg-[var(--riafco-blue)]/5 dark:before:bg-[var(--riafco-blue)]/10 before:z-1 items-center overflow-hidden">
                 <div className="container relative z-2">
                     <div className="grid grid-cols-1 md:mt-44 mt-32 text-center">
                         <div className="" data-aos="fade-up">
@@ -46,7 +46,7 @@ export default function IndexSaas() {
                                 on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                             <div className="mt-6">
-                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Try For Free</Link>
+                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Try For Free</Link>
 
                                 <p className="text-slate-400 text-sm mt-3">No credit card required. Free 14-days trial</p>
                             </div>
@@ -56,11 +56,11 @@ export default function IndexSaas() {
                         </div>
                     </div>
 
-                    <div className="bg-indigo-600 w-8 h-16 z-2 absolute start-2 lg:bottom-28 md:bottom-36 sm:bottom-40 bottom-16"></div>
-                    <div className="bg-indigo-600/20 w-8 h-16 z-2 absolute start-12 lg:bottom-32 md:bottom-40 sm:bottom-44 bottom-20"></div>
+                    <div className="bg-[var(--riafco-blue)] w-8 h-16 z-2 absolute start-2 lg:bottom-28 md:bottom-36 sm:bottom-40 bottom-16"></div>
+                    <div className="bg-[var(--riafco-blue)]/20 w-8 h-16 z-2 absolute start-12 lg:bottom-32 md:bottom-40 sm:bottom-44 bottom-20"></div>
 
-                    <div className="bg-indigo-600/20 w-8 h-16 z-2 absolute end-12 xl:bottom-[420px] lg:bottom-[315px] md:bottom-[285px] sm:bottom-80 bottom-32"></div>
-                    <div className="bg-indigo-600 w-8 h-16 z-2 absolute end-2 xl:bottom-[440px] lg:bottom-[335px] md:bottom-[305px] sm:bottom-[340px] bottom-36"></div>
+                    <div className="bg-[var(--riafco-blue)]/20 w-8 h-16 z-2 absolute end-12 xl:bottom-[420px] lg:bottom-[315px] md:bottom-[285px] sm:bottom-80 bottom-32"></div>
+                    <div className="bg-[var(--riafco-blue)] w-8 h-16 z-2 absolute end-2 xl:bottom-[440px] lg:bottom-[335px] md:bottom-[305px] sm:bottom-[340px] bottom-36"></div>
                 </div>
             </section>
 
@@ -83,7 +83,7 @@ export default function IndexSaas() {
 
                     <div className="grid grid-cols-1 justify-center" data-aos="fade-up" data-aos-delay="200">
                         <div className="mt-6 text-center">
-                            <Link className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <MdArrowForward className="text-base ms-1"/></Link>
+                            <Link className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <MdArrowForward className="text-base ms-1" /></Link>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ export default function IndexSaas() {
                                     <img src={home} alt="" data-aos="zoom-in-up"/>
                                     <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                         <Link to="#" onClick={() => setOpen(true)}
-                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -165,7 +165,7 @@ export default function IndexSaas() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
 
             <section className="relative md:py-24 py-16">

@@ -56,22 +56,22 @@ export default function IndexTravel(){
                                         <div className="registration-form relative text-dark text-start">
                                             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6 lg:divide-x-[1px] lg:divide-gray-200 lg:dark:divide-gray-700">
                                                 <div className="filter-search-form relative">
-                                                    <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                    <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                                     <input name="name" type="text" id="location" className="form-input lg:rounded-t-sm lg:rounded-e-none lg:rounded-b-none lg:rounded-s-sm lg:outline-0 w-full filter-input-box bg-gray-50 dark:bg-slate-800 border-0 focus:ring-0" placeholder="Location"/>
                                                 </div>
 
                                                 <div className="filter-search-form relative">
-                                                    <TbCurrencyDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                    <TbCurrencyDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                                     <i ></i>
                                                     <input name="name" type="number" id="job-keyword" className="form-input lg:rounded-t-sm lg:rounded-e-none lg:rounded-b-none lg:rounded-s-sm lg:outline-0 w-full filter-input-box bg-gray-50 dark:bg-slate-800 border-0 focus:ring-0" placeholder="Budget"/>
                                                 </div>
                                             
                                                 <div className="filter-search-form relative">
-                                                    <LuCalendarDays className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                    <LuCalendarDays className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                                     <input name="name" type="text" id="job-keyword" className="form-input lg:rounded-t-sm lg:rounded-e-none lg:rounded-b-none lg:rounded-s-sm lg:outline-0 w-full filter-input-box bg-gray-50 dark:bg-slate-800 border-0 focus:ring-0 start" placeholder="Select date"/>
                                                 </div>
 
-                                                <input type="submit" id="search" name="search" style={{height:'60px'}} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white searchbtn lg:rounded-t-none lg:rounded-e-sm lg:rounded-b-sm lg:rounded-s-none rounded-lg w-full" value="Search"/>
+                                                <input type="submit" id="search" name="search" style={{ height: '60px' }} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white searchbtn lg:rounded-t-none lg:rounded-e-sm lg:rounded-b-sm lg:rounded-s-none rounded-lg w-full" value="Search" />
                                             </div>
                                         </div>
                                     </form>
@@ -124,12 +124,12 @@ export default function IndexTravel(){
                             return(
                                 <div key={index} className="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 duration-500">
                                     <div
-                                        className="size-16 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 duration-500">
+                                        className="size-16 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 duration-500">
                                         <Icons/>
                                     </div>
 
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@ export default function IndexTravel(){
                                 {accordionData.slice(0,4).map((item, index) => (
                                     <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                         <h2 className="text-base font-semibold">
-                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} >
+                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} >
                                                 <span>{item.title}</span>
                                                 <svg className={`${activeIndex === index ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>

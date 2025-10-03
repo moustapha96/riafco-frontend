@@ -91,7 +91,7 @@ export default function IndexCoworking() {
                             <form className="relative mx-auto max-w-xl">
                                 <Icon.MapPin className="size-5 absolute top-[48%] -translate-y-1/2 start-4"></Icon.MapPin>
                                 <input type="text" id="search_name" name="name" className="pt-4 pe-40 pb-4 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 ps-12" placeholder="Washington, D.C." />
-                                <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Find A Space</button>
+                                <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Find A Space</button>
                             </form>
                         </div>
                     </div>
@@ -108,12 +108,12 @@ export default function IndexCoworking() {
 
                         <div className="md:col-span-6">
                             <div className="lg:me-5">
-                                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Our History</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Our History</h6>
                                 <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">“Sweet as the Moment When <br /> the coworking Went &apos;Pop”</h3>
 
                                 <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full">Get Started</Link>
+                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-full">Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -132,14 +132,14 @@ export default function IndexCoworking() {
                             return(
                                 <div key={index} className="group relative lg:px-10 mt-4 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                     <div className="relative overflow-hidden text-transparent -m-3">
-                                        <Icon.Hexagon className="size-32 fill-indigo-600/5 mx-auto"></Icon.Hexagon>
-                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <Icon.Hexagon className="size-32 fill-[var(--riafco-blue)]/5 mx-auto"></Icon.Hexagon>
+                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <Icons className='size-7'/>
                                         </div>
                                     </div>
             
                                     <div className="mt-6">
-                                        <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 transition-all duration-500 ease-in-out mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -194,7 +194,7 @@ export default function IndexCoworking() {
                                         <img src={cta} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -246,7 +246,7 @@ export default function IndexCoworking() {
                         </div>
                     </div>
                 }
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
             <section className="realtive md:py-24 py-16">
                 <div className="container relative">
@@ -255,18 +255,18 @@ export default function IndexCoworking() {
                             <div className="sticky top-20">
                                 <ul className="flex-column text-center p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                                 <li role="presentation">
-                                        <button className={`${ isOpenTab === 0 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true"
+                                        <button className={`${isOpenTab === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true"
                                         onClick={() => handleTabClick(0)}
                                         >Private Office</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dedicated Office</button>
+                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dedicated Office</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Kitchen Space</button>
+                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Kitchen Space</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Meeting Rooms</button>
+                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Meeting Rooms</button>
                                     </li>
                                 </ul>
                             </div>
@@ -282,7 +282,7 @@ export default function IndexCoworking() {
                                             <div className="mt-6">
                                                 <h5 className="text-lg font-semibold mb-4">{item.title}</h5>
                                                 <p className="text-slate-400 mb-2">{item.description}</p>
-                                                <Link to="#" className="relative inline-flex items-center    font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                                    <Link to="#" className="relative inline-flex items-center    font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                             </div>
                                         </div>
                                         )
@@ -319,7 +319,7 @@ export default function IndexCoworking() {
 
                     </div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center">
-                        <Link onClick={()=>setModal(!modal)}  className="size-12 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full"><FiPhone className="me-1 text-lg"/></Link>
+                        <Link onClick={() => setModal(!modal)} className="size-12 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full"><FiPhone className="me-1 text-lg" /></Link>
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@ export default function IndexCoworking() {
                                             <label htmlFor="name" className="font-semibold">Your Name:</label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :" />
+                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name :" />
                                             </div>
                                         </div>
                                     </div>
@@ -352,7 +352,7 @@ export default function IndexCoworking() {
                                             <label htmlFor="email" className="font-semibold">Your Email:</label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :" />
+                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email :" />
                                             </div>
                                         </div>
                                     </div>
@@ -364,7 +364,7 @@ export default function IndexCoworking() {
                                             <label htmlFor="subject" className="font-semibold">Your Question:</label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.Book className="size-4 absolute top-3 start-4"></Icon.Book>
-                                                <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Subject :" />
+                                                    <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Subject :" />
                                             </div>
                                         </div>
                                     </div>
@@ -374,12 +374,12 @@ export default function IndexCoworking() {
                                             <label htmlFor="comments" className="font-semibold">Your Comment:</label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                                                <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Send Message</button>
+                                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md justify-center flex items-center">Send Message</button>
                             </form>
                         </div>
                     </div>

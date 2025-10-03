@@ -33,7 +33,7 @@ export default function IndexLandingThree() {
     return (
         <>
             <Navbar navClass="nav-light" />
-            <section className="relative table w-full py-36 lg:py-56 bg-indigo-600 bg-[url('../../assets/images/bg.png')] bg-center bg-no-repeat bg-cover">
+            <section className="relative table w-full py-36 lg:py-56 bg-[var(--riafco-blue)] bg-[url('../../assets/images/bg.png')] bg-center bg-no-repeat bg-cover">
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-6 position-relative">Powerfull analytics <br /> tools for your business</h4>
@@ -64,12 +64,12 @@ export default function IndexLandingThree() {
                                     return(
                                         <div key={index} className="group flex p-6 md:px-4 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 transition-all duration-500 ease-in-out">
                                             <div
-                                                className="min-w-[64px] h-16 bg-indigo-600/5 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                                className="min-w-[64px] h-16 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                                 <Icons width={30} height={30}/>
                                             </div>
         
                                             <div className="content ms-4 flex-1">
-                                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                                 <p className="text-slate-400 mt-2">{item.desc}</p>
                                             </div>
                                         </div>
@@ -95,17 +95,17 @@ export default function IndexLandingThree() {
                             return(
                                 <div key={index} className="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out">
                                     <div
-                                        className="size-16 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                                        className="size-16 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                                         <Icons width={30} height={30}/>
                                     </div>
 
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
 
                                         <div className="mt-5">
                                             <Link
-                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                 More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                         </div>
                                     </div>
@@ -125,12 +125,12 @@ export default function IndexLandingThree() {
 
                         <div className="md:col-span-6">
                             <div className="lg:ms-5">
-                                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Fast & Effective</h6>
                                 <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Powerful Digitalization <br /> With Techwind</h3>
 
                                 <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full">Get Started</Link>
+                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-full">Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -146,18 +146,18 @@ export default function IndexLandingThree() {
 
                         <div className="lg:col-span-7 md:col-span-6 order2 md:order-1">
                             <div className="lg:me-5">
-                                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Easy To Track</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Easy To Track</h6>
                                 <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Techwind Marketing <br /> Analytics For All Expenses</h3>
 
                                 <p className="text-slate-400 max-w-xl">You can combine all the Techwind templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
 
                                 <ul className="list-none text-slate-400 my-6">
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Our Talented & Experienced Marketing Agency</li>
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Create your own skin to match your brand</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                                 </ul>
 
-                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full">Get Started</Link>
+                                <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-full">Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@ export default function IndexLandingThree() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-base mb-2">Testimonial</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-base mb-2">Testimonial</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
@@ -183,7 +183,7 @@ export default function IndexLandingThree() {
                                     <img src={home} alt="" />
                                     <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                         <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -214,7 +214,7 @@ export default function IndexLandingThree() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
             {isOpen && 
                 <div className="flex bg-[#00000099] overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">

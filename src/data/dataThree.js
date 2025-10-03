@@ -622,7 +622,7 @@ export const digitalServices = [
     {
         icon:FiAirplay,
         title:"Digital Marketing",
-        background:"bg-indigo-600/5 text-indigo-600",
+        background:"bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)] ",
         desc:"The phrasal sequence of the Lorem Ipsum text is now so that many"
     },
     {

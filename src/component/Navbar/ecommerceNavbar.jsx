@@ -113,7 +113,7 @@ export default function EcommerceNavbar() {
                     </li>
 
                     <li className="dropdown inline-block relative">
-                        <button onClick={()=>setIsCart(!isCart)}  data-dropdown-toggle="dropdown" className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" type="button">
+                        <button onClick={() => setIsCart(!isCart)} data-dropdown-toggle="dropdown" className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white" type="button">
                             <i className="mdi mdi-cart ms-1"></i>
                         </button>
                         {isCart ?
@@ -169,8 +169,8 @@ export default function EcommerceNavbar() {
                                  </li>
  
                                  <li className="py-1.5 px-4 space-x-1">
-                                     <Link to="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white">View Cart</Link>
-                                     <Link to="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white">Checkout</Link>
+                                        <Link to="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center rounded-md bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white">View Cart</Link>
+                                        <Link to="#" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center rounded-md bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white">Checkout</Link>
                                      <p className="text-sm text-slate-400 mt-1">*T&C Apply</p>
                                  </li>
  
@@ -181,7 +181,7 @@ export default function EcommerceNavbar() {
                     </li>
 
                     <li className="inline-block ms-1">
-                        <Link onClick={()=>setShowModel(!showModal)}   className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" data-modal-toggle="ContactUs">
+                        <Link onClick={() => setShowModel(!showModal)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white" data-modal-toggle="ContactUs">
                             <i className="mdi mdi-heart"></i>
                         </Link>
                     </li>
@@ -202,7 +202,7 @@ export default function EcommerceNavbar() {
 
                                     <h4 className="text-xl font-semibold mt-6">Your wishlist is empty.</h4>
                                     <p className="text-slate-400 my-3">Create your first wishlist request...</p>
-                                    <Link className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center bg-transparent hover:bg-indigo-600 border border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2">Create a new wishlist</Link>
+                                    <Link className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-sm text-center bg-transparent hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md mt-2">Create a new wishlist</Link>
                                 </div>
                             </div>
                         </div>
@@ -210,23 +210,23 @@ export default function EcommerceNavbar() {
                     
 
                     <li className="dropdown inline-block relative ms-1">
-                        <button onClick={()=>setIsAccount(!isAccount)} data-dropdown-toggle="dropdown" className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" type="button">
+                        <button onClick={() => setIsAccount(!isAccount)} data-dropdown-toggle="dropdown" className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white" type="button">
                             <i className="mdi mdi-account"></i>
                         </button>
                         {isAccount ? <div className="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-44 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 ">
                             <ul className="py-2 text-start" aria-labelledby="dropdownDefault">
                                 <li>
-                                    <Link to="/shop-account" className="flex items-center py-1.5 px-4 hover:text-indigo-600"><AiOutlineUser className="me-2"/> Account</Link>
+                                    <Link to="/shop-account" className="flex items-center py-1.5 px-4 hover:text-[var(--riafco-orange)] "><AiOutlineUser className="me-2" /> Account</Link>
                                 </li>
                                 <li>
-                                    <Link to="/shop-cart" className="flex items-center py-1.5 px-4 hover:text-indigo-600"><PiNoteDuotone className="align-middle me-1"/> Order History</Link>
+                                    <Link to="/shop-cart" className="flex items-center py-1.5 px-4 hover:text-[var(--riafco-orange)] "><PiNoteDuotone className="align-middle me-1" /> Order History</Link>
                                 </li>
                                 <li>
-                                    <Link to="/shop-checkout" className="flex items-center py-1.5 px-4 hover:text-indigo-600"><BsArrowDownCircle className="align-middle text-sm me-1"/> Download</Link>
+                                    <Link to="/shop-checkout" className="flex items-center py-1.5 px-4 hover:text-[var(--riafco-orange)] "><BsArrowDownCircle className="align-middle text-sm me-1" /> Download</Link>
                                 </li>
                                 <li className="border-t border-gray-100 dark:border-gray-800 my-2"></li>
                                 <li>
-                                    <Link to="/auth-login" className="flex items-center py-1.5 px-4 hover:text-indigo-600"><LiaSignOutAltSolid className="align-middle me-2 size-5"/> Logout</Link>
+                                    <Link to="/auth-login" className="flex items-center py-1.5 px-4 hover:text-[var(--riafco-orange)] "><LiaSignOutAltSolid className="align-middle me-2 size-5" /> Logout</Link>
                                 </li>
                             </ul>
                         </div> :""}

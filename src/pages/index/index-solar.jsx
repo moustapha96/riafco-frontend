@@ -65,7 +65,7 @@ export default function IndexSolar() {
                             <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
                         
                             <div className="mt-6">
-                                <a href="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded me-2 mt-2">Get a Free Quote <i className="uil uil-arrow-right"></i></a>
+                                  <a href="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded me-2 mt-2">Get a Free Quote <i className="uil uil-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@ export default function IndexSolar() {
                                     <img className="object-cover size-48 rounded shadow-md dark:shadow-gyay-700" src={solar3} alt=""/>
                                 </div>
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                    <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                      <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
                                     </Link>
                                 </div>
@@ -191,7 +191,7 @@ export default function IndexSolar() {
                             <p className="text-slate-400 max-w-xl">At Esoler Solar Energy, we are dedicated to providing sustainable and renewable energy solutions to empower individuals, businesses, and communities. With a passion for harnessing the power of the sun, we strive to make a positive impact on the environment while helping our clients reduce their carbon footprint and energy costs.</p>
                             <p className="text-slate-400 max-w-xl mt-3">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today one can now find slightly different versions.</p>
                             <div className="mt-6">
-                                <Link to="#" className="py-2 px-5 inline-flex font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded items-center">Read More <MdKeyboardArrowRight className="uil uil-angle-right-b align-middle"/></Link>
+                                  <Link to="#" className="py-2 px-5 inline-flex font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded items-center">Read More <MdKeyboardArrowRight className="uil uil-angle-right-b align-middle" /></Link>
                             </div>
                         </div>
                     </div>
@@ -208,10 +208,10 @@ export default function IndexSolar() {
                     {solarAbout.map((item,index)=>{
                         let Icon = item.icon
                         return(
-                            <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 duration-500 rounded bg-white dark:bg-slate-900 overflow-hidden text-center">
+                            <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] duration-500 rounded bg-white dark:bg-slate-900 overflow-hidden text-center">
                                 <div className="relative overflow-hidden text-transparent -m-3">
-                                    <FiHexagon className="size-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></FiHexagon>
-                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                                    <FiHexagon className="size-24 fill-[var(--riafco-blue)]/5 group-hover:fill-white/10 mx-auto"></FiHexagon>
+                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
                                         <Icon />
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@ export default function IndexSolar() {
 
                                 <div className="p-6 absolute bottom-0 -start-72 group-hover:start-0 duration-500">
                                     <div className="bg-white dark:bg-slate-900 py-3 px-4 w-fit rounded">
-                                        <Link to="#" className="hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
+                                        <Link to="#" className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.title}</Link>
                                         
                                         <p className="text-slate-400">{item.subtitle}</p>
                                     </div>
@@ -331,7 +331,7 @@ export default function IndexSolar() {
                         </div>
 
                         <div className="mt-6">
-                            <Link to="#" className="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded bg-indigo-600 text-white">Learn More <i className="mdi mdi-arrow-right ms-1"></i></Link>
+                              <Link to="#" className="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded bg-[var(--riafco-blue)] text-white">Learn More <i className="mdi mdi-arrow-right ms-1"></i></Link>
                         </div>
 
                         <div className="flex items-center mt-8">
@@ -353,27 +353,27 @@ export default function IndexSolar() {
                             <div className="grid md:grid-cols-12 grid-cols-1 gap-4 mt-6">
                                 <div className="md:col-span-6">
                                     <label className="font-semibold">Your Name:</label>
-                                    <input name="name" id="name" type="text" className="w-full py-2 px-3 border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="First Name:"/>
+                                      <input name="name" id="name" type="text" className="w-full py-2 px-3 border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="First Name:" />
                                 </div>
 
                                 <div className="md:col-span-6">
                                     <label className="font-semibold">Your Email:</label>
-                                    <input name="email" id="email" type="email" className="w-full py-2 px-3 border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="Your email:"/>
+                                      <input name="email" id="email" type="email" className="w-full py-2 px-3 border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="Your email:" />
                                 </div> 
 
                                 <div className="md:col-span-6">
                                     <label className="font-semibold">Phone no.:</label>
-                                    <input name="number" type="number" id="phone-number" className="w-full py-2 px-3 border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="Phone no.:"/>
+                                      <input name="number" type="number" id="phone-number" className="w-full py-2 px-3 border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="Phone no.:" />
                                 </div> 
 
                                 <div className="md:col-span-6">
                                     <label className="font-semibold">Electricity usage in kWh?</label>
-                                    <input name="name" id="kWh" type="text" className="w-full py-2 px-3 border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="kWh"/>
+                                      <input name="name" id="kWh" type="text" className="w-full py-2 px-3 border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0" placeholder="kWh" />
                                 </div>
 
                                 <div className="md:col-span-12">
                                     <label className="font-semibold">System Type:</label>
-                                    <select className="form-select w-full py-2 px-3 border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0">
+                                      <select className="form-select w-full py-2 px-3 border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] bg-transparent focus:outline-none rounded h-10 mt-1 focus:ring-0">
                                         <option value="USA">Solar for water</option>
                                         <option value="CAD">Solar Panels</option>
                                     </select>
@@ -385,13 +385,13 @@ export default function IndexSolar() {
                                     <ul className="list-none mt-1">
                                         <li className="inline-block me-2">
                                             <div className="flex items-center mb-0">
-                                                <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="ViaCall"/>
+                                                  <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="ViaCall" />
                                                 <label className="form-checkbox-label text-slate-400" htmlFor="ViaCall">Phone</label>
                                             </div>
                                         </li>
                                         <li className="inline-block">
                                             <div className="flex items-center mb-0">
-                                                <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="ViaEmail"/>
+                                                  <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="ViaEmail" />
                                                 <label className="form-checkbox-label text-slate-400" htmlFor="ViaEmail">Email</label>
                                             </div>
                                         </li>
@@ -400,7 +400,7 @@ export default function IndexSolar() {
                             </div>
 
                             <div className="grid grid-cols-1 mt-4">
-                                <input type="submit" id="submit" name="send" className="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded bg-indigo-600 text-white" value="Submit Request"/>
+                                  <input type="submit" id="submit" name="send" className="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded bg-[var(--riafco-blue)] text-white" value="Submit Request" />
                             </div>
                         </form>
                     </div>
@@ -422,11 +422,11 @@ export default function IndexSolar() {
                             <div key={index} className="blog relative rounded shadow-sm dark:shadow-gray-800 overflow-hidden">
                                 <img src={item.image} alt="" />
                                 <div className="content p-6">
-                                    <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                    <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                     <p className="text-slate-400 mt-3">{item.desc}</p>
                                     
                                     <div className="mt-4">
-                                        <Link to="/blog-detail" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight/></Link>
+                                        <Link to="/blog-detail" className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight /></Link>
                                     </div>
                                 </div>
                             </div>

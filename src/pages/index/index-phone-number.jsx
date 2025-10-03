@@ -28,13 +28,13 @@ export default function IndexPhoneNumber() {
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-7 md:order-2 order-1">
                             <div className="ms-6">
-                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Stand Out With a Custom <span className="text-indigo-600">Phone Number</span></h4>
+                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Stand Out With a Custom <span className="text-[var(--riafco-orange)] ">Phone Number</span></h4>
                                 <p className="text-slate-400 text-lg max-w-xl">Techwind is the largest provider of custom phone numbers since 2020</p>
 
                                 <div className="subcribe-form mt-6">
                                     <form className="relative max-w-xl">
                                         <input type="text" id="SearchForumKeyword" name="text" className="pt-4 ltr:pr-14 rtl:pl-14 pb-4 ltr:pl-6 rtl:pr-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" placeholder="Search Number :" />
-                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] ltr:right-[3px] rtl:left-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full"><LuSearch className='me-1'/>Find Number</button>
+                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] ltr:right-[3px] rtl:left-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full"><LuSearch className='me-1' />Find Number</button>
                                     </form>
                                 </div>
                             </div>
@@ -48,9 +48,9 @@ export default function IndexPhoneNumber() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline  uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Phone Number</li>
+                        <li className="inline  uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Phone Number</li>
                     </ul>
                 </div>
             </section>
@@ -74,16 +74,16 @@ export default function IndexPhoneNumber() {
                             let Icons = item.icon
                             return(
                                 <div key={index} className={item.bgClass}>
-                                    <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                    <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                         <Icons className='size-7'/>
                                     </div>
 
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
 
                                         <div className="mt-5">
-                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -104,11 +104,11 @@ export default function IndexPhoneNumber() {
                             mobileNumber.map((data,index) => {
                                 return (
                                     <div key={index} className="group p-4 text-center rounded-lg shadow-sm hover:shadow-lg dark:shadow-gray-800 transition duration-500">
-                                        <Link className="hover:text-indigo-600 text-xl font-semibold">{data.number}</Link>
+                                        <Link className="hover:text-[var(--riafco-orange)]  text-xl font-semibold">{data.number}</Link>
 
                                         <div className="mt-3 flex items-center justify-center">
-                                            <span className="text-indigo-600 text-lg">{data.money}</span>
-                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full ms-3">Buy Now</Link>
+                                            <span className="text-[var(--riafco-orange)]  text-lg">{data.money}</span>
+                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full ms-3">Buy Now</Link>
                                         </div>
                                     </div>
                                 )
@@ -119,7 +119,7 @@ export default function IndexPhoneNumber() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See More Numbers <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See More Numbers <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ export default function IndexPhoneNumber() {
                                 <div className="text-center subcribe-form">
                                     <form className="relative mx-auto max-w-xl">
                                         <input type="email" id="subemail" name="name" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-gray-100 dark:border-gray-700" placeholder="Enter your email id.." />
-                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subcribe Now</button>
+                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Subcribe Now</button>
                                     </form>
                                 </div>
                             </div>

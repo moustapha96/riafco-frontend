@@ -91,9 +91,9 @@ export default function ShopItemDetail() {
 
                     <div className="relative mt-3">
                         <ul className="tracking-[0.5px] mb-0 inline-flex items-center space-x-1">
-                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/index-shop">Techwind</Link></li>
+                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/index-shop">Techwind</Link></li>
                             <li className="inline-block text-base text-slate-950 dark:text-white mx-0.5"><MdKeyboardArrowRight className="text-xl"/></li>
-                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Item Detail</li>
+                            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Item Detail</li>
                         </ul>
                     </div>
                 </div>
@@ -135,9 +135,9 @@ export default function ShopItemDetail() {
                                     <p className="text-slate-400 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
 
                                     <ul className="list-none text-slate-400 mt-4 ">
-                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Our Talented & Experienced Marketing Agency</li>
-                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Create your own skin to match your brand</li>
+                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                                        <li className="mb-1 flex items-center ml-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                                     </ul>
                                 </div>
 
@@ -145,21 +145,21 @@ export default function ShopItemDetail() {
                                     <div className="flex items-center">
                                         <h5 className="text-lg font-semibold me-2">Size:</h5>
                                         <div className="space-x-1">
-                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white">S</Link>
-                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white">M</Link>
-                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white">L</Link>
-                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white">XL</Link>
+                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white">S</Link>
+                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white">M</Link>
+                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white">L</Link>
+                                            <Link className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white">XL</Link>
                                         </div>
                                     </div>
 
                                     <div className="flex items-center">
                                         <h5 className="text-lg font-semibold me-2">Quantity:</h5>
                                         <div className="qty-icons ms-3 space-x-1">
-                                            <button onClick={handleStepDown} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white minus"                                            >
+                                            <button onClick={handleStepDown} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white minus"                                            >
                                                 -
                                             </button>
-                                            <input min="0" readOnly name="quantity" value="0" type="number" className="h-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white pointer-events-none w-16 ps-4 quantity" />
-                                            <button onClick={handleStepUp} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white plus" >
+                                            <input min="0" readOnly name="quantity" value="0" type="number" className="h-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white pointer-events-none w-16 ps-4 quantity" />
+                                            <button onClick={handleStepUp} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white plus" >
                                                 +
                                             </button>
                                         </div>
@@ -167,8 +167,8 @@ export default function ShopItemDetail() {
                                 </div>
 
                                 <div className="mt-4">
-                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Shop Now</Link>
-                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white mt-2">Add to Cart</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2">Shop Now</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white mt-2">Add to Cart</Link>
                                 </div>
                             </div>
                         </div>
@@ -179,13 +179,13 @@ export default function ShopItemDetail() {
                             <div className="sticky top-20">
                                 <ul className="flex-column p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Description</button>
+                                        <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Description</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Additional Information</button>
+                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Additional Information</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Review</button>
+                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-start font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Review</button>
                                     </li>
                                 </ul>
                             </div>
@@ -230,12 +230,12 @@ export default function ShopItemDetail() {
                                                         <img src={data.image} className="size-11 rounded-full shadow-sm" alt="" />
 
                                                         <div className="ms-3 flex-1">
-                                                            <Link className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">{data.name}</Link>
+                                                                <Link className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{data.name}</Link>
                                                             <p className="text-sm text-slate-400">{data.time}</p>
                                                         </div>
                                                     </div>
 
-                                                    <Link className="text-slate-400 hover:text-indigo-600 transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> {data.reply}</Link>
+                                                        <Link className="text-slate-400 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> {data.reply}</Link>
                                                 </div>
                                                 <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800 mt-6">
                                                     <ul className="list-none inline-block text-orange-400">
@@ -264,7 +264,7 @@ export default function ShopItemDetail() {
                                                         <label htmlFor="name" className="font-semibold">Your Name:</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                            <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :" />
+                                                                <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name :" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -274,7 +274,7 @@ export default function ShopItemDetail() {
                                                         <label htmlFor="email" className="font-semibold">Your Email:</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                            <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :" />
+                                                                <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email :" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -286,12 +286,12 @@ export default function ShopItemDetail() {
                                                         <label htmlFor="comments" className="font-semibold">Your Comment:</label>
                                                         <div className="form-icon relative mt-2">
                                                             <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                                                            <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                                <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Send Message</button>
+                                                <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Send Message</button>
                                         </form>
                                     </div>
                                 </div> :"" 
@@ -318,9 +318,9 @@ export default function ShopItemDetail() {
                                     </div>
     
                                     <ul className="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                        <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-heart"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`}className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
+                                            <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-heart"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
                                     </ul>
                                     {item.tag ? <ul className="list-none absolute top-[10px] start-4">
                                         <li><Link className={`${item.tagBg} text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5`}>{item.tag}</Link></li>
@@ -329,7 +329,7 @@ export default function ShopItemDetail() {
                                 </div>
     
                                 <div className="mt-4">
-                                    <Link to={`/shop-item-detail/${item.id}`} className="hover:text-indigo-600 text-lg font-semibold">{item.name}</Link>
+                                        <Link to={`/shop-item-detail/${item.id}`} className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.name}</Link>
                                     <div className="flex justify-between items-center mt-1">
                                         <p className="text-green-600">{item.descAmount} <del className="text-red-600">{item.amount}</del></p>
                                         <ul className="font-medium text-amber-400 list-none">

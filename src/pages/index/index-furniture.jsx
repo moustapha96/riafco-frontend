@@ -99,7 +99,7 @@ export default function IndexFurniture() {
                                     <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Modern <br /> Furniture</h1>
 
                                     <div className="mt-8">
-                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ export default function IndexFurniture() {
                                     <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Dream <br /> Sofa Design</h1>
 
                                     <div className="mt-8">
-                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ export default function IndexFurniture() {
                                     <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Look <br /> Modern House</h1>
 
                                     <div className="mt-8">
-                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ export default function IndexFurniture() {
                             <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Modern <br /> Furniture</h1>
 
                             <div className="mt-8">
-                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ export default function IndexFurniture() {
                             <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Dream <br /> Sofa Design</h1>
 
                             <div className="mt-8">
-                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ export default function IndexFurniture() {
                             <h1 className="font-bold dark:text-white lg:leading-normal leading-normal text-3xl lg:text-5xl">Look <br /> Modern House</h1>
 
                             <div className="mt-8">
-                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                             </div>
                         </div>
                     </div>
@@ -170,12 +170,12 @@ export default function IndexFurniture() {
                             <img src={fea1} className="group-hover:scale-105 transition-all duration-500" alt="" />
 
                             <div className="absolute top-1/2 -translate-y-1/2 p-6">
-                                <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-indigo-600 transition-all duration-500">Sofa Set for House</Link>
+                                <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-[var(--riafco-orange)]  transition-all duration-500">Sofa Set for House</Link>
 
                                 <p className="mt-2 text-slate-950 font-medium">Dispatched within a week, from $125</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                    <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -184,12 +184,12 @@ export default function IndexFurniture() {
                             <img src={fea2} className="group-hover:scale-105 transition-all duration-500" alt="" />
 
                             <div className="absolute top-1/2 -translate-y-1/2 p-6">
-                                <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-indigo-600 transition-all duration-500">Lighting on Express</Link>
+                                <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-[var(--riafco-orange)]  transition-all duration-500">Lighting on Express</Link>
 
                                 <p className="mt-2 text-slate-950 font-medium">Dispatched within a week, from $125</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                    <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Shop Now <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@ export default function IndexFurniture() {
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
 
@@ -225,7 +225,7 @@ export default function IndexFurniture() {
                                     </div>
 
                                     <div className="p-4 pb-0 text-center">
-                                        <Link to="#" className="text-lg font-semibold hover:text-indigo-600">{item.name}</Link>
+                                        <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)] ">{item.name}</Link>
 
                                         <p className="text-slate-400 font-semibold">{item.amount}</p>
                                     </div>
@@ -235,7 +235,7 @@ export default function IndexFurniture() {
                     </div>
                     <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ export default function IndexFurniture() {
 
                         <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
-                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
+                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  mx-auto mt-10">
                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                         </Link>
                     </div>
@@ -289,12 +289,12 @@ export default function IndexFurniture() {
                                 <img src={item.image} className="group-hover:scale-105 transition-all duration-500" alt="" />
 
                                 <div className="absolute top-0 start-0 end-0 p-6">
-                                    <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-indigo-600 transition-all duration-500">{item.title}</Link>
+                                       <Link to="#" className="font-semibold text-2xl text-slate-950 hover:text-[var(--riafco-orange)]  transition-all duration-500">{item.title}</Link>
 
                                     <p className="mt-2 text-slate-950 font-medium">{item.desc}</p>
 
                                     <div className="mt-4">
-                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See Collections <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                           <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See Collections <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                     </div>
                                 </div>
                             </div>
@@ -309,14 +309,14 @@ export default function IndexFurniture() {
                             return(
                             <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center" key={index}>
                                 <div className="relative overflow-hidden text-transparent -m-3">
-                                    <Icon.Hexagon className="size-32 fill-indigo-600/5 mx-auto"></Icon.Hexagon>
-                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <Icon.Hexagon className="size-32 fill-[var(--riafco-blue)]/5 mx-auto"></Icon.Hexagon>
+                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
                                         <Icons className="size-8"/>
                                     </div>
                                 </div>
     
                                 <div className="mt-6">
-                                    <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                     <p className="text-slate-400 transition-all duration-500 ease-in-out mt-3">{item.desc}</p>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@ export default function IndexFurniture() {
                     />
 
                     <div className="absolute top-2/4 -translate-y-2/4 start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 text-center hidden md:block">
-                        <Link to="https://www.instagram.com/shreethemes/" target="_blank" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Follow Now</Link>
+                        <Link to="https://www.instagram.com/shreethemes/" target="_blank" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Follow Now</Link>
                     </div>
                 </div>
             </div>

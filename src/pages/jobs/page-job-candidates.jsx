@@ -57,14 +57,14 @@ export default function PageJobCandidates() {
                                             <img src={data.image} className="rounded-full shadow-md size-20 mx-auto block" alt="" />
 
                                             <div className="mt-3">
-                                                <Link to={`/page-job-candidate-detail/${data.id}`} className="text-lg font-medium hover:text-indigo-600 transition duration-500 block">{data.name}</Link>
+                                                <Link to={`/page-job-candidate-detail/${data.id}`} className="text-lg font-medium hover:text-[var(--riafco-orange)]  transition duration-500 block">{data.name}</Link>
                                                 <span className="block text-sm text-slate-400">{data.job}</span>
                                             </div>
                                         </div>
 
                                         <div className="flex items-center justify-around my-4">
-                                            <span className="text-slate-400 flex items-center"><RiMapPinLine className="text-indigo-600 me-1"/>{data.place}</span>
-                                            <span className="text-slate-400 flex items-center"><PiCurrencyDollarSimpleLight className="text-indigo-600 me-2"/>3300/mo</span>
+                                            <span className="text-slate-400 flex items-center"><RiMapPinLine className="text-[var(--riafco-orange)]  me-1" />{data.place}</span>
+                                            <span className="text-slate-400 flex items-center"><PiCurrencyDollarSimpleLight className="text-[var(--riafco-orange)]  me-2" />3300/mo</span>
                                         </div>
 
                                         <Link className="bg-gray-100 dark:bg-gray-800 text-slate-400 text-xs font-medium px-3 py-1 rounded-lg h-[24px] inline-block m-1">PHP</Link>
@@ -73,11 +73,11 @@ export default function PageJobCandidates() {
                                         <Link className="bg-gray-100 dark:bg-gray-800 text-slate-400 text-xs font-medium px-3 py-1 rounded-lg h-[24px] inline-block m-1">WordPress</Link>
 
                                         <div className="mt-4">
-                                            <Link to="/page-job-candidate-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-md w-full">View Profile</Link>
+                                            <Link to="/page-job-candidate-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md w-full">View Profile</Link>
                                         </div>
 
                                         <div className="absolute top-6 start-6">
-                                            <span className="bg-indigo-600/5 text-indigo-600 text-sm font-medium px-4 py-1 rounded-full h-[28px]">Featured</span>
+                                            <span className="bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-sm font-medium px-4 py-1 rounded-full h-[28px]">Featured</span>
                                         </div>
                                         <div className="absolute top-6 end-6">
                                             <Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border border-gray-200 hover:border-gray-100 dark:border-gray-800 dark:hover:border-gray-700 rounded-full"><BiBookmark/></Link>

@@ -17,6 +17,7 @@ import { propertyListing } from '../../data/data';
 import { FiCamera, FiPhone } from 'react-icons/fi';
 import { LiaCompressArrowsAltSolid } from 'react-icons/lia';
 import { LuBath, LuBedDouble } from 'react-icons/lu';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 
@@ -53,7 +54,7 @@ export default function PropertyDetail() {
                                 <img src={image} alt="" />
                                 <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                                 <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                                    <Link onClick={() => handleCLick(0)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                    <Link onClick={() => handleCLick(0)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +66,7 @@ export default function PropertyDetail() {
                                         <img src={image1} alt="" />
                                         <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                                         <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                                            <Link onClick={() => handleCLick(1)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                            <Link onClick={() => handleCLick(1)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +76,7 @@ export default function PropertyDetail() {
                                         <img src={image2} alt="" />
                                         <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                                         <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                                            <Link onClick={() => handleCLick(2)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                            <Link onClick={() => handleCLick(2)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +88,7 @@ export default function PropertyDetail() {
                                         <img src={image3} alt="" />
                                         <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                                         <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                                            <Link onClick={() => handleCLick(3)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                            <Link onClick={() => handleCLick(3)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +98,7 @@ export default function PropertyDetail() {
                                         <img src={image4} alt="" />
                                         <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                                         <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                                            <Link onClick={() => handleCLick(4)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="size-4"/></Link>
+                                            <Link onClick={() => handleCLick(4)} className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><FiCamera className="size-4" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -113,17 +114,17 @@ export default function PropertyDetail() {
 
                             <ul className="py-6 flex items-center list-none">
                                 <li className="flex items-center lg:me-6 me-4">
-                                    <LiaCompressArrowsAltSolid className=" lg:text-3xl text-2xl me-2 text-indigo-600"/>
+                                    <LiaCompressArrowsAltSolid className=" lg:text-3xl text-2xl me-2 text-[var(--riafco-orange)] " />
                                     <span className="lg:text-xl">{data?.sqrt ? data?.sqrt : '8000sqf'}</span>
                                 </li>
 
                                 <li className="flex items-center lg:me-6 me-4">
-                                    <LuBedDouble className="lg:text-3xl text-2xl me-2 text-indigo-600"/>
+                                    <LuBedDouble className="lg:text-3xl text-2xl me-2 text-[var(--riafco-orange)] " />
                                     <span className="lg:text-xl">4 Beds</span>
                                 </li>
 
                                 <li className="flex items-center">
-                                    <LuBath className="lg:text-3xl text-2xl me-2 text-indigo-600"/>
+                                    <LuBath className="lg:text-3xl text-2xl me-2 text-[var(--riafco-orange)] " />
                                     <span className="lg:text-xl">4 Baths</span>
                                 </li>
                             </ul>
@@ -147,7 +148,7 @@ export default function PropertyDetail() {
                                         <div className="flex justify-between items-center mt-4">
                                             <span className="text-xl font-medium">$ 45,231</span>
 
-                                            <span className="bg-indigo-600/10 text-indigo-600 text-sm px-2.5 py-0.75 rounded h-6">For Sale</span>
+                                            <span className="bg-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-sm px-2.5 py-0.75 rounded h-6">For Sale</span>
                                         </div>
 
                                         <ul className="list-none space-x-1 mt-4">
@@ -170,10 +171,10 @@ export default function PropertyDetail() {
 
                                     <div className="flex">
                                         <div className="p-1 w-1/2">
-                                            <Link  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Book Now</Link>
+                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Book Now</Link>
                                         </div>
                                         <div className="p-1 w-1/2">
-                                            <Link  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Offer Now</Link>
+                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Offer Now</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +183,7 @@ export default function PropertyDetail() {
                                     <h3 className="mb-6 text-xl leading-normal font-medium">Have Question ? Get in touch!</h3>
 
                                     <div className="mt-6">
-                                        <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-indigo-600 border border-indigo-600 text-indigo-600 hover:text-white rounded-md"><FiPhone className="me-1 text-lg"/>Contact us</Link>
+                                        <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md"><FiPhone className="me-1 text-lg" />Contact us</Link>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +192,7 @@ export default function PropertyDetail() {
                 </div>
             </section>
 
-            <Footer />
+            <TransparentFooter />
 
             <Lightbox
                 open={isOpen}

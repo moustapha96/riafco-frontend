@@ -31,7 +31,7 @@ export default function IndexLandingOne() {
         <>
             <Navbar />
 
-            <section className="relative items-center overflow-hidden bg-indigo-600/5 dark:bg-indigo-600/10">
+            <section className="relative items-center overflow-hidden bg-[var(--riafco-blue)]/5 dark:bg-[var(--riafco-blue)]/10">
                 <div className="container relative z-2">
                     <div className="grid grid-cols-1 md:mt-44 mt-32 text-center">
                         <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5">Solve Problem With on Integrated <br /> Marketing Agency</h4>
@@ -41,7 +41,7 @@ export default function IndexLandingOne() {
                             <div className="subcribe-form mt-6 mb-3">
                                 <form className="relative mx-auto max-w-xl">
                                     <input type="email" id="subcribe" name="email" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" placeholder="Your Email Address :" />
-                                    <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Get Started <FaArrowRight className="ms-2 text-[10px]"/></button>
+                                    <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Get Started <FaArrowRight className="ms-2 text-[10px]" /></button>
                                 </form>
                             </div>
                         </div>
@@ -80,12 +80,12 @@ export default function IndexLandingOne() {
                                 let Icons = data.icon
                                 return (
                                     <div className="text-center md:px-3" key={index}>
-                                        <div className="size-24 bg-indigo-600/5 text-indigo-600 rounded-3xl text-4xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                        <div className="size-24 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-3xl text-4xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                              <Icons className='size-7'/>
                                         </div>
 
                                         <div className="content mt-7">
-                                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{data.feature}</Link>
+                                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{data.feature}</Link>
                                             <p className="text-slate-400 mt-3">The phrasal sequence of the Lorem Ipsum text is now so that many</p>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ export default function IndexLandingOne() {
                                             <span className="text-xl font-semibold self-end mb-1">/mo</span>
                                         </div>
 
-                                        <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Buy Now</Link>
+                                        <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Buy Now</Link>
                                     </div>
 
                                     <div className="p-6">

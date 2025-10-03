@@ -60,12 +60,12 @@ export default function Index() {
           <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
             <div className="md:col-span-7">
               <div className="me-6">
-                <h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Our Creativity Is Your <span className="text-indigo-600">Success</span></h4>
+                <h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Our Creativity Is Your <span className="text-[var(--riafco-orange)] ">Success</span></h4>
                 <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                 <div className="mt-6">
-                  <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope  className="me-2 text-sm "/> Get Started</Link>
-                  <Link to="/documentation" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2"><BiBookAlt className="me-2"/> Documentation</Link>
+                  <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm " /> Get Started</Link>
+                  <Link to="/documentation" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md mt-2"><BiBookAlt className="me-2" /> Documentation</Link>
                 </div>
               </div>
             </div>
@@ -102,13 +102,13 @@ export default function Index() {
                 <p className="text-slate-400 max-w-xl">You can combine all the Techwind templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
 
                 <ul className="list-none text-slate-400 mt-4 ">
-                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Our Talented & Experienced Marketing Agency</li>
-                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Create your own skin to match your brand</li>
+                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                  <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                 </ul>
 
                 <div className="mt-4">
-                  <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl"/></Link>
+                  <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl" /></Link>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Index() {
                           <label className="form-label font-medium">Your Name : <span className="text-red-600">*</span></label>
                           <div className="form-icon relative mt-2">
                             <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                            <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name" name="name" required="" />
+                            <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name" name="name" required="" />
                           </div>
                         </div>
 
@@ -137,7 +137,7 @@ export default function Index() {
                           <label className="form-label font-medium">Your Email : <span className="text-red-600">*</span></label>
                           <div className="form-icon relative mt-2">
                             <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                            <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email" name="email" required="" />
+                            <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email" name="email" required="" />
                           </div>
                         </div>
 
@@ -145,12 +145,12 @@ export default function Index() {
                           <label className="form-label font-medium">Enter Password : <span className="text-red-600">*</span></label>
                           <div className="form-icon relative mt-2">
                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Password" required="" />
+                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Password" required="" />
                           </div>
                         </div>
 
                         <div className="">
-                          <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Download</button>
+                          <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Download</button>
                         </div>
                       </div>
                     </form>
@@ -159,17 +159,17 @@ export default function Index() {
               </div>
             </div>
             <div className="lg:col-span-7 md:order-1 order-2">
-              <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Speed up your development <br /> with <span className="text-indigo-600">Techwind.</span></h3>
+              <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Speed up your development <br /> with <span className="text-[var(--riafco-orange)] ">Techwind.</span></h3>
               <p className="text-slate-400 max-w-xl">You can combine all the Techwind templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
 
               <ul className="list-none text-slate-400 mt-4">
-                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
-                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
-                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Create your own skin to match your brand</li>
+                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
               </ul>
 
               <div className="mt-4">
-                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl"/></Link>
+                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl" /></Link>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function Index() {
       <section className="relative md:py-24 py-16">
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h6 className="mb-4 text-base font-medium text-indigo-600">We believe in building each other and hence</h6>
+            <h6 className="mb-4 text-base font-medium text-[var(--riafco-orange)] ">We believe in building each other and hence</h6>
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Work with some amazing partners</h3>
 
             <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
@@ -200,7 +200,7 @@ export default function Index() {
                           <p className="text-base text-slate-400"> {item.description} </p>
   
                           <div>
-                            <span className="text-indigo-600 block mb-1">{item.name}</span>
+                            <span className="text-[var(--riafco-orange)]  block mb-1">{item.name}</span>
                             <span className="text-slate-400 text-sm dark:text-white/60 block">{item.role}</span>
                           </div>
                         </div>
@@ -231,15 +231,15 @@ export default function Index() {
         <div className="container relative">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-[30px]">
             <div className="flex">
-              <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+              <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
               <div className="flex-1">
-                <h5 className="mb-2 text-xl font-semibold">How our <span className="text-indigo-600">Techwind</span> work ?</h5>
+                <h5 className="mb-2 text-xl font-semibold">How our <span className="text-[var(--riafco-orange)] ">Techwind</span> work ?</h5>
                 <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.</p>
               </div>
             </div>
 
             <div className="flex">
-              <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+              <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
               <div className="flex-1">
                 <h5 className="mb-2 text-xl font-semibold"> What is the main process open account ?</h5>
                 <p className="text-slate-400">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making a neutral judgement on the visual impact</p>
@@ -247,7 +247,7 @@ export default function Index() {
             </div>
 
             <div className="flex">
-              <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+              <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
               <div className="flex-1">
                 <h5 className="mb-2 text-xl font-semibold"> How to make unlimited data entry ?</h5>
                 <p className="text-slate-400">Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.</p>
@@ -255,9 +255,9 @@ export default function Index() {
             </div>
 
             <div className="flex">
-              <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+              <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
               <div className="flex-1">
-                <h5 className="mb-2 text-xl font-semibold"> Is <span className="text-indigo-600">Techwind</span> safer to use with my account ?</h5>
+                <h5 className="mb-2 text-xl font-semibold"> Is <span className="text-[var(--riafco-orange)] ">Techwind</span> safer to use with my account ?</h5>
                 <p className="text-slate-400">The most well-known dummy text is the &apos;Lorem Ipsum&apos;, which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to &apos;proper&apos; Latin.</p>
               </div>
             </div>

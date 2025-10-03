@@ -51,7 +51,7 @@ export default function IndexClassicApp() {
     }
     return (
         <>
-            <span className="fixed blur-[200px] size-[600px] rounded-full top-1/2 -translate-y-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 bg-indigo-600/20"></span>
+            <span className="fixed blur-[200px] size-[600px] rounded-full top-1/2 -translate-y-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 bg-[var(--riafco-blue)]/20"></span>
 
             <Navbar />
 
@@ -66,7 +66,7 @@ export default function IndexClassicApp() {
                                 <li className="inline"><i className="mdi mdi-star"></i></li>
                                 <li className="inline"><i className="mdi mdi-star"></i></li>
                             </ul>
-                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Making <span className="after:absolute after:end-0 after:start-0 after:bottom-3 after:-rotate-6 after:h-2 after:w-auto after:rounded-md after:bg-indigo-600/20 relative text-indigo-600">everybody</span> <br /> feel valued at work</h4>
+                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Making <span className="after:absolute after:end-0 after:start-0 after:bottom-3 after:-rotate-6 after:h-2 after:w-auto after:rounded-md after:bg-[var(--riafco-blue)]/20 relative text-[var(--riafco-orange)] ">everybody</span> <br /> feel valued at work</h4>
                             <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                             <div className="mt-6">
@@ -77,13 +77,13 @@ export default function IndexClassicApp() {
 
                         <div className="relative">
                             <img src={classic02} className="mx-auto" alt="" />
-                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-indigo-600/20 via-indigo-600/70 from-indigo-600 bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-indigo-600/10 rounded-full"></div>
+                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-[var(--riafco-blue)]/20 via-[var(--riafco-blue)]/70 from-[var(--riafco-blue)] bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-[var(--riafco-blue)]/10 rounded-full"></div>
 
-                            <div className="overflow-hidden after:content-[''] after:absolute after:size-10 after:bg-indigo-600/20 after:top-0 after:start-0 after:-z-1 after:rounded-lg after:animate-[spin_10s_linear_infinite]"></div>
+                            <div className="overflow-hidden after:content-[''] after:absolute after:size-10 after:bg-[var(--riafco-blue)]/20 after:top-0 after:start-0 after:-z-1 after:rounded-lg after:animate-[spin_10s_linear_infinite]"></div>
 
                             <div className="absolute flex justify-between items-center top-16 md:-start-10 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
                                 <div className="flex items-center">
-                                    <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-indigo-600/5 text-indigo-600 text-center rounded-full me-3">
+                                    <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                                         <Icon.Monitor className="size-6"></Icon.Monitor>
                                     </div>
                                     <div className="flex-1">
@@ -102,7 +102,7 @@ export default function IndexClassicApp() {
                                     <span className="text-slate-400">84%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "84%" }}></div>
+                                    <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "84%" }}></div>
                                 </div>
                             </div>
 
@@ -118,8 +118,8 @@ export default function IndexClassicApp() {
                         </div>
 
                         <div className="relative animate-[spin_30s_linear_infinite] -z-1">
-                            <span className="after:absolute after:start-0 after:bottom-1/2 after:translate-y-1/2 after:h-2 after:w-8 after:rounded-md after:bg-indigo-600/20 relative after:z-10"></span>
-                            <span className="after:absolute after:start-0 after:bottom-1/2 after:translate-y-1/2 after:rotate-90 after:h-2 after:w-8 after:rounded-md after:bg-indigo-600/20 relative after:z-10"></span>
+                            <span className="after:absolute after:start-0 after:bottom-1/2 after:translate-y-1/2 after:h-2 after:w-8 after:rounded-md after:bg-[var(--riafco-blue)]/20 relative after:z-10"></span>
+                            <span className="after:absolute after:start-0 after:bottom-1/2 after:translate-y-1/2 after:rotate-90 after:h-2 after:w-8 after:rounded-md after:bg-[var(--riafco-blue)]/20 relative after:z-10"></span>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ export default function IndexClassicApp() {
 
                                 <div className="absolute top-4 md:end-14 -end-2 text-center">
                                     <Link to="#" data-type="youtube" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center text-white bg-indigo-600">
+                                        className="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center text-white bg-[var(--riafco-blue)]">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -169,11 +169,11 @@ export default function IndexClassicApp() {
                                 </div>
                             }
 
-                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-indigo-600/20 via-indigo-600/70 from-indigo-600 bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-indigo-600/10 rounded-full"></div>
+                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-[var(--riafco-blue)]/20 via-[var(--riafco-blue)]/70 from-[var(--riafco-blue)] bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-[var(--riafco-blue)]/10 rounded-full"></div>
 
                             <div className="absolute flex justify-between items-center bottom-16 md:-start-10 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-64 m-3">
                                 <div className="flex items-center">
-                                    <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-indigo-600/5 text-indigo-600 text-center rounded-full me-3">
+                                    <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                                         <Icon.DollarSign className="size-6"></Icon.DollarSign>
                                     </div>
                                     <div className="flex-1">
@@ -218,7 +218,7 @@ export default function IndexClassicApp() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-indigo-600/20 via-indigo-600/70 from-indigo-600 bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-indigo-600/10 rounded-full"></div>
+                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-[var(--riafco-blue)]/20 via-[var(--riafco-blue)]/70 from-[var(--riafco-blue)] bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 -z-1 shadow-md shadow-[var(--riafco-blue)]/10 rounded-full"></div>
 
                             <div className="absolute flex justify-between items-center md:bottom-16 bottom-0 end-5 rounded-lg shadow-md dark:shadow-gray-800 lg:w-72 w-48 m-3">
                                 <img src={sales_chart} className="rounded-lg shadow-sm dark:shadow-gray-800" alt="" />
@@ -232,7 +232,7 @@ export default function IndexClassicApp() {
                                 {accordionData.slice(0,4).map((item, index) => (
                                     <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                         <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                                 <span>{item.title}</span>
                                                 <svg data-accordion-icon className={`${activeIndex === index ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -252,7 +252,7 @@ export default function IndexClassicApp() {
                             </div>
 
                             <div className="mt-4">
-                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                             </div>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ export default function IndexClassicApp() {
                     <div className="grid md:grid-cols-2 grid-cols-1 items-center mt-16 gap-[30px]">
                         <div className="relative">
                             <img src={classic04} className="mx-auto" alt="" />
-                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-indigo-600/20 via-indigo-600/70 from-indigo-600 bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-indigo-600/10 rounded-full"></div>
+                            <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-[var(--riafco-blue)]/20 via-[var(--riafco-blue)]/70 from-[var(--riafco-blue)] bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-[var(--riafco-blue)]/10 rounded-full"></div>
 
                             <div className="absolute bottom-1/2 translate-y-1/2 lg:-end-7 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3">
                                 <div className="flex">
@@ -278,7 +278,7 @@ export default function IndexClassicApp() {
                                         <span className="text-xs"><span className="font-semibold">950</span> <span className="text-slate-400">Ratings</span></span>
                                     </div>
 
-                                    <span className="font-bold ms-3">Trusted by over <span className="text-indigo-600">50000</span> members</span>
+                                    <span className="font-bold ms-3">Trusted by over <span className="text-[var(--riafco-orange)] ">50000</span> members</span>
                                 </div>
                             </div>
 
@@ -297,13 +297,13 @@ export default function IndexClassicApp() {
                             <h4 className="mb-4 md:text-3xl text-2xl lg:leading-normal leading-normal font-semibold">Plan in front program for your needs</h4>
                             <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
                             <ul className="list-none text-slate-400 mt-4">
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/>  Digital Marketing Solutions for Tomorrow</li>
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/>  Our Talented & Experienced Marketing Agency</li>
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/>  Create your own skin to match your brand</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" />  Digital Marketing Solutions for Tomorrow</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" />  Our Talented & Experienced Marketing Agency</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" />  Create your own skin to match your brand</li>
                             </ul>
 
                             <div className="mt-4">
-                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                             </div>
                         </div>
                     </div>
@@ -320,7 +320,7 @@ export default function IndexClassicApp() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-base mb-2">Testimonial</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-base mb-2">Testimonial</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>

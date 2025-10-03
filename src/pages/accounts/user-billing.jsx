@@ -9,6 +9,7 @@ import AccpontTab from '../../component/accountTab';
 import Navbar from '../../component/Navbar/navbar';
 import { FiEdit, FiPhone } from 'react-icons/fi';
 import { RiMapPinLine } from 'react-icons/ri';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 export default function UserBilling() {
@@ -63,7 +64,7 @@ export default function UserBilling() {
                                     <div className="md:w-1/2 md:px-3">
                                         <div className="flex items-center mb-4 justify-between">
                                             <h5 className="text-xl font-semibold">Billing Address:</h5>
-                                            <Link to="/#" className="text-indigo-600 text-lg"><FiEdit/></Link>
+                                            <Link to="/#" className="text-[var(--riafco-orange)]  text-lg"><FiEdit /></Link>
                                         </div>
                                         <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
                                             <p className="text-lg font-semibold mb-2">Jenny Jimenez</p>
@@ -85,7 +86,7 @@ export default function UserBilling() {
                                     <div className="md:w-1/2 md:px-3 mt-[30] md:mt-0">
                                         <div className="flex items-center mb-4 justify-between">
                                             <h5 className="text-xl font-semibold">Shipping Address:</h5>
-                                            <Link to="/#" className="text-indigo-600 text-lg"><FiEdit/></Link>
+                                            <Link to="/#" className="text-[var(--riafco-orange)]  text-lg"><FiEdit /></Link>
                                         </div>
                                         <div className="pt-4 border-t border-gray-100 dark:border-gray-700">
                                             <p className="text-lg font-semibold mb-2">Jenny Jimenez</p>
@@ -109,7 +110,7 @@ export default function UserBilling() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

@@ -36,13 +36,13 @@ export default function IndexConstruction() {
                                 <p className="text-slate-900 dark:text-white/75 text-lg max-w-xl">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact Us</Link>
+                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Contact Us</Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-5 md:text-center md:order-2 order-1">
-                            <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox lg:size-24 size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white hover:bg-indigo-600 text-indigo-600 hover:text-white duration-500 ease-in-out mx-auto">
+                            <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox lg:size-24 size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white hover:bg-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white duration-500 ease-in-out mx-auto">
                                 <i className="mdi mdi-play inline-flex items-center justify-center text-3xl"></i>
                             </Link>
                         </div>
@@ -57,7 +57,7 @@ export default function IndexConstruction() {
                         <div className="relative z-2 transition-all duration-500 ease-in-out sm:-mt-[200px] -mt-[140px] m-0">
                             <div className="relative bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden">
                                 <div className="grid lg:grid-cols-12 grid-cols-1">
-                                    <div className="lg:col-span-4 order-1 lg:order-2 bg-indigo-600">
+                                    <div className="lg:col-span-4 order-1 lg:order-2 bg-[var(--riafco-blue)]">
                                         <div className="p-[30px] lg:text-start text-center">
                                             <span className="text-xl text-white/75">Our proud</span>
                                             <h4 className="text-2xl font-semibold text-white my-3">25 years of undefeated success</h4>
@@ -74,7 +74,7 @@ export default function IndexConstruction() {
                                                 let Icons = item.icon
                                                 return(
                                                     <div className="group flex transition-all duration-500 ease-in-out" key={index}>
-                                                        <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                                                        <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                                                             <Icons className='size-8'/>
                                                         </div>
                                                         <div className="flex-1 ms-4">
@@ -104,7 +104,7 @@ export default function IndexConstruction() {
                                 <div className="absolute bottom-16 end-0">
                                     <img src={ab02} className="rounded-md rounded-ee-[30px] shadow-md .size-56" alt="" />
                                     <div className="absolute bottom-0 end-0 text-center">
-                                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-indigo-600 text-white">
+                                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-[var(--riafco-blue)] text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
                                         </Link>
                                     </div>
@@ -133,11 +133,11 @@ export default function IndexConstruction() {
 
                         <div className="md:col-span-7">
                             <div className="lg:ms-4">
-                                <span className="bg-indigo-600 inline-block text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5">About Company</span>
+                                <span className="bg-[var(--riafco-blue)] inline-block text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5">About Company</span>
                                 <h4 className="mb-6 mt-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">World&apos;s largest and <br /> trusted construction company</h4>
                                 <p className="text-slate-400 max-w-xl">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text. This might also explain why one can now find slightly different versions.</p>
                                 <div className="mt-6">
-                                    <Link to="#" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Read More <MdKeyboardArrowRight/></Link>
+                                    <Link to="#" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Read More <MdKeyboardArrowRight /></Link>
                                 </div>
 
                                 <div className="pt-6 mt-6 border-t border-gray-200 dark:border-gray-700">
@@ -174,7 +174,7 @@ export default function IndexConstruction() {
                                 <div className="group relative block overflow-hidden rounded-md transition-all duration-500" key={index}>
                                     <Link to="/portfolio-detail-one"><img src={item.image} className="rounded-md shadow-sm dark:shadow-gray-800" alt="" /></Link>
                                     <div className="content pt-3">
-                                        <h5 className="mb-1"><Link to="/portfolio-detail-one" className="hover:text-indigo-600 transition-all duration-500 font-semibold text-lg">{item.title}</Link></h5>
+                                        <h5 className="mb-1"><Link to="/portfolio-detail-one" className="hover:text-[var(--riafco-orange)]  transition-all duration-500 font-semibold text-lg">{item.title}</Link></h5>
                                         <h6 className="text-slate-400">{item.name}</h6>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@ export default function IndexConstruction() {
 
                         <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
-                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
+                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  mx-auto mt-10">
                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                         </Link>
                     </div>

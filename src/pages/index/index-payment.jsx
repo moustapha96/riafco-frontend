@@ -41,11 +41,11 @@ export default function IndexPayment() {
                                 <div className="subcribe-form mt-6 mb-3">
                                     <form className="relative max-w-xl">
                                         <input type="email" id="subcribe" name="email" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" placeholder="Enter your mail" />
-                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Get started <FaArrowRight className="ms-2 text-[10px]"/></button>
+                                        <button type="submit" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Get started <FaArrowRight className="ms-2 text-[10px]" /></button>
                                     </form>
                                 </div>
 
-                                <span className="text-slate-400 font-medium">Looking for help? <Link  className="text-indigo-600">Get in touch with us</Link></span>
+                                <span className="text-slate-400 font-medium">Looking for help? <Link className="text-[var(--riafco-orange)] ">Get in touch with us</Link></span>
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@ export default function IndexPayment() {
                                 </div>
 
                                 <div className="md:w-[350px] w-72 absolute top-1/3 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 z-3">
-                                    <div className="p-5 bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800">
+                                    <div className="p-5 bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800">
                                         <img src={visaa} className="h-16" alt="" />
 
                                         <div className="pt-5">
@@ -156,16 +156,16 @@ export default function IndexPayment() {
                             const Icons = item.icon
                             return(
                                 <div key={index} className={item.bgClass}>
-                                    <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                    <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                         <Icons className='size-7'/>
                                     </div>
         
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
         
                                         <div className="mt-5">
-                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -184,13 +184,13 @@ export default function IndexPayment() {
                             <h4 className="mb-4 md:text-3xl text-2xl lg:leading-normal leading-normal font-semibold">You will always get extra security from us</h4>
                             <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
                             <ul className="list-none text-slate-400 mt-4">
-                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Our Talented & Experienced Marketing Agency</li>
-                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Create your own skin to match your brand</li>
+                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                                <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                             </ul>
 
                             <div className="mt-4">
-                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                             </div>
                         </div>
                     </div>

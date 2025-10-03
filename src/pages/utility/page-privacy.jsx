@@ -5,6 +5,7 @@ import Footer from '../../component/Footer/footer';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { FaArrowRight } from 'react-icons/fa';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 export default function PagePrivacy() {
@@ -27,11 +28,11 @@ export default function PagePrivacy() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link >Utility</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link >Utility</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600"aria-current="page">Privacy</li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Privacy</li>
                     </ul>
                 </div>
             </section>
@@ -56,19 +57,19 @@ export default function PagePrivacy() {
 
                                 <h5 className="text-xl font-semibold mb-4 mt-8">We use your information to :</h5>
                                 <ul className="list-none text-slate-400 mt-4">
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Our Talented & Experienced Marketing Agency</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Create your own skin to match your brand</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Our Talented & Experienced Marketing Agency</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Create your own skin to match your brand</li>
                                 </ul>
 
                                 <h5 className="text-xl font-semibold mb-4 mt-8">Information Provided Voluntarily :</h5>
                                 <p className="text-slate-400">In the 1960s, the text suddenly became known beyond the professional circle of typesetters and layout designers when it was used for Letraset sheets (adhesive letters on transparent film, popular until the 1980s) Versions of the text were subsequently included in DTP programmes such as PageMaker etc.</p>
 
                                 <div className="mt-8">
-                                    <Link  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Print</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Print</Link>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +77,7 @@ export default function PagePrivacy() {
                 </div>
             </section>
 
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

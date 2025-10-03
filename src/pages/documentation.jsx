@@ -5,6 +5,7 @@ import Footer from '../component/Footer/footer';
 import { Link } from 'react-router-dom'
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../component/Footer/transparentFooter';
 
 export default function Documentation() {
     useEffect(() => {
@@ -24,9 +25,9 @@ export default function Documentation() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600"aria-current="page">Documentation</li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Documentation</li>
                     </ul>
                 </div>
             </section>
@@ -54,10 +55,10 @@ export default function Documentation() {
 
                             <h5 className="text-xl font-semibold mb-4">Introduction</h5>
                             <p className="text-slate-400 text-base leading-8">We are using <Link to="https://nodejs.com/"
-                                    className="text-indigo-600 font-semibold mx-2" target="_blank">npm</Link> which allows having
+                                className="text-[var(--riafco-orange)]  font-semibold mx-2" target="_blank">npm</Link> which allows having
                                 complete automation for build flow. In case if you don&apos;t know Gulp then it&apos;s easy to use
                                 it. You can read it
-                                more about it <Link to="https://nodejs.com/" className="text-indigo-600 font-semibold mx-2"
+                                more about it <Link to="https://nodejs.com/" className="text-[var(--riafco-orange)]  font-semibold mx-2"
                                     target="_blank">here</Link>. Please follow below steps to install and setup all
                                 prerequisites:</p>
 
@@ -72,7 +73,7 @@ export default function Documentation() {
                                     <div className="ml-2">
                                         <h6>Nodejs</h6>
                                         <p className="text-slate-400 text-base leading-8">Make sure to have the <Link to="https://nodejs.org/"
-                                                className="text-indigo-600 font-semibold mx-2" target="_blank">Node.js</Link>
+                                            className="text-[var(--riafco-orange)]  font-semibold mx-2" target="_blank">Node.js</Link>
                                             installed & running in your computer. If you already have installed Node on
                                             your computer, you can skip this step if your existing node version is
                                             greater than 16.</p>
@@ -84,7 +85,7 @@ export default function Documentation() {
                                     <div className="ml-2">
                                         <h6>Git</h6>
                                         <p className="text-slate-400 text-base leading-8">Make sure to have the <Link to="https://git-scm.com/"
-                                                className="text-indigo-600 font-semibold mx-2" target="_blank">Git</Link> installed
+                                            className="text-[var(--riafco-orange)]  font-semibold mx-2" target="_blank">Git</Link> installed
                                             globally & running on your computer. If you already have installed git on
                                             your computer, you can skip this step.</p>
                                     </div>
@@ -136,7 +137,7 @@ export default function Documentation() {
                                                 Runs the project locally, starts the development server and watches for any
                                                 changes in your code, including your HTML, javascript, sass, etc. The
                                                 development server is accessible at <Link to="http://localhost:3000"
-                                                    className="text-indigo-600 font-semibold mx-2"
+                                                    className="text-[var(--riafco-orange)]  font-semibold mx-2"
                                                     target="_blank">http://localhost:3000</Link>.
                                             </td>
                                         </tr>
@@ -157,7 +158,7 @@ export default function Documentation() {
                 </div>
             </section >
 
-            <Footer />
+            <TransparentFooter />
 
 
          

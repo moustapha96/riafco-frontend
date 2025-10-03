@@ -7,6 +7,7 @@ import Footer from '../../component/Footer/footer';
 import { accordionData } from '../../data/dataTwo';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { FaArrowRight } from 'react-icons/fa';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function PageTerms() {
 
@@ -37,11 +38,11 @@ export default function PageTerms() {
                 </div>
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link >Utility</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link >Utility</Link></li>
                         <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600"aria-current="page">Terms</li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Terms</li>
                     </ul>
                 </div>
             </section>
@@ -70,12 +71,12 @@ export default function PageTerms() {
                                 <h5 className="text-xl font-semibold mb-4 mt-8">Restrictions :</h5>
                                 <p className="text-slate-400">You are specifically restricted from all of the following :</p>
                                 <ul className="list-none text-slate-400 mt-3">
-                                    <li className="flex items-center mt-2"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
+                                    <li className="flex items-center mt-2"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Our Talented & Experienced Marketing Agency</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Create your own skin to match your brand</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Our Talented & Experienced Marketing Agency</li>
+                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-[var(--riafco-orange)]   align-middle me-2" />Create your own skin to match your brand</li>
                                 </ul>
 
                                 <h5 className="text-xl font-semibold mt-8">Users Question & Answer :</h5>
@@ -84,7 +85,7 @@ export default function PageTerms() {
                                     {accordionData.slice(0,4).map((item, index) => (
                                         <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                             <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                                <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                                <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                                     <span>{item.title}</span>
                                                     <svg data-accordion-icon className={`${activeIndex === index ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule ="evenodd"></path>
@@ -104,8 +105,8 @@ export default function PageTerms() {
                                 </div>
 
                                 <div className="mt-6">
-                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Accept</Link>
-                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md ms-2">Decline</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Accept</Link>
+                                    <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md ms-2">Decline</Link>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +114,7 @@ export default function PageTerms() {
                 </div>
             </section>
 
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

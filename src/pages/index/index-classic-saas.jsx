@@ -38,12 +38,12 @@ export default function IndexClassicSaas() {
                     <div className="relative grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-7">
                             <div className="md:me-6">
-                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative">Fast and clean help <br /> <span className="after:absolute after:end-0 after:start-0 after:bottom-3 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-indigo-600/30 relative text-indigo-600">Structure</span> your work</h4>
+                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white relative">Fast and clean help <br /> <span className="after:absolute after:end-0 after:start-0 after:bottom-3 after:lg:h-3 after:h-2 after:w-auto after:rounded-md after:bg-[var(--riafco-blue)]/30 relative text-[var(--riafco-orange)] ">Structure</span> your work</h4>
                                 <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                 <div className="relative mt-8">
-                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2">Get Started</Link>
-                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><i className="mdi mdi-play text-xl align-middle"></i></Link><small className="text-sm font-semibold uppercase align-middle ms-2">Watch Now</small>
+                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2">Get Started</Link>
+                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full lightbox"><i className="mdi mdi-play text-xl align-middle"></i></Link><small className="text-sm font-semibold uppercase align-middle ms-2">Watch Now</small>
                                 </div>
                             </div>
                         </div>
@@ -69,12 +69,12 @@ export default function IndexClassicSaas() {
 
                         <div className="md:col-span-5">
                             <div className="relative after:content-[''] after:absolute after:md:bottom-12 after:-bottom-20 lg:after:-start-0 md:after:-start-20 after:-start-24
-                        after:bg-indigo-600 after:shadow-2xl after:shadow-indigo-600/40 after:-z-1 ltr:after:rotate-[130deg] rtl:after:-rotate-[130deg] after:w-[75rem] after:md:h-[55rem] after:h-[30rem] after:rounded-[20rem]">
+                        after:bg-[var(--riafco-blue)] after:shadow-2xl after:shadow-[var(--riafco-blue)]/40 after:-z-1 ltr:after:rotate-[130deg] rtl:after:-rotate-[130deg] after:w-[75rem] after:md:h-[55rem] after:h-[30rem] after:rounded-[20rem]">
                                 <img src={laptop} className="lg:max-w-none md:max-w-md" alt="" />
                             </div>
                         </div>
 
-                        <div className="overflow-hidden after:content-[''] after:absolute after:size-32 after:bg-indigo-600/5 after:top-16 after:start-0  after:-z-1 after:rounded-3xl after:animate-[spin_10s_linear_infinite]"></div>
+                        <div className="overflow-hidden after:content-[''] after:absolute after:size-32 after:bg-[var(--riafco-blue)]/5 after:top-16 after:start-0  after:-z-1 after:rounded-3xl after:animate-[spin_10s_linear_infinite]"></div>
                     </div>
                 </div>
             </section>
@@ -101,14 +101,14 @@ export default function IndexClassicSaas() {
                             return(
                                 <div key={index} className="group relative lg:px-6 mt-4 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
                                     <div className="relative overflow-hidden text-transparent -m-3">
-                                        <Icon.Hexagon className="size-28 fill-indigo-600/5 mx-auto rotate-[30deg]"></Icon.Hexagon>
-                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                        <Icon.Hexagon className="size-28 fill-[var(--riafco-blue)]/5 mx-auto rotate-[30deg]"></Icon.Hexagon>
+                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                             <Icons/>
                                         </div>
                                     </div>
         
                                     <div className="mt-6">
-                                        <Link href="#" className="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                        <Link href="#" className="text-xl font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                         <p className="text-slate-400 transition duration-500 ease-in-out mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@ export default function IndexClassicSaas() {
                                     <span className="text-slate-400">84%</span>
                                 </div>
                                 <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                    <div className="bg-indigo-600 h-[6px] rounded-full" style={{ "width": "84%" }}></div>
+                                    <div className="bg-[var(--riafco-blue)] h-[6px] rounded-full" style={{ "width": "84%" }}></div>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ export default function IndexClassicSaas() {
                             <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
 
                             <div className="mt-4">
-                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                             </div>
                         </div>
                     </div>
@@ -158,13 +158,13 @@ export default function IndexClassicSaas() {
                             <h4 className="mb-4 text-2xl leading-normal font-medium">Get Notified About Importent Email</h4>
                             <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters visual impact.</p>
                             <ul className="list-none text-slate-400 mt-4">
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
-                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-indigo-600 text-base me-2" /> Create your own skin to match your brand</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                                <li className="mb-1 flex items-center m-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                             </ul>
 
                             <div className="mt-4">
-                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                                <Link to="/page-aboutus" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Find Out More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ export default function IndexClassicSaas() {
                                     <img src={home} alt="" />
                                     <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                         <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                            className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -217,7 +217,7 @@ export default function IndexClassicSaas() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
                 <MobileApp/>
             <Footer />

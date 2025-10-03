@@ -4,6 +4,7 @@ import Footer from '../../component/Footer/footer';
 import PortfolioCreativeFilter from '../../component/portfolioCreativeFilter';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function PortfolioCreativeThree() {
     useEffect(() => {
@@ -43,7 +44,7 @@ export default function PortfolioCreativeThree() {
             </div>
 
             <PortfolioCreativeFilter className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-4 gap-[30px]" />
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

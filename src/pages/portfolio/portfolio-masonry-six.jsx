@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PortfolioMasonryFilter from '../../component/portfolioMasonryFilter';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 
 export default function PortfolioMasonrySix() {
@@ -45,7 +46,7 @@ export default function PortfolioMasonrySix() {
                 </div>
             </div>
             <PortfolioMasonryFilter shuffle={6} containerClass={true} columnsCountBreakPoints={{350: 1, 750: 2, 900: 6}}/>
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

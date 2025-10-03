@@ -14,7 +14,7 @@
     li {
         &.active,
         &:hover {
-            @apply !text-indigo-600 !border-indigo-600;
+            @apply !text-[var(--riafco-orange)]  !border-indigo-600;
         }
     }
 }

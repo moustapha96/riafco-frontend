@@ -28,7 +28,7 @@ export default function Helpcenter() {
                         <div className="text-center subcribe-form mt-4 pt-2">
                             <form className="relative mx-auto max-w-xl">
                                 <input type="text" id="help" name="name" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white opacity-70 dark:bg-slate-900 border border-gray-100 dark:border-gray-700" placeholder="Search your questions or topic..." />
-                                <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Search</button>
+                                <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Search</button>
                             </form>
                         </div>
                     </div>
@@ -64,16 +64,16 @@ export default function Helpcenter() {
                               let Ions = item.icon
                             return(
                                 <div key={index} className="text-center px-6 mt-6">
-                                    <div className="size-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                    <div className="size-20 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                         <Ions className="size-7"/>
                                     </div>
         
                                     <div className="content mt-7">
-                                        <Link to={item.link} className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to={item.link} className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
         
                                         <div className="mt-5">
-                                            <Link to={item.link} className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to={item.link} className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -91,15 +91,15 @@ export default function Helpcenter() {
 
                     <div className="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
                         <div className="flex">
-                            <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+                            <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
                             <div className="flex-1">
-                                <h5 className="mb-2 text-xl font-semibold">How our <span className="text-indigo-600">Techwind</span> work ?</h5>
+                                <h5 className="mb-2 text-xl font-semibold">How our <span className="text-[var(--riafco-orange)] ">Techwind</span> work ?</h5>
                                 <p className="text-slate-400">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.</p>
                             </div>
                         </div>
 
                         <div className="flex">
-                            <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+                            <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
                             <div className="flex-1">
                                 <h5 className="mb-2 text-xl font-semibold"> What is the main process open account ?</h5>
                                 <p className="text-slate-400">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making a neutral judgement on the visual impact</p>
@@ -107,7 +107,7 @@ export default function Helpcenter() {
                         </div>
 
                         <div className="flex">
-                            <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+                            <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
                             <div className="flex-1">
                                 <h5 className="mb-2 text-xl font-semibold"> How to make unlimited data entry ?</h5>
                                 <p className="text-slate-400">Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.</p>
@@ -115,9 +115,9 @@ export default function Helpcenter() {
                         </div>
 
                         <div className="flex">
-                            <Icon.HelpCircle className="fea icon-ex-md text-indigo-600 me-3"></Icon.HelpCircle>
+                            <Icon.HelpCircle className="fea icon-ex-md text-[var(--riafco-orange)]  me-3"></Icon.HelpCircle>
                             <div className="flex-1">
-                                <h5 className="mb-2 text-xl font-semibold"> Is <span className="text-indigo-600">Techwind</span> safer to use with my account ?</h5>
+                                <h5 className="mb-2 text-xl font-semibold"> Is <span className="text-[var(--riafco-orange)] ">Techwind</span> safer to use with my account ?</h5>
                                 <p className="text-slate-400">The most well-known dummy text is the &apos;Lorem Ipsum&apos;, which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to &apos;proper&apos; Latin.</p>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ export default function Helpcenter() {
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                         <div className="mt-6">
-                            <Link to="/helpcenter-support" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FiPhone className="me-1 text-lg"/> Contact us</Link>
+                            <Link to="/helpcenter-support" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2"><FiPhone className="me-1 text-lg" /> Contact us</Link>
                         </div>
                     </div>
                 </div>

@@ -84,14 +84,14 @@ export default function IndexChristmas(){
                         return(
                             <div className="group relative lg:px-6 mt-4 duration-500 rounded-xl overflow-hidden text-center" key={index}>
                                 <div className="relative overflow-hidden text-transparent -m-3">
-                                    <FiHexagon className="size-28 fill-indigo-600/5 mx-auto rotate-[30deg]"/>
-                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl duration-500 text-3xl flex align-middle justify-center items-center">
+                                    <FiHexagon className="size-28 fill-[var(--riafco-blue)]/5 mx-auto rotate-[30deg]" />
+                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl duration-500 text-3xl flex align-middle justify-center items-center">
                                         <Icon/>
                                     </div>
                                 </div>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="text-xl font-medium hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                    <Link to="#" className="text-xl font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                     <p className="text-slate-400 duration-500 mt-3">{item.desc}</p>
                                 </div>
                             </div>
@@ -126,9 +126,9 @@ export default function IndexChristmas(){
                                     </div>
     
                                     <ul className="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                        <li><Link to='#' className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-heart"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link to='#' className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
+                                        <li><Link to='#' className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-heart"></i></Link></li>
+                                        <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
+                                        <li className="mt-1 ml-0"><Link to='#' className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
                                     </ul>
                                     {item.tag ? <ul className="list-none absolute top-[10px] start-4">
                                         <li><Link to='#' className={`${item.tagBg} text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5`}>{item.tag}</Link></li>
@@ -137,7 +137,7 @@ export default function IndexChristmas(){
                                 </div>
     
                                 <div className="mt-4">
-                                    <Link to={`/shop-item-detail/${item.id}`} className="hover:text-indigo-600 text-lg font-semibold">{item.name}</Link>
+                                    <Link to={`/shop-item-detail/${item.id}`} className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.name}</Link>
                                     <div className="flex justify-between items-center mt-1">
                                         <p className="text-green-600">{item.descAmount} <del className="text-red-600">{item.amount}</del></p>
                                         <ul className="font-medium text-amber-400 list-none">
@@ -166,7 +166,7 @@ export default function IndexChristmas(){
                             <div key={index} className="group relative overflow-hidden hover:shadow-lg hover:dark:shadow-gray-800 rounded-md transition-all duration-500 p-6 text-center">
                                 <img src={item.image} className="rounded-full shadow-md dark:shadow-gray-800 size-20 block mx-auto mb-2" alt="" />
     
-                                <Link to='#' className="font-semibold hover:text-indigo-600 text-lg">{item.title}</Link>
+                                <Link to='#' className="font-semibold hover:text-[var(--riafco-orange)]  text-lg">{item.title}</Link>
                             </div>
                         )
                     })}

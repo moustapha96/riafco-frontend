@@ -16,6 +16,7 @@ import { LiaClipboardCheckSolid } from "react-icons/lia";
 import { FiLock } from "react-icons/fi";
 import { TbPhotoPlus } from "react-icons/tb";
 import { RiBitCoinLine } from "react-icons/ri";
+import TransparentFooter from "../component/Footer/transparentFooter";
 
 export default function UiComponents(){
     useEffect(() => {
@@ -120,9 +121,9 @@ export default function UiComponents(){
             
             <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                 <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                     <li className="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight/></li>
-                    <li className="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">Components</li>
+                        <li className="inline-block uppercase text-[13px] font-bold text-[var(--riafco-orange)] " aria-current="page">Components</li>
                 </ul>
             </div>
         </section>
@@ -175,7 +176,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -232,7 +233,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -289,7 +290,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -346,7 +347,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-full">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-full">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -403,7 +404,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-md">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -460,7 +461,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full">Indigo</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-full">Indigo</Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
@@ -517,15 +518,15 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Small</Link>
+                                                        <Link to="" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Small</Link>
                                                 </li>
                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Default</Link>
+                                                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Default</Link>
                                                 </li>
                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="py-2.5 px-8 inline-block font-semibold tracking-wide border align-middle duration-500 text-lg text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Large</Link>
+                                                        <Link to="" className="py-2.5 px-8 inline-block font-semibold tracking-wide border align-middle duration-500 text-lg text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Large</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -538,35 +539,35 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-transparent hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                                 
                                                 <li className="inline-block m-0.5">
-                                                    <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><Icon.ShoppingCart className="size-4"/></Link>
+                                                        <Link to="" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.ShoppingCart className="size-4" /></Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -585,7 +586,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-indigo-600 text-white text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
+                                                        <span className="bg-[var(--riafco-blue)] text-white text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -642,7 +643,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-indigo-600 text-white text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
+                                                        <span className="bg-[var(--riafco-blue)] text-white text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -699,7 +700,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-transparent border border-indigo-600 text-indigo-600 text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
+                                                        <span className="bg-transparent border border-[var(--riafco-blue)] text-[var(--riafco-orange)]  text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -756,7 +757,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-transparent border border-indigo-600 text-indigo-600 text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
+                                                        <span className="bg-transparent border border-[var(--riafco-blue)] text-[var(--riafco-orange)]  text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -813,7 +814,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-indigo-600/5 border border-indigo-600/5 text-indigo-600 text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
+                                                        <span className="bg-[var(--riafco-blue)]/5 border border-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -870,7 +871,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="inline-block">
-                                                    <span className="bg-indigo-600/5 border border-indigo-600/5 text-indigo-600 text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
+                                                        <span className="bg-[var(--riafco-blue)]/5 border border-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-[12px] font-semibold px-2.5 py-0.5 rounded-full h-5">Indigo</span>
                                                 </li>
                                                 
                                                 <li className="inline-block">
@@ -932,7 +933,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <div className="space-y-3">
-                                                <div className="relative px-4 py-2 rounded-md font-medium bg-indigo-600 border border-indigo-600 text-white block">A simple alert—check it out!</div>
+                                                    <div className="relative px-4 py-2 rounded-md font-medium bg-[var(--riafco-blue)] border border-[var(--riafco-blue)] text-white block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-emerald-600 border border-emerald-600 text-white block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-yellow-500 border border-yellow-500 text-white block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-red-600 border border-red-600 text-white block">A simple alert—check it out!</div>
@@ -949,7 +950,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <div className="space-y-3">
-                                                <div className="relative px-4 py-2 rounded-md font-medium bg-indigo-600/10 border border-indigo-600/10 text-indigo-600 block">A simple alert—check it out!</div>
+                                                    <div className="relative px-4 py-2 rounded-md font-medium bg-[var(--riafco-blue)]/10 border border-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-emerald-600/10 border border-emerald-600/10 text-emerald-600 block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-yellow-500/10 border border-yellow-500/10 text-yellow-500 block">A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-red-600/10 border border-red-600/10 text-red-600 block">A simple alert—check it out!</div>
@@ -966,7 +967,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <div className="space-y-3">
-                                                <div className="relative px-4 py-2 rounded-md font-medium bg-indigo-600/10 border border-indigo-600/10 text-indigo-600 flex items-center"><AiOutlineExclamationCircle className="me-1"/>A simple alert—check it out!</div>
+                                                    <div className="relative px-4 py-2 rounded-md font-medium bg-[var(--riafco-blue)]/10 border border-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  flex items-center"><AiOutlineExclamationCircle className="me-1" />A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-emerald-600/10 border border-emerald-600/10 text-emerald-600 flex items-center"><AiOutlineCheckCircle className="me-1"/> A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-yellow-500/10 border border-yellow-500/10 text-yellow-500 flex items-center"><AiOutlineExclamationCircle className="me-1"/> A simple alert—check it out!</div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-red-600/10 border border-red-600/10 text-red-600 flex items-center"><AiOutlineExclamationCircle className="me-1"/> A simple alert—check it out!</div>
@@ -981,7 +982,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <div className="space-y-3">
-                                                <div className="relative px-4 py-2 rounded-md font-medium bg-indigo-600/10 border border-indigo-600/10 text-indigo-600 block">A simple alert—check it out! <Link to="" className="font-bold ms-1">Click here!</Link></div>
+                                                    <div className="relative px-4 py-2 rounded-md font-medium bg-[var(--riafco-blue)]/10 border border-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  block">A simple alert—check it out! <Link to="" className="font-bold ms-1">Click here!</Link></div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-emerald-600/10 border border-emerald-600/10 text-emerald-600 block">A simple alert—check it out! <Link to="" className="font-bold ms-1">Click here!</Link></div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-yellow-500/10 border border-yellow-500/10 text-yellow-500 block">A simple alert—check it out! <Link to="" className="font-bold ms-1">Click here!</Link></div>
                                                 <div className="relative px-4 py-2 rounded-md font-medium bg-red-600/10 border border-red-600/10 text-red-600 block">A simple alert—check it out! <Link to="" className="font-bold ms-1">Click here!</Link></div>
@@ -1003,24 +1004,24 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="dropdown inline-block relative m-0.5">
-                                                    <button onClick={() => setManu1(!manu1)} className="dropdown-toggle py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md" type="button">
+                                                        <button onClick={() => setManu1(!manu1)} className="dropdown-toggle py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md" type="button">
                                                         Indigo <MdKeyboardArrowDown className="text-[20px] align-middle inline-block"/>
                                                     </button>
                                                    
                                                     <div className={`dropdown-menu absolute start-0 m-0 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 ${manu1 ? 'block' : 'hidden'}`} >
                                                         <ul className="py-2 text-start">
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Home</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Home</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Service</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Service</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">About us</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">About us</Link>
                                                             </li>
                                                             <li className="border-t border-gray-100 dark:border-gray-800 my-2"></li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Contact</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Contact</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1252,24 +1253,24 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li className="dropdown inline-block relative m-0.5">
-                                                    <button onClick={() => setManu11(!manu11)} className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md" type="button">
+                                                        <button onClick={() => setManu11(!manu11)} className="dropdown-toggle size-9 inline-flex items-center justify-center tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md" type="button">
                                                         <AiOutlineSetting/>
                                                     </button>
                                                     
                                                     <div className={`dropdown-menu absolute start-0 m-0 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 ${manu11 ? 'block' : 'hidden'}`}>
                                                         <ul className="py-2 text-start">
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Home</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Home</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Service</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Service</Link>
                                                             </li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">About us</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">About us</Link>
                                                             </li>
                                                             <li className="border-t border-gray-100 dark:border-gray-800 my-2"></li>
                                                             <li>
-                                                                <Link to="" className="block font-medium py-1.5 px-4 hover:text-indigo-600">Contact</Link>
+                                                                    <Link to="" className="block font-medium py-1.5 px-4 hover:text-[var(--riafco-orange)] ">Contact</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1506,7 +1507,7 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
                                                 <li>
-                                                    <span className="text-indigo-600 font-semibold">.text-indigo-600</span>
+                                                        <span className="text-[var(--riafco-orange)]  font-semibold">.text-[var(--riafco-orange)] </span>
                                                 </li>
                                                 <li>
                                                     <span className="text-emerald-600 font-semibold">.text-emerald-600</span>
@@ -1554,7 +1555,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 text-white bg-indigo-600">.bg-indigo-600</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 text-white bg-[var(--riafco-blue)]">.bg-[var(--riafco-blue)]</li>
                                                 <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 text-white bg-emerald-600">.bg-emerald-600</li>
                                                 <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 text-white bg-red-600">.bg-red-600</li>
                                                 <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 text-white bg-yellow-500">.bg-yellow-500</li>
@@ -1577,21 +1578,21 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="list-none">
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600">.bg-indigo-600</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/95">.bg-indigo-600 .opacity-95</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/90">.bg-indigo-600 .opacity-90</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/80">.bg-indigo-600 .opacity-80</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/75">.bg-indigo-600 .opacity-75</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/70">.bg-indigo-600 .opacity-70</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/60">.bg-indigo-600 .opacity-60</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/50">.bg-indigo-600 .opacity-50</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/40">.bg-indigo-600 .opacity-40</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/30">.bg-indigo-600 .opacity-30</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/25">.bg-indigo-600 .opacity-25</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/20">.bg-indigo-600 .opacity-20</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/10">.bg-indigo-600 .opacity-10</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/5">.bg-indigo-600 .opacity-5</li>
-                                                <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-indigo-600/0">.bg-indigo-600 .opacity-0</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]">.bg-[var(--riafco-blue)]</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/95">.bg-[var(--riafco-blue)] .opacity-95</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/90">.bg-[var(--riafco-blue)] .opacity-90</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/80">.bg-[var(--riafco-blue)] .opacity-80</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/75">.bg-[var(--riafco-blue)] .opacity-75</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/70">.bg-[var(--riafco-blue)] .opacity-70</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/60">.bg-[var(--riafco-blue)] .opacity-60</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/50">.bg-[var(--riafco-blue)] .opacity-50</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/40">.bg-[var(--riafco-blue)] .opacity-40</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/30">.bg-[var(--riafco-blue)] .opacity-30</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/25">.bg-[var(--riafco-blue)] .opacity-25</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/20">.bg-[var(--riafco-blue)] .opacity-20</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/10">.bg-[var(--riafco-blue)] .opacity-10</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/5">.bg-[var(--riafco-blue)] .opacity-5</li>
+                                                    <li className="inline-block shadow-sm dark:shadow-gray-800 rounded-md py-2 px-3 m-0.5 bg-[var(--riafco-blue)]/0">.bg-[var(--riafco-blue)] .opacity-0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1611,7 +1612,7 @@ export default function UiComponents(){
                                                 {accordionData.slice(0,4).map((item, index) => (
                                                     <div key={index} className="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-4">
                                                         <h2 className="text-base font-semibold" id="accordion-collapse-heading-1">
-                                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-indigo-600' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                                            <button type="button" onClick={() => toggleAccordion(index)} className={`flex justify-between items-center p-5 w-full font-medium text-start ${activeIndex === index ? 'bg-gray-50 dark:bg-slate-800 text-[var(--riafco-orange)] ' : ''}`} data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
                                                                 <span>{item.title}</span>
                                                                 <svg data-accordion-icon className={`${activeIndex === index ? "rotate-180" : "rotate-270" } size-4 shrink-01`}  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -1645,10 +1646,10 @@ export default function UiComponents(){
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="inline-block w-fit mx-auto flex-wrap justify-center text-center p-2 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
                                                 <li role="presentation" className="inline-block">
-                                                    <button className={`${ isOpen === 0 ? 'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-indigo-600 duration-500`} onClick={() => handleTabClick(0)}>Tab One</button>
+                                                        <button className={`${isOpen === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-[var(--riafco-orange)]  duration-500`} onClick={() => handleTabClick(0)}>Tab One</button>
                                                 </li>
                                                 <li role="presentation" className="inline-block">
-                                                    <button className={`${ isOpen === 1 ? 'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-indigo-600 duration-500`} onClick={() => handleTabClick(1)} >Tab Two</button>
+                                                        <button className={`${isOpen === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-[var(--riafco-orange)]  duration-500`} onClick={() => handleTabClick(1)} >Tab Two</button>
                                                 </li>
                                             </ul>
                                             <div id="StarterContent" className="mt-6">
@@ -1676,10 +1677,10 @@ export default function UiComponents(){
                                                 <div className="lg:col-span-4 md:col-span-5">
                                                     <ul className="flex-column text-center space-y-2">
                                                         <li role="presentation">
-                                                            <button className={`${ isOpen1 === 0 ? 'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-indigo-600 duration-500`} onClick={() => handleTabClick1(0)}>Tab One</button>
+                                                                <button className={`${isOpen1 === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-[var(--riafco-orange)]  duration-500`} onClick={() => handleTabClick1(0)}>Tab One</button>
                                                         </li>
                                                         <li role="presentation">
-                                                            <button className={`${ isOpen1 === 1 ? 'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-indigo-600 duration-500`} onClick={() => handleTabClick1(1)}>Tab Two</button>
+                                                                <button className={`${isOpen1 === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-1 text-sm font-semibold rounded-md w-full hover:text-[var(--riafco-orange)]  duration-500`} onClick={() => handleTabClick1(1)}>Tab Two</button>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1717,25 +1718,25 @@ export default function UiComponents(){
                                                 <div className="grid grid-cols-1 gap-5">
                                                     <div className="">
                                                         <label className="form-label font-semibold">First Name:</label>
-                                                        <input type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 mt-2" placeholder="First Name:" id="firstname" name="name" required=""/>
+                                                            <input type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 mt-2" placeholder="First Name:" id="firstname" name="name" required="" />
                                                     </div>
                 
                                                     <div className="">
                                                         <label className="form-label font-semibold">Username:</label>
                                                         <div className="relative mt-2">
                                                             <span className="absolute top-0.5 start-0.5 size-9 text-xl bg-gray-100 dark:bg-slate-800 inline-flex justify-center items-center text-dark dark:text-white rounded" id="basic-addon1"><VscMention/></span>
-                                                            <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Username" required/>
+                                                                <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Username" required />
                                                         </div>
                                                     </div>
                 
                                                     <div className="">
                                                         <label className="form-label font-semibold">Your Email:</label>
-                                                        <input type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 mt-2" placeholder="Email" name="email" required=""/>
+                                                            <input type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 mt-2" placeholder="Email" name="email" required="" />
                                                     </div>
                 
                                                     <div className="">
                                                         <label className="font-semibold">Select Input:</label>
-                                                        <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                                            <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                             <option value="USA">USA</option>
                                                             <option value="CAD">Canada</option>
                                                             <option value="CHINA">China</option>
@@ -1744,24 +1745,24 @@ export default function UiComponents(){
 
                                                     <div className="">
                                                         <label className="form-label font-semibold">Number:</label>
-                                                        <input type="number" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 mt-2" placeholder="Zip:" id="zipcode" name="number" required=""/>
+                                                            <input type="number" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 mt-2" placeholder="Zip:" id="zipcode" name="number" required="" />
                                                     </div>
 
                                                     <div className="">
                                                         <h6 className="font-semibold">Form Checkbox</h6>
 
                                                         <div className="flex items-center w-full mb-0">
-                                                            <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" defaultChecked value="" id="sameaddress"/>
+                                                                <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" defaultChecked value="" id="sameaddress" />
                                                             <label className="form-check-label text-slate-400" htmlFor="sameaddress">Checkbox 1</label>
                                                         </div>
                 
                                                         <div className="flex items-center w-full mb-0">
-                                                            <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="savenexttime"/>
+                                                                <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="savenexttime" />
                                                             <label className="form-check-label text-slate-400" htmlFor="savenexttime">Checkbox 2</label>
                                                         </div>
                 
                                                         <div className="flex items-center w-full mb-0">
-                                                            <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" disabled value="" id="checkbox-d"/>
+                                                                <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" disabled value="" id="checkbox-d" />
                                                             <label className="form-check-label text-slate-400" htmlFor="checkbox-d">Disabled Checkbox</label>
                                                         </div>
                                                     </div>
@@ -1772,7 +1773,7 @@ export default function UiComponents(){
                                                         <div className="block">
                                                             <div>
                                                                 <label className="inline-flex items-center">
-                                                                    <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" defaultChecked name="radio-colors" value="1"/>
+                                                                        <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" defaultChecked name="radio-colors" value="1" />
                                                                     <span className="text-slate-400">Radio 1</span>
                                                                 </label>
                                                             </div>
@@ -1781,7 +1782,7 @@ export default function UiComponents(){
                                                         <div className="block mt-2">
                                                             <div>
                                                                 <label className="inline-flex items-center">
-                                                                    <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1"/>
+                                                                        <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1" />
                                                                     <span className="text-slate-400">Radio 2</span>
                                                                 </label>
                                                             </div>
@@ -1790,7 +1791,7 @@ export default function UiComponents(){
                                                         <div className="block mt-2">
                                                             <div>
                                                                 <label className="inline-flex items-center">
-                                                                    <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" disabled name="radio-colors" value="1"/>
+                                                                        <input type="radio" className="form-radio border-gray-200 dark:border-gray-800 text-[var(--riafco-orange)]  focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" disabled name="radio-colors" value="1" />
                                                                     <span className="text-slate-400">Disabled Radio</span>
                                                                 </label>
                                                             </div>
@@ -1897,11 +1898,11 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                                                <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="index.html">Techwind</Link></li>
+                                                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="index.html">Techwind</Link></li>
                                                 <li className="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight/></li>
-                                                <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="">Components</Link></li>
+                                                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="">Components</Link></li>
                                                 <li className="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight/></li>
-                                                <li className="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">Typography</li>
+                                                    <li className="inline-block uppercase text-[13px] font-bold text-[var(--riafco-orange)] " aria-current="page">Typography</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1920,27 +1921,27 @@ export default function UiComponents(){
                                             <nav aria-label="Page navigation example">
                                                 <ul className="inline-flex items-center -space-x-px">
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                                             <MdKeyboardArrowLeft className="text-[20px] rtl:rotate-180 rtl:-mt-1"/>
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</Link>
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">1</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</Link>
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">2</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</Link>
+                                                            <Link to="#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]">3</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</Link>
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">4</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</Link>
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">5</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                                            <Link to="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]">
                                                             <MdKeyboardArrowRight className="text-[20px] rtl:rotate-180 rtl:-mt-1"/>
                                                         </Link>
                                                     </li>
@@ -1960,7 +1961,7 @@ export default function UiComponents(){
                                             <h5 className="text-lg font-semibold">Modals</h5>
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
-                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md" onClick={() => setModal(!modal)}>
+                                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md" onClick={() => setModal(!modal)}>
                                                 Modal
                                             </Link>
 
@@ -1983,7 +1984,7 @@ export default function UiComponents(){
                                                             <h4 className="text-xl font-semibold mt-6">Your wishlist is empty.</h4>
                                                             <p className="text-slate-400 my-3">Create your first wishlist request...</p>
 
-                                                            <Link to="" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center bg-transparent hover:bg-indigo-600 border border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2">Create a new wishlist</Link>
+                                                                <Link to="" className="py-[5px] px-4 inline-block font-semibold tracking-wide align-middle duration-500 text-sm text-center bg-transparent hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md mt-2">Create a new wishlist</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2015,7 +2016,7 @@ export default function UiComponents(){
                                                     <tbody>
                                                         <tr className="border-t border-gray-100 dark:border-gray-700">
                                                             <td className="p-4"><Link to="" className="flex items-center"><LiaClipboardCheckSolid className='me-1'/> Lesson 1</Link></td>
-                                                            <td className="p-4 text-end"><span className="bg-indigo-600/5 text-indigo-600 text-xs font-bold px-2.5 py-0.5 rounded h-5">Watch Free</span></td>
+                                                                <td className="p-4 text-end"><span className="bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  text-xs font-bold px-2.5 py-0.5 rounded h-5">Watch Free</span></td>
                                                         </tr>
                     
                                                         <tr className="border-t border-gray-100 dark:border-gray-700">
@@ -2101,7 +2102,7 @@ export default function UiComponents(){
                                         </div>
                                         <div className="p-5 border-t border-gray-100 dark:border-slate-800">
                                             <h6 className="text-lg font-medium">Feather Icons</h6>
-                                            <p className="text-slate-400">There are 280+ feather icons and you can get all icons info from here: <Link to="https://feathericons.com/" target="_blank"><code className="text-indigo-600">https://feathericons.com/</code></Link></p>
+                                                <p className="text-slate-400">There are 280+ feather icons and you can get all icons info from here: <Link to="https://feathericons.com/" target="_blank"><code className="text-[var(--riafco-orange)] ">https://feathericons.com/</code></Link></p>
                                             <h6 className="text-slate-400 mb-4 pb-2">Ex. <code className="text-red-600">&lt;i data-feather=&quot;mail&quot; className=&quot;size-8&quot;&gt; &lt;/i&gt;</code></h6>
 
                                             <ul className="list-none">
@@ -2114,7 +2115,7 @@ export default function UiComponents(){
                                             </ul>
 
                                             <h6 className="mt-6 text-lg font-medium">Material Design Icons</h6>
-                                            <p className="text-slate-400">There are 4400+ Material Design icons and you can get all icons info from here: <Link to="https://materialdesignicons.com/" target="_blank"><code className="text-indigo-600">https://materialdesignicons.com/</code></Link></p>
+                                                <p className="text-slate-400">There are 4400+ Material Design icons and you can get all icons info from here: <Link to="https://materialdesignicons.com/" target="_blank"><code className="text-[var(--riafco-orange)] ">https://materialdesignicons.com/</code></Link></p>
                                             <h6 className="text-slate-400 mb-4 pb-2">Ex. <code className="text-red-600">&lt;i className=&quot;mdi mdi-home&quot;&gt; &lt;/i&gt;</code></h6>
 
                                             <i className="mdi mdi-home text-lg me-2"></i>
@@ -2125,13 +2126,13 @@ export default function UiComponents(){
                                             <i className="mdi mdi-silverware-fork-knife text-lg me-2"></i>
 
                                             <h6 className="mt-6 text-lg font-medium">React Icons</h6>
-                                            <p className="text-slate-400">There are 2200+ React Icons and you can get all icons info from here: <Link to="https://react-icons.github.io/react-icons/search" target="_blank"><code className="text-indigo-600">https://react-icons.github.io/react-icons/search</code></Link></p>
+                                                <p className="text-slate-400">There are 2200+ React Icons and you can get all icons info from here: <Link to="https://react-icons.github.io/react-icons/search" target="_blank"><code className="text-[var(--riafco-orange)] ">https://react-icons.github.io/react-icons/search</code></Link></p>
                                             <h6 className="text-slate-400 mb-4 pb-2">Ex. <code className="text-red-600"><br/>&lt;FaBeer className=&quot;size-7&quot;/&gt;</code></h6>
-                                            <span className="text-lg text-indigo-600 me-2"><TbPhotoPlus className="inline"/></span>
-                                            <span className="text-lg text-indigo-600 me-2 "><AiOutlineAndroid className="inline"/></span>
-                                            <span className="text-lg text-indigo-600 me-2"><RiBitCoinLine className="inline"/></span>
-                                            <span className="text-lg text-indigo-600 me-2"><MdOutlineCalendarMonth className="inline"/></span>
-                                            <span className="text-lg text-indigo-600"><AiOutlinePieChart className="inline"/></span>
+                                                <span className="text-lg text-[var(--riafco-orange)]  me-2"><TbPhotoPlus className="inline" /></span>
+                                                <span className="text-lg text-[var(--riafco-orange)]  me-2 "><AiOutlineAndroid className="inline" /></span>
+                                                <span className="text-lg text-[var(--riafco-orange)]  me-2"><RiBitCoinLine className="inline" /></span>
+                                                <span className="text-lg text-[var(--riafco-orange)]  me-2"><MdOutlineCalendarMonth className="inline" /></span>
+                                                <span className="text-lg text-[var(--riafco-orange)] "><AiOutlinePieChart className="inline" /></span>
                                         </div>
                                     </div>
                                 </div>
@@ -2142,7 +2143,7 @@ export default function UiComponents(){
             </div>
         </section>
         
-        <Footer />
+            <TransparentFooter />
         </>
     )
 }

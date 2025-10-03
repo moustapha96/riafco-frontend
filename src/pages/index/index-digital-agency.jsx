@@ -35,12 +35,12 @@ export default function IndexDigitalAgency() {
                         <div className="md:col-span-6">
                             <div className="md:me-6">
                                 <img src={logo_icon_40} className="mb-5" alt="" />
-                                <p className="text-indigo-600 text-lg font-medium mb-4">We are a very dedicated team</p>
+                                <p className="text-[var(--riafco-orange)]  text-lg font-medium mb-4">We are a very dedicated team</p>
                                 <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5">We are a full-service digital agency</h4>
                                 <p className="text-slate-400 text-lg max-w-xl">We collaborate with people, teams, and businesses to develop design systems, strategies, and processes to do a better creative work everyday.</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white lightbox"><Icon.Video className="size-4"></Icon.Video></Link><span className="font-semibold ms-2 align-middle">Watch Now</span>
+                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white lightbox"><Icon.Video className="size-4"></Icon.Video></Link><span className="font-semibold ms-2 align-middle">Watch Now</span>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ export default function IndexDigitalAgency() {
                                         <img src={imageP} className="shadow-sm rounded-lg" alt="" />
 
                                         <div className="ms-auto">
-                                            <div className="size-28 bg-indigo-600/10 rounded-lg"></div>
+                                            <div className="size-28 bg-[var(--riafco-blue)]/10 rounded-lg"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -101,8 +101,8 @@ export default function IndexDigitalAgency() {
                 <div className="container relative">
                     <div className="flex">
                         <div className="lg:w-1/3 md:1/2 sm:w-2/3 p-6 rounded-md shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900">
-                            <h6 className="text-indigo-600 font-semibold mb-2">Techwind Digital Agency</h6>
-                            <h4 className="mb-4 md:text-[28px]] text-2xl leading-normal font-bold">Leading Digital <br /> Business For <span className="text-indigo-600 typewrite" data-period="2000" data-type='[ "Agency", "Software", "Technology", "Studio", "Webapps" ]'> <span className="wrap"></span> </span>
+                            <h6 className="text-[var(--riafco-orange)]  font-semibold mb-2">Techwind Digital Agency</h6>
+                            <h4 className="mb-4 md:text-[28px]] text-2xl leading-normal font-bold">Leading Digital <br /> Business For <span className="text-[var(--riafco-orange)]  typewrite" data-period="2000" data-type='[ "Agency", "Software", "Technology", "Studio", "Webapps" ]'> <span className="wrap"></span> </span>
                             <TypeAnimation
                                     sequence={[
                                         // Same substring at the start will only be typed out once, initially
@@ -118,7 +118,7 @@ export default function IndexDigitalAgency() {
                                     wrapper="span"
                                     speed={50}
                                     style={{  display: 'inline-block' }}
-                                    className='text-2xl text-indigo-600 '
+                                    className='text-2xl text-[var(--riafco-orange)]  '
                                     repeat={Infinity}
                                     cursor={false}
                                     />
@@ -126,7 +126,7 @@ export default function IndexDigitalAgency() {
                             <p className="text-slate-400 mb-0">Certain internet providers exploit the fact that fill text cannot be recognized by automatic search engines - meaningful information cannot be distinguished from meaningless.</p>
 
                             <div className="mt-4">
-                                <Link onClick={()=>setIsmodal(!isModal)} data-modal-toggle="contactModal" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Get a project?</Link>
+                                <Link onClick={() => setIsmodal(!isModal)} data-modal-toggle="contactModal" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Get a project?</Link>
                             </div>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ export default function IndexDigitalAgency() {
                                     </div>
         
                                     <div className="content mt-7">
-                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ export default function IndexDigitalAgency() {
                                     <div className="grid grid-cols-1 gap-4">
                                         <img src={image3} className="shadow-sm rounded-lg" alt="" />
 
-                                        <div className="size-28 bg-indigo-600/10 rounded-lg"></div>
+                                        <div className="size-28 bg-[var(--riafco-blue)]/10 rounded-lg"></div>
                                     </div>
                                 </div>
                             </div>
@@ -183,12 +183,12 @@ export default function IndexDigitalAgency() {
 
                         <div className="md:col-span-6">
                             <div className="md:ms-6">
-                                <p className="text-indigo-600 text-lg font-medium mb-4">Web and mobile development</p>
+                                <p className="text-[var(--riafco-orange)]  text-lg font-medium mb-4">Web and mobile development</p>
                                 <h4 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Analyze your entire market <br /> pricing & stock availability</h4>
                                 <p className="text-slate-400 max-w-xl">We collaborate with people, teams, and businesses to develop design systems, strategies, and processes to do a better creative work everyday.</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact Us</Link>
+                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Contact Us</Link>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ export default function IndexDigitalAgency() {
                                         <img src={cta} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -245,7 +245,7 @@ export default function IndexDigitalAgency() {
                 </div>
 
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
 
 
@@ -254,13 +254,13 @@ export default function IndexDigitalAgency() {
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid md:grid-cols-12 grid-cols-1 pb-8 items-end">
                         <div className="lg:col-span-8 md:col-span-6 md:text-start text-center">
-                            <h6 className="text-indigo-600 font-semibold mb-2">Portfolio</h6>
+                            <h6 className="text-[var(--riafco-orange)]  font-semibold mb-2">Portfolio</h6>
                             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Digital Product</h3>
                             <p className="text-slate-400 max-w-xl">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="text-sm ms-1"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="text-sm ms-1" /></Link>
                         </div>
                     </div>
 
@@ -270,13 +270,13 @@ export default function IndexDigitalAgency() {
                             <div className="picture-item p-4 rounded-md" key={index}>
                                 <div className="">
                                     <div className="relative">
-                                        <div className="shadow-sm dark:shadow-gray-800 p-5 pb-0 rounded-md bg-indigo-600/5 dark:bg-indigo-600/30">
+                                            <div className="shadow-sm dark:shadow-gray-800 p-5 pb-0 rounded-md bg-[var(--riafco-blue)]/5 dark:bg-[var(--riafco-blue)]/30">
                                             <img src={item.image} className="rounded-t-md shadow-sm" alt="" />
                                         </div>
                                     </div>
 
                                     <div className="pt-4 px-3">
-                                        <h5 className="mb-1 font-semibold text-lg"><Link to="https://1.envato.market/techwind-react" target="_blank" className="hover:text-indigo-600 transition-all duration-500 ease-in-out">{item.title}</Link></h5>
+                                            <h5 className="mb-1 font-semibold text-lg"><Link to="https://1.envato.market/techwind-react" target="_blank" className="hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{item.title}</Link></h5>
                                         <span className="text-slate-400">{item.name}</span>
                                     </div>
                                 </div>
@@ -287,20 +287,20 @@ export default function IndexDigitalAgency() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                         </div>
                     </div>
                 </div>
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold mb-2">Available for freelance projects</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold mb-2">Available for freelance projects</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Do you have digital project? <br /> Let&apos;s talk.</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                         <div className="mt-6">
-                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-4"><FiPhone className="me-1 text-lg"/> Contact us</Link>
+                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-4"><FiPhone className="me-1 text-lg" /> Contact us</Link>
                         </div>
                     </div>
                 </div>
@@ -324,7 +324,7 @@ export default function IndexDigitalAgency() {
                                                 <label htmlFor="name" className="font-semibold">Your Name:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :" />
+                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -334,7 +334,7 @@ export default function IndexDigitalAgency() {
                                                 <label htmlFor="email" className="font-semibold">Your Email:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :" />
+                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -346,7 +346,7 @@ export default function IndexDigitalAgency() {
                                                 <label htmlFor="subject" className="font-semibold">Your Question:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.Book className="size-4 absolute top-3 start-4"></Icon.Book>
-                                                    <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Subject :" />
+                                                    <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Subject :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -356,12 +356,12 @@ export default function IndexDigitalAgency() {
                                                 <label htmlFor="comments" className="font-semibold">Your Comment:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Send Message</button>
+                                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md justify-center flex items-center">Send Message</button>
                                 </form>
                             </div>
                         </div>

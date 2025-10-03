@@ -50,7 +50,7 @@ export default function IndexBusiness() {
                                         <p className="text-white/70 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                         <div className="md:mt-8 mt-4">
-                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact us</Link>
+                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Contact us</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ export default function IndexBusiness() {
                                         <p className="text-white/70 text-lg max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                         <div className="mt-8">
-                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">See Services</Link>
+                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">See Services</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@ export default function IndexBusiness() {
                                         <p className="text-white/70 text-lg max-w-xl md:ms-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                         <div className="mt-8">
-                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Pricing Plans</Link>
+                                            <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Pricing Plans</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ export default function IndexBusiness() {
                     </SwiperSlide>
                 </Swiper>
             </section>
-            <section className="relative py-8 bg-indigo-600">
+            <section className="relative py-8 bg-[var(--riafco-blue)]">
                 <div className="container relative">
                    <CompanyLogo/>
                 </div>
@@ -109,7 +109,7 @@ export default function IndexBusiness() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Who We Are ?</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Who We Are ?</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Business strategies and top <br /> permormance ideas</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
@@ -120,14 +120,14 @@ export default function IndexBusiness() {
                             let Icons = item.icon
                             return(
                                 <div className="group text-center" key={index}>
-                                    <Icons className="size-10 stroke-1 group-hover:stroke-[1.5px] group-hover:text-indigo-600 transition-all duration-500 ease-in-out mx-auto"/>
+                                    <Icons className="size-10 stroke-1 group-hover:stroke-[1.5px] group-hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out mx-auto" />
                                     <div className="mt-6">
-                                        <Link to="#" className="text-xl font-semibold group-hover:text-indigo-600 transition-all duration-500 ease-in-out">{item.title}</Link>
+                                        <Link to="#" className="text-xl font-semibold group-hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{item.title}</Link>
 
                                         <p className="text-slate-400 mt-4">{item.desc}</p>
 
                                         <div className="mt-4">
-                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -150,9 +150,9 @@ export default function IndexBusiness() {
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 mt-8 gap-[30px]">
                         {priceTwo.map((item,index) => {
                             return(
-                                <div key={index} className="group border-b-[3px] border-gray-200 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 duration-500 hover:scale-105 relative shadow-sm dark:shadow-gray-800 rounded-md bg-white dark:bg-slate-900">
+                                <div key={index} className="group border-b-[3px] border-gray-200 dark:border-gray-700 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] duration-500 hover:scale-105 relative shadow-sm dark:shadow-gray-800 rounded-md bg-white dark:bg-slate-900">
                                     <div className="p-6 py-8">
-                                        <h6 className="font-bold uppercase mb-5 text-indigo-600">{item.title}</h6>
+                                        <h6 className="font-bold uppercase mb-5 text-[var(--riafco-orange)] ">{item.title}</h6>
 
                                         <div className="flex mb-5">
                                             <span className="text-xl font-semibold">$</span>
@@ -163,11 +163,11 @@ export default function IndexBusiness() {
                                         <ul className="list-none text-slate-400 ">
                                             {item.subData.map((el,index)=>{
                                                 return(
-                                                    <li className="mb-1 flex ml-0" key={index}><BsCheckCircle className="text-indigo-600 text-base me-2"/> {el} </li>
+                                                    <li className="mb-1 flex ml-0" key={index}><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> {el} </li>
                                                 )
                                             })}
                                         </ul>
-                                        <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Get Started</Link>
+                                        <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5">Get Started</Link>
                                     </div>
                                 </div>
                             )

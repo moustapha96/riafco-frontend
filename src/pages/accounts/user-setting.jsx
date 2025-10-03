@@ -6,6 +6,7 @@ import AccpontTab from '../../component/accountTab';
 
 import * as Icon from 'react-feather'
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function UserSetting() {
 
@@ -64,28 +65,28 @@ export default function UserSetting() {
                       <label className="form-label font-medium">First Name : <span className="text-red-600">*</span></label>
                       <div className="form-icon relative mt-2">
                         <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                        <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="First Name:" id="firstname" name="name" required="" />
+                        <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="First Name:" id="firstname" name="name" required="" />
                       </div>
                     </div>
                     <div>
                       <label className="form-label font-medium">Last Name : <span className="text-red-600">*</span></label>
                       <div className="form-icon relative mt-2">
                         <Icon.UserCheck className="size-4 absolute top-3 start-4"></Icon.UserCheck>
-                        <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Last Name:" id="lastname" name="name" required="" />
+                        <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Last Name:" id="lastname" name="name" required="" />
                       </div>
                     </div>
                     <div>
                       <label className="form-label font-medium">Your Email : <span className="text-red-600">*</span></label>
                       <div className="form-icon relative mt-2">
                         <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                        <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email" name="email" required="" />
+                        <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email" name="email" required="" />
                       </div>
                     </div>
                     <div>
                       <label className="form-label font-medium">Occupation : </label>
                       <div className="form-icon relative mt-2">
                         <Icon.Bookmark className="size-4 absolute top-3 start-4"></Icon.Bookmark>
-                        <input name="name" id="occupation" type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Occupation :" />
+                        <input name="name" id="occupation" type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Occupation :" />
                       </div>
                     </div>
                   </div>
@@ -95,12 +96,12 @@ export default function UserSetting() {
                       <label className="form-label font-medium">Description : </label>
                       <div className="form-icon relative mt-2">
                         <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                        <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                        <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                       </div>
                     </div>
                   </div>
 
-                  <input type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5" value="Save Changes" />
+                  <input type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5" value="Save Changes" />
                 </form>
               </div>
 
@@ -115,7 +116,7 @@ export default function UserSetting() {
                           <label className="form-label font-medium">Phone No. :</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Phone className="size-4 absolute top-3 start-4"></Icon.Phone>
-                            <input name="number" id="number" type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Phone :" />
+                            <input name="number" id="number" type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Phone :" />
                           </div>
                         </div>
 
@@ -123,12 +124,12 @@ export default function UserSetting() {
                           <label className="form-label font-medium">Website :</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Phone className="size-4 absolute top-3 start-4"></Icon.Phone>
-                            <input name="url" id="url" type="url" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Url :" />
+                            <input name="url" id="url" type="url" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Url :" />
                           </div>
                         </div>
                       </div>
 
-                      <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Add</button>
+                      <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5">Add</button>
                     </form>
                   </div>
 
@@ -140,7 +141,7 @@ export default function UserSetting() {
                           <label className="form-label font-medium">Old password :</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Old password" required="" />
+                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Old password" required="" />
                           </div>
                         </div>
 
@@ -148,7 +149,7 @@ export default function UserSetting() {
                           <label className="form-label font-medium">New password :</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="New password" required="" />
+                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="New password" required="" />
                           </div>
                         </div>
 
@@ -156,12 +157,12 @@ export default function UserSetting() {
                           <label className="form-label font-medium">Re-type New password :</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Key className="size-4 absolute top-3 start-4"></Icon.Key>
-                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Re-type New password" required="" />
+                            <input type="password" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Re-type New password" required="" />
                           </div>
                         </div>
                       </div>
 
-                      <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-5">Save password</button>
+                      <button className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-5">Save password</button>
                     </form>
                   </div>
                 </div>
@@ -171,7 +172,7 @@ export default function UserSetting() {
         </div>
       </section>
 
-      <Footer />
+      <TransparentFooter />
 
     </>
   )

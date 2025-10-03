@@ -30,7 +30,7 @@ export default function IndexItSolution() {
         <>
             <Navbar navClass="nav-light" />
 
-            <section className="relative table w-full py-36 pb-0 lg:py-44 lg:pb-0 bg-indigo-600 bg-[url('../../assets/images/bg2.png')] bg-center bg-no-repeat bg-cover">
+            <section className="relative table w-full py-36 pb-0 lg:py-44 lg:pb-0 bg-[var(--riafco-blue)] bg-[url('../../assets/images/bg2.png')] bg-center bg-no-repeat bg-cover">
                 <div className="container relative">
                     <div className="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                         <div className="lg:col-span-7">
@@ -77,10 +77,10 @@ export default function IndexItSolution() {
                             about.map((data,index) => {
                                 const Icons = data.icon
                                 return (
-                                    <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
+                                    <div key={index} className="group relative p-6 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                         <div className="relative overflow-hidden text-transparent -m-3">
-                                            <Icon.Hexagon className="size-24 fill-indigo-600/5 group-hover:fill-white/10 mx-auto"></Icon.Hexagon>
-                                            <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                                            <Icon.Hexagon className="size-24 fill-[var(--riafco-blue)]/5 group-hover:fill-white/10 mx-auto"></Icon.Hexagon>
+                                            <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl group-hover:text-white transition-all duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
                                                 <Icons className="size-7"/>
                                             </div>
                                         </div>
@@ -108,12 +108,12 @@ export default function IndexItSolution() {
 
                         <div className="md:col-span-6 order-2 md:order-1">
                             <div className="lg:me-5">
-                                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Fast & Effective</h6>
                                 <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Powerful Digitalization <br /> With Techwind</h3>
 
                                 <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                                <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"><MdOutlineEventNote className="me-2 text-lg"/> Get Started</Link>
+                                <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md"><MdOutlineEventNote className="me-2 text-lg" /> Get Started</Link>
                             </div>
                         </div>
                     </div>

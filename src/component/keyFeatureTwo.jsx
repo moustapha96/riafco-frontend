@@ -8,7 +8,7 @@ export default function KeyFeatureTwo(){
         <div className="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
             <div className="grid grid-cols-1 gap-[30px]">
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.Monitor className="size-5"></Icon.Monitor>
                     </div>
                     <div className="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
@@ -19,7 +19,7 @@ export default function KeyFeatureTwo(){
 
 
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.Feather className="size-5"></Icon.Feather>
                     </div>
                     <div className="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
@@ -30,7 +30,7 @@ export default function KeyFeatureTwo(){
 
 
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.Eye className="size-5"></Icon.Eye>
                     </div>
                     <div className="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
@@ -49,7 +49,7 @@ export default function KeyFeatureTwo(){
         <div className="lg:col-span-4 md:col-span-6 order-3">
             <div className="grid grid-cols-1 gap-[30px]">
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.UserCheck className="size-5"></Icon.UserCheck>
                     </div>
                     <div className="flex-1 ms-4">
@@ -60,7 +60,7 @@ export default function KeyFeatureTwo(){
 
 
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.Smartphone className="size-5"></Icon.Smartphone>
                     </div>
                     <div className="flex-1 ms-4">
@@ -71,7 +71,7 @@ export default function KeyFeatureTwo(){
 
 
                 <div className="group flex transition-all duration-500 ease-in-out xl:p-3">
-                    <div className="flex align-middle justify-center items-center size-14 mt-1 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white text-indigo-600 rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
+                        <div className="flex align-middle justify-center items-center size-14 mt-1 bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] group-hover:text-white text-[var(--riafco-orange)]  rounded-full text-2xl shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">
                         <Icon.Heart className="size-5"></Icon.Heart>
                     </div>
                     <div className="flex-1 ms-4">

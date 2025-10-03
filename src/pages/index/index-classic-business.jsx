@@ -32,16 +32,16 @@ export default function IndexClassicBusiness(){
                 <div className="grid grid-cols-1">
                     <div className="flex items-center justify-between">
                         <ul className="list-none mb-0">
-                            <li className="inline mb-0"><Link to="mailto:contact@example.com" className="text-slate-400 hover:text-indigo-600 inline-flex items-center"><FiMail className="size-4 me-1 text-indigo-600"/> contact@example.com</Link></li>
-                            <li className="inline mb-0 ms-3"><Link to="tel:+152534-468-854" className="text-slate-400 hover:text-indigo-600 inline-flex items-center"><FiPhone className="size-4 me-1 text-indigo-600"/> +152 534-468-854</Link></li>
+                                <li className="inline mb-0"><Link to="mailto:contact@example.com" className="text-slate-400 hover:text-[var(--riafco-orange)]  inline-flex items-center"><FiMail className="size-4 me-1 text-[var(--riafco-orange)] " /> contact@example.com</Link></li>
+                                <li className="inline mb-0 ms-3"><Link to="tel:+152534-468-854" className="text-slate-400 hover:text-[var(--riafco-orange)]  inline-flex items-center"><FiPhone className="size-4 me-1 text-[var(--riafco-orange)] " /> +152 534-468-854</Link></li>
                         </ul>
 
                         <ul className="list-none mb-0">
-                            <li className="inline"><Link to="https://dribbble.com/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><FiDribbble /></Link></li>
-                            <li className="inline"><Link to="https://www.behance.net/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><FaBehance /></Link></li>
-                            <li className="inline"><Link to="http://linkedin.com/company/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><FiLinkedin /></Link></li>
-                            <li className="inline"><Link to="https://www.facebook.com/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><FiFacebook /></Link></li>
-                            <li className="inline"><Link to="https://www.instagram.com/shreethemes/" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><FiInstagram /></Link></li>
+                                <li className="inline"><Link to="https://dribbble.com/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]"><FiDribbble /></Link></li>
+                                <li className="inline"><Link to="https://www.behance.net/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]"><FaBehance /></Link></li>
+                                <li className="inline"><Link to="http://linkedin.com/company/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]"><FiLinkedin /></Link></li>
+                                <li className="inline"><Link to="https://www.facebook.com/shreethemes" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]"><FiFacebook /></Link></li>
+                                <li className="inline"><Link to="https://www.instagram.com/shreethemes/" target="_blank" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)]"><FiInstagram /></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function IndexClassicBusiness(){
                     <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
                     
                     <div className="mt-6">
-                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Explore More <i className="mdi mdi-arrow-right"></i></Link>
+                            <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Explore More <i className="mdi mdi-arrow-right"></i></Link>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@ export default function IndexClassicBusiness(){
                             <div className="relative flex justify-end">
                                 <img src={about1} className="lg:w-[400px] w-[280px] rounded shadow-sm dark:shadow-gray-700" alt=""/>
                                 <div className="absolute top-0 translate-y-2/4 start-0 text-center">
-                                    <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600">
+                                        <Link to="#!" onClick={() => setOpen(true)} className="lightbox size-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)] ">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -103,12 +103,12 @@ export default function IndexClassicBusiness(){
 
                     <div className="lg:col-span-7 md:col-span-6">
                         <div className="lg:ms-5">
-                            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Creative Vision & Mission</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Creative Vision & Mission</h6>
                             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">We develop & create <br/> digital future.</h3>
 
                             <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                            <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded">Get Started</Link>
+                                <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -123,78 +123,78 @@ export default function IndexClassicBusiness(){
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[30px] mt-8">
                     <div className="group rounded shadow-lg relative p-6 overflow-hidden h-fit">
-                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full me-3">
+                            <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                             <FiBox className="size-6 rotate-45"/>
                         </div>
 
                         <div className="content mt-6 relative z-1">
-                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">Web Design</Link>
+                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">Web Design</Link>
                             <p className="text-slate-400 mt-3">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making.</p>
 
                             <div className="mt-6">
-                                <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight/></Link>
+                                    <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight /></Link>
                             </div>
                         </div>
 
                         <div className="absolute bottom-0 -end-16">
-                            <FiBox className="size-48 text-indigo-600 opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500"/>
+                                <FiBox className="size-48 text-[var(--riafco-orange)]  opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
                         </div>
                     </div>
 
                     <div className="group rounded shadow-lg relative p-6 overflow-hidden h-fit lg:mt-16">
-                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full me-3">
+                            <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                         <FiCamera className="size-6 rotate-45"/>
                         </div>
 
                         <div className="content mt-6 relative z-1">
-                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">Search Engine Optimization</Link>
+                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">Search Engine Optimization</Link>
                             <p className="text-slate-400 mt-3">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making.</p>
 
                             <div className="mt-6">
-                                <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight/></Link>
+                                    <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight /></Link>
                             </div>
                         </div>
 
                         <div className="absolute bottom-0 -end-16">
-                            <FiCamera className="size-48 text-indigo-600 opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500"/>
+                                <FiCamera className="size-48 text-[var(--riafco-orange)]  opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
                         </div>
                     </div>
 
                     <div className="group rounded shadow-lg relative p-6 overflow-hidden h-fit">
-                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full me-3">
+                            <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                             <FiBell className="size-6 rotate-45"/>
                         </div>
 
                         <div className="content mt-6 relative z-1">
-                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">Social Media</Link>
+                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">Social Media</Link>
                             <p className="text-slate-400 mt-3">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making.</p>
 
                             <div className="mt-6">
-                                <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight/></Link>
+                                    <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight /></Link>
                             </div>
                         </div>
 
                         <div className="absolute bottom-0 -end-16">
-                            <FiBell className="size-48 text-indigo-600 opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500"/>
+                                <FiBell className="size-48 text-[var(--riafco-orange)]  opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
                         </div>
                     </div>
 
                     <div className="group rounded shadow-lg relative p-6 overflow-hidden h-fit lg:mt-16">
-                        <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full me-3">
+                            <div className="flex items-center justify-center size-14 -rotate-45 bg-gradient-to-r from-transparent to-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                             <FiMonitor className="size-6 rotate-45"/>
                         </div>
 
                         <div className="content mt-6 relative z-1">
-                            <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">Design & Branding</Link>
+                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">Design & Branding</Link>
                             <p className="text-slate-400 mt-3">If the distribution of letters and &apos;words&apos; is random, the reader will not be distracted from making.</p>
 
                             <div className="mt-6">
-                            <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read More <FiArrowRight/></Link>
+                                    <Link to="" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Read More <FiArrowRight /></Link>
                             </div>
                         </div>
 
                         <div className="absolute bottom-0 -end-16">
-                            <FiMonitor className="size-48 text-indigo-600 opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500"/>
+                                <FiMonitor className="size-48 text-[var(--riafco-orange)]  opacity-[0.03] dark:opacity-[0.04] group-hover:opacity-10 duration-500" />
                         </div>
                     </div>
                 </div>
@@ -236,12 +236,12 @@ export default function IndexClassicBusiness(){
 
                     <div className="md:col-span-6 order-2 md:order-1">
                         <div className="lg:me-5">
-                            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Fast & Effective</h6>
                             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Powerful Digitalization <br/> With Techwind</h3>
 
                             <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"><PiNotepadBold className="me-1"/> Get Started</Link>
+                                <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md"><PiNotepadBold className="me-1" /> Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -256,7 +256,7 @@ export default function IndexClassicBusiness(){
 
                                 <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 mx-auto lg:size-72 size-56 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800">
                                     <div className="text-center">
-                                        <span className="text-indigo-600 text-2xl font-bold mb-0 block"><CountUp className="counter-value" start={1} end={15} />+</span>
+                                            <span className="text-[var(--riafco-orange)]  text-2xl font-bold mb-0 block"><CountUp className="counter-value" start={1} end={15} />+</span>
                                         <span className="font-semibold block mt-2">Years <br/> Experience</span>
                                     </div>
                                 </div>
@@ -266,12 +266,12 @@ export default function IndexClassicBusiness(){
 
                     <div className="md:col-span-6">
                         <div className="lg:ms-8">
-                            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Fast & Effective</h6>
                             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">We&apos;re a global stakeholder <br/> relations and partnership <br/> building consultancy.</h3>
 
                             <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"><PiNotepadBold className="me-1"/> Get Started</Link>
+                                <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md"><PiNotepadBold className="me-1" /> Get Started</Link>
                         </div>
                     </div>
                 </div>

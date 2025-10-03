@@ -26,7 +26,7 @@ export default function AuthSignupSuccess() {
                                     <p className="text-slate-400 mt-4">Your account has been successfully created. <br /> Enjoy your journey. Thank you</p>
 
                                     <div className="mt-6">
-                                        <Link to="/" className="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigobg-indigo-700 text-white rounded-md">Continue</Link>
+                                        <Link to="/" className="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-indigobg-[var(--riafco-blue] text-white rounded-md">Continue</Link>
                                     </div>
                                 </div>
 

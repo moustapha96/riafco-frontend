@@ -18,6 +18,7 @@ const publicRoutes = [
   '/auth/forgot-password',
   '/auth/reset-password',
   '/news',
+  '/notre-équipe',
   '/partners',
 ];
 

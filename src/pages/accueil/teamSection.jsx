@@ -61,8 +61,8 @@ export default function TeamSection() {
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 overflow-hidden">
                 <div className="container relative">
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                        <div className="group relative p-6 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out bg-white dark:bg-slate-900 overflow-hidden text-center">
-                            <div className="size-20 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                        <div className="group relative p-6 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] transition-all duration-500 ease-in-out bg-white dark:bg-slate-900 overflow-hidden text-center">
+                            <div className="size-20 bg-[var(--riafco-blue)] group-hover:bg-white text-white group-hover:text-[var(--riafco-orange)]  rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                                 <LiaUniversitySolid className="size-7"/>
                             </div>
 
@@ -72,8 +72,8 @@ export default function TeamSection() {
                             </div>
                         </div>
 
-                        <div className="group relative p-6 bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out overflow-hidden text-center">
-                            <div className="size-20 bg-white text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-600 mx-auto">
+                        <div className="group relative p-6 bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] transition-all duration-500 ease-in-out overflow-hidden text-center">
+                            <div className="size-20 bg-white text-[var(--riafco-orange)]  rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-600 mx-auto">
                                 <LiaMoneyBillAltSolid className="size-7"/>
                             </div>
 
@@ -83,8 +83,8 @@ export default function TeamSection() {
                             </div>
                         </div>
 
-                        <div className="group relative p-6 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out bg-white dark:bg-slate-900 overflow-hidden text-center">
-                            <div className="size-20 bg-indigo-600 group-hover:bg-white text-white group-hover:text-indigo-600 rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
+                        <div className="group relative p-6 hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] transition-all duration-500 ease-in-out bg-white dark:bg-slate-900 overflow-hidden text-center">
+                            <div className="size-20 bg-[var(--riafco-blue)] group-hover:bg-white text-white group-hover:text-[var(--riafco-orange)]  rounded-full text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 dark:group-hover:shadow-gray-700 mx-auto">
                                 <LiaAwardSolid className="size-7"/>
                             </div>
 
@@ -102,7 +102,7 @@ export default function TeamSection() {
                                 <div className="relative">
                                     <img src={ab1} className="lg:w-[400px] w-[280px]" alt="" />
                                     <div className="absolute top-0 translate-y-2/4 end-0 text-center">
-                                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -139,13 +139,13 @@ export default function TeamSection() {
                                 <p className="text-slate-400 max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with &apos;real&apos; content.</p>
 
                                 <ul className="list-none text-slate-400 mt-4">
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Our Talented & Experienced Marketing Agency</li>
-                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-indigo-600 text-base me-2"/> Create your own skin to match your brand</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Digital Marketing Solutions for Tomorrow</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Our Talented & Experienced Marketing Agency</li>
+                                    <li className="mb-1 flex items-center ms-0"><BsCheckCircle className="text-[var(--riafco-orange)]  text-base me-2" /> Create your own skin to match your brand</li>
                                 </ul>
 
                                 <div className="mt-6">
-                                    <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contact us</Link>
+                                    <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white me-2 mt-2"><FaRegEnvelope className="me-2 text-sm" /> Contact us</Link>
                                 </div>
                             </div>
                         </div>

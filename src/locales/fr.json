@@ -1,0 +1,817 @@
+{
+    "header": {
+        "accueil": "Accueil",
+        "actualites": "Actualités",
+        "activites": "Activités",
+        "membres": "Membres",
+        "evenements": "Événements",
+        "apropos": "À propos",
+        "contact": "Contact",
+        "services": "Services",
+        "rechercher": "Rechercher",
+        "ressources": "Ressources",
+        "gouvernances": "Gouvernances",
+        "historique": "Historique",
+        "reglement-interieur": "Règlement Intérieur",
+        "notre_equipe": "Notre équipe"
+    },
+    "home": {
+        "hero": {
+            "subtitle": "RIAFCO EN ACTION",
+            "title": "Nous connectons l’Afrique <orange>pour un avenir durable</orange>",
+            "description": "RIAFCO est une plateforme dédiée à la promotion de la coopération inter-africaine, à travers des projets concrets, des échanges de bonnes pratiques et un réseau dynamique d’acteurs engagés pour le développement du continent.",
+            "button1": "En savoir plus",
+            "button2": "Nos événements"
+        },
+        "hero2": {
+            "title": "Renforcer la coopération <orange>inter-africaine</orange>",
+            "description": "RIAFCO connecte les acteurs du développement en Afrique à travers des projets collaboratifs, des ressources partagées et des événements fédérateurs.",
+            "button": "Nous contacter"
+        },
+        "about": {
+            "subtitle": "RIAFCO EN ACTION",
+            "title": "Nous connectons l’Afrique <orange>pour un avenir durable</orange>",
+            "description": "RIAFCO est une plateforme dédiée à la promotion de la coopération inter-africaine, à travers des projets concrets, des échanges de bonnes pratiques et un réseau dynamique d’acteurs engagés pour le développement du continent."
+        },
+        "services": {
+            "gouvernance": {
+                "title": "Gouvernance",
+                "description": "Découvrez notre structure de gouvernance et nos principes de transparence.",
+                "button": "En savoir plus"
+            },
+            "equipe": {
+                "title": "Notre Équipe",
+                "description": "Rencontrez les membres de notre équipe dédiée à la coopération inter-africaine.",
+                "button": "En savoir plus"
+            },
+            "evenements": {
+                "title": "Événements",
+                "description": "Consultez notre agenda et participez à nos événements fédérateurs.",
+                "button": "En savoir plus"
+            },
+            "ressources": {
+                "title": "Ressources",
+                "description": "Accédez à notre bibliothèque de documents et rapports.",
+                "button": "En savoir plus"
+            }
+        },
+        "portfolio": {
+            "title": "Explore Latest Works",
+            "description": "Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect."
+        }
+    },
+    "buttons": {
+        "enSavoirPlus": "En savoir plus",
+        "lirePlus": "Lire plus",
+        "telecharger": "Télécharger",
+        "envoyer": "Envoyer",
+        "fermer": "Fermer"
+    },
+    "form": {
+        "nom": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "sujet": "Sujet",
+        "envoyer": "Envoyer le message"
+    },
+    "governance": {
+        "header": {
+            "title": "Rapports de Gouvernance",
+            "description": "Découvrez les documents officiels et rapports de gouvernance du RIAFCO, incluant les statuts, règlements et informations sur la structure organisationnelle."
+        },
+        "error": {
+            "loading": "Erreur lors du chargement des rapports",
+            "retry": "Réessayer"
+        },
+        "published": "Publié le",
+        "pdfAvailable": "Document PDF disponible",
+        "download": "Télécharger",
+        "pagination": {
+            "previous": "Page précédente",
+            "next": "Page suivante"
+        },
+        "stats": {
+            "title": "Statistiques des Documents",
+            "documents": "Documents sur cette page",
+            "pages": "Pages au total",
+            "downloadable": "Fichiers téléchargeables"
+        }
+    },
+    "history": {
+        "header": {
+            "title": "L'historique du RIAFCO",
+            "description": "Découvrez le parcours du Réseau des Institutions Africaines de Financement des Collectivités Locales depuis sa création jusqu'à aujourd'hui"
+        },
+        "journey": {
+            "title": "NOTRE PARCOURS"
+        },
+        "timeline": {
+            "title": "Chronologie du RIAFCO",
+            "description": "Depuis sa création, le RIAFCO a marqué l'histoire du financement des collectivités locales en Afrique à travers des initiatives majeures et des partenariats stratégiques."
+        },
+        "yearEvents": "Événements de",
+        "yearOf": "Année des",
+        "year": "Année",
+        "keywords": {
+            "workshops": "ateliers",
+            "programs": "programmes",
+            "recognition": "reconnaissance",
+            "launches": "lancements",
+            "studies": "études",
+            "conferences": "conférences",
+            "summits": "sommets"
+        },
+        "stats": {
+            "title": "CHIFFRES CLÉS",
+            "subtitle": "Notre impact en chiffres",
+            "events": "Événements historiques",
+            "eventsDesc": "enregistrés dans notre base",
+            "years": "Années d'activité",
+            "yearsDesc": "de développement continu",
+            "countries": "Pays concernés",
+            "countriesDesc": "mentionnés dans nos activités",
+            "programs": "Programmes lancés",
+            "programsDesc": "et initiatives stratégiques"
+        },
+        "highlights": {
+            "title": "ÉVÉNEMENTS MARQUANTS",
+            "subtitle": "Moments clés de notre histoire",
+            "description": "Ces événements ont marqué l'évolution du RIAFCO et renforcé son impact sur le continent africain. Cliquez sur un événement pour plus de détails."
+        },
+        "evolution": {
+            "title": "L'évolution du RIAFCO année par année"
+        },
+        "ourHistory": {
+            "title": "NOTRE HISTOIRE",
+            "subtitle": "Chronologie du RIAFCO",
+            "description": "Découvrez les étapes clés de notre développement depuis la création du réseau"
+        },
+        "programInfo": {
+            "title": "Programme stratégique du RIAFCO",
+            "modalTitle": "Contexte du programme",
+            "modalDescription": "Ce programme s'inscrit dans le cadre des efforts du RIAFCO pour renforcer les capacités des institutions de financement local en Afrique et promouvoir un développement durable."
+        },
+        "buttons": {
+            "details": "Voir les détails",
+            "more": "Voir plus",
+            "close": "Fermer",
+            "viewTimeline": "Voir dans le timeline"
+        }
+    },
+    "actualites": {
+        "pageTitle": "Actualités",
+        "pageDescription": "De nouvelles actualités et mises à jour sur notre plateforme.",
+        "filterSection": {
+            "title": "Filtrer les Actualités",
+            "searchPlaceholder": "Rechercher une actualité...",
+            "statusFilter": {
+                "all": "Tous les statuts",
+                "published": "Publié",
+                "draft": "Brouillon",
+                "archived": "Archivé"
+            },
+            "searchButton": "Rechercher"
+        },
+        "newsSection": {
+            "loading": "Chargement des actualités...",
+            "notFound": "Aucune actualité trouvée.",
+            "readMore": "Lire la suite",
+            "publishedAt": "Publié le : "
+        },
+        "newsletterSection": {
+            "title": "Abonnez-vous à notre newsletter",
+            "description": "Abonnez-vous pour recevoir les dernières actualités et mises à jour sur nos activités.",
+            "emailPlaceholder": "Entrez votre adresse email...",
+            "subscribeButton": "S'abonner"
+        }
+    },
+    "actualitesDetails": {
+        "dateActivity": "Date de l'activité",
+        "gallery": "Galerie d'images",
+        "loading": "Chargement...",
+        "notFound": "Actualité non trouvée.",
+        "breadcrumb": {
+            "home": "RIAFCO",
+            "details": "Détails Actualité"
+        },
+        "publishedOn": "Publié le : {{date}}",
+        "author": "Auteur : {{name}}",
+        "keywords": "Mots-clés",
+        "similarNews": "Actualités Similaires"
+    },
+    "activites": {
+        "pageTitle": "Nos Activités",
+        "pageDescription": "Devenir membre de RIAFCO et participer aux activités de l'association.",
+        "filterSection": {
+            "title": "Filtrer les Activités",
+            "searchPlaceholder": "Rechercher une activité...",
+            "statusFilter": {
+                "all": "Tous les statuts",
+                "published": "Publié",
+                "draft": "Brouillon",
+                "archived": "Archivé"
+            },
+            "searchButton": "Rechercher"
+        },
+        "listSection": {
+            "loading": "Chargement des activités...",
+            "emptyTitle": "Aucune activité trouvée",
+            "emptyDescription": "Aucune activité ne correspond à vos critères de recherche. Essayez avec d'autres termes ou filtres.",
+            "readMore": "Lire la suite",
+            "paginationSummary": "Page {{page}} sur {{pages}} | {{total}} activités"
+        }
+    },
+    "activitesDetails": {
+        "gallery": "Galerie d'images",
+        "similarActivites": "Activités Similaires",
+        "loading": "Chargement...",
+        "notFound": "Activité non trouvée.",
+        "author": "Auteur : {{name}}",
+        "date": "Date : {{date}}"
+    },
+    "members": {
+        "header": {
+            "title": "Nos pays membres",
+            "description": "RIAFCO est une organisation panafricaine qui soutient et accompagne les pays africains dans leurs efforts de développement."
+        },
+        "hero": {
+            "title": "Nos Pays Membres en <orange>Afrique</orange>",
+            "subtitle": "Découvrez les nations africaines qui s'engagent avec le RIAFCO pour un développement durable et inclusif",
+            "stats": {
+                "totalMembers": "Pays Membres",
+                "activeMembers": "Membres Actifs",
+                "observers": "Observateurs",
+                "totalCriteria": "Critères Totaux"
+            },
+            "legend": {
+                "active": "Pays Membres Actifs",
+                "observer": "Pays Observateurs",
+                "others": "Autres pays",
+                "selected": "Pays sélectionné"
+            }
+        },
+        "mapSection": {
+            "title": "Carte Interactive de l'<orange>Afrique</orange>",
+            "description": "Explorez nos pays membres africains. Cliquez sur un pays pour découvrir ses détails et critères d'adhésion. Utilisez les contrôles pour zoomer et naviguer sur la carte.",
+            "controls": {
+                "zoomIn": "Zoom avant",
+                "zoomOut": "Zoom arrière",
+                "reset": "Réinitialiser la vue"
+            },
+            "toast": {
+                "notMember": "{{country}} n'est pas un pays membre du RIAFCO"
+            }
+        },
+        "listSection": {
+            "title": "Nos Partenaires <orange>Africains</orange>",
+            "description": "Découvrez en détail chaque pays membre et leurs contributions au développement africain.",
+            "loading": "Chargement des pays membres...",
+            "emptyTitle": "Aucun pays membre trouvé",
+            "emptyDescription": "Les données des pays membres seront bientôt disponibles.",
+            "criteriaBadge_one": "{{count}} critère d'adhésion",
+            "criteriaBadge_other": "{{count}} critères d'adhésion",
+            "details": "Voir les détails"
+        },
+        "modal": {
+            "members": "Membres",
+            "backToList": "Retour à la Liste",
+            "title": "Détails du Pays Membre",
+            "status": {
+                "active": "Membre Actif",
+                "observer": "Pays Observateur"
+            },
+            "officialNames": "Noms Officiels",
+            "lang": {
+                "fr": "Français",
+                "en": "Anglais"
+            },
+            "generalInfo": "Informations Générales",
+            "countryCode": "Code Pays",
+            "coordinates": "Coordonnées",
+            "criteriaCount": "Critères d'Adhésion",
+            "joinDate": "Date d'Adhésion",
+            "descriptionFr": "Description (Français)",
+            "descriptionEn": "Description (Anglais)",
+            "filledCriteria": "Critères d'Adhésion Remplis",
+            "close": "Fermer"
+        }
+    },
+    "events": {
+        "header": {
+            "title": "Nos Événements",
+            "description": "Retrouvez ici tous les événements de la RIAFCO."
+        },
+        "intro": {
+            "kicker": "Calendrier RIAFCO",
+            "title": "Planning des <blue>Événements</blue>",
+            "desc": "Découvrez nos événements à venir et participez aux initiatives de RIAFCO pour le développement en Afrique."
+        },
+        "calendar": {
+            "today": "Aujourd'hui",
+            "selected": "Date sélectionnée",
+            "hasEvent": "Événement prévu",
+            "monthOf": "Événements du {{date}}",
+            "allEvents": "Tous les événements",
+            "seeAll": "Voir tous les événements",
+            "emptyForDate": "Aucun événement prévu pour cette date.",
+            "emptyAll": "Aucun événement disponible."
+        },
+        "list": {
+            "details": "Détails",
+            "register": "S'inscrire",
+            "closed": "Inscription fermée",
+            "organizer": "Organisateur"
+        },
+        "modal": {
+            "dateTime": "Date et heure",
+            "place": "Lieu",
+            "online": "Événement en ligne",
+            "organizer": "Organisateur",
+            "description": "Description",
+            "moreInfo": "Informations complémentaires",
+            "registerCta": "S'inscrire à l'événement",
+            "closed": "Inscription fermée",
+            "close": "Fermer"
+        }
+    },
+    "contact": {
+        "header": {
+            "title": "Nous contacter",
+            "description": "{{siteName}}"
+        },
+        "followUs": "Suivez-nous sur les réseaux sociaux",
+        "loadingSocial": "Chargement des réseaux sociaux...",
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+        },
+        "map": {
+            "title": "Localisation RIAFCO - Dakar, Sénégal",
+            "aria": "Carte de localisation du RIAFCO à Dakar, Sénégal"
+        },
+        "title": "Contactez-nous !",
+        "description": "Nous sommes à votre disposition pour répondre à toutes vos questions concernant les institutions de financement des collectivités locales en Afrique.",
+        "imageAlt": "Contact RIAFCO",
+        "submitSuccess": "Votre message a été envoyé avec succès !",
+        "submitError": "Une erreur est survenue lors de l'envoi du message.",
+        "contactInfo": {
+            "email": {
+                "title": "Email",
+                "desc": "Envoyez-nous un email pour toute question ou demande d'information."
+            },
+            "phone": {
+                "title": "Téléphone",
+                "desc": "Appellez-nous pour une assistance immédiate."
+            },
+            "address": {
+                "title": "Adresse",
+                "desc": "Visitez nos bureaux à Dakar, Sénégal."
+            }
+        }
+    },
+
+    "about": {
+        "partners": {
+            "kicker": "Nos Partenaires Clés",
+            "title": "Ils nous font confiance",
+            "desc": "Découvrez les institutions et organisations qui collaborent avec le RIAFCO pour renforcer le financement des collectivités locales en Afrique."
+        },
+        "badge": "À PROPOS DU RIAFCO",
+        "title": "Qui sommes-nous ?",
+        "p1": "Le RIAFCO (Réseau des Institutions Africaines de Financement des Collectivités Locales) est une organisation panafricaine qui vise à renforcer les capacités des institutions financières locales pour soutenir le développement durable des territoires.",
+        "p2": "Nous connectons les acteurs publics, les institutions financières et les partenaires pour des projets communs visant à améliorer le financement des collectivités locales en Afrique.",
+        "imageAlt": "Réseau RIAFCO en action - Coopération entre institutions africaines",
+        "cta": "En savoir plus sur notre réseau",
+        "missions": {
+            "title": "Nos missions principales",
+            "lead": "Le RIAFCO agit comme catalyseur pour le développement local en Afrique à travers :",
+            "items": [
+                "L'échange d'expériences et de bonnes pratiques entre institutions membres",
+                "Le renforcement des capacités des institutions de financement locales",
+                "La promotion de modèles innovants de financement local",
+                "Le plaidoyer pour une meilleure reconnaissance des IFCL"
+            ]
+        },
+        "video": {
+            "title": "Présentation du RIAFCO",
+            "close": "Fermer"
+        },
+        "domains": {
+            "title": "Nos Domaines d'Intervention",
+            "lead": "Le RIAFCO intervient dans plusieurs domaines clés pour renforcer le financement des collectivités locales en Afrique",
+            "more": "En savoir plus"
+        },
+        "services": [{
+                "title": "Réseau Panafricain",
+                "desc": "Nous connectons les institutions de financement des collectivités locales à travers toute l'Afrique pour une coopération renforcée."
+            },
+            {
+                "title": "Coopération Institutionnelle",
+                "desc": "Facilitation des échanges entre pairs, partage d'expériences et bonnes pratiques entre institutions membres."
+            },
+            {
+                "title": "Développement Local",
+                "desc": "Soutien au développement durable des territoires à travers le financement des collectivités locales."
+            }
+        ]
+    },
+    "resources": {
+        "header": {
+            "title": "Centre de Ressources",
+            "description": "Découvrez notre collection de documents, rapports, guides et ressources pour vous accompagner dans vos projets de financement local."
+        },
+        "searchPlaceholder": "Rechercher des ressources...",
+        "labels": {
+            "category": "Catégorie",
+            "date": "Date de publication"
+        },
+        "size": {
+            "units": [
+                "octets",
+                "Ko",
+                "Mo",
+                "Go"
+            ]
+        },
+        "actions": {
+            "download": "Télécharger",
+            "preview": "Aperçu"
+        },
+        "pagination": {
+            "prev": "Précédent",
+            "next": "Suivant"
+        },
+        "empty": {
+            "title": "Aucune ressource trouvée",
+            "subtitle": "Essayez de modifier vos critères de recherche."
+        },
+        "loading": "Chargement…"
+    },
+    "governanceReports": {
+        "header": {
+            "title": "Rapports de Gouvernance",
+            "description": "Découvrez les documents officiels et rapports de gouvernance du RIAFCO, incluant les statuts, règlements et informations sur la structure organisationnelle."
+        },
+        "loading": "Chargement des rapports…",
+        "error": "Erreur lors du chargement des rapports",
+        "retry": "Réessayer",
+        "publishedOn": "Publié le {{date}}",
+        "pdfAvailable": "Document PDF disponible",
+        "download": "Télécharger",
+        "pagination": {
+            "prev": "Précédent",
+            "next": "Suivant"
+        },
+        "empty": {
+            "title": "Aucun rapport trouvé",
+            "subtitle": "Les rapports seront bientôt disponibles."
+        },
+        "stats": {
+            "title": "Statistiques des documents",
+            "onPage": "Documents sur cette page",
+            "totalPages": "Pages au total",
+            "downloadable": "Fichiers téléchargeables"
+        }
+    },
+    "historique": {
+        "header": {
+            "title": "L'historique du RIAFCO",
+            "description": "Découvrez le parcours du Réseau des Institutions Africaines de Financement des Collectivités Locales depuis sa création jusqu'à aujourd'hui"
+        },
+        "journey": {
+            "tag": "NOTRE PARCOURS",
+            "title": "Chronologie du RIAFCO",
+            "desc": "Depuis sa création, le RIAFCO a marqué l'histoire du financement des collectivités locales en Afrique à travers des initiatives majeures et des partenariats stratégiques."
+        },
+        "stats": {
+            "tag": "CHIFFRES CLÉS",
+            "title": "Notre impact en chiffres",
+            "eventsTitle": "Événements historiques",
+            "eventsDesc": "enregistrés dans notre base",
+            "yearsTitle": "Années d'activité",
+            "yearsDesc": "de développement continu",
+            "countriesTitle": "Pays concernés",
+            "countriesDesc": "mentionnés dans nos activités",
+            "programsTitle": "Programmes lancés",
+            "programsDesc": "et initiatives stratégiques"
+        },
+        "highlights": {
+            "tag": "ÉVÉNEMENTS MARQUANTS",
+            "title": "Moments clés de notre histoire",
+            "desc": "Ces événements ont marqué l'évolution du RIAFCO et renforcé son impact sur le continent africain. Cliquez sur un événement pour plus de détails.",
+            "seeDetails": "Voir les détails"
+        },
+        "evolution": {
+            "tag": "NOTRE PARCOURS",
+            "title": "L'évolution du RIAFCO année par année"
+        },
+        "timeline2": {
+            "tag": "NOTRE HISTOIRE",
+            "title": "Chronologie du RIAFCO",
+            "desc": "Découvrez les étapes clés de notre développement depuis la création du réseau"
+        },
+        "modal": {
+            "close": "Fermer",
+            "programContextTitle": "Contexte du programme",
+            "programContextBody": "Ce programme s'inscrit dans le cadre des efforts du RIAFCO pour renforcer les capacités des institutions de financement local en Afrique et promouvoir un développement durable.",
+            "viewInTimeline": "Voir dans la chronologie",
+            "year": "Année {{year}}"
+        },
+        "labels": {
+            "yearOf": "Année des {{keywords}}",
+            "eventsOfYear": "Événements de {{year}}"
+        }
+    },
+    "legal": {
+        "internalRules": {
+            "header": {
+                "title": "Règlement intérieur",
+                "description": "Consultez les règles internes, les mises à jour et les versions en vigueur."
+            },
+            "loading": "Chargement des conditions légales…",
+            "error": "Erreur lors du chargement des conditions légales",
+            "retry": "Réessayer",
+            "breadcrumb": {
+                "section": "Règlement intérieur"
+            },
+            "toggle": {
+                "fr": "Français",
+                "en": "English"
+            },
+            "badges": {
+                "version": "Version {{version}}",
+                "active": "Actif",
+                "effectiveFrom": "Effectif depuis le {{date}}",
+                "lastUpdated": "Dernière mise à jour : {{date}}"
+            },
+            "empty": {
+                "title": "Aucune condition légale disponible",
+                "subtitle": "Les contenus seront publiés prochainement."
+            }
+        }
+    },
+    "team": {
+        "header": {
+            "title": "Notre Équipe",
+            "description": "Découvrez les professionnels qui composent le RIAFCO et œuvrent pour le développement des institutions de financement des collectivités locales en Afrique."
+        },
+        "loading": "Chargement de l'équipe…",
+        "error": "Impossible de charger les informations sur l'équipe",
+        "sections": {
+            "leadership": "Direction",
+            "experts": "Nos Experts",
+            "tech": "Équipe Technique",
+            "valuesKicker": "NOS VALEURS",
+            "valuesTitle": "Ce qui nous anime",
+            "valuesSubtitle": "Nos valeurs guident notre action au quotidien pour un développement durable des collectivités locales en Afrique."
+        },
+        "values": {
+            "excellence": {
+                "title": "Excellence",
+                "desc": "Nous visons l'excellence dans tout ce que nous entreprenons pour offrir les meilleurs services à nos membres."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "desc": "Nous croyons en la puissance de la collaboration entre institutions pour un impact plus grand."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "desc": "Nous encourageons l'innovation pour trouver des solutions adaptées aux défis africains."
+            },
+            "integrity": {
+                "title": "Intégrité",
+                "desc": "Nous agissons avec intégrité et transparence dans toutes nos actions."
+            },
+            "sustainability": {
+                "title": "Durabilité",
+                "desc": "Nous promouvons un développement durable des territoires africains."
+            },
+            "knowledge": {
+                "title": "Savoir",
+                "desc": "Nous partageons les connaissances pour renforcer les capacités de tous."
+            }
+        },
+        "breadcrumb": {
+            "section": "Équipe"
+        }
+    },
+
+    "footer": {
+        "droitsReserves": "Tous droits réservés",
+        "mentionsLegales": "Mentions légales",
+        "politique": "Politique de confidentialité",
+        "suivezNous": "Suivez-nous",
+        "sections": {
+            "about": "À Propos",
+            "usefulLinks": "Liens Utiles",
+            "newsletter": "Newsletter"
+        },
+        "companyLinks": {
+            "history": "Historique",
+            "team": "Notre Équipe",
+            "membersMap": "Carte des membres",
+            "internalRules": "Règlement intérieur"
+        },
+        "usefulLinks": {
+            "events": "Événements",
+            "history": "Historique",
+            "library": "Bibliothèque",
+            "contact": "Nous Contacter",
+            "governanceReport": "Rapport de Gouvernance"
+        },
+        "newsletter": {
+            "subscribeText": "Abonnez-vous pour recevoir les dernières actualités de {{siteName}}.",
+            "emailLabel": "Votre email",
+            "emailPlaceholder": "votre@email.com",
+            "subscribeBtn": "S'abonner",
+            "required": "(obligatoire)",
+            "success": "Merci ! Vous êtes inscrit(e) à la newsletter.",
+            "error": "Une erreur est survenue. Merci de réessayer."
+        },
+        "legal": {
+            "mentions": "Mentions Légales",
+            "privacy": "Politique de Confidentialité",
+            "terms": "Termes et Conditions"
+        },
+        "copyrightDefault": "© {{year}} {{siteName}}. Tous droits réservés."
+    },
+
+    "activitySection": {
+        "loading": "Chargement des activités...",
+        "label": "Activités RIAFCO",
+        "title": {
+            "pre": "Découvrez nos",
+            "highlight": "dernières activités",
+            "post": "et projets en Afrique"
+        },
+        "description": "Suivez les initiatives, événements et ressources partagées par RIAFCO pour un développement durable en Afrique.",
+        "byAuthorDot": "{{author}} • {{date}}",
+        "fallbackTitle": "Activité RIAFCO",
+        "fallbackExcerpt": "Découvrez les détails de cette activité...",
+        "readMore": "Lire la suite",
+        "none": "Aucune activité publiée pour le moment.",
+        "seeAll": "Voir toutes les activités"
+    },
+
+    "newsSection": {
+        "label": "Actualités",
+        "title": "Découvrez nos dernières actualités",
+        "description": "Retrouvez ici les dernières actualités, événements et ressources de RIAFCO pour rester informé.",
+        "loading": "Chargement des actualités...",
+        "empty": "Aucune actualité disponible pour le moment.",
+        "readMore": "Lire plus",
+        "seeAll": "Voir toutes les actualités"
+    },
+
+    "hero": {
+        "title": "Politique de Confidentialité",
+        "subtitle": "Protection et traitement de vos données personnelles"
+    },
+
+    "breadcrumb": {
+        "legal": "Légal",
+        "current": "Confidentialité"
+    },
+
+    "sections": {
+        "collection": {
+            "title": "1. Collecte des Données",
+            "body": "RIAFCO collecte et traite vos données personnelles dans le respect du RGPD et des législations nationales applicables. Nous nous engageons à protéger votre vie privée et à traiter vos données de manière transparente."
+        },
+        "types": {
+            "title": "2. Types de Données Collectées",
+            "lead": "Données que nous collectons :",
+            "items": [
+                "Informations d'identification (nom, prénom, email)",
+                "Données professionnelles (organisation, fonction)",
+                "Données de navigation (cookies, logs de connexion)",
+                "Préférences de communication et d'événements"
+            ]
+        },
+        "usage": {
+            "title": "3. Utilisation des Données",
+            "lead": "Vos données sont utilisées exclusivement pour les finalités suivantes :",
+            "cards": [{
+                    "title": "Gestion des membres",
+                    "body": "Administration des adhésions, communication avec les membres, organisation d'événements",
+                    "wrapperClass": "p-6 rounded-lg bg-blue-50 dark:bg-blue-900/20"
+                },
+                {
+                    "title": "Amélioration des services",
+                    "body": "Analyse de l'utilisation du site, personnalisation de l'expérience utilisateur",
+                    "wrapperClass": "p-6 rounded-lg bg-purple-50 dark:bg-purple-900/20"
+                }
+            ]
+        },
+        "rights": {
+            "title": "4. Vos Droits",
+            "lead": "Conformément au RGPD, vous disposez des droits suivants :",
+            "items": [{
+                    "title": "Droit d'accès",
+                    "body": "Obtenir une copie de vos données personnelles"
+                },
+                {
+                    "title": "Droit de rectification",
+                    "body": "Corriger des données inexactes"
+                },
+                {
+                    "title": "Droit à l'effacement",
+                    "body": "Demander la suppression de vos données"
+                },
+                {
+                    "title": "Droit d'opposition",
+                    "body": "Vous opposer au traitement de vos données"
+                }
+            ]
+        }
+    },
+
+    "faqTitle": "Questions Fréquentes sur la Confidentialité",
+    "faq": [{
+            "title": "Comment exercer mes droits ?",
+            "body": "Pour exercer vos droits, contactez notre DPO à {{email}}."
+        },
+        {
+            "title": "Combien de temps conservons-nous vos données ?",
+            "body": "Nous conservons vos données pendant la durée nécessaire aux finalités décrites, puis les supprimons ou anonymisons."
+        },
+        {
+            "title": "Partageons-nous vos données ?",
+            "body": "Nous ne vendons pas vos données. Elles peuvent être partagées avec des prestataires strictement nécessaires et soumis à des obligations de confidentialité."
+        },
+        {
+            "title": "Où sont hébergées vos données ?",
+            "body": "Vos données peuvent être hébergées au sein de l'UE ou chez des prestataires offrant des garanties adéquates."
+        }
+    ],
+
+    "dpoEmail": "dpo@riafco.org",
+    "cta": {
+        "title": "Des questions sur vos données ?",
+        "body": "Contactez notre équipe pour toute question relative à la protection de vos données.",
+        "button": "Nous contacter"
+    },
+
+    "terms": {
+        "hero": {
+            "title": "Conditions d'Utilisation",
+            "subtitle": "Veuillez lire attentivement ces conditions avant d'utiliser nos services"
+        },
+        "breadcrumb": {
+            "legal": "Légal",
+            "current": "Conditions"
+        },
+        "sections": {
+            "acceptance": {
+                "title": "1. Acceptation des Conditions",
+                "body": "En accédant et en utilisant le site web du RIAFCO, vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site."
+            },
+            "use": {
+                "title": "2. Utilisation du Site",
+                "body": "Ce site a pour but de fournir des informations sur les activités du RIAFCO et de faciliter la communication entre les membres du réseau. Vous vous engagez à l'utiliser de manière responsable et légale."
+            },
+            "allowed": {
+                "title": "Utilisations autorisées :",
+                "items": [
+                    "Consulter les informations publiques sur le RIAFCO",
+                    "Télécharger les documents mis à disposition",
+                    "Participer aux événements et formations",
+                    "Communiquer avec les membres du réseau"
+                ]
+            },
+            "restrictions": {
+                "title": "3. Restrictions d'Utilisation",
+                "lead": "Vous vous interdisez expressément de :",
+                "items": [
+                    "Utiliser le site à des fins illégales ou non autorisées",
+                    "Reproduire, distribuer ou modifier le contenu sans autorisation",
+                    "Tenter d'accéder aux systèmes informatiques de manière non autorisée",
+                    "Publier du contenu offensant, diffamatoire ou inapproprié"
+                ]
+            }
+        },
+        "faqTitle": "Questions Fréquentes",
+        "faq": [{
+                "title": "Comment contacter l'équipe juridique ?",
+                "body": "Utilisez la page de contact pour toute question relative aux conditions d'utilisation."
+            },
+            {
+                "title": "Peut-on réutiliser les documents ?",
+                "body": "La réutilisation peut nécessiter une autorisation préalable. Merci de vérifier la licence ou de nous contacter."
+            },
+            {
+                "title": "Que se passe-t-il si je n'accepte pas les Conditions ?",
+                "body": "Si vous n'acceptez pas les Conditions, veuillez cesser d'utiliser le site. Certains services ne seront pas accessibles."
+            },
+            {
+                "title": "Les Conditions peuvent-elles évoluer ?",
+                "body": "Oui. Nous pouvons mettre à jour ces Conditions. L'usage continu du site après mise à jour vaut acceptation."
+            }
+        ],
+        "cta": {
+            "accept": "J'accepte les conditions",
+            "decline": "Je refuse"
+        }
+    }
+}

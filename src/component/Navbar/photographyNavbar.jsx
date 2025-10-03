@@ -81,11 +81,11 @@ export default function PhotographyNavbar(){
 
                     <ul className="buy-button list-none space-x-1 mb-0">
                         <li className="inline mb-0">
-                            <Link to="/" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><Icon.Settings className="size-4"></Icon.Settings></Link>
+                            <Link to="/" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.Settings className="size-4"></Icon.Settings></Link>
                         </li>
 
                         <li className="inline ps-1 mb-0">
-                            <Link to="#" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><Icon.ShoppingCart className="size-4"></Icon.ShoppingCart></Link>
+                            <Link to="#" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><Icon.ShoppingCart className="size-4"></Icon.ShoppingCart></Link>
                         </li>
                     </ul>
 

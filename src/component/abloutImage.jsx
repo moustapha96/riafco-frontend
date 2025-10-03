@@ -18,7 +18,7 @@ export default function AboutImage({grid}){
                         <img src={about02} className="rounded-md shadow-md size-48" alt="" />
                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                             <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                className="lightbox size-14 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600">
+                                className="lightbox size-14 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)] ">
                                 <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
                             </Link>
                         </div>
@@ -47,12 +47,12 @@ export default function AboutImage({grid}){
 
             <div className="md:col-span-6">
                 <div className="lg:ms-5">
-                    <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Our History</h6>
+                    <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">Our History</h6>
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">“Sweet as the Moment When <br /> the coworking Went &apos;Pop”</h3>
 
                     <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
 
-                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-md">Get Started</Link>
+                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md">Get Started</Link>
                 </div>
             </div>
         </div>

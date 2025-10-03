@@ -1,76 +1,214 @@
-import { Link } from 'react-router-dom';
 
-import Navbar from '../../component/Navbar/navbar'
-import Footer from '../../component/Footer/footer';
-import { MdKeyboardArrowRight } from 'react-icons/md';
-import { FaArrowRight } from 'react-icons/fa';
-import { useEffect } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../../component/Navbar/navbar";
+import Footer from "../../component/Footer/footer";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { FaGlobe, FaShieldAlt, FaExclamationTriangle } from "react-icons/fa";
+
+import legalService from "../../services/legalService"
+
+import HeaderBreakdumb from "../components/hearder-breakdumb";
+import riafcoAbout from "../../assets/images/riafco-about.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function ReglementInterieurPage() {
+    const { t, i18n } = useTranslation();
+    const isFr = i18n.language?.startsWith("fr");
+    const locale = isFr ? "fr-FR" : "en-US";
+
+    const [legalTerms, setLegalTerms] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        const htmlTag = document.getElementsByTagName("html")[0]
-        htmlTag.classList.add('light');
-        htmlTag.classList.remove('dark')
-    });
-    return (
-        <>
-            <Navbar />
+        const htmlTag = document.getElementsByTagName("html")[0];
+        htmlTag.classList.add("light");
+        htmlTag.classList.remove("dark");
+        fetchReglementInterieur();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-            <section className="relative table w-full py-32 lg:py-40 bg-gray-50 dark:bg-slate-800">
-                <div className="container relative">
-                    <div className="grid grid-cols-1 text-center mt-10">
-                        <h3 className="text-3xl leading-normal font-semibold">Privacy Policy</h3>
+    const fetchReglementInterieur = async () => {
+        try {
+            setError(null);
+            setLoading(true);
+            const response = await legalService.getAll();
+            if (response?.success) {
+                setLegalTerms(response.data || []);
+            } else {
+                setError(t("legal.internalRules.error"));
+            }
+        } catch {
+            setError(t("legal.internalRules.error"));
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const formatContent = (content = "") => {
+        return content.split("\n").map((paragraph, index) => {
+            if (paragraph.trim() === "") return null;
+
+            if (paragraph.includes("**")) {
+                // Rend le texte entre ** ** en tant que sous-titre
+                const parts = paragraph.split("**");
+                return (
+                    <div key={index} className="mb-4">
+                        {parts.map((part, partIndex) =>
+                            partIndex % 2 === 1 ? (
+                                <h5 key={partIndex} className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                                    {part}
+                                </h5>
+                            ) : (
+                                <span key={partIndex}>{part}</span>
+                            )
+                        )}
+                    </div>
+                );
+            }
+
+            return (
+                <p key={index} className="text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">
+                    {paragraph.trim()}
+                </p>
+            );
+        });
+    };
+
+    if (loading) {
+        return (
+            <>
+                <Navbar navClass="nav-light" />
+                <HeaderBreakdumb
+                    title={t("legal.internalRules.header.title")}
+                    description={t("legal.internalRules.header.description")}
+                    background={riafcoAbout}
+                />
+                <div className="min-h-[40vh] flex items-center justify-center">
+                    <div className="text-center text-slate-600">
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[var(--riafco-orange)] mx-auto mb-4"></div>
+                        <p>{t("legal.internalRules.loading")}</p>
                     </div>
                 </div>
+                <Footer />
+            </>
+        );
+    }
 
-                <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
-                    <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
-                        <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link >Utility</Link></li>
-                        <li className="inline-block text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600"aria-current="page">Privacy</li>
-                    </ul>
+    if (error) {
+        return (
+            <>
+                <Navbar navClass="nav-light" />
+                <HeaderBreakdumb
+                    title={t("legal.internalRules.header.title")}
+                    description={t("legal.internalRules.header.description")}
+                    background={riafcoAbout}
+                />
+                <div className="min-h-[40vh] flex items-center justify-center">
+                    <div className="text-center">
+                        <FaExclamationTriangle className="text-red-500 text-4xl mx-auto mb-4" />
+                        <p className="text-red-600">{error}</p>
+                        <button
+                            onClick={fetchReglementInterieur}
+                            className="mt-4 px-6 py-2 bg-[var(--riafco-blue)] text-white rounded-md hover:opacity-90"
+                        >
+                            {t("legal.internalRules.retry")}
+                        </button>
+                    </div>
                 </div>
-            </section>
+                <Footer />
+            </>
+        );
+    }
 
-            <div className="relative">
-                <div className="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white dark:text-slate-900">
-                    <svg className="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                    </svg>
+    return (
+        <>
+            <Navbar navClass="nav-light" />
+
+            <HeaderBreakdumb
+                title={t("legal.internalRules.header.title")}
+                description={t("legal.internalRules.header.description")}
+                background={riafcoAbout}
+            />
+
+            {/* Fil d’ariane sous le header */}
+            <div className="container relative flex flex-col items-center justify-center text-center">
+                <div className="mt-6 flex justify-center">
+                    <ul className="tracking-[0.5px] mb-0 inline-flex items-center space-x-1 text-slate-500">
+                        <li className="inline-block uppercase text-[12px] font-bold">
+                            <Link to="/">RIAFCO</Link>
+                        </li>
+                        <li className="inline-block text-base mx-1">
+                            <MdKeyboardArrowRight className="text-xl" />
+                        </li>
+                        <li className="inline-block uppercase text-[12px] font-bold" aria-current="page">
+                            {t("legal.internalRules.breadcrumb.section")}
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <section className="relative md:py-24 py-16">
+            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
-                    <div className="md:flex justify-center">
-                        <div className="md:w-3/4">
-                            <div className="p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md">
-                                <h5 className="text-xl font-semibold mb-4">Overview :</h5>
-                                <p className="text-slate-400">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text.</p>
-                                <p className="text-slate-400">In the 1960s, the text suddenly became known beyond the professional circle of typesetters and layout designers when it was used for Letraset sheets (adhesive letters on transparent film, popular until the 1980s) Versions of the text were subsequently included in DTP programmes such as PageMaker etc.</p>
-                                <p className="text-slate-400">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical stories.</p>
 
-                                <h5 className="text-xl font-semibold mb-4 mt-8">We use your information to :</h5>
-                                <ul className="list-none text-slate-400 mt-4">
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Digital Marketing Solutions for Tomorrow</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="flex items-center mt-2 ml-0"><FaArrowRight className="ms-2 text-[10px] text-indigo-600  align-middle me-2"/>Create your own skin to match your brand</li>
-                                </ul>
 
-                                <h5 className="text-xl font-semibold mb-4 mt-8">Information Provided Voluntarily :</h5>
-                                <p className="text-slate-400">In the 1960s, the text suddenly became known beyond the professional circle of typesetters and layout designers when it was used for Letraset sheets (adhesive letters on transparent film, popular until the 1980s) Versions of the text were subsequently included in DTP programmes such as PageMaker etc.</p>
+                    <div className="flex justify-center">
+                        <div className="w-full max-w-4xl">
+                            {legalTerms.map((term) => {
+                                const title = isFr ? term.title_fr ?? term.title_en : term.title_en ?? term.title_fr;
+                                const content = isFr ? term.content_fr ?? term.content_en : term.content_en ?? term.content_fr;
 
-                                <div className="mt-8">
-                                    <Link  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Print</Link>
+                                return (
+                                    <div
+                                        key={term.id}
+                                        className="bg-white dark:bg-slate-900 shadow-lg dark:shadow-gray-800 rounded-xl p-8 mb-8"
+                                    >
+                                        {/* Header */}
+                                        <div className="border-b border-gray-200 dark:border-gray-700 pb-6 mb-6">
+                                            <div className="flex items-center mb-4">
+                                                <FaShieldAlt className="text-2xl text-[var(--riafco-orange)] mr-3" />
+                                                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">{title}</h2>
+                                            </div>
+                                            <div className="flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-400">
+                                                <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">
+                                                    {t("legal.internalRules.badges.version", { version: term.version })}
+                                                </span>
+                                                <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full">
+                                                    {t("legal.internalRules.badges.active")}
+                                                </span>
+                                                <span>
+                                                    {t("legal.internalRules.badges.effectiveFrom", {
+                                                        date: new Date(term.effectiveDate).toLocaleDateString(locale),
+                                                    })}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="prose prose-lg max-w-none">{formatContent(content)}</div>
+
+                                        {/* Footer */}
+                                        <div className="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8">
+                                            <div className="text-sm text-gray-500 dark:text-gray-400">
+                                                {t("legal.internalRules.badges.lastUpdated", {
+                                                    date: new Date(term.updatedAt).toLocaleDateString(locale),
+                                                })}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+
+                            {legalTerms.length === 0 && (
+                                <div className="text-center py-12">
+                                    <p className="text-lg font-semibold">{t("legal.internalRules.empty.title")}</p>
+                                    <p className="text-slate-500">{t("legal.internalRules.empty.subtitle")}</p>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -78,5 +216,5 @@ export default function ReglementInterieurPage() {
 
             <Footer />
         </>
-    )
+    );
 }

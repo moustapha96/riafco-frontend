@@ -55,19 +55,19 @@ export default function IndexStudio() {
     return (
         <>
             <Navbar />
-            <section className="relative table w-full py-36 lg:py-44 before:content-[''] before:absolute  xl:before:start-[50rem] lg:before:start-[30rem] md:before:start-[15rem] before:start-[0rem] lg:before:bottom-[10rem] md:before:bottom-[12rem] before:bottom-[14rem] before:w-[60rem] before:h-[30rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-indigo-600/5 dark:before:bg-indigo-600/10 overflow-hidden">
-                <div className="absolute inset-0 bg-indigo-600 opacity-5"></div>
+            <section className="relative table w-full py-36 lg:py-44 before:content-[''] before:absolute  xl:before:start-[50rem] lg:before:start-[30rem] md:before:start-[15rem] before:start-[0rem] lg:before:bottom-[10rem] md:before:bottom-[12rem] before:bottom-[14rem] before:w-[60rem] before:h-[30rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-[var(--riafco-blue)]/5 dark:before:bg-[var(--riafco-blue)]/10 overflow-hidden">
+                <div className="absolute inset-0 bg-[var(--riafco-blue)] opacity-5"></div>
                 <div className="container relative">
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-7">
                             <div className="md:me-6">
                                 <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5">Bigger, Bolder
-                                    <br /> <span className="text-indigo-600">& Better</span></h4>
+                                    <br /> <span className="text-[var(--riafco-orange)] ">& Better</span></h4>
                                 <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise
                                     on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                                 <div className="mt-6">
-                                    <Link to="/page-aboutus" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Company</Link>
+                                    <Link to="/page-aboutus" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Company</Link>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ export default function IndexStudio() {
 
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                     <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -136,7 +136,7 @@ export default function IndexStudio() {
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
                             <Link
-                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See
+                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See
                                 More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                         </div>
                     </div>
@@ -144,12 +144,12 @@ export default function IndexStudio() {
                         <div className="lg:col-span-3">
                             <div className="grid lg:grid-cols-1 grid-cols-2 sticky top-20">
                                 <div className="counter-box relative md:text-start text-center">
-                                    <h1 className="font-bold text-3xl text-indigo-600"><CountUp className="counter-value" end={11} start={3} />+</h1>
+                                    <h1 className="font-bold text-3xl text-[var(--riafco-orange)] "><CountUp className="counter-value" end={11} start={3} />+</h1>
                                     <span className="counter-head font-medium h6">Designers & <br /> developers</span>
                                 </div>
 
                                 <div className="counter-box relative md:text-start text-center lg:mt-6">
-                                    <h1 className="font-bold text-3xl text-indigo-600"><CountUp className="counter-value" end={5} start={1} />
+                                    <h1 className="font-bold text-3xl text-[var(--riafco-orange)] "><CountUp className="counter-value" end={5} start={1} />
                                     </h1>
                                     <span className="counter-head font-medium h6">Years of <br /> Experience</span>
                                 </div>
@@ -163,17 +163,17 @@ export default function IndexStudio() {
                                         return(
                                         <div key={index} className="p-6 rounded-lg shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900">
                                             <div
-                                                className="size-16 bg-indigo-600/5 border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                                                    className="size-16 bg-[var(--riafco-blue)]/5 border-2 border-[var(--riafco-blue)]/20 text-[var(--riafco-orange)]  rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                                                 <Icons className='size-7'/>
                                             </div>
         
                                             <div className="content mt-7">
-                                                <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                                                    <Link to="/page-services" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                                 <p className="text-slate-400 mt-3">{item.desc}</p>
         
                                                 <div className="mt-5">
                                                     <Link
-                                                        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                                                            className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read
                                                         More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                                 </div>
                                             </div>
@@ -185,7 +185,7 @@ export default function IndexStudio() {
                             <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                                 <div className="md:col-span-12 text-center">
                                     <Link
-                                        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See
+                                        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See
                                         More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@ export default function IndexStudio() {
                                         <img src={cta} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -240,7 +240,7 @@ export default function IndexStudio() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
 
 
@@ -251,16 +251,16 @@ export default function IndexStudio() {
                             <div className="sticky top-20">
                                 <ul className="flex-column text-center p-6 bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 rounded-md" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                                     <li role="presentation">
-                                         <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Project Strategy</button>
+                                        <button onClick={() => handleTabClick(0)} className={`${isOpenTab === 0 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Project Strategy</button>
                                     </li>
                                     <li role="presentation">
-                                     <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Ux Research and Concept </button>
+                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Ux Research and Concept </button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Creative Front-End </button>
+                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Creative Front-End </button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600 hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Content Strategy</button>
+                                        <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ? 'text-white bg-[var(--riafco-blue)] hover:text-white' : ''} px-4 py-2 text-center font-semibold rounded-md w-full mt-3 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Content Strategy</button>
                                     </li>
                                 </ul>
                             </div>
@@ -273,7 +273,7 @@ export default function IndexStudio() {
                                         <img src={p01} className="shadow-sm rounded-md" alt="" />
                                         <div className="mt-6">
                                             <p className="text-slate-400 mb-2">This is required when, for example, the final text is not yet available. Dummy text is also known as &apos;fill text&apos;. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div> : ""}
                                 {isOpenTab === 1 ? 
@@ -281,7 +281,7 @@ export default function IndexStudio() {
                                         <img src={p02} className="shadow-sm rounded-md" alt="" />
                                         <div className="mt-6">
                                             <p className="text-slate-400 mb-2">This is required when, for example, the final text is not yet available. Dummy text is also known as &apos;fill text&apos;. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div> :""
                                 }    
@@ -290,7 +290,7 @@ export default function IndexStudio() {
                                         <img src={p03} className="shadow-sm rounded-md" alt="" />
                                         <div className="mt-6">
                                             <p className="text-slate-400 mb-2">This is required when, for example, the final text is not yet available. Dummy text is also known as &apos;fill text&apos;. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>:""
                                 }
@@ -299,7 +299,7 @@ export default function IndexStudio() {
                                     <img src={p04} className="shadow-sm rounded-md" alt="" />
                                     <div className="mt-6">
                                         <p className="text-slate-400 mb-2">This is required when, for example, the final text is not yet available. Dummy text is also known as &apos;fill text&apos;. It is said that song composers of the past used dummy texts as lyrics.</p>
-                                        <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                     </div>
                                 </div> : ""
                                 }
@@ -312,7 +312,7 @@ export default function IndexStudio() {
                 <div className="container relative">
                     <div className="grid grid-cols-1">
                         <div className="section-title mb-8">
-                            <h6 className="text-indigo-600 text-sm font-bold mb-2">Portfolio</h6>
+                            <h6 className="text-[var(--riafco-orange)]  text-sm font-bold mb-2">Portfolio</h6>
                             <h4 className="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold mb-4">Read some amazing <br /> case studies.</h4>
                             <p className="text-slate-400 max-w-xl mb-0">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
                         </div>
@@ -342,7 +342,7 @@ export default function IndexStudio() {
                     <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
                         <div className="md:col-span-12 text-center">
                             <Link
-                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See
+                                className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See
                                 More <FaArrowRight className="ms-2 text-[10px]"/></Link>
                         </div>
                     </div>
@@ -354,13 +354,13 @@ export default function IndexStudio() {
                </div>
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold mb-2">Available for freelance projects</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold mb-2">Available for freelance projects</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Do you have digital project? <br /> Let&apos;s talk.</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                         <div className="mt-6">
-                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-4"><FiPhone className="me-1 text-lg"/> Contact us</Link>
+                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-4"><FiPhone className="me-1 text-lg" /> Contact us</Link>
                         </div>
                     </div>
                 </div>

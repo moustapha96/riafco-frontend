@@ -12,6 +12,7 @@ import { BiWallet } from 'react-icons/bi';
 import { AiOutlineCopy, AiOutlineUser } from 'react-icons/ai';
 import { LiaSignOutAltSolid } from 'react-icons/lia';
 
+
 export default function NftNavbar() {
     let [isMenu, setisMenu] = useState(false);
     let [isDropdown, openDropdown] = useState(true);
@@ -156,23 +157,23 @@ export default function NftNavbar() {
                     <li className="inline-block mb-0">
                         <div className="form-icon relative">
                              <LuSearch className="text-xl absolute top-1/2 -translate-y-1/2 start-3"/>
-                            <input type="text" className="form-input sm:w-44 w-28 ps-10 py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-3xl outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 bg-white" name="s" id="searchItem" placeholder="Search..." />
+                            <input type="text" className="form-input sm:w-44 w-28 ps-10 py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded-3xl outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 bg-white" name="s" id="searchItem" placeholder="Search..." />
                         </div>
                     </li>
 
                     <li className="inline-block ps-1 mb-0">
-                        <Link id="connectWallet" onClick={metamask}  className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><BiWallet/></Link>
+                        <Link id="connectWallet" onClick={metamask} className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><BiWallet /></Link>
                     </li>
 
                     <li className="dropdown inline-block relative ps-1">
-                        <button onClick={() => openDropdown(!isDropdown)}  data-dropdown-toggle="dropdown" className="dropdown-toggle size-9  items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white inline-flex" type="button">
+                        <button onClick={() => openDropdown(!isDropdown)} data-dropdown-toggle="dropdown" className="dropdown-toggle size-9  items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white inline-flex" type="button">
                             <img src={image} className="rounded-full" alt="" />
                         </button>
 
                         <div className= {`dropdown-menu absolute end-0 m-0 mt-4 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800  ${isDropdown ? 'hidden' : 'block'}`}>
                        
                             <div className="relative">
-                                <div className="py-8 bg-gradient-to-tr from-indigo-600 to-red-600"></div>
+                                <div className="py-8 bg-gradient-to-tr from-[var(--riafco-blue)] to-red-600"></div>
                                 <div className="absolute px-4 -bottom-7 start-0">
                                     <div className="flex items-end">
                                         <img src={image} className="rounded-full size-10 shadow-sm dark:shadow-gray-700" alt="" />
@@ -186,24 +187,24 @@ export default function NftNavbar() {
                                 <h5 className="font-semibold text-[15px]">Wallet:</h5>
                                 <div className="flex items-center justify-between">
                                     <span className="text-[13px] text-slate-400">qhut0...hfteh45</span>
-                                    <Link to="#!" className="text-indigo-600"><AiOutlineCopy/></Link>
+                                    <Link to="#!" className="text-[var(--riafco-orange)] "><AiOutlineCopy /></Link>
                                 </div>
                             </div>
 
                             <div className="mt-4 px-4">
-                                <h5 className="text-[15px]">Balance: <span className="text-indigo-600 font-semibold">0.00045ETH</span></h5>
+                                <h5 className="text-[15px]">Balance: <span className="text-[var(--riafco-orange)]  font-semibold">0.00045ETH</span></h5>
                             </div>
 
                             <ul className="py-2 text-start">
                                 <li>
-                                    <Link to="/nft-creator-profile" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-indigo-600"><AiOutlineUser className="me-2"/> Profile</Link>
+                                    <Link to="/nft-creator-profile" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-[var(--riafco-orange)] "><AiOutlineUser className="me-2" /> Profile</Link>
                                 </li>
                                 <li>
-                                    <Link to="/nft-creator-profile-edit" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-indigo-600"><IoSettingsOutline className="me-1 w-5"/> Settings</Link>
+                                    <Link to="/nft-creator-profile-edit" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-[var(--riafco-orange)] "><IoSettingsOutline className="me-1 w-5" /> Settings</Link>
                                 </li>
                                 <li className="border-t border-gray-100 dark:border-gray-800 my-2"></li>
                                 <li>
-                                    <Link to="/auth-login" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-indigo-600"><LiaSignOutAltSolid className="me-2 size-4"/> Logout</Link>
+                                    <Link to="/auth-login" className="flex items-center text-[14px] font-semibold py-1.5 px-4 hover:text-[var(--riafco-orange)] "><LiaSignOutAltSolid className="me-2 size-4" /> Logout</Link>
                                 </li>
                             </ul>
                         </div>

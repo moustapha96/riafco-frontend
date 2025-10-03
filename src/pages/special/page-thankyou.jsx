@@ -15,14 +15,14 @@ export default function PageThankyou() {
                 <div className="container relative">
                     <div className="grid grid-cols-1">
                         <div className="title-heading text-center my-auto">
-                            <div className="size-24 bg-indigo-600/5 text-indigo-600 rounded-full text-5xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                        <div className="size-24 bg-[var(--riafco-blue)]/5 text-[var(--riafco-orange)]  rounded-full text-5xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
                                 <FiThumbsUp className='size-11'/>
                             </div>
                             <h1 className="mt-6 mb-8 md:text-5xl text-3xl font-bold">Thank You</h1>
                             <p className="text-slate-400 max-w-xl mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind x3 html page.</p>
 
                             <div className="mt-6">
-                                <Link to="/" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-md">Back to Home</Link>
+                            <Link to="/" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white rounded-md">Back to Home</Link>
                             </div>
                         </div>
                     </div>

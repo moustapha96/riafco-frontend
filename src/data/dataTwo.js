@@ -315,7 +315,7 @@ export const productData = [
         amount:"$21.00",
         descAmount:"$16.00",
         tag:"Sale",
-        tagBg:"bg-indigo-600"
+        tagBg:"bg-[var(--riafco-blue)]"
     },
     {
         id:8,

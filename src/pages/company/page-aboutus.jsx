@@ -158,7 +158,7 @@ export default function PageAboutus() {
 
                     <div className="grid grid-cols-1 justify-center">
                         <div className="mt-6 text-center">
-                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">See More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
+                            <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2">See More <MdKeyboardArrowRight className="text-xl ms-1" /></Link>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ export default function PageAboutus() {
                                         <img src={cta_bg} className="rounded-md shadow-lg" alt="" />
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                             <Link to="#" onClick={() => setOpen(true)}  data-type="youtube" data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -226,7 +226,7 @@ export default function PageAboutus() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
+                <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-[var(--riafco-blue)]"></div>
             </section>
 
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0" id="team">
@@ -245,16 +245,16 @@ export default function PageAboutus() {
                                         <img src={item.image} className="size-24 rounded-full shadow-md dark:shadow-gray-800" alt="" />
         
                                         <div className="content mt-4">
-                                            <Link  className="text-lg font-medium hover:text-indigo-600 block">{item.name}</Link>
+                                            <Link className="text-lg font-medium hover:text-[var(--riafco-orange)]  block">{item.name}</Link>
                                             <span className="text-slate-400 block">{item.title}</span>
         
                                             <p className="text-slate-400 mt-4">{item.desc}</p>
         
                                             <ul className="list-none mt-4 space-x-1">
-                                                <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
-                                                <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
-                                                <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
-                                                <li className="inline"><Link  className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
+                                                <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
+                                                <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
+                                                <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
+                                                <li className="inline"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] hover:text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -280,7 +280,7 @@ export default function PageAboutus() {
                                         <div className="tiny-slide text-center" key={index}>
                                             <img src={item.image} className="h-6 mx-auto" alt="" />
                                             <p className="text-slate-400 mt-6">{item.description}</p>
-                                            <h6 className="text-indigo-600 font-semibold mt-3">- {item.name}</h6>
+                                            <h6 className="text-[var(--riafco-orange)]  font-semibold mt-3">- {item.name}</h6>
                                         </div>
                                     ))}
                                 </TinySlider>

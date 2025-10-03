@@ -45,7 +45,7 @@
 //                         className="size-24 mx-auto rounded-full shadow-sm mb-4"
 //                         alt={name || "Auteur"}
 //                     />
-//                     <Link className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">
+//                     <Link className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">
 //                         {name || "Administrateur RIAFCO"}
 //                     </Link>
 //                     <p className="text-slate-400">Membre du RIAFCO</p>
@@ -69,7 +69,7 @@
 //                                 <div className="ms-3">
 //                                     <Link
 //                                         to={`/activity-detail/${activity.id}`}
-//                                         className="font-semibold hover:text-indigo-600 block"
+//                                         className="font-semibold hover:text-[var(--riafco-orange)]  block"
 //                                     >
 //                                         {activity.title_fr}
 //                                     </Link>
@@ -90,7 +90,7 @@
 //                     )}
 //                 </div>
 
-                
+
 // {/*
 //                 <h5 className="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow-sm dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
 //                     Réseaux Sociaux
@@ -99,7 +99,7 @@
 //                     <li className="inline">
 //                         <Link
 //                             to="#"
-//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"
+//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"
 //                         >
 //                             <Icon.Facebook className="size-4" />
 //                         </Link>
@@ -107,7 +107,7 @@
 //                     <li className="inline">
 //                         <Link
 //                             to="#"
-//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"
+//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"
 //                         >
 //                             <Icon.Twitter className="size-4" />
 //                         </Link>
@@ -115,7 +115,7 @@
 //                     <li className="inline">
 //                         <Link
 //                             to="#"
-//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"
+//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"
 //                         >
 //                             <Icon.Linkedin className="size-4" />
 //                         </Link>
@@ -123,7 +123,7 @@
 //                     <li className="inline">
 //                         <Link
 //                             to="#"
-//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"
+//                             className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"
 //                         >
 //                             <Icon.Instagram className="size-4" />
 //                         </Link>
@@ -138,7 +138,7 @@
 //                     <li className="inline-block m-2">
 //                         <Link
 //                             to="#"
-//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
+//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
 //                         >
 //                             IFCL
 //                         </Link>
@@ -146,7 +146,7 @@
 //                     <li className="inline-block m-2">
 //                         <Link
 //                             to="#"
-//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
+//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
 //                         >
 //                             Décentralisation
 //                         </Link>
@@ -154,7 +154,7 @@
 //                     <li className="inline-block m-2">
 //                         <Link
 //                             to="#"
-//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
+//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
 //                         >
 //                             Financement Local
 //                         </Link>
@@ -162,7 +162,7 @@
 //                     <li className="inline-block m-2">
 //                         <Link
 //                             to="#"
-//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
+//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
 //                         >
 //                             Afrique
 //                         </Link>
@@ -170,7 +170,7 @@
 //                     <li className="inline-block m-2">
 //                         <Link
 //                             to="#"
-//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
+//                             className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out"
 //                         >
 //                             Développement Durable
 //                         </Link>
@@ -240,7 +240,7 @@ export default function ActualiteUserDetail({
                         />
                         <Link
                             to="#"
-                            className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out block"
+                            className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out block"
                         >
                             {auteurNom || "Administrateur RIAFCO"}
                         </Link>
@@ -277,7 +277,7 @@ export default function ActualiteUserDetail({
                                     <div className="ms-3 flex-grow">
                                         <Link
                                             to={`/actualités/${actualite.id}/détails`}
-                                            className="font-semibold hover:text-indigo-600 block"
+                                            className="font-semibold hover:text-[var(--riafco-orange)]  block"
                                         >
                                             {actualite.title_fr}
                                         </Link>
@@ -311,7 +311,7 @@ export default function ActualiteUserDetail({
                             <Link
                                 key={motCle}
                                 to="#"
-                                className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-100 dark:bg-slate-700 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-300 ease-in-out"
+                                className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-100 dark:bg-slate-700 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-300 ease-in-out"
                             >
                                 {motCle}
                             </Link>

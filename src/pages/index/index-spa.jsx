@@ -73,7 +73,7 @@ export default function IndexSpa() {
                                 <div className="relative">
                                     <img src={ab1} className="lg:w-[400px] w-[280px]" alt="" />
                                     <div className="absolute top-0 translate-y-2/4 end-0 text-center">
-                                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                         </Link>
                                     </div>
@@ -111,7 +111,7 @@ export default function IndexSpa() {
                                 <p className="text-slate-400 max-w-xl">We must now retrace our way a little. It was mentioned that upon first breaking ground in the whale&apos;s back, the blubber-hook was inserted into the original hole there cut by the spades of the mates.</p>
 
                                 <div className="mt-8">
-                                    <Link className="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white font-normal">Explore Now</Link>
+                                    <Link className="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white font-normal">Explore Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +133,8 @@ export default function IndexSpa() {
                                         <img src={data.image} className="size-16" alt="" />
                                         <div className="ms-2 w-full">
                                             <div className="flex justify-between pb-2 border-b border-gray-100 dark:border-gray-800">
-                                                <Link className="!font-ebgaramond hover:text-indigo-600 text-xl font-semibold">{data.type}</Link>
-                                                <h6 className="text-indigo-600">$140</h6>
+                                                <Link className="!font-ebgaramond hover:text-[var(--riafco-orange)]  text-xl font-semibold">{data.type}</Link>
+                                                <h6 className="text-[var(--riafco-orange)] ">$140</h6>
                                             </div>
                                             <p className="text-slate-400 mt-2">Your athletic spa experience and recovery.</p>
                                         </div>
@@ -154,7 +154,7 @@ export default function IndexSpa() {
 
                         <p className="text-white/80 max-w-xl mx-auto">Every treatment is specifically designed to using massage sequences and the most potent actives available in the world today.</p>
 
-                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
+                        <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610" className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  mx-auto mt-10">
                             <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                         </Link>
                     </div>
@@ -191,14 +191,14 @@ export default function IndexSpa() {
                                             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black size-52 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"></div>
 
                                             <ul className="list-none space-x-1 absolute start-0 end-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out flex justify-center">
-                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
-                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
-                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
+                                                <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
                                             </ul>
                                         </div>
 
                                         <div className="content mt-3">
-                                            <Link className="text-xl font-semibold !font-ebgaramond hover:text-indigo-600 transition-all duration-500 ease-in-out">{item.name}</Link>
+                                            <Link className="text-xl font-semibold !font-ebgaramond hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{item.name}</Link>
                                             <p className="text-slate-400">Thai Massage</p>
                                         </div>
                                     </div>
@@ -223,11 +223,11 @@ export default function IndexSpa() {
                                     <img src={item.image} alt="" />
 
                                     <div className="content p-6">
-                                        <Link to="/blog-detail" className="title h5 text-xl font-semibold !font-ebgaramond hover:text-indigo-600 duration-500 ease-in-out">{item.title}</Link>
+                                        <Link to="/blog-detail" className="title h5 text-xl font-semibold !font-ebgaramond hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</Link>
                                         <p className="text-slate-400 mt-3">{item.desc}</p>
 
                                         <div className="mt-4">
-                                            <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>

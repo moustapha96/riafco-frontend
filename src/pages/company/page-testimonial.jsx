@@ -60,7 +60,7 @@ export default function PageTestimonial() {
                                             <img src={data.image} className="size-16 rounded-full shadow-sm dark:shadow-gray-800" alt="" />
 
                                             <div className="ps-4">
-                                                <Link to = "#"className="text-lg hover:text-indigo-600 duration-500 ease-in-out">{data.name}</Link>
+                                                <Link to="#" className="text-lg hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{data.name}</Link>
                                                 <p className="text-slate-400">{data.role}</p>
                                             </div>
                                         </div>
@@ -86,13 +86,13 @@ export default function PageTestimonial() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 text-center">
-                        <h6 className="text-indigo-600 text-sm font-bold mb-2">Available for freelance projects</h6>
+                        <h6 className="text-[var(--riafco-orange)]  text-sm font-bold mb-2">Available for freelance projects</h6>
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Do you have digital project? <br /> Let&apos;s talk.</h3>
 
                         <p className="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                         <div className="mt-6">
-                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-4"><FiPhone className="me-1 text-lg"/> Contact us</Link>
+                            <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-4"><FiPhone className="me-1 text-lg" /> Contact us</Link>
                         </div>
                     </div>
                 </div>

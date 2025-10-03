@@ -51,7 +51,7 @@ export default function PageJobCompanyDetail() {
                                             <li className="flex mt-2 items-center font-medium"><Icon.Users className="size-4 text-amber-500 me-3"></Icon.Users><span className="text-slate-400 me-3">No. of employees :</span> 200</li>
                                         </ul>
 
-                                        <Link to="/page-job-apply" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-6">Apply Now</Link>
+                                        <Link to="/page-job-apply" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-6">Apply Now</Link>
                                     </div>
                                 </div>
 
@@ -76,11 +76,11 @@ export default function PageJobCompanyDetail() {
                                     return(
                                         <div key={index}>
                                         <Link to="/page-job-detail" className="group flex  bg-white dark:bg-slate-900 transition-all duration-500 hover:scale-105 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md">
-                                            <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full me-3">
+                                                <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  text-center rounded-full me-3">
                                                 <Icon className="size-5 rotate-45"></Icon>
                                             </div>
                                             <div className="content">
-                                                <h4 className="text-lg font-medium group-hover:text-indigo-600 duration-500 ease-in-out">{item.title}</h4>
+                                                    <h4 className="text-lg font-medium group-hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.title}</h4>
                                                 <p className="text-slate-400">{item.location}</p>
                                             </div>
                                         </Link>

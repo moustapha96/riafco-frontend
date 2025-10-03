@@ -30,7 +30,7 @@ export default function UserInvoice() {
                                             <img src={logo_light} className="hidden dark:block" alt="" />
                                             <div className="flex mt-4">
                                                 <Link to="#" className="size-4 me-3 mt-1"></Link>
-                                                <Link to="#"className="text-indigo-600 dark:text-white font-medium">https://1.envato.market/techwind-react</Link>
+                                                <Link to="#" className="text-[var(--riafco-orange)]  dark:text-white font-medium">https://1.envato.market/techwind-react</Link>
                                             </div>
                                         </div>
 
@@ -198,7 +198,7 @@ export default function UserInvoice() {
 
                                         <div className="mt-4 md:mt-0">
                                             <div className="text-slate-400 text-center md:text-end">
-                                                <h6 className="mb-0"><Link to="/page-terms" target="_blank" className="text-indigo-600">Terms & Conditions</Link></h6>
+                                                <h6 className="mb-0"><Link to="/page-terms" target="_blank" className="text-[var(--riafco-orange)] ">Terms & Conditions</Link></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@ export default function UserInvoice() {
             <SmallFooter/>
 
             <div className="fixed bottom-3 end-3">
-                <Link to="/" className="back-button size-9 inline-flex items-center justify-center tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full"><Icon.ArrowLeft className="size-4"></Icon.ArrowLeft></Link>
+                <Link to="/" className="back-button size-9 inline-flex items-center justify-center tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full"><Icon.ArrowLeft className="size-4"></Icon.ArrowLeft></Link>
             </div>
         </>
     )

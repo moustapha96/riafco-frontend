@@ -5,6 +5,7 @@ import Footer from '../../component/Footer/footer';
 import PortfolioMasonryFilter from '../../component/portfolioMasonryFilter';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function PortfolioMasonryFive() {
     useEffect(() => {
@@ -46,7 +47,7 @@ export default function PortfolioMasonryFive() {
             </div>
 
             <PortfolioMasonryFilter shuffle={5} containerClass={true} columnsCountBreakPoints={{350: 1, 750: 2, 900: 5}}/>
-            <Footer />
+            <TransparentFooter />
 
         </>
     )

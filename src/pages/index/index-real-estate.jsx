@@ -122,14 +122,14 @@ export default function IndexRealEstate() {
                                         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6 lg:divide-x-[1px] lg:divide-gray-200 lg:dark:divide-gray-700">
                                     <div>
                                         <div className="filter-search-form relative">
-                                            <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                        <LuSearch className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <input name="name" type="text" id="job-keyword" className="form-input lg:rounded-t-sm lg:rounded-e-none lg:rounded-b-none lg:rounded-s-sm lg:outline-0 w-full filter-input-box bg-gray-50 dark:bg-slate-800 border-0 focus:ring-0" placeholder="Search your Keywords" />
                                         </div>
                                     </div>
 
                                     <div>                                                      
                                         <div className="filter-search-form relative">
-                                            <AiOutlineHome className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                        <AiOutlineHome className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={project} />
 
                                         </div>
@@ -137,7 +137,7 @@ export default function IndexRealEstate() {
 
                                     <div>                                                       
                                         <div className="filter-search-form relative">
-                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                        <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={minPrice} />
 
                                         </div>
@@ -145,14 +145,14 @@ export default function IndexRealEstate() {
 
                                     <div>                                                       
                                         <div className="filter-search-form relative">
-                                            <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-indigo-600 text-[20px]"/>
+                                                        <AiOutlineDollar className="absolute top-[48%] -translate-y-1/2 start-3 z-1 text-[var(--riafco-orange)]  text-[20px]" />
                                             <Select className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" options={maxPrice} />
 
                                         </div>
                                     </div>
 
                                     <div className="lg:mt-6">
-                                        <input type="submit" id="search-buy" name="search" className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
+                                                    <input type="submit" id="search-buy" name="search" className="btn bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@ export default function IndexRealEstate() {
                                 </div>
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                     <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-md dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600">
+                                        className="lightbox size-20 rounded-full shadow-md dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)] ">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -204,7 +204,7 @@ export default function IndexRealEstate() {
                                 <p className="text-slate-400 max-w-xl">Techwind Homes developed a platform for the Real Estate marketplace that allows buyers and sellers to easily execute a transaction on their own. The platform drives efficiency, cost transparency and control into the hands of the consumers. Techwind Homes is Real Estate Redefined.</p>
 
                                 <div className="mt-4">
-                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-3">Learn More </Link>
+                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-3">Learn More </Link>
                                 </div>
                             </div>
                         </div>
@@ -224,8 +224,8 @@ export default function IndexRealEstate() {
                             return(
                             <div key={index} className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-md bg-white dark:bg-slate-900 overflow-hidden text-center">
                                 <div className="relative overflow-hidden text-transparent -m-3">
-                                    <Icon.Hexagon className="size-32 fill-indigo-600/5 mx-auto"></Icon.Hexagon>
-                                    <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-md transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <Icon.Hexagon className="size-32 fill-[var(--riafco-blue)]/5 mx-auto"></Icon.Hexagon>
+                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-md transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
                                         <Icons className="size-8"/>
                                     </div>
                                 </div>
@@ -263,22 +263,22 @@ export default function IndexRealEstate() {
 
                                         <div className="p-6">
                                             <div className="pb-6">
-                                                <Link to="/property-detail" className="text-lg hover:text-indigo-600 font-medium ease-in-out duration-500">{data.address}</Link>
+                                                <Link to="/property-detail" className="text-lg hover:text-[var(--riafco-orange)]  font-medium ease-in-out duration-500">{data.address}</Link>
                                             </div>
 
                                             <ul className="py-6 border-y border-gray-100 dark:border-gray-800 flex items-center list-none">
                                                 <li className="flex items-center me-4">
-                                                    <LiaCompressArrowsAltSolid className=" text-2xl me-2 text-indigo-600"/>
+                                                    <LiaCompressArrowsAltSolid className=" text-2xl me-2 text-[var(--riafco-orange)] " />
                                                     <span>8000sqf</span>
                                                 </li>
 
                                                 <li className="flex items-center me-4">
-                                                 <LuBedDouble className="text-2xl me-2 text-indigo-600"/>
+                                                    <LuBedDouble className="text-2xl me-2 text-[var(--riafco-orange)] " />
                                                     <span>4 Beds</span>
                                                 </li>
 
                                                 <li className="flex items-center">
-                                                    <LuBath className="text-2xl me-2 text-indigo-600"/>
+                                                    <LuBath className="text-2xl me-2 text-[var(--riafco-orange)] " />
                                                     <span>4 Baths</span>
                                                 </li>
                                             </ul>
@@ -310,7 +310,7 @@ export default function IndexRealEstate() {
 
                     <div className="md:flex justify-center text-center mt-6">
                         <div className="md:w-full">
-                            <Link to="/property-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">View More Properties <FaArrowRight className="ms-2 text-[10px]"/> </Link>
+                            <Link to="/property-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">View More Properties <FaArrowRight className="ms-2 text-[10px]" /> </Link>
                         </div>
                     </div>
                 </div>

@@ -72,11 +72,11 @@ export default function IndexCourse() {
     return (
         <div>
             <Navbar />
-            <section className="relative table w-full py-36 lg:py-44 bg-indigo-600/5 overflow-hidden">
+            <section className="relative table w-full py-36 lg:py-44 bg-[var(--riafco-blue)]/5 overflow-hidden">
                 <div className="container relative">
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] relative">
                         <div className="md:col-span-7">
-                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Learn with <span className="text-indigo-600">Expert</span> <br /> Anytime & Anywhere</h4>
+                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Learn with <span className="text-[var(--riafco-orange)] ">Expert</span> <br /> Anytime & Anywhere</h4>
                             <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                             <div className="mt-6">
@@ -91,7 +91,7 @@ export default function IndexCourse() {
 
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                     <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610"
-                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
                                 </div>
@@ -99,7 +99,7 @@ export default function IndexCourse() {
                         </div>
 
                         <div className="overflow-hidden after:content-[''] after:absolute after:size-32 after:bg-red-600/5 after:top-10 after:start-0 after:-z-1 after:rounded-3xl after:animate-[spin_10s_linear_infinite]"></div>
-                        <div className="overflow-hidden after:content-[''] after:absolute after:size-[512px] after:bg-indigo-600/5 after:top-0 after:-end-5 after:-z-1 after:rounded-full"></div>
+                        <div className="overflow-hidden after:content-[''] after:absolute after:size-[512px] after:bg-[var(--riafco-blue)]/5 after:top-0 after:-end-5 after:-z-1 after:rounded-full"></div>
                     </div>
                 </div>
             </section>
@@ -142,14 +142,14 @@ export default function IndexCourse() {
                             return(
                                 <div key={index} className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
                                     <div className="relative overflow-hidden text-transparent -m-3">
-                                        <Icon.Hexagon className="size-32 fill-indigo-600/5 mx-auto"></Icon.Hexagon>
-                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-indigo-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+                                        <Icon.Hexagon className="size-32 fill-[var(--riafco-blue)]/5 mx-auto"></Icon.Hexagon>
+                                        <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-[var(--riafco-orange)]  rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
                                             <Icons className='size-7'/>
                                         </div>
                                     </div>
 
                                     <div className="mt-6">
-                                        <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="#" className="text-xl font-medium transition-all duration-500 ease-in-out hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 transition-all duration-500 ease-in-out mt-3">{item.desc}</p>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@ export default function IndexCourse() {
                                         <img src={ab01} className="shadow-sm rounded-md" alt="" />
                                     </div>
                                 </div>
-                                <div className="overflow-hidden after:content-[''] after:absolute after:size-[512px] after:bg-indigo-600/5 after:top-0 after:-end-5 after:-z-1 after:rounded-full"></div>
+                                <div className="overflow-hidden after:content-[''] after:absolute after:size-[512px] after:bg-[var(--riafco-blue)]/5 after:top-0 after:-end-5 after:-z-1 after:rounded-full"></div>
                             </div>
                         </div>
 
@@ -185,7 +185,7 @@ export default function IndexCourse() {
                                 <p className="text-slate-400 max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with &apos;real&apos; content.</p>
 
                                 <div className="mt-6">
-                                    <Link to='#' className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-semibold text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Learn more <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                    <Link to='#' className="relative inline-flex items-center tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 font-semibold text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">Learn more <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@ export default function IndexCourse() {
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">All Categories <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">All Categories <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -215,13 +215,13 @@ export default function IndexCourse() {
                                         let Icons = item.icon
                                         return(
                                             <div className="tiny-slide" key={index}>
-                                                <div className="px-3 py-10 rounded-md shadow-sm dark:shadow-gray-800 group text-center bg-white dark:bg-slate-900 hover:bg-indigo-600/5 dark:hover:bg-indigo-600/5 transition duration-500 m-2">
-                                                    <div className="w-[84px] h-[84px] bg-indigo-600/5 group-hover:bg-indigo-600 text-indigo-600 group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
+                                                <div className="px-3 py-10 rounded-md shadow-sm dark:shadow-gray-800 group text-center bg-white dark:bg-slate-900 hover:bg-[var(--riafco-blue)]/5 dark:hover:bg-[var(--riafco-blue)]/5 transition duration-500 m-2">
+                                                    <div className="w-[84px] h-[84px] bg-[var(--riafco-blue)]/5 group-hover:bg-[var(--riafco-blue)] text-[var(--riafco-orange)]  group-hover:text-white rounded-full text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition duration-500 mx-auto">
                                                         <Icons className='size-7'/>
                                                     </div>
 
                                                     <div className="content mt-6">
-                                                        <Link to='#' className="title h5 text-lg font-medium hover:text-indigo-600">{item.course}</Link>
+                                                        <Link to='#' className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)] ">{item.course}</Link>
                                                         <p className="text-slate-400 mt-3">{item.lesson} Lesson</p>
                                                     </div>
                                                 </div>
@@ -234,7 +234,7 @@ export default function IndexCourse() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to='#' className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">All Categories  <FaArrowRight/></Link>
+                            <Link to='#' className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">All Categories  <FaArrowRight /></Link>
                         </div>
                     </div>
                 </div>
@@ -267,8 +267,8 @@ export default function IndexCourse() {
                             </div>
 
                             <div className="content p-6 relative">
-                                <Link to={`/course-detail/${item.id}`} className="font-medium block text-indigo-600">{item.field}</Link>
-                                <Link to={`/course-detail/${item.id}`} className="text-lg font-medium block hover:text-indigo-600 duration-500 ease-in-out mt-2">{item.desc}</Link>
+                                        <Link to={`/course-detail/${item.id}`} className="font-medium block text-[var(--riafco-orange)] ">{item.field}</Link>
+                                        <Link to={`/course-detail/${item.id}`} className="text-lg font-medium block hover:text-[var(--riafco-orange)]  duration-500 ease-in-out mt-2">{item.desc}</Link>
                                 <p className="text-slate-400 mt-3 mb-4">The phrasal sequence of the is now so that many campaign and benefit</p>
 
                                 <ul className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center list-none text-slate-400">
@@ -289,7 +289,7 @@ export default function IndexCourse() {
                                 </ul>
 
                                 <div className="absolute -top-7 end-6 z-1 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
-                                    <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-indigo-600 dark:text-white">
+                                            <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-[var(--riafco-orange)]  dark:text-white">
                                         <span className="font-semibold">$11</span>
                                     </div>
                                 </div>
@@ -301,7 +301,7 @@ export default function IndexCourse() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to="/course-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See All Courses <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="/course-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See All Courses <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -318,7 +318,7 @@ export default function IndexCourse() {
                             <p className="text-white/70 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                             <div className="relative mt-10">
-                                <Link to='#' className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Admission Now</Link>
+                                <Link to='#' className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Admission Now</Link>
                             </div>
                         </div>
 
@@ -332,7 +332,7 @@ export default function IndexCourse() {
                                             <label className="form-label font-medium">Your Name : <span className="text-red-600">*</span></label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name" name="name" required />
+                                                <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name" name="name" required />
                                             </div>
                                         </div>
 
@@ -340,7 +340,7 @@ export default function IndexCourse() {
                                             <label className="form-label font-medium">Your Email : <span className="text-red-600">*</span></label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email" name="email" required />
+                                                <input type="email" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email" name="email" required />
                                             </div>
                                         </div>
 
@@ -348,12 +348,12 @@ export default function IndexCourse() {
                                             <label className="form-label font-medium">Phone No. : <span className="text-red-600">*</span></label>
                                             <div className="form-icon relative mt-2">
                                                 <Icon.Phone className="size-4 absolute top-3 start-4"></Icon.Phone>
-                                                <input name="number" id="phNumber" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="+12 12458 854" required />
+                                                <input name="number" id="phNumber" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="+12 12458 854" required />
                                             </div>
                                         </div>
 
                                         <div>
-                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Free Trial</Link>
+                                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Free Trial</Link>
                                         </div>
                                     </div>
                                 </form>
@@ -385,7 +385,7 @@ export default function IndexCourse() {
                                                     <img src={item.image} className="size-16 rounded-full shadow-sm dark:shadow-gray-800" alt="" />
 
                                                     <div className="ps-4">
-                                                        <Link to='#' className="text-lg hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                                                            <Link to='#' className="text-lg hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.name}</Link>
                                                         <p className="text-slate-400">{item.title}</p>
                                                     </div>
                                                 </div>
@@ -407,7 +407,7 @@ export default function IndexCourse() {
                                                     <img src={item.image2} className="size-16 rounded-full shadow-sm dark:shadow-gray-800" alt="" />
 
                                                     <div className="ps-4">
-                                                        <Link to='#' className="text-lg hover:text-indigo-600 duration-500 ease-in-out">{item.name2}</Link>
+                                                            <Link to='#' className="text-lg hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{item.name2}</Link>
                                                         <p className="text-slate-400">{item.title2}</p>
                                                     </div>
                                                 </div>
@@ -451,24 +451,24 @@ export default function IndexCourse() {
 
                                                 <ul className="list-none  space-x-1 absolute start-0 end-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
                                                     <li className="inline">
-                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white">
+                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white">
                                                             <Icon.Facebook className="size-4"></Icon.Facebook>
                                                         </Link>
                                                     </li>
                                                     <li className="inline">
-                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white">
+                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white">
                                                             <Icon.Instagram className="size-4"></Icon.Instagram>
                                                         </Link>
                                                     </li>
                                                     <li className="inline">
-                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white">
+                                                        <Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-[var(--riafco-blue)] bg-[var(--riafco-blue)] hover:border-[var(--riafco-blue)] hover:bg-[var(--riafco-blue)] text-white">
                                                             <Icon.Linkedin className="size-4"></Icon.Linkedin>
                                                         </Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="content mt-3">
-                                                <Link to="" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">{data.name}</Link>
+                                                <Link to="" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{data.name}</Link>
                                                 <p className="text-slate-400">{data.role}</p>
                                             </div>
                                         </div>
@@ -496,11 +496,11 @@ export default function IndexCourse() {
                                         <img src={data.image} alt="" />
 
                                         <div className="content p-6">
-                                            <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">{data.title}</Link>
+                                            <Link to="/blog-detail" className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out">{data.title}</Link>
                                             <p className="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
 
                                             <div className="mt-4">
-                                                <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                                <Link to="/blog-detail" className="relative inline-flex items-center font-normal tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                             </div>
                                         </div>
                                     </div>

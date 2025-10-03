@@ -23,7 +23,7 @@ export default function NftCreateItem() {
         <>
             <NftNavbar />
 
-            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-indigo-600/20">
+            <section className="relative table w-full py-32 lg:py-40 bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-[var(--riafco-blue)]/20">
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <h3 className="text-3xl leading-normal font-medium">Create Your Item</h3>
@@ -32,11 +32,11 @@ export default function NftCreateItem() {
 
                 <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                     <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/">Techwind</Link></li>
+                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/">Techwind</Link></li>
                         <li className="inline-flex text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><Link to="/index-nft">NFT</Link></li>
+                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-[var(--riafco-orange)] "><Link to="/index-nft">NFT</Link></li>
                         <li className="inline-flex text-base mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out text-indigo-600" aria-current="page">Create</li>
+                        <li className="inline-flex uppercase text-[13px] font-bold duration-500 ease-in-out text-[var(--riafco-orange)] " aria-current="page">Create</li>
                     </ul>
                 </div>
             </section>
@@ -58,7 +58,7 @@ export default function NftCreateItem() {
                            } 
                             <img src={file} alt="" className="preview-box flex justify-center rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden bg-gray-50 dark:bg-slate-800 text-slate-400 p-2 text-center small"/>
                             <input type="file" id="input-file" name="input-file" accept="image/*"  hidden  onClick={(e)=>handleChange(e)}/>
-                            <label className="btn-upload py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full mt-6 cursor-pointer" htmlFor="input-file">Upload Image</label>
+                            <label className="btn-upload py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full mt-6 cursor-pointer" htmlFor="input-file">Upload Image</label>
                         </div>
 
                         <div className="lg:w-2/3 md:w-3/5 mt-8 md:mt-0">
@@ -67,17 +67,17 @@ export default function NftCreateItem() {
                                     <div className="grid grid-cols-12 gap-6">
                                         <div className="col-span-12">
                                             <label className="font-semibold">Art Title <span className="text-red-600">*</span></label>
-                                            <input name="name" id="name" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Title :" />
+                                            <input name="name" id="name" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Title :" />
                                         </div>
 
                                         <div className="col-span-12">
                                             <label className="font-semibold"> Description : </label>
-                                            <textarea name="comments" id="comments" className="form-input mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Description :"></textarea>
+                                            <textarea name="comments" id="comments" className="form-input mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Description :"></textarea>
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12">
                                             <label htmlFor= "NftItems" className="font-semibold">Type :</label>
-                                            <select id="NftItems" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
+                                            <select id="NftItems" className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0">
                                                 <option>GIFs</option>
                                                 <option>Music</option>
                                                 <option>Video</option>
@@ -87,7 +87,7 @@ export default function NftCreateItem() {
 
                                         <div className="md:col-span-6 col-span-12">
                                             <label className="font-semibold"> Rate : </label>
-                                            <input name="time" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" id="time"  />
+                                            <input name="time" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" id="time" />
                                         </div>
 
                                         <div className="col-span-12">
@@ -96,16 +96,16 @@ export default function NftCreateItem() {
 
                                         <div className="md:col-span-6 col-span-12">
                                             <label className="font-semibold"> Starting Date : </label>
-                                            <input name="date" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 start" placeholder="Select date :" />
+                                            <input name="date" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 start" placeholder="Select date :" />
                                         </div>
 
                                         <div className="md:col-span-6 col-span-12">
                                             <label className="font-semibold"> Expiration date : </label>
-                                            <input name="date" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 end" placeholder="Select date :" />
+                                            <input name="date" type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0 end" placeholder="Select date :" />
                                         </div>
 
                                         <div className="col-span-12">
-                                            <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Create Item</button>
+                                            <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Create Item</button>
                                         </div>
                                     </div>
                                 </form>

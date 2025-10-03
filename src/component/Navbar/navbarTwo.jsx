@@ -95,11 +95,11 @@ export default function NavbarTwo(props) {
             {
                 navClass !== 'nav-light' ? <ul className={`buy-button list-none space-x-1 mb-0`} >
                         <li className="inline mb-0">
-                            <Link to="#" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><Icon.Settings className="size-4" /></Link>
+                            <Link to="#" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.Settings className="size-4" /></Link>
                         </li>
 
                         <li className="inline ps-1 mb-0">
-                            <Link to="https://1.envato.market/techwind-react" target="_blank" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><Icon.ShoppingCart className="size-4" /></Link>
+                            <Link to="https://1.envato.market/techwind-react" target="_blank" className="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><Icon.ShoppingCart className="size-4" /></Link>
                         </li>
                         
                     </ul>
@@ -107,14 +107,14 @@ export default function NavbarTwo(props) {
                     <ul className="buy-button list-none space-x-1 mb-0">
                     <li className="inline mb-0">
                         <Link to="#">
-                            <span className="login-btn-primary"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><Icon.Settings className="size-4" /></span></span>
+                                    <span className="login-btn-primary"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)]/5 hover:bg-[var(--riafco-blue)] border border-[var(--riafco-blue)]/10 hover:border-[var(--riafco-blue)] text-[var(--riafco-orange)]  hover:text-white"><Icon.Settings className="size-4" /></span></span>
                             <span className="login-btn-light"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><Icon.Settings className="size-4" /></span></span>
                         </Link>
                     </li>
             
                     <li className="inline ps-1 mb-0">
                         <Link to="https://1.envato.market/techwind-react" target="_blank">
-                            <div className="login-btn-primary"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><Icon.ShoppingCart className="size-4" /></span></div>
+                                    <div className="login-btn-primary"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><Icon.ShoppingCart className="size-4" /></span></div>
                             <div className="login-btn-light"><span className="size-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><Icon.ShoppingCart className="size-4" /></span></div>
                         </Link>
                     </li>
@@ -226,7 +226,7 @@ export default function NavbarTwo(props) {
                             <li className={`${["/page-aboutus", "/page-services","/page-team", "/page-pricing", "/page-testimonial"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}><Link to="#"> Company </Link><span className="submenu-arrow"></span>
                                 <ul className="submenu">
                                     <li className={manu === "/page-aboutus" || "" ? "active" : ""}><Link to="/page-aboutus" className="sub-menu-item"> About Us</Link></li>
-                                    <li className={`has-submenu child-menu-item ${["/page-services","/page-service-detail"].includes(manu)? "active" : ""}`}><Link to="#"> Services <span className="bg-indigo-600 inline-block text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Added</span></Link><span className="submenu-arrow"></span>
+                                        <li className={`has-submenu child-menu-item ${["/page-services", "/page-service-detail"].includes(manu) ? "active" : ""}`}><Link to="#"> Services <span className="bg-[var(--riafco-blue)] inline-block text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Added</span></Link><span className="submenu-arrow"></span>
                                         <ul className="submenu">
                                             <li><Link to="/page-services" className="sub-menu-item">Services</Link></li>
                                             <li><Link to="/page-service-detail" className="sub-menu-item">Service Detail </Link></li>

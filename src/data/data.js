@@ -219,20 +219,20 @@ export const nftData = [
     },
 ]
 export  const  creatorsData = [
-    {id:1,image:client1,name:"Calvin Carlo", title:"@calvin_carlo", background:" bg-gradient-to-r to-orange-600/70 from-indigo-600/70"},
-    {id:2, image:client2,name:"Tiffany Betancourt", title:"@cutiegirl", background:" bg-gradient-to-r to-red-600/70 from-indigo-600/70"},
+    {id:1,image:client1,name:"Calvin Carlo", title:"@calvin_carlo", background:" bg-gradient-to-r to-orange-600/70 from-[var(--riafco-blue)]/70"},
+    {id:2, image:client2,name:"Tiffany Betancourt", title:"@cutiegirl", background:" bg-gradient-to-r to-red-600/70 from-[var(--riafco-blue)]/70"},
     {id:3, image:client3,name:"Mari Harrington", title:"@norse_queen", background:" bg-gradient-to-r to-fuchsia-600/70 from-green-600/70"},
     {id:4, image:client4,name:"Floyd Glasgow", title:"@bigbull", background:"bg-gradient-to-r to-pink-600/70 from-purple-600/70"},
-    {id:5, image:client5, name:"Donna Schultz", title:"@angel", background:"bg-gradient-to-r to-indigo-600/70 from-blue-600/70"},
-    {id:6, image:client6,name:"Joshua Morris", title:"@crazyanyone", background:"bg-gradient-to-r to-orange-600/70 from-indigo-600/70"},
+    {id:5, image:client5, name:"Donna Schultz", title:"@angel", background:"bg-gradient-to-r to-[var(--riafco-blue)]/70 from-blue-600/70"},
+    {id:6, image:client6,name:"Joshua Morris", title:"@crazyanyone", background:"bg-gradient-to-r to-orange-600/70 from-[var(--riafco-blue)]/70"},
     {id:7,  image:client7,name:"Carl Williams", title:"@looserbad", background:" bg-gradient-to-r to-sky-600/70 from-yellow-600/70"},
     {id:8, image:client8,name:"Eugene Green", title:"@kristyhoney", background:"bg-gradient-to-r to-lime-600/70 from-rose-600/70"},
-    {id:9, image:client1,name:"Calvin Carlo", title:"@calvin_carlo", background:" bg-gradient-to-r to-orange-600/70 from-indigo-600/70"},
-    {id:10, image:client2,name:"Tiffany Betancourt", title:"@cutiegirl", background:"bg-gradient-to-r to-red-600/70 from-indigo-600/70"},
+    {id:9, image:client1,name:"Calvin Carlo", title:"@calvin_carlo", background:" bg-gradient-to-r to-orange-600/70 from-[var(--riafco-blue)]/70"},
+    {id:10, image:client2,name:"Tiffany Betancourt", title:"@cutiegirl", background:"bg-gradient-to-r to-red-600/70 from-[var(--riafco-blue)]/70"},
     {id:11, image:client3,name:"Mari Harrington", title:"@norse_queen", background:"bg-gradient-to-r to-fuchsia-600/70 from-green-600/70"},
     {id:12, image:client5,name:"Floyd Glasgow", title:"@bigbull", background:"bg-gradient-to-r to-pink-600/70 from-purple-600/70"},
-    {id:13, image:client6,name:"Donna Schultz", title:"@angel", background:"bg-gradient-to-r to-indigo-600/70 from-blue-600/70"},
-    {id:14, image:client7,name:"Joshua Morris", title:"@crazyanyone", background:"bg-gradient-to-r to-orange-600/70 from-indigo-600/70"},
+    {id:13, image:client6,name:"Donna Schultz", title:"@angel", background:"bg-gradient-to-r to-[var(--riafco-blue)]/70 from-blue-600/70"},
+    {id:14, image:client7,name:"Joshua Morris", title:"@crazyanyone", background:"bg-gradient-to-r to-orange-600/70 from-[var(--riafco-blue)]/70"},
     {id:15, image:client8,name:"Carl Williams", title:"@looserbad", background:"bg-gradient-to-r to-sky-600/70 from-yellow-600/70"},
 ]
 export   const jobGrid = [
@@ -1047,7 +1047,7 @@ export const teamData =[
         name:"Ronny Jofra",
         title:"C.E.O.",
         desc:"If the distribution of letters and 'words' is random",
-        background:"bg-indigo-600/10 dark:bg-indigo-600/30 ",
+        background:"bg-[var(--riafco-blue)]/10 dark:bg-[var(--riafco-blue)]/30 ",
     },
     {
         image:client2,
@@ -1075,7 +1075,7 @@ export const teamData =[
         name:"Ronny Jofra",
         title:"C.E.O.",
         desc:"If the distribution of letters and 'words' is random",
-        background:"bg-indigo-600/10 dark:bg-indigo-600/30  ",
+        background:"bg-[var(--riafco-blue)]/10 dark:bg-[var(--riafco-blue)]/30  ",
     },
     {
         image:client6,

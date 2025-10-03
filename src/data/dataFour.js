@@ -240,7 +240,7 @@ export const hostingServices = [
         sale: 'Sale',
         price: '3.99',
         time: '/year',
-        background:"bg-indigo-600"
+        background:"bg-[var(--riafco-blue)]"
     },
     {
         image: biz,

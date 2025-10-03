@@ -79,7 +79,7 @@ export default function VideoPortfolio() {
 
                     <div className="grid grid-cols-1 mt-8">
                         <div className="text-center">
-                            <Link to="photography-portfolio" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="photography-portfolio" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] dark:after:bg-white duration-500 ease-in-out">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>

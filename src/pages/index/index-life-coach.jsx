@@ -35,12 +35,12 @@ export default function LifeCoach(){
             <div className="container relative z-3">
                 <div className="grid grid-cols-1 mt-10">
                     <div className="md:text-start text-center">
-                        <span className="bg-indigo-600 inline-block text-white text-sm font-semibold px-2.5 rounded mb-4">Life Coach</span>
+                            <span className="bg-[var(--riafco-blue)] inline-block text-white text-sm font-semibold px-2.5 rounded mb-4">Life Coach</span>
                         <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Unleash Your Real <br/> Potential and Live <br/> Limitless!</h1>
                         <p className="text-white/70 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
                         
                         <div className="mt-8">
-                            <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Contact us <i className="mdi mdi-arrow-right align-middle"></i></Link>
+                                <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Contact us <i className="mdi mdi-arrow-right align-middle"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export default function LifeCoach(){
                             <img src={aboutImage} className="rounded-full" alt=""/>
                             <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                 <Link to="#!" onClick={() => setOpen(true)}
-                                    className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                        className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                     <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                 </Link>
                             </div>
@@ -149,7 +149,7 @@ export default function LifeCoach(){
 
                     <div className="lg:col-span-7 md:col-span-6">
                         <div className="lg:ms-5">
-                            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">About Me</h6>
+                                <h6 className="text-[var(--riafco-orange)]  text-sm font-bold uppercase mb-2">About Me</h6>
                             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Unleash Your Real <br/> Potential and <br/> Live Limitless!</h3>
 
                             <p className="text-slate-400 max-w-xl">I am glad that you have made it here to send a distress signal, and inform the Senate that all on board were killed. Dantooine.  I’m not going to Alderaan. I really got to go.</p>
@@ -188,8 +188,8 @@ export default function LifeCoach(){
                                 </div>
 
                                 <div className="content p-6 relative">
-                                    <Link to="/course-detail" className="font-medium block text-indigo-600">{item.name}</Link>
-                                    <Link to="/course-detail" className="text-lg font-medium block hover:text-indigo-600 duration-500 ease-in-out mt-2">{item.title}</Link>
+                                    <Link to="/course-detail" className="font-medium block text-[var(--riafco-orange)] ">{item.name}</Link>
+                                    <Link to="/course-detail" className="text-lg font-medium block hover:text-[var(--riafco-orange)]  duration-500 ease-in-out mt-2">{item.title}</Link>
                                     <p className="text-slate-400 mt-3 mb-4">{item.desc}</p>
                                     
                                     <ul className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center list-none text-slate-400">
@@ -210,7 +210,7 @@ export default function LifeCoach(){
                                     </ul>
 
                                     <div className="absolute -top-7 end-6 z-1 opacity-0 group-hover:opacity-100 duration-500 ease-in-out">
-                                        <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-indigo-600 dark:text-white">
+                                        <div className="flex justify-center items-center size-14 bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800 text-[var(--riafco-orange)]  dark:text-white">
                                             <span className="font-semibold">$11</span>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ export default function LifeCoach(){
 
                 <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
                     <div className="md:col-span-12 text-center">
-                        <Link to="/course-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">See All Courses <FiArrowRight className="align-middle ms-1"/></Link>
+                            <Link to="/course-listing" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">See All Courses <FiArrowRight className="align-middle ms-1" /></Link>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ export default function LifeCoach(){
                     <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
                 
                     <div className="mt-8">
-                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">JOIN FOR FREE</Link>
+                            <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">JOIN FOR FREE</Link>
                     </div>
                 </div>
             </div>

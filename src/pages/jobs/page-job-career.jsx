@@ -75,7 +75,7 @@ export default function PageJobCareer() {
                                 <p className="text-slate-400 max-w-xl">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text. This might also explain why one can now find slightly different versions.</p>
 
                                 <div className="mt-6">
-                                    <Link  className="relative inline-flex font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                    <Link className="relative inline-flex font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Read More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -117,28 +117,28 @@ export default function PageJobCareer() {
                         <div className="lg:w-3/4">
                             <div className="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-lg dark:shadow-gray-700 transition-all duration-500">
                                 <div>
-                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-indigo-600">Frontend Developer</Link>
+                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-[var(--riafco-orange)] ">Frontend Developer</Link>
                                     <p className="text-slate-400 mt-1">Total Openings: 1</p>
                                 </div>
 
-                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-indigo-600 border-gray-100 dark:border-gray-800 hover:border-indigo-600 dark:hover:border-indigo-600 text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
+                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-gray-100 dark:border-gray-800 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
                             </div>
 
                             <div className="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-lg dark:shadow-gray-700 transition-all duration-500 mt-6">
                                 <div>
-                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-indigo-600">Business Development Manager</Link>
+                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-[var(--riafco-orange)] ">Business Development Manager</Link>
                                     <p className="text-slate-400 mt-1">Total Openings: 2</p>
                                 </div>
 
-                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-indigo-600 border-gray-100 dark:border-gray-800 hover:border-indigo-600 dark:hover:border-indigo-600 text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
+                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-gray-100 dark:border-gray-800 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
                             </div>
 
                             <div className="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-lg dark:shadow-gray-700 transition-all duration-500 mt-6">
                                 <div>
-                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-indigo-600">Backend Developer</Link>
+                                    <Link to="/page-job-detail" className="text-lg font-semibold hover:text-[var(--riafco-orange)] ">Backend Developer</Link>
                                     <p className="text-slate-400 mt-1">Total Openings: 4</p>
                                 </div>
-                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-indigo-600 border-gray-100 dark:border-gray-800 hover:border-indigo-600 dark:hover:border-indigo-600 text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
+                                <Link to="/page-job-detail" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-transparent hover:bg-[var(--riafco-blue)] border-gray-100 dark:border-gray-800 hover:border-[var(--riafco-blue)] dark:hover:border-[var(--riafco-blue)] text-slate-900 dark:text-white hover:text-white rounded-full md:mt-0 mt-4">Apply now</Link>
                             </div>
                         </div>
                     </div>

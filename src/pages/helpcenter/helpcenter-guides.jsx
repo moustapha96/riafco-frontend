@@ -53,10 +53,10 @@ export default function HelpcenterGuides() {
                             <h5 className="font-semibold text-xl">Getting started</h5>
                             <ul className="list-none mt-4">
                                 
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Deciding to purchase</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>List your space</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Landing an experience or adventure</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Top uses questions</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Deciding to purchase</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>List your space</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Landing an experience or adventure</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Top uses questions</Link></li>
                                 
                             </ul>
                         </div>
@@ -64,62 +64,62 @@ export default function HelpcenterGuides() {
                         <div className="">
                             <h5 className="font-semibold text-xl">Your calendar</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Pricing & availability</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Booking settings</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Responding to enquiries & requests</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Snoozing or deactivating your listing</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Pricing & availability</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Booking settings</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Responding to enquiries & requests</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Snoozing or deactivating your listing</Link></li>
                             </ul>
                         </div>
 
                         <div className="">
                             <h5 className="font-semibold text-xl">Your listings</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Updating your listing</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Neighbourhoods</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Listing photos & photography</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Techwind Plus</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>API-connected software</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Updating your listing</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Neighbourhoods</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Listing photos & photography</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Techwind Plus</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>API-connected software</Link></li>
                             </ul>
                         </div>
 
                         <div className="">
                             <h5 className="font-semibold text-xl">How payouts work</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Getting paid</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Adding payout info</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Your payout status</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Donations</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Taxes</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Getting paid</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Adding payout info</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Your payout status</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Donations</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Taxes</Link></li>
                             </ul>
                         </div>
 
                         <div className="">
                             <h5 className="font-semibold text-xl">Your reservations</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Techwind safely</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Techwind Experiences and Adventures</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Changing a reservation</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Cancelling a reservation</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Long-term reservations</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Techwind safely</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Techwind Experiences and Adventures</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Changing a reservation</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Cancelling a reservation</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Long-term reservations</Link></li>
                             </ul>
                         </div>
 
                         <div className="">
                             <h5 className="font-semibold text-xl">Reservation help</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Help with a reservation or guest</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Guest cancellations</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Help with a reservation or guest</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Guest cancellations</Link></li>
                             </ul>
                         </div>
 
                         <div className="">
                             <h5 className="font-semibold text-xl">Your account</h5>
                             <ul className="list-none mt-4">
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Your profile</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Account security</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Identification & verifications</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Reviews</Link></li>
-                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-indigo-600 me-2"></i>Superhost status</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Your profile</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Account security</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Identification & verifications</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Reviews</Link></li>
+                                <li className="mt-2 ml-0"><Link className="text-slate-400"><i className="mdi mdi-arrow-right text-[var(--riafco-orange)]  me-2"></i>Superhost status</Link></li>
                             </ul>
                         </div>
                     </div>

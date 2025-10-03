@@ -5,6 +5,7 @@ import Footer from '../../component/Footer/footer';
 import PortfolioFilter from '../../component/portfolioFilter';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useEffect } from 'react';
+import TransparentFooter from '../../component/Footer/transparentFooter';
 
 export default function PortfolioModernFour() {
     useEffect(() => {
@@ -45,7 +46,7 @@ export default function PortfolioModernFour() {
             </div>
 
             <PortfolioFilter className="grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 mt-4 gap-[30px]" />
-            <Footer />
+            <TransparentFooter />
         </>
     )
 }

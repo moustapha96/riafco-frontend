@@ -36,7 +36,7 @@ export default function IndexShop() {
                                     <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">New Accessories <br /> Collections</h1>
                                     <p className="text-white/70 text-xl max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
                                     <div className="mt-6">
-                                        <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><i className="mdi mdi-cart-outline"></i> Shop Now</Link>
+                                        <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2"><i className="mdi mdi-cart-outline"></i> Shop Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ export default function IndexShop() {
                             <div className="group relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
                                 <img src={hoodie} className="group-hover:scale-110 transition-all duration-500" alt="" />
                                 <div className="absolute bottom-4 start-4">
-                                    <Link className="text-xl font-semibold hover:text-indigo-600 transition-all duration-500">Hoodies</Link>
+                                    <Link className="text-xl font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500">Hoodies</Link>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export default function IndexShop() {
                             <div className="group relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
                                 <img src={beanie} className="group-hover:scale-110 transition-all duration-500" alt="" />
                                 <div className="absolute bottom-4 start-4">
-                                    <Link className="text-xl font-semibold hover:text-indigo-600 transition-all duration-500">Beanies for Man & Women</Link>
+                                        <Link className="text-xl font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500">Beanies for Man & Women</Link>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export default function IndexShop() {
                             <div className="group relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
                                 <img src={glasses} className="group-hover:scale-110 transition-all duration-500" alt="" />
                                 <div className="absolute bottom-4 start-4">
-                                    <Link className="text-xl font-semibold hover:text-indigo-600 transition-all duration-500">Glasses</Link>
+                                        <Link className="text-xl font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500">Glasses</Link>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function IndexShop() {
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
-                            <Link to="/shop-grid-two" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">View More Items <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="/shop-grid-two" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">View More Items <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
 
@@ -101,9 +101,9 @@ export default function IndexShop() {
                                     </div>
     
                                     <ul className="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                        <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-heart"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
+                                            <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-heart"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
                                     </ul>
                                     {item.tag ? <ul className="list-none absolute top-[10px] start-4">
                                         <li><Link className={`${item.tagBg} text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5`}>{item.tag}</Link></li>
@@ -112,7 +112,7 @@ export default function IndexShop() {
                                 </div>
     
                                 <div className="mt-4">
-                                    <Link to={`/shop-item-detail/${item.id}`} className="hover:text-indigo-600 text-lg font-semibold">{item.name}</Link>
+                                        <Link to={`/shop-item-detail/${item.id}`} className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.name}</Link>
                                     <div className="flex justify-between items-center mt-1">
                                         <p className="text-green-600">{item.descAmount} <del className="text-red-600">{item.amount}</del></p>
                                         <ul className="font-medium text-amber-400 list-none">
@@ -131,7 +131,7 @@ export default function IndexShop() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to="/shop-grid-two" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">View More Items <FaArrowRight className='ms-2 text-xs'/></Link>
+                            <Link to="/shop-grid-two" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 text-slate-400 hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500 ease-in-out">View More Items <FaArrowRight className='ms-2 text-xs' /></Link>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export default function IndexShop() {
                                 <div key={index} className="group relative overflow-hidden hover:shadow-lg hover:dark:shadow-gray-800 rounded-md transition-all duration-500 p-6 text-center">
                                     <img src={item.image} className="rounded-full shadow-md dark:shadow-gray-800 size-20 block mx-auto mb-2" alt="" />
         
-                                    <Link className="font-semibold hover:text-indigo-600 text-lg">{item.title}</Link>
+                                    <Link className="font-semibold hover:text-[var(--riafco-orange)]  text-lg">{item.title}</Link>
                                 </div>
                             )
                         })}
@@ -170,9 +170,9 @@ export default function IndexShop() {
                                     </div>
     
                                     <ul className="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                        <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-heart"></i></Link></li>
-                                        <li className="mt-1"><Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
-                                        <li className="mt-1"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
+                                            <li><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-heart"></i></Link></li>
+                                            <li className="mt-1"><Link to="" className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
+                                            <li className="mt-1"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
                                     </ul>
                                     {item.tag ? <ul className="list-none absolute top-[10px] start-4">
                                         <li><Link className={`${item.tagBg} text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5`}>{item.tag}</Link></li>
@@ -181,7 +181,7 @@ export default function IndexShop() {
                                 </div>
     
                                 <div className="mt-4">
-                                    <Link to={`/shop-item-detail/${item.id}`} className="hover:text-indigo-600 text-lg font-semibold">{item.name}</Link>
+                                        <Link to={`/shop-item-detail/${item.id}`} className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.name}</Link>
                                     <div className="flex justify-between items-center mt-1">
                                         <p className="text-green-600">{item.descAmount} <del className="text-red-600">{item.amount}</del></p>
                                         <ul className="font-medium text-amber-400 list-none">
@@ -209,7 +209,7 @@ export default function IndexShop() {
                         <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
                         <div className="mt-6">
-                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><i className="mdi mdi-cart-outline"></i> Shop Now</Link>
+                            <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md me-2 mt-2"><i className="mdi mdi-cart-outline"></i> Shop Now</Link>
                         </div>
                     </div>
                 </div>
@@ -233,9 +233,9 @@ export default function IndexShop() {
                                     </div>
     
                                     <ul className="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                        <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-heart"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`}className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
-                                        <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
+                                            <li className='ml-0'><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-heart"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link to={`/shop-item-detail/${item.id}`} className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-eye-outline"></i></Link></li>
+                                            <li className="mt-1 ml-0"><Link className="size-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white"><i className="mdi mdi-bookmark-outline"></i></Link></li>
                                     </ul>
                                     {item.tag ? <ul className="list-none space-x-1 absolute top-[10px] start-4">
                                         <li><Link className={`${item.tagBg} text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5`}>{item.tag}</Link></li>
@@ -244,7 +244,7 @@ export default function IndexShop() {
                                 </div>
     
                                 <div className="mt-4">
-                                    <Link to="/shop-item-detail" className="hover:text-indigo-600 text-lg font-semibold">{item.name}</Link>
+                                        <Link to="/shop-item-detail" className="hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.name}</Link>
                                     <div className="flex justify-between items-center mt-1">
                                         <p className="text-green-600">{item.descAmount} <del className="text-red-600">{item.amount}</del></p>
                                         <ul className="font-medium text-amber-400 list-none">

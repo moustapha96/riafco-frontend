@@ -51,7 +51,7 @@ export default function IndexConsulting() {
                         <p className="text-white/60 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
 
                         <div className="mt-8">
-                            <Link to="#" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Learn More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Learn More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>
@@ -81,12 +81,12 @@ export default function IndexConsulting() {
                                     </div>
 
                                     <div className="mt-6">
-                                        <Link to="#" className="text-xl font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">{item.title}</Link>
+                                        <Link to="#" className="text-xl font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{item.title}</Link>
 
                                         <p className="text-slate-400 mt-4">{item.desc}</p>
 
                                         <div className="mt-4">
-                                            <Link to="#" className="hover:text-indigo-600 duration-500 ease-in-out font-semibold"><span className="hidden group-hover:inline-block">Read More</span> <FaArrowRight className="ms-2 text-[10px] inline"/></Link>
+                                            <Link to="#" className="hover:text-[var(--riafco-orange)]  duration-500 ease-in-out font-semibold"><span className="hidden group-hover:inline-block">Read More</span> <FaArrowRight className="ms-2 text-[10px] inline" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@ export default function IndexConsulting() {
                         <div className="lg:col-span-7 md:col-span-6">
                             <div className="lg:ms-5">
                                 <div className="flex mb-4">
-                                    <span className="text-indigo-600 text-2xl font-bold mb-0"><CountUp className="counter-value text-6xl font-bold"start={1} end={15}></CountUp>+</span>
+                                    <span className="text-[var(--riafco-orange)]  text-2xl font-bold mb-0"><CountUp className="counter-value text-6xl font-bold" start={1} end={15}></CountUp>+</span>
                                     <span className="self-end font-semibold ms-2">Years <br /> Experience</span>
                                 </div>
 
@@ -126,7 +126,7 @@ export default function IndexConsulting() {
                                 <p className="text-slate-400 max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with &apos;real&apos; content.</p>
 
                                 <div className="mt-6">
-                                    <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md mt-2"><FiAirplay className="me-1"/> Get Started</Link>
+                                    <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md mt-2"><FiAirplay className="me-1" /> Get Started</Link>
                                 </div>
                             </div>
                         </div>
@@ -137,15 +137,15 @@ export default function IndexConsulting() {
                         {consultingAbout.map((item, index) => {
                             let Icons = item.icon
                             return(
-                                <div key={index} className="group px-6 py-8 hover:bg-white dark:hover:bg-slate-900 hover:shadow-sm dark:hover:shadow-gray-800 duration-500 ease-in-out border-b-[3px] border-transparent hover:border-indigo-600">
-                                     <Icons className="size-10 stroke-1 text-indigo-600"/>
+                                <div key={index} className="group px-6 py-8 hover:bg-white dark:hover:bg-slate-900 hover:shadow-sm dark:hover:shadow-gray-800 duration-500 ease-in-out border-b-[3px] border-transparent hover:border-[var(--riafco-blue)]">
+                                    <Icons className="size-10 stroke-1 text-[var(--riafco-orange)] " />
 
                                     <div className="content mt-6">
-                                        <Link to="/page-services" className="title h5 text-xl font-semibold hover:text-indigo-600">{item.title}</Link>
+                                        <Link to="/page-services" className="title h5 text-xl font-semibold hover:text-[var(--riafco-orange)] ">{item.title}</Link>
                                         <p className="text-slate-400 mt-4">{item.desc}</p>
 
                                         <div className="mt-5">
-                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Learn More<FaArrowRight className="ms-2 text-[10px]"/></Link>
+                                            <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">Learn More<FaArrowRight className="ms-2 text-[10px]" /></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@ export default function IndexConsulting() {
                         </div>
 
                         <div className="lg:col-span-4 md:col-span-6 md:text-end hidden md:block">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-2">
@@ -172,13 +172,13 @@ export default function IndexConsulting() {
                             <div className="picture-item p-4 rounded-md" key={index}>
                                 <div className="">
                                     <div className="relative">
-                                        <div className="shadow-sm dark:shadow-gray-800 p-5 pb-0 rounded-md bg-indigo-600/5 dark:bg-indigo-600/30">
+                                            <div className="shadow-sm dark:shadow-gray-800 p-5 pb-0 rounded-md bg-[var(--riafco-blue)]/5 dark:bg-[var(--riafco-blue)]/30">
                                             <img src={item.image} className="rounded-t-md shadow-sm" alt="" />
                                         </div>
                                     </div>
 
                                     <div className="pt-4 px-3">
-                                        <h5 className="mb-1 font-semibold text-lg"><Link to="https://1.envato.market/techwind-react" target='_blank' className="hover:text-indigo-600 transition-all duration-500 ease-in-out">{item.title}</Link></h5>
+                                            <h5 className="mb-1 font-semibold text-lg"><Link to="https://1.envato.market/techwind-react" target='_blank' className="hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">{item.title}</Link></h5>
                                         <span className="text-slate-400">{item.name}</span>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ export default function IndexConsulting() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 md:hidden mt-8">
                         <div className="md:col-span-12 text-center">
-                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">See More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                            <Link to="#" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-[var(--riafco-orange)]  hover:text-[var(--riafco-orange)]  after:bg-[var(--riafco-blue)] duration-500">See More <FaArrowRight className="ms-2 text-[10px]" /></Link>
                         </div>
                     </div>
                 </div>

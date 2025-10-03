@@ -104,7 +104,7 @@ export default function FoodRecipe() {
                     <div className="md:flex">
                         <div className="relative lg:w-2/3 w-full -mt-32">
                             <div className="px-6 py-12 bg-white dark:bg-slate-900 rounded-md shadow-sm dark:shadow-gray-800 text-center">
-                                <Link to="#" className="bg-indigo-600/10 text-indigo-600 font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food & Recipes</Link>
+                                <Link to="#" className="bg-[var(--riafco-blue)]/10 text-[var(--riafco-orange)]  font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">Food & Recipes</Link>
                                 <h5 className="font-semibold text-2xl mt-5">{data?.title ?data?.title  :'Recipes Creamy Garlic Parmesan Chicken Salad' }</h5>
 
                                 <div className="flex items-center justify-center mt-5">
@@ -124,9 +124,9 @@ export default function FoodRecipe() {
                     <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div className="lg:col-span-8 md:col-span-6">
                             <div>
-                                <Link to="#" className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Food</Link>
-                                <Link to="#" className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Drinks</Link>
-                                <Link to="#" className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Recipes</Link>
+                                <Link to="#" className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Food</Link>
+                                <Link to="#" className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Drinks</Link>
+                                <Link to="#" className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5 me-1">Recipes</Link>
 
                                 <p className="text-slate-400 mb-4 mt-5">Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
                                 <p className="text-slate-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -140,7 +140,7 @@ export default function FoodRecipe() {
 
                                         <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                                           <Link to="#" onClick={() => setOpen(true)}  data-type="youtube" data-id="S_CGed6E610"
-                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
+                                                className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[var(--riafco-orange)]  dark:text-white">
                                                 <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                             </Link>
                                         </div>
@@ -175,12 +175,12 @@ export default function FoodRecipe() {
                                             <img src={image1} className="size-11 rounded-full shadow-sm" alt="" />
 
                                             <div className="ms-3 flex-1">
-                                                <Link to="#" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</Link>
+                                                <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">Calvin Carlo</Link>
                                                 <p className="text-sm text-slate-400">6th May 2022 at 01:25 pm</p>
                                             </div>
                                         </div>
 
-                                        <Link to="#" className="text-slate-400 hover:text-indigo-600 transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
+                                        <Link to="#" className="text-slate-400 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
                                     </div>
                                     <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800 mt-6">
                                         <p className="text-slate-400 italic">&quot; There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour &quot;</p>
@@ -193,12 +193,12 @@ export default function FoodRecipe() {
                                             <img src={image2} className="size-11 rounded-full shadow-sm" alt="" />
 
                                             <div className="ms-3 flex-1">
-                                                <Link to="#" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</Link>
+                                                <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">Calvin Carlo</Link>
                                                 <p className="text-sm text-slate-400">6th May 2022 at 01:25 pm</p>
                                             </div>
                                         </div>
 
-                                        <Link to="#" className="text-slate-400 hover:text-indigo-600 transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
+                                        <Link to="#" className="text-slate-400 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
                                     </div>
                                     <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800 mt-6">
                                         <p className="text-slate-400 italic">&quot; There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour &quot;</p>
@@ -211,12 +211,12 @@ export default function FoodRecipe() {
                                             <img src={image3} className="size-11 rounded-full shadow-sm" alt="" />
 
                                             <div className="ms-3 flex-1">
-                                                <Link to="#" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</Link>
+                                                <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">Calvin Carlo</Link>
                                                 <p className="text-sm text-slate-400">6th May 2022 at 01:25 pm</p>
                                             </div>
                                         </div>
 
-                                        <Link to="#" className="text-slate-400 hover:text-indigo-600 transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
+                                        <Link to="#" className="text-slate-400 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
                                     </div>
                                     <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800 mt-6">
                                         <p className="text-slate-400 italic">&quot; There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour &quot;</p>
@@ -229,12 +229,12 @@ export default function FoodRecipe() {
                                             <img src={image4} className="size-11 rounded-full shadow-sm" alt="" />
 
                                             <div className="ms-3 flex-1">
-                                                <Link to="#" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</Link>
+                                                <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">Calvin Carlo</Link>
                                                 <p className="text-sm text-slate-400">6th May 2022 at 01:25 pm</p>
                                             </div>
                                         </div>
 
-                                        <Link to="#" className="text-slate-400 hover:text-indigo-600 transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
+                                        <Link to="#" className="text-slate-400 hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out ms-5"><i className="mdi mdi-reply"></i> Reply</Link>
                                     </div>
                                     <div className="p-4 bg-gray-50 dark:bg-slate-800 rounded-md shadow-sm dark:shadow-gray-800 mt-6">
                                         <p className="text-slate-400 italic">&quot; There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour &quot;</p>
@@ -252,7 +252,7 @@ export default function FoodRecipe() {
                                                 <label htmlFor="name" className="font-semibold">Your Name:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.User className="size-4 absolute top-3 start-4"></Icon.User>
-                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :" />
+                                                    <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Name :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -262,7 +262,7 @@ export default function FoodRecipe() {
                                                 <label htmlFor="email" className="font-semibold">Your Email:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.Mail className="size-4 absolute top-3 start-4"></Icon.Mail>
-                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :" />
+                                                    <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Email :" />
                                                 </div>
                                             </div>
                                         </div>
@@ -274,12 +274,12 @@ export default function FoodRecipe() {
                                                 <label htmlFor="comments" className="font-semibold">Your Comment:</label>
                                                 <div className="form-icon relative mt-2">
                                                     <Icon.MessageCircle className="size-4 absolute top-3 start-4"></Icon.MessageCircle>
-                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                                                    <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-[var(--riafco-blue)] dark:border-gray-800 dark:focus:border-[var(--riafco-blue)] focus:ring-0" placeholder="Message :"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Send Message</button>
+                                    <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md w-full">Send Message</button>
                                 </form>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ export default function FoodRecipe() {
                                 <div className="text-center mt-8">
                                     <img src={imageP} className="size-24 mx-auto rounded-full shadow-sm mb-4" alt="" />
 
-                                    <Link to="#" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Cristina Romsey</Link>
+                                    <Link to="#" className="text-lg font-semibold hover:text-[var(--riafco-orange)]  transition-all duration-500 ease-in-out">Cristina Romsey</Link>
                                     <p className="text-slate-400">Content Writer</p>
                                 </div>
 
@@ -299,7 +299,7 @@ export default function FoodRecipe() {
                                     <img src={image5} className="h-16 rounded-md shadow-sm dark:shadow-gray-800" alt="" />
 
                                     <div className="ms-3">
-                                        <Link to="#" className="font-semibold hover:text-indigo-600">Consultant Business</Link>
+                                        <Link to="#" className="font-semibold hover:text-[var(--riafco-orange)] ">Consultant Business</Link>
                                         <p className="text-sm text-slate-400">1st May 2022</p>
                                     </div>
                                 </div>
@@ -308,7 +308,7 @@ export default function FoodRecipe() {
                                     <img src={image6} className="h-16 rounded-md shadow-sm dark:shadow-gray-800" alt="" />
 
                                     <div className="ms-3">
-                                        <Link to="#" className="font-semibold hover:text-indigo-600">Grow Your Business</Link>
+                                        <Link to="#" className="font-semibold hover:text-[var(--riafco-orange)] ">Grow Your Business</Link>
                                         <p className="text-sm text-slate-400">1st May 2022</p>
                                     </div>
                                 </div>
@@ -317,34 +317,34 @@ export default function FoodRecipe() {
                                     <img src={image7} className="h-16 rounded-md shadow-sm dark:shadow-gray-800" alt="" />
 
                                     <div className="ms-3">
-                                        <Link to="#" className="font-semibold hover:text-indigo-600">Look On The Glorious Balance</Link>
+                                        <Link to="#" className="font-semibold hover:text-[var(--riafco-orange)] ">Look On The Glorious Balance</Link>
                                         <p className="text-sm text-slate-400">1st May 2022</p>
                                     </div>
                                 </div>
 
                                 <h5 className="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow-sm dark:shadow-gray-800 rounded-md p-2 text-center mt-8">Social sites</h5>
                                 <ul className="list-none text-center mt-8 space-x-1">
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.GitHub className="size-4"></Icon.GitHub></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Youtube className="size-4"></Icon.Youtube></Link></li>
-                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-indigo-600 hover:text-white hover:bg-indigo-600"><Icon.Gitlab className="size-4"></Icon.Gitlab></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Facebook className="size-4"></Icon.Facebook></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Instagram className="size-4"></Icon.Instagram></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Twitter className="size-4"></Icon.Twitter></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Linkedin className="size-4"></Icon.Linkedin></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.GitHub className="size-4"></Icon.GitHub></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Youtube className="size-4"></Icon.Youtube></Link></li>
+                                    <li className="inline"><Link to="#" className="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[var(--riafco-blue)] hover:text-white hover:bg-[var(--riafco-blue)]"><Icon.Gitlab className="size-4"></Icon.Gitlab></Link></li>
                                 </ul>
 
                                 <h5 className="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow-sm dark:shadow-gray-800 rounded-md p-2 text-center mt-8">Tagscloud</h5>
                                 <ul className="list-none text-center mt-8 space-x-1">
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Food</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Chicken</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Recipe</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Enjoy</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Restra</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Sunday</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Offer</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Holiday</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Cake</Link></li>
-                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-indigo-600 dark:hover:bg-indigo-600 rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Burns</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Food</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Chicken</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Recipe</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Enjoy</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Restra</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Sunday</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Offer</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Holiday</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Cake</Link></li>
+                                    <li className="inline-block m-2"><Link to="#" className="px-3 py-1 text-slate-400 hover:text-white dark:hover:text-white bg-gray-50 dark:bg-slate-800 text-sm hover:bg-[var(--riafco-blue)] dark:hover:bg-[var(--riafco-blue)] rounded-md shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out">Burns</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -366,12 +366,12 @@ export default function FoodRecipe() {
                                     <div className="relative overflow-hidden rounded-md shadow-sm dark:shadow-gray-800">
                                         <img src={item.image} className="group-hover:scale-105 duration-500 ease-in-out" alt="" />
                                         <div className="absolute top-0 start-0 pt-3 ps-3">
-                                            <Link to="#" className="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.tag}</Link>
+                                                <Link to="#" className="bg-[var(--riafco-blue)] text-white text-xs font-semibold px-2.5 py-0.5 rounded w-fit mx-auto h-5">{item.tag}</Link>
                                         </div>
                                     </div>
     
                                     <div className="p-3">
-                                        <Link to={`/food-recipe/${item.id}`} className="block hover:text-indigo-600 text-lg font-semibold">{item.title}</Link>
+                                            <Link to={`/food-recipe/${item.id}`} className="block hover:text-[var(--riafco-orange)]  text-lg font-semibold">{item.title}</Link>
     
                                         <ul className="list-none flex items-center justify-between mt-2">
                                             <li>
@@ -404,7 +404,7 @@ export default function FoodRecipe() {
                                 <div className="text-center subcribe-form">
                                     <form className="relative mx-auto max-w-xl">
                                         <input type="email" id="subemail" name="name" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-gray-100 dark:border-gray-700" placeholder="Enter your email id.." />
-                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subcribe Now</button>
+                                        <button type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide align-middle transition duration-500 ease-in-out text-base text-center absolute top-[2px] end-[3px] h-[46px] bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-full">Subcribe Now</button>
                                     </form>
                                 </div>
                             </div>
@@ -442,7 +442,7 @@ export default function FoodRecipe() {
                     </div>
 
                     <div className="absolute top-2/4 -translate-y-2/4 start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 text-center hidden md:block">
-                        <Link to="https://www.instagram.com/shreethemes/" target="_blank"className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Follow Now</Link>
+                        <Link to="https://www.instagram.com/shreethemes/" target="_blank" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[var(--riafco-blue)] hover:bg-[var(--riafco-blue] border-[var(--riafco-blue)] hover:border-[var(--riafco-blue] text-white rounded-md">Follow Now</Link>
                     </div>
                 </div>
             </div>
