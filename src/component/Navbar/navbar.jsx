@@ -57,7 +57,7 @@ function TopStrip() {
                 <div className="ml-auto flex items-center gap-3 md:gap-4">
 
                     <Link
-                        to="http://localhost:3000/auth/login"
+                        to="https://admin.riafco-io.org/auth/login"
                         className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-white/30 hover:bg-white/10"
                     >
                         <i className="mdi mdi-account text-lg" />
