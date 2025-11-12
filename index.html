@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" class="light scroll-smooth" dir="ltr">
+<html lang="fr" class="light scroll-smooth" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Security Headers - Protection contre les attaques -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Content Security Policy (CSP) - Protection XSS stricte -->
+  <!-- Note: 'unsafe-inline' et 'unsafe-eval' nécessaires pour React/Vite en développement -->
+  <!-- En production, considérez l'utilisation de nonces pour améliorer la sécurité -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data: https://cdnjs.cloudflare.com; img-src 'self' data: https: blob:; connect-src 'self' https://riafco-io.org http://localhost:5000 https://api.riafco-io.org wss://localhost:* wss://riafco-io.org; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content; require-trusted-types-for 'script';" />
+  
+  <!-- Protection contre le clickjacking -->
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  
+  <!-- Protection contre le MIME type sniffing -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  
+  <!-- Contrôle de la politique de référent -->
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  
+  <!-- Permissions Policy - Désactivation des fonctionnalités sensibles -->
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()" />
+  
+  <!-- Cross-Origin Embedder Policy - Protection contre les attaques Spectre -->
+  <!-- Note: Peut causer des problèmes avec certains CDN. À ajuster selon vos besoins. -->
+  <!-- <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" /> -->
+  
+  <!-- Cross-Origin Opener Policy - Isolation des fenêtres -->
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin-allow-popups" />
+  
+  <!-- Cross-Origin Resource Policy - Contrôle des ressources cross-origin -->
+  <!-- Note: Peut bloquer certaines ressources externes. À ajuster si nécessaire. -->
+  <!-- <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin" /> -->
+  
+  <!-- Expect-CT - Certificate Transparency (déprécié mais maintenu pour compatibilité) -->
+  <!-- Remarque: Utilisez plutôt les en-têtes HTTP côté serveur pour une meilleure sécurité -->
+  
+  <!-- SEO & Meta Information -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="description" content="RIAFCO - Réseau des Institutions Africaines de Financement des Collectivités locales. Organisation dédiée au financement et au développement des collectivités locales en Afrique." />
+  <meta name="keywords" content="RIAFCO, financement, collectivités locales, Afrique, développement, institutions financières" />
+  <meta name="author" content="RIAFCO" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light dark" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RIAFCO | Réseau des Institutions Africaines de Financement des Collectivités locales" />
+  <meta property="og:description" content="Réseau des Institutions Africaines de Financement des Collectivités locales" />
+  <meta property="og:site_name" content="RIAFCO" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RIAFCO | Réseau des Institutions Africaines de Financement des Collectivités locales" />
+  <meta name="twitter:description" content="Réseau des Institutions Africaines de Financement des Collectivités locales" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  
+  <!-- Title -->
   <title>RIAFCO | Réseau des Institutions Africaines de Financement des Collectivités locales</title>
+  
+  <!-- External Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+</head>
 
 <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900">
   <div id="root"></div>

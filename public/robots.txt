@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Désactiver l'indexation des fichiers de développement
+Disallow: /dev-dist/
+Disallow: /node_modules/
+
+# Autoriser l'indexation des pages principales
+Allow: /
+Allow: /accueil
+Allow: /a-propos
+Allow: /activités
+Allow: /actualités
+Allow: /blog-page
+Allow: /contact
+Allow: /évènements
+Allow: /membres
+Allow: /ressources
+Allow: /historique
+Allow: /notre-équipe
+
+# Sitemap (à mettre à jour avec votre URL de production)
+Sitemap: https://riafco-io.org/sitemap.xml
+
