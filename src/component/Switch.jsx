@@ -2,7 +2,7 @@ import {useEffect , useState} from 'react'
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from 'react-scroll';
 
-import { FiArrowUp, FiMoon, FiSun } from 'react-icons/fi';
+import { FiArrowUp } from 'react-icons/fi';
 
 export default function Switcher() {
     let [scrollToTops, setScrollToTops] = useState(false); 
@@ -49,17 +49,6 @@ export default function Switcher() {
     }
     return (
         <>
-            {/* <div className="fixed top-1/4 -right-3 z-50">
-                <span className="relative inline-block rotate-90">
-                    <input type="checkbox" className="checkbox opacity-0 absolute" id="chk" onClick={(event) => changeMode('mode', event)} />
-                    <label className="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" htmlFor="chk">
-                        <FiMoon  width={20} className="text-[20px] text-yellow-500"/>
-                        <FiSun width={20} className="text-[20px] text-yellow-500"/>
-                        <span className="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-                    </label>
-                </span>
-            </div> */}
-
             <div className="fixed top-[40%] -right-3 z-50">
                 <Link to="#" id="switchRtl" className="cursor-pointer">
                     <span className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" onClick={(event) => changeMode('layout', event)}>LTR</span>
