@@ -4,12 +4,15 @@ import react from '@vitejs/plugin-react';
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill';
 import path from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
+import removeConsole from './vite-plugin-remove-console.js';
 
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
     plugins: [
         react(),
+        // Plugin pour supprimer les console en production (complémentaire à Terser)
+        ...(isProd ? [removeConsole()] : []),
         VitePWA({
             registerType: "autoUpdate",
             devOptions: {
@@ -123,7 +126,10 @@ export default defineConfig({
         minify: "terser",
         terserOptions: {
             compress: {
+                // Supprimer tous les types de console en production
                 drop_console: isProd,
+                drop_debugger: isProd,
+                pure_funcs: isProd ? ['console.log', 'console.info', 'console.debug', 'console.warn', 'console.error', 'console.trace', 'console.table', 'console.group', 'console.groupEnd', 'console.time', 'console.timeEnd', 'console.count', 'console.assert'] : [],
             },
         },
         chunkSizeWarningLimit: 1000,

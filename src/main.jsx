@@ -1,3 +1,6 @@
+// IMPORTANT: Charger en premier pour désactiver les console en production
+import './utils/console';
+
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
