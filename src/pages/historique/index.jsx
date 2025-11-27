@@ -249,7 +249,7 @@ export default function HistoriquePage() {
             <HeaderBreakdumb
                 title={t("historique.header.title")}
                 description={t("historique.header.description")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             {/* Section Timeline Dynamique */}

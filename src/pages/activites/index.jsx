@@ -15,7 +15,6 @@ import HeaderBreakdumb from "../components/hearder-breakdumb";
 import activityService from '../../services/activityService';
 import { buildImageUrl } from '../../utils/imageUtils';
 
-
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 
 export default function ActivitePage() {
@@ -81,7 +80,7 @@ export default function ActivitePage() {
             <HeaderBreakdumb
                 title={t("activites.pageTitle")}
                 description={t("activites.pageDescription")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             {/* Section de filtrage et de recherche */}

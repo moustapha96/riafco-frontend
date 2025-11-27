@@ -79,7 +79,7 @@ export default function EquipePage() {
             <HeaderBreakdumb
                 title={t('team.header.title')}
                 description={t('team.header.description')}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             {/* Fil d’Ariane sous le header (optionnel) */}

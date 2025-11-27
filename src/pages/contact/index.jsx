@@ -45,7 +45,7 @@ export default function ContactPage() {
             <HeaderBreakdumb
                 title={t('contact.header.title')}
                 description={t('contact.header.description', { siteName: config?.siteName || '' })}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             {/* Ton formulaire / section de contact (peut être i18n-isé dans son composant aussi) */}

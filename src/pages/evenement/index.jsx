@@ -114,7 +114,7 @@ export default function EvenementPage() {
             <HeaderBreakdumb
                 title={t("events.header.title")}
                 description={t("events.header.description")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             <section className="relative md:py-24 py-16">

@@ -37,7 +37,7 @@ export default function TermeUtilisationPage() {
             <HeaderBreakdumb
                 title={t("terms.hero.title")}
                 description={t("terms.hero.subtitle")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
 

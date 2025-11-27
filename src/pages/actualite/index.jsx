@@ -91,7 +91,7 @@ export default function ActualitesPage() {
             <HeaderBreakdumb
                 title={t("actualites.pageTitle")}
                 description={t("actualites.pageDescription")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             {/* Section de filtrage et recherche */}

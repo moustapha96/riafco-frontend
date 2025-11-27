@@ -86,7 +86,7 @@ export default function ActualitesDetails() {
 
             <HeaderBreakdumb
                 title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
-                background={newsItem?.image ? buildImageUrl(newsItem.image) : background}
+                background={newsItem?.image ? buildImageUrl(newsItem.image) : null}
 
             />
 
