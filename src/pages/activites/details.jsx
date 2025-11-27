@@ -114,7 +114,7 @@ export default function ActiviteDetailPage() {
             <HeaderBreakdumb
                 title={title}
                 description={t("activitesDetails.author", { name: `${activity.author.firstName} ${activity.author.lastName}` })}
-                background={activity?.image ? buildImageUrl(activity.image) : background}
+                background={activity?.image ? `${import.meta.env.VITE_API_URL_SIMPLE || 'https://back.riafco-oi.org/'}${activity.image}` : background}
 
             />
 
