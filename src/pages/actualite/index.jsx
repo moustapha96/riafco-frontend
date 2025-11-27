@@ -12,6 +12,7 @@ import { MdKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from 'react-icons/md
 import { FaArrowRight } from 'react-icons/fa6';
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import newsService from '../../services/newsService';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
@@ -146,7 +147,7 @@ export default function ActualitesPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
                             {news.map((item) => (
                                 <div key={item.id} className="blog relative rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden">
-                                    <img src={item.image} alt={item.title_fr} className="w-full h-48 object-cover" />
+                                    <img src={buildImageUrl(item.image)} alt={item.title_fr} className="w-full h-48 object-cover" />
                                     <div className="content p-6">
                                         <Link
                                             to={`/actualités/${item.id}/détails`}

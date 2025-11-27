@@ -11,6 +11,7 @@ import { FaDownload, FaEye, FaTag, FaCalendar, FaFolder } from "react-icons/fa";
 import { BiFile, BiFileBlank } from "react-icons/bi";
 import { MdPictureAsPdf, MdImage, MdVideoLibrary, MdDescription } from "react-icons/md";
 import resourceService from "../../services/resourceService";
+import { buildImageUrl } from "../../utils/imageUtils";
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import { useTranslation } from "react-i18next";
 
@@ -83,7 +84,7 @@ export default function RessourcePage() {
 
   const handleDownload = (resource) => {
     const link = document.createElement("a");
-    link.href = resource.url;
+    link.href = buildImageUrl(resource.url);
     link.download = resource.fileName || resource.title || "resource";
     document.body.appendChild(link);
     link.click();
@@ -156,12 +157,13 @@ export default function RessourcePage() {
                     className="group bg-white dark:bg-slate-900 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden"
                   >
                     <div className="h-48 overflow-hidden">
-                      {resource.couverture &&
+                      {resource.couverture && (
                         <img
-                          src={resource.couverture || "/activities/default-activity.jpg"}
+                          src={buildImageUrl(resource.couverture) || "/activities/default-activity.jpg"}
                           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          alt={resource.title}
                         />
-                      }
+                      )}
 
                     </div>
 
@@ -188,7 +190,7 @@ export default function RessourcePage() {
                       {resource.lien && (
                         <p className="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-4">
                           <a
-                            href={resource.lien}
+                            href={buildImageUrl(resource.lien)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:no-underline break-all"

@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 
 const africaGeoData = feature(africaTopology, africaTopology.objects.africa);
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 const settings = {
   container: ".tiny-two-item",
@@ -440,7 +441,7 @@ export default function MembrePage() {
                           <div className="flex justify-center mb-4">
                             {country.flag && typeof country.flag === "string" && country.flag.startsWith("/") ? (
                               <img
-                                src={country.flag || "/placeholder.svg"}
+                                src={buildImageUrl(country.flag) || "/placeholder.svg"}
                                 alt={`Flag ${nameByLang(country)}`}
                                 className="w-16 md:w-20 h-10 md:h-12 object-contain border border-gray-200 rounded shadow-sm group-hover:scale-105 transition-transform"
                               />
@@ -521,7 +522,7 @@ export default function MembrePage() {
                       <div key={m.id} className={`border rounded-lg p-4 hover:shadow ${activeMember?.id === m.id ? "ring-2 ring-[var(--riafco-blue)]" : "border-gray-200"}`}>
                         <div className="flex items-center gap-3">
                           {m.flag && typeof m.flag === "string" && m.flag.startsWith("/") ? (
-                            <img src={m.flag} alt={`Flag ${nameByLang(m)}`} className="w-12 h-8 object-contain border border-gray-200 rounded" />
+                            <img src={buildImageUrl(m.flag)} alt={`Flag ${nameByLang(m)}`} className="w-12 h-8 object-contain border border-gray-200 rounded" />
                           ) : (
                             <span className="text-2xl">{m.flag || "🏳️"}</span>
                           )}
@@ -559,7 +560,7 @@ export default function MembrePage() {
                     <div className="text-center mb-6">
                       {c.flag && typeof c.flag === "string" && c.flag.startsWith("/") ? (
                         <img
-                          src={c.flag || "/placeholder.svg"}
+                          src={buildImageUrl(c.flag) || "/placeholder.svg"}
                           alt={`Flag ${nameByLang(c)}`}
                           className="w-20 md:w-24 h-12 md:h-16 mx-auto object-contain border border-gray-200 rounded shadow-sm mb-4"
                         />

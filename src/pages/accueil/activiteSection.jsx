@@ -127,6 +127,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 import { activityService } from '../../services/activityService';
 import { useTranslation } from 'react-i18next';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 export default function ActiviteSection(props) {
     const { t } = useTranslation();
@@ -202,7 +203,7 @@ export default function ActiviteSection(props) {
                             >
                                 {activity.image && (
                                     <img
-                                        src={activity.image}
+                                        src={buildImageUrl(activity.image)}
                                         alt={activity.title_fr || t('activitySection.fallbackTitle')}
                                         className="w-full h-48 object-cover"
                                     />
@@ -234,7 +235,7 @@ export default function ActiviteSection(props) {
                                     <div className="flex items-center">
                                         {activity.author?.profilePic && (
                                             <img
-                                                src={activity.author.profilePic}
+                                                src={buildImageUrl(activity.author.profilePic)}
                                                 alt={`${activity.author?.firstName || ""} ${activity.author?.lastName || ""}`.trim() || "author"}
                                                 className="size-8 rounded-full mr-2"
                                             />

@@ -11,6 +11,7 @@ import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import HeaderBreakdumb from '../components/hearder-breakdumb';
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import { useTranslation } from 'react-i18next';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 export default function EquipePage() {
     const { t } = useTranslation();
@@ -234,7 +235,7 @@ const TeamMemberCard = ({ member }) => {
         <div className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="relative">
                 <img
-                    src={member.photo || "/teams/default-member.jpg"}
+                    src={member.photo ? buildImageUrl(member.photo) : "/teams/default-member.jpg"}
                     alt={member.name}
                     className="w-32 h-32 rounded-full mx-auto object-cover shadow-md"
                 />

@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 import HeaderBreakdumb from '../components/hearder-breakdumb';
 import background from '../../assets/images/corporate/1.jpg';
 import Gallery from '../../component/Gallery';
+import { buildImageUrl } from '../../utils/imageUtils';
 export default function ActualitesDetails() {
     const { id } = useParams();
     const { t, i18n } = useTranslation();
@@ -85,7 +86,7 @@ export default function ActualitesDetails() {
 
             <HeaderBreakdumb
                 title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
-                background={newsItem?.image ? newsItem?.image : background}
+                background={newsItem?.image ? buildImageUrl(newsItem.image) : background}
 
             />
 
@@ -97,7 +98,7 @@ export default function ActualitesDetails() {
                         <div className="lg:col-span-8 md:col-span-6">
                             <div className="p-6 rounded-md shadow-sm dark:shadow-gray-800">
                                 <img
-                                    src={newsItem.image}
+                                    src={buildImageUrl(newsItem.image)}
                                     className="rounded-md w-full h-64 object-cover mb-6"
                                     alt={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
                                 />
@@ -146,7 +147,7 @@ export default function ActualitesDetails() {
                                         {similarNews.map((item) => (
                                             <div key={item.id} className="rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden">
                                                 <img
-                                                    src={item.image}
+                                                    src={buildImageUrl(item.image)}
                                                     className="w-full h-32 object-cover"
                                                     alt={i18n.language === "fr" ? item.title_fr : item.title_en}
                                                 />

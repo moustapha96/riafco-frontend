@@ -6,6 +6,7 @@ import { FaHome } from 'react-icons/fa'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 export default function HeaderBreakdumb({ title, description = '', background = '' }) {
     return <>
@@ -14,7 +15,7 @@ export default function HeaderBreakdumb({ title, description = '', background = 
         <section
             className="relative w-full py-32 lg:py-36  bg-center bg-no-repeat bg-cover"
             style={{
-                backgroundImage: background ? `url(${background})` : `url(${riafcoAbout})`,
+                backgroundImage: background ? `url(${buildImageUrl(background)})` : `url(${riafcoAbout})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

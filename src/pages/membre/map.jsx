@@ -8,6 +8,7 @@ import ifclService from "../../services/ifclService";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import africaGeo from "../../data/africa.geo.json";
 import { toast } from "react-toastify";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 
 const normalize = (str = "") =>
@@ -297,7 +298,7 @@ export default function Maps() {
                   <div className="flex items-center gap-3 mb-4">
                     {c.flag && (
                       <img
-                        src={c.flag}
+                        src={buildImageUrl(c.flag)}
                         alt={`Drapeau ${c.name_fr || c.name_en || ""}`}
                         className="w-20 h-14 object-cover rounded"
                       />
@@ -385,7 +386,7 @@ export default function Maps() {
                     <div className="flex items-center gap-3 mb-3">
                       {c.flag && (
                         <img
-                          src={c.flag}
+                          src={buildImageUrl(c.flag)}
                           alt={`Drapeau ${c.name_fr || c.name_en || ""}`}
                           className="w-16 h-12 object-cover rounded"
                         />
@@ -432,7 +433,7 @@ export default function Maps() {
                 <div className="flex items-center gap-3 mb-4">
                   {detailItem.flag && (
                     <img
-                      src={detailItem.flag}
+                      src={buildImageUrl(detailItem.flag)}
                       alt={`Drapeau ${detailItem.name_fr || detailItem.name_en || ""}`}
                       className="w-20 h-14 object-cover rounded"
                     />

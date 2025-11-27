@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useMemo, useState, useCallback } from "react";
+import { buildImageUrl } from "../utils/imageUtils";
 
 /**
  * props:
@@ -61,7 +62,7 @@ export default function Gallery({ images = [], title = "Galerie" }) {
         };
     }, [isOpen, prev, next]);
 
-    const thumbs = useMemo(() => images.filter(Boolean), [images]);
+    const thumbs = useMemo(() => images.filter(Boolean).map(img => buildImageUrl(img)), [images]);
 
     if (!thumbs.length) return null;
 

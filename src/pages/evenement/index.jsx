@@ -17,6 +17,7 @@ import { GoClock } from "react-icons/go";
 import { BsCheckCircle } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 export default function EvenementPage() {
     const { t, i18n } = useTranslation();
@@ -278,7 +279,7 @@ export default function EvenementPage() {
                                                                 <div className="flex items-center">
                                                                     {event.author.profilePic && (
                                                                         <img
-                                                                            src={event.author.profilePic || "/placeholder.svg"}
+                                                                            src={buildImageUrl(event.author.profilePic) || "/placeholder.svg"}
                                                                             alt={event.author.firstName}
                                                                             className="w-8 h-8 rounded-full mr-2"
                                                                         />
@@ -349,7 +350,7 @@ export default function EvenementPage() {
                         <div className="p-6">
                             {selectedEvent.image && (
                                 <img
-                                    src={selectedEvent.image || "/placeholder.svg"}
+                                    src={buildImageUrl(selectedEvent.image) || "/placeholder.svg"}
                                     alt={i18n.language === "fr" ? (selectedEvent.title_fr || selectedEvent.title) : (selectedEvent.title_en || selectedEvent.title_fr || selectedEvent.title)}
                                     className="w-full h-48 object-cover rounded-lg mb-6"
                                 />
@@ -386,7 +387,7 @@ export default function EvenementPage() {
                                         <div className="w-6 h-6 mr-3 flex items-center justify-center">
                                             {selectedEvent.author.profilePic ? (
                                                 <img
-                                                    src={selectedEvent.author.profilePic || "/placeholder.svg"}
+                                                    src={buildImageUrl(selectedEvent.author.profilePic) || "/placeholder.svg"}
                                                     alt={selectedEvent.author.firstName}
                                                     className="w-6 h-6 rounded-full"
                                                 />

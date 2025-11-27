@@ -99,6 +99,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import activityService from '../../services/activityService';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 export default function ActiviteUserDetail({
     className,
@@ -143,7 +144,7 @@ export default function ActiviteUserDetail({
                 </h5>
                 <div className="text-center mt-8">
                     <img
-                        src={profilePic || "/profiles/default-profile.png"}
+                        src={profilePic ? buildImageUrl(profilePic) : "/profiles/default-profile.png"}
                         className="size-24 mx-auto rounded-full shadow-sm mb-4"
                         alt={name || "Auteur"}
                     />
@@ -160,7 +161,7 @@ export default function ActiviteUserDetail({
                         similarActivities.map((activity) => (
                             <div key={activity.id} className="flex items-center p-3 rounded-md shadow-sm dark:shadow-gray-800">
                                 <img
-                                    src={activity.image || "/activities/default-activity.jpg"}
+                                    src={activity.image ? buildImageUrl(activity.image) : "/activities/default-activity.jpg"}
                                     className="size-16 rounded-md shadow-sm dark:shadow-gray-800 object-cover"
                                     alt={activity.title_fr || activity.title_en}
                                 />

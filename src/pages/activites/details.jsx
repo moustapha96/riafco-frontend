@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import HeaderBreakdumb from '../components/hearder-breakdumb';
 import background from '../../assets/images/corporate/1.jpg';
 import Gallery from '../../component/Gallery';
+import { buildImageUrl } from '../../utils/imageUtils';
 export default function ActiviteDetailPage() {
     const { id } = useParams();
     const { t, i18n } = useTranslation();
@@ -113,7 +114,7 @@ export default function ActiviteDetailPage() {
             <HeaderBreakdumb
                 title={title}
                 description={t("activitesDetails.author", { name: `${activity.author.firstName} ${activity.author.lastName}` })}
-                background={activity?.image ? activity?.image : background}
+                background={activity?.image ? buildImageUrl(activity.image) : background}
 
             />
 
@@ -141,7 +142,7 @@ export default function ActiviteDetailPage() {
                         <div className="lg:col-span-8 md:col-span-6">
                             <div className="p-6 rounded-md shadow-sm dark:shadow-gray-800">
                                 <img
-                                    src={activity.image}
+                                    src={buildImageUrl(activity.image)}
                                     className="rounded-md w-full h-64 object-cover mb-6"
                                     alt={title}
                                 />
@@ -192,7 +193,7 @@ export default function ActiviteDetailPage() {
                                         {similarActivities.map((item) => (
                                             <div key={item.id} className="rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden">
                                                 <img
-                                                    src={item.image}
+                                                    src={buildImageUrl(item.image)}
                                                     className="w-full h-32 object-cover"
                                                     alt={i18n.language === "fr" ? item.title_fr : item.title_en}
                                                 />

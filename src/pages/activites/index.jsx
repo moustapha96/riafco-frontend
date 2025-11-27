@@ -13,6 +13,7 @@ import Navbar from '../../component/Navbar/navbar';
 import Footer from '../../component/Footer/footer';
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import activityService from '../../services/activityService';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
@@ -146,7 +147,7 @@ export default function ActivitePage() {
                                     >
                                         <div className="h-48 overflow-hidden">
                                             <img
-                                                src={activity.image || "/activities/default-activity.jpg"}
+                                                src={buildImageUrl(activity.image) || "/activities/default-activity.jpg"}
                                                 alt={i18n.language === 'fr' ? activity.title_fr : (activity.title_en || activity.title_fr)}
                                                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                                             />

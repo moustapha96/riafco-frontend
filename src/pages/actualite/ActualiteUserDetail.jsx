@@ -185,6 +185,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import newsService from '../../services/newsService';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 export default function ActualiteUserDetail({
     className,
@@ -234,7 +235,7 @@ export default function ActualiteUserDetail({
                     <h5 className="text-lg font-semibold text-center mb-4">Auteur</h5>
                     <div className="text-center">
                         <img
-                            src={auteurPhoto || "/profiles/default-profile.png"}
+                            src={auteurPhoto ? buildImageUrl(auteurPhoto) : "/profiles/default-profile.png"}
                             className="size-24 mx-auto rounded-full shadow-sm mb-4"
                             alt={auteurNom || "Auteur"}
                         />
@@ -269,7 +270,7 @@ export default function ActualiteUserDetail({
                                 >
                                     <div className="flex-shrink-0">
                                         <img
-                                            src={actualite.image || "/news/default-news.jpg"}
+                                            src={actualite.image ? buildImageUrl(actualite.image) : "/news/default-news.jpg"}
                                             className="size-16 rounded-md shadow-sm dark:shadow-gray-800 object-cover"
                                             alt={actualite.title_fr}
                                         />

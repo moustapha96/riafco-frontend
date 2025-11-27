@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import newsService from '../../services/newsService';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import { buildImageUrl } from '../../utils/imageUtils';
 
 export default function NewsSection(props) {
     const { t } = useTranslation();
@@ -87,7 +88,7 @@ export default function NewsSection(props) {
                             >
                                 {item.image && (
                                     <img
-                                        src={item.image}
+                                        src={buildImageUrl(item.image)}
                                         alt={title || "news"}
                                         className="w-full h-48 object-cover"
                                     />
@@ -113,7 +114,7 @@ export default function NewsSection(props) {
                                         <div className="flex items-center">
                                             {item.author?.profilePic && (
                                                 <img
-                                                    src={item.author.profilePic}
+                                                    src={buildImageUrl(item.author.profilePic)}
                                                     alt={`${item.author?.firstName || ""} ${item.author?.lastName || ""}`.trim() || "author"}
                                                     className="size-8 rounded-full mr-2"
                                                 />

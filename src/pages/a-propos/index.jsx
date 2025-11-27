@@ -16,6 +16,7 @@ import background from "../../assets/images/corporate/1.jpg";
 import { useTranslation } from "react-i18next";
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 
 const settings = {
@@ -265,7 +266,7 @@ export default function AproposPage() {
                       <div className="relative">
                         <img
                           className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-orange-100 group-hover:border-orange-200 transition-colors"
-                          src={partner.logo || "/placeholder.svg"}
+                          src={buildImageUrl(partner.logo) || "/placeholder.svg"}
                           alt={partner.name}
                         />
                       </div>
@@ -310,7 +311,7 @@ export default function AproposPage() {
                       <div className="lg:flex p-6 lg:p-0 relative rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden m-2">
                         <img
                           className="size-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto object-contain"
-                          src={partner.logo || "/placeholder.svg"}
+                          src={buildImageUrl(partner.logo) || "/placeholder.svg"}
                           alt={partner.name}
                         />
                         <div className="pt-6 lg:p-6 text-center lg:text-start space-y-4">

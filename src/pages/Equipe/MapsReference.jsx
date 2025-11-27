@@ -7,6 +7,7 @@ import ifclService from "../../../services/ifclService"
 import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 import africaGeo from "../../../data/africa.geo.json"
 import { toast } from "sonner"
+import { buildImageUrl } from "../../../utils/imageUtils"
 
 const MapsIfcl = () => {
     const [ifcls, setIfcls] = useState([])
@@ -181,7 +182,7 @@ const MapsIfcl = () => {
                             <Card>
                                 <div className="flex items-center gap-3 mb-4">
                                     {selectedCountryData.flag && (
-                                        <img src={selectedCountryData.flag} alt="" className="w-35 h-35 rounded" />
+                                        <img src={buildImageUrl(selectedCountryData.flag)} alt="" className="w-35 h-35 rounded" />
                                     )}
 
                                     <div>
