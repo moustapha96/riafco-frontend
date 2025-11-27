@@ -20,5 +20,5 @@ Allow: /historique
 Allow: /notre-équipe
 
 # Sitemap (à mettre à jour avec votre URL de production)
-Sitemap: https://riafco-io.org/sitemap.xml
+Sitemap: https://riafco-oi.org/sitemap.xml
 
