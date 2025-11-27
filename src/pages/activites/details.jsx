@@ -142,8 +142,8 @@ export default function ActiviteDetailPage() {
                         <div className="lg:col-span-8 md:col-span-6">
                             <div className="p-6 rounded-md shadow-sm dark:shadow-gray-800">
                                 <img
-                                    src={buildImageUrl(activity.image)}
-                                    // src={activity.image}
+                                    // src={buildImageUrl(activity.image)}
+                                    src={activity.image}
                                     className="rounded-md w-full h-64 object-cover mb-6"
                                     alt={title}
                                 />
