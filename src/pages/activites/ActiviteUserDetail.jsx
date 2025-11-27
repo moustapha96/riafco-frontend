@@ -144,7 +144,7 @@ export default function ActiviteUserDetail({
                 </h5>
                 <div className="text-center mt-8">
                     <img
-                        src={profilePic ? buildImageUrl(profilePic) : "/profiles/default-profile.png"}
+                        src={profilePic ? profilePic : "/logo.png"}
                         className="size-24 mx-auto rounded-full shadow-sm mb-4"
                         alt={name || "Auteur"}
                     />
