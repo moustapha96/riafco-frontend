@@ -69,7 +69,7 @@ export const AuthProvider  = ({ children }) => {
   const login = useCallback(
     (userData, rememberMe = false) => {
       saveAuthData(userData, rememberMe)
-      navigate("/admin/dashboard")
+      navigate("/")
     },
     [navigate, saveAuthData],
   )

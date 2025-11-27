@@ -56,7 +56,7 @@ export default function PageComingsoon() {
                             </div>
                         </div>
                         <div className="text-center">
-                            <p className="mb-0 text-slate-400">© {new Date().getFullYear()} Techwind. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                            <p className="mb-0 text-slate-400">© {new Date().getFullYear()} RIAFCO. Réalisé avec par  <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
                         </div>
                     </div>
                 </div>

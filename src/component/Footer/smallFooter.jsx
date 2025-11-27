@@ -16,7 +16,7 @@ export default function SmallFooter(){
                             </div>
 
                             <div className="lg:col-span-6 text-center mt-6 md:mt-0">
-                                <p className="mb-0">© {new Date().getFullYear()} Techwind. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                                <p className="mb-0">© {new Date().getFullYear()} RIAFCO. Réalisé avec par  <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
                             </div>
 
                             <ul className="lg:col-span-4 list-none space-x-1 md:text-end text-center mt-6 md:mt-0">
