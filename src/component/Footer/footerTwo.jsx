@@ -37,7 +37,7 @@ export default function FooterTwo(){
             <div className="py-[30px] px-0 border border-gray-800 dark:border-gray-700">
                 <div className="container relative text-center">
                     <div className="grid md:grid-cols-1">
-                        <p className="mb-0">© {new Date().getFullYear()} RIAFCO. Réalisé avec par  <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                            <p className="mb-0">© {new Date().getFullYear()} RIAFCO. Réalisé par   <Link to="https://alhussein-khouma.vercel.app/" target="_blank" className="text-reset">Alhouma</Link>.</p>
                     </div>
                 </div>
             </div>

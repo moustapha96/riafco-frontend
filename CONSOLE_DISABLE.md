@@ -163,5 +163,5 @@ logger.error('Erreur importante');
 
 ---
 
-**Dernière mise à jour**: 2024
+**Dernière mise à jour**: 10-11-2025
 
