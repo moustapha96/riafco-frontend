@@ -233,6 +233,7 @@ import TransparentFooter from "../../component/Footer/transparentFooter";
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import { useTranslation } from "react-i18next";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 export default function RapportGouvernance() {
     const { t, i18n } = useTranslation();
@@ -294,7 +295,7 @@ export default function RapportGouvernance() {
             <HeaderBreakdumb
                 title={t("governanceReports.header.title")}
                 description={t("governanceReports.header.description")}
-                background={riafcoAbout}
+                // background={riafcoAbout}
             />
 
             <section className="relative md:py-24 py-16 bg-gray-50">
@@ -359,7 +360,7 @@ export default function RapportGouvernance() {
                                                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                                                         <span className="text-sm text-gray-500">{t("governanceReports.pdfAvailable")}</span>
                                                         <Link
-                                                            to={report.fileUrl}
+                                                            to={buildImageUrl(report.fileUrl)}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="inline-flex items-center px-4 py-2 bg-[var(--riafco-blue)] hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"

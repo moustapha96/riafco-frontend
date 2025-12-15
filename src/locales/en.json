@@ -56,8 +56,8 @@
             }
         },
         "portfolio": {
-            "title": "Explore Latest Works",
-            "description": "Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect."
+            "title": "Explore Our Latest Works",
+            "description": "Discover RIAFCO's initiatives and projects that can provide everything you need to generate awareness, drive engagement, and connect stakeholders across Africa."
         }
     },
     "buttons": {
@@ -209,7 +209,7 @@
     },
     "actualitesDetails": {
         "dateActivity": "Date of the activity",
-        "gallery": "Galerie d'images",
+        "gallery": "Image Gallery",
         "loading": "Loading...",
         "notFound": "News not found.",
         "breadcrumb": {
@@ -244,8 +244,8 @@
         }
     },
     "activitesDetails": {
-        "gallery": "Galerie d'images",
-        "similarActivites": "Activités Similaires",
+        "gallery": "Image Gallery",
+        "similarActivites": "Similar Activities",
         "loading": "Loading...",
         "notFound": "Activity not found.",
         "author": "Author: {{name}}",
@@ -274,7 +274,7 @@
         },
         "mapSection": {
             "title": "Interactive Map of <orange>Africa</orange>",
-            "description": "Explore our African member countries. Click a country to view details and membership criteria. Use the controls to zoom and navigate.",
+            "description": "Explore our African member countries. Click a country to view details and criteria. Use the controls to zoom and navigate.",
             "controls": {
                 "zoomIn": "Zoom in",
                 "zoomOut": "Zoom out",
@@ -290,12 +290,13 @@
             "loading": "Loading member countries...",
             "emptyTitle": "No member country found",
             "emptyDescription": "Member country data will be available soon.",
-            "criteriaBadge_one": "{{count}} membership criterion",
-            "criteriaBadge_other": "{{count}} membership criteria",
+            "criteriaBadge_one": "{{count}} criterion",
+            "criteriaBadge_other": "{{count}} criteria",
             "details": "View details"
         },
         "modal": {
-            "members": "Member",
+            "member": "Member",
+            "members": "Members",
             "backToList": "Back to list",
             "title": "Member Country Details",
             "status": {
@@ -310,11 +311,11 @@
             "generalInfo": "General Information",
             "countryCode": "Country Code",
             "coordinates": "Coordinates",
-            "criteriaCount": "Membership Criteria",
+            "criteriaCount": "Criteria",
             "joinDate": "Join Date",
             "descriptionFr": "Description (French)",
             "descriptionEn": "Description (English)",
-            "filledCriteria": "Completed Membership Criteria",
+            "filledCriteria": "Completed Criteria",
             "close": "Close"
         }
     },
@@ -655,6 +656,11 @@
             "terms": "Terms & Conditions"
         },
         "copyrightDefault": "© {{year}} {{siteName}}. All rights reserved."
+    },
+    "cookie": {
+        "message": "This website uses cookies to provide you with a great user experience. By using it, you accept our",
+        "linkText": "use of cookies",
+        "close": "Close"
     },
     "activitySection": {
         "loading": "Loading activities...",

@@ -56,8 +56,8 @@
             }
         },
         "portfolio": {
-            "title": "Explore Latest Works",
-            "description": "Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect."
+            "title": "Découvrez nos derniers travaux",
+            "description": "Commencez à travailler avec RIAFCO qui peut fournir tout ce dont vous avez besoin pour générer de la visibilité, augmenter le trafic et créer des connexions."
         }
     },
     "buttons": {
@@ -252,7 +252,7 @@
         },
         "mapSection": {
             "title": "Carte Interactive de l'<orange>Afrique</orange>",
-            "description": "Explorez nos pays membres africains. Cliquez sur un pays pour découvrir ses détails et critères d'adhésion. Utilisez les contrôles pour zoomer et naviguer sur la carte.",
+            "description": "Explorez nos pays membres africains. Cliquez sur un pays pour découvrir ses détails et critères. Utilisez les contrôles pour zoomer et naviguer sur la carte.",
             "controls": {
                 "zoomIn": "Zoom avant",
                 "zoomOut": "Zoom arrière",
@@ -268,11 +268,12 @@
             "loading": "Chargement des pays membres...",
             "emptyTitle": "Aucun pays membre trouvé",
             "emptyDescription": "Les données des pays membres seront bientôt disponibles.",
-            "criteriaBadge_one": "{{count}} critère d'adhésion",
-            "criteriaBadge_other": "{{count}} critères d'adhésion",
+            "criteriaBadge_one": "{{count}} critère",
+            "criteriaBadge_other": "{{count}} critères",
             "details": "Voir les détails"
         },
         "modal": {
+            "member": "Membre",
             "members": "Membres",
             "backToList": "Retour à la Liste",
             "title": "Détails du Pays Membre",
@@ -288,11 +289,11 @@
             "generalInfo": "Informations Générales",
             "countryCode": "Code Pays",
             "coordinates": "Coordonnées",
-            "criteriaCount": "Critères d'Adhésion",
+            "criteriaCount": "Critères",
             "joinDate": "Date d'Adhésion",
             "descriptionFr": "Description (Français)",
             "descriptionEn": "Description (Anglais)",
-            "filledCriteria": "Critères d'Adhésion Remplis",
+            "filledCriteria": "Critères Remplis",
             "close": "Fermer"
         }
     },
@@ -635,6 +636,12 @@
             "terms": "Termes et Conditions"
         },
         "copyrightDefault": "© {{year}} {{siteName}}. Tous droits réservés."
+    },
+
+    "cookie": {
+        "message": "Ce site web utilise des cookies pour vous offrir une excellente expérience utilisateur. En l'utilisant, vous acceptez notre",
+        "linkText": "utilisation des cookies",
+        "close": "Fermer"
     },
 
     "activitySection": {

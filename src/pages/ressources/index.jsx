@@ -190,7 +190,7 @@ export default function RessourcePage() {
                       {resource.lien && (
                         <p className="text-slate-600 dark:text-slate-300 text-sm line-clamp-3 mb-4">
                           <a
-                            href={buildImageUrl(resource.lien)}
+                            href={resource.lien}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:no-underline break-all"

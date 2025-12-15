@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router';
+import { Route, Routes, Navigate } from 'react-router';
 
 import Switch from './component/Switch';
 import Accueil from './pages/accueil';
@@ -45,7 +45,8 @@ function App() {
                 <Route exact path="/rapport-gouvernance" element={<RapportGouvernance />} />
                 <Route exact path="/terme-et-condition" element={<TermeUtilisationPage />} />
 
-                
+                {/* Route catch-all : redirige vers la page d'accueil pour toutes les routes non trouvées */}
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </>
     )

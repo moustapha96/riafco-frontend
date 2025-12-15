@@ -494,26 +494,28 @@ export default function MembrePage() {
       {/* Popup regroupé par pays */}
       {showModal && selectedCountryName && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn"
+          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-[9999] p-4 animate-fadeIn"
           onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}
           role="dialog"
           aria-modal="true"
         >
-          <div className="bg-white rounded-xl md:rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp">
-            <div className="sticky top-0 bg-white border-b border-gray-200 p-4 md:p-6 flex justify-between items-center rounded-t-xl md:rounded-t-2xl">
+          <div className="bg-white rounded-xl md:rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl animate-slideUp">
+            {/* Header fixe toujours visible */}
+            <div className="flex-shrink-0 bg-white border-b border-gray-200 p-4 md:p-6 flex justify-between items-center rounded-t-xl md:rounded-t-2xl z-10">
               <h2 className="text-xl md:text-2xl font-bold text-gray-800">
                 {selectedCountryName} — {countryMembers.length} {countryMembers.length > 1 ? t("members.modal.members") : t("members.modal.member")}
               </h2>
               <button
                 onClick={closeModal}
-                className="text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
-                aria-label="Fermer"
+                className="text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors flex-shrink-0"
+                aria-label={t("members.modal.close")}
               >
                 ×
               </button>
             </div>
 
-            <div className="p-4 md:p-6">
+            {/* Contenu scrollable */}
+            <div className="flex-1 overflow-y-auto p-4 md:p-6">
               {/* Si plusieurs membres : grille + sélection d’un actif */}
               {countryMembers.length > 1 && (
                 <>
@@ -655,7 +657,7 @@ export default function MembrePage() {
                 );
               })()}
 
-              <div className="flex justify-center pt-4 gap-2">
+              <div className="flex justify-center pt-4 gap-2 pb-2">
                 {countryMembers.length > 1 && activeMember && (
                   <button
                     onClick={() => setActiveMember(null)}
