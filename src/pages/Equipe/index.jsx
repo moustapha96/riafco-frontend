@@ -235,7 +235,7 @@ const TeamMemberCard = ({ member }) => {
         <div className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="relative">
                 <img
-                    src={member.photo ? buildImageUrl(member.photo) : "/teams/default-member.jpg"}
+                    src={member.photo ? buildImageUrl(member.photo) : "https://riafco-oi.org/logo.png"}
                     alt={member.name}
                     className="w-32 h-32 rounded-full mx-auto object-cover shadow-md"
                 />
@@ -278,13 +278,13 @@ const TeamMemberCard = ({ member }) => {
                             <FaTwitter className="text-xl" />
                         </a>
                     )}
-                    <a
+                    {/* <a
                         href={`mailto:${email}`}
                         className="p-2 text-[var(--riafco-blue)] hover:text-[var(--riafco-orange)] transition-colors"
                         aria-label="Email"
                     >
                         <Icon.Mail className="text-xl" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>

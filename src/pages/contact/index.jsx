@@ -111,7 +111,7 @@ export default function ContactPage() {
                                             </Link>
                                         )}
 
-                                        {config?.socialMedia?.linkedin && (
+                                        {/* {config?.socialMedia?.linkedin && (
                                             <Link
                                                 to={config.socialMedia.linkedin}
                                                 target="_blank"
@@ -121,7 +121,7 @@ export default function ContactPage() {
                                             >
                                                 <Icon.Linkedin className="size-5" />
                                             </Link>
-                                        )}
+                                        )} */}
                                 </>
                             )}
                         </div>
