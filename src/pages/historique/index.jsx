@@ -16,6 +16,10 @@ import {
     FaTimes,
     FaExternalLinkAlt,
     FaChevronRight,
+    FaTh,
+    FaList,
+    FaStream,
+    FaClock,
 } from "react-icons/fa";
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import Navbar from "../../component/Navbar/navbar";
@@ -25,6 +29,7 @@ import { Chrono } from "react-chrono";
 import ReactModal from "react-modal";
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import { useTranslation } from "react-i18next";
+import { buildImageUrl } from "../../utils/imageUtils";
 
 export default function HistoriquePage() {
     const { t, i18n } = useTranslation();
@@ -34,6 +39,7 @@ export default function HistoriquePage() {
     const [loading, setLoading] = useState(true);
     const [expandedYears, setExpandedYears] = useState({});
     const [activeYear, setActiveYear] = useState(null);
+    const [displayType, setDisplayType] = useState("timeline"); // "timeline", "cards", "alternate", "chrono"
     const [stats, setStats] = useState({
         totalEvents: 0,
         yearsCount: 0,
@@ -67,6 +73,32 @@ export default function HistoriquePage() {
 
     const formatMonthYear = (dateString) =>
         new Date(dateString).toLocaleDateString(locale, { month: "long", year: "numeric" });
+
+    // Fonction pour extraire la première image de la description HTML
+    const extractFirstImage = (htmlString) => {
+        if (!htmlString) return null;
+        const imgMatch = htmlString.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i);
+        if (imgMatch && imgMatch[1]) {
+            return imgMatch[1];
+        }
+        return null;
+    };
+
+    // Fonction pour obtenir l'image d'un événement (image directe ou extraite de la description)
+    const getEventImage = (event) => {
+        if (event.image) {
+            return buildImageUrl(event.image);
+        }
+        const extractedImage = extractFirstImage(event.description);
+        if (extractedImage) {
+            // Si l'image est déjà une URL complète, on la retourne telle quelle
+            if (extractedImage.startsWith('http://') || extractedImage.startsWith('https://') || extractedImage.startsWith('//')) {
+                return extractedImage;
+            }
+            return buildImageUrl(extractedImage);
+        }
+        return null;
+    };
 
     const fetchHistory = async () => {
         try {
@@ -232,15 +264,18 @@ export default function HistoriquePage() {
 
     const timelineYears = groupByYear();
 
-    const chronoItems = historyItems.map((i) => ({
-        title: i.formattedDate,
-        cardTitle: i.title,
-        cardDetailedText: i.description?.replace(/<[^>]*>/g, ""),
-        media: {
-            type: "IMAGE",
-            source: { url: "https://via.placeholder.com/300x200/4a6fa1/ffffff?text=RIAFCO" },
-        },
-    }));
+    const chronoItems = historyItems.map((i) => {
+        const eventImage = getEventImage(i);
+        return {
+            title: i.formattedDate,
+            cardTitle: i.title,
+            cardDetailedText: i.description?.replace(/<[^>]*>/g, ""),
+            media: {
+                type: "IMAGE",
+                source: { url: eventImage || "https://riafco-oi.org/logo.png" },
+            },
+        };
+    });
 
     return (
         <>
@@ -263,30 +298,83 @@ export default function HistoriquePage() {
                         <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t("historique.journey.desc")}</p>
                     </div>
 
+                    {/* Sélecteur de type d'affichage */}
+                    <div className="flex justify-center mb-8">
+                        <div className="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 p-1 shadow-sm">
+                            <button
+                                onClick={() => setDisplayType("timeline")}
+                                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+                                    displayType === "timeline"
+                                        ? "bg-[var(--riafco-blue)] text-white"
+                                        : "text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                                }`}
+                            >
+                                <FaList />
+                                {i18n.language === "fr" ? "Timeline" : "Timeline"}
+                            </button>
+                            <button
+                                onClick={() => setDisplayType("cards")}
+                                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+                                    displayType === "cards"
+                                        ? "bg-[var(--riafco-blue)] text-white"
+                                        : "text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                                }`}
+                            >
+                                <FaTh />
+                                {i18n.language === "fr" ? "Cartes" : "Cards"}
+                            </button>
+                            <button
+                                onClick={() => setDisplayType("alternate")}
+                                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+                                    displayType === "alternate"
+                                        ? "bg-[var(--riafco-blue)] text-white"
+                                        : "text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                                }`}
+                            >
+                                <FaStream />
+                                {i18n.language === "fr" ? "Alternée" : "Alternate"}
+                            </button>
+                            <button
+                                onClick={() => setDisplayType("chrono")}
+                                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+                                    displayType === "chrono"
+                                        ? "bg-[var(--riafco-blue)] text-white"
+                                        : "text-slate-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-700"
+                                }`}
+                            >
+                                <FaClock />
+                                {i18n.language === "fr" ? "Chrono" : "Chrono"}
+                            </button>
+                        </div>
+                    </div>
+
                     {loading ? (
                         <div className="flex justify-center py-12">
                             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[var(--riafco-blue)]"></div>
                         </div>
                     ) : (
                         <>
-
-                            <div className="mt-8 overflow-x-auto pb-4">
-                                <div className="flex gap-4 whitespace-nowrap">
-                                    {[...new Set(historyItems.map((i) => i.year))]
-                                        .sort()
-                                        .map((year) => (
-                                            <button
-                                                key={year}
-                                                onClick={() => scrollToYear(year)}
-                                                className="px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-[var(--riafco-blue)] hover:text-white transition-colors"
-                                            >
-                                                {year}
-                                            </button>
-                                        ))}
+                            {/* Navigation par années - affichée pour timeline et cards */}
+                            {(displayType === "timeline" || displayType === "cards") && (
+                                <div className="mt-8 overflow-x-auto pb-4">
+                                    <div className="flex gap-4 whitespace-nowrap">
+                                        {[...new Set(historyItems.map((i) => i.year))]
+                                            .sort()
+                                            .map((year) => (
+                                                <button
+                                                    key={year}
+                                                    onClick={() => scrollToYear(year)}
+                                                    className="px-4 py-2 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-[var(--riafco-blue)] hover:text-white transition-colors"
+                                                >
+                                                    {year}
+                                                </button>
+                                            ))}
                                     </div>
                                 </div>
+                            )}
 
-                                {/* Timeline principale */}
+                                {/* Timeline principale - affichée uniquement si displayType === "timeline" */}
+                                {displayType === "timeline" && (
                                 <div className="space-y-12" ref={timelineRef}>
                                     {timelineYears.map(([year, events]) => (
                                         <div
@@ -314,33 +402,50 @@ export default function HistoriquePage() {
                                                 className={`grid grid-cols-1 gap-6 mt-4 transition-all duration-300 ${expandedYears[year] ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
                                                     }`}
                                             >
-                                                {events.map((event) => (
-                                                    <div
-                                                        key={event.id}
-                                                        className="relative p-6 rounded-lg shadow-md bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800"
-                                                    >
-                                                        <div className="flex items-start mb-4">
-                                                            <FaCalendarAlt className="text-[var(--riafco-orange)] text-lg mt-1 mr-3 flex-shrink-0" />
-                                                            <div>
-                                                                <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">{event.formattedDate}</h4>
-                                                            </div>
-                                                        </div>
-
-                                                        <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{event.title}</h3>
-
+                                                {events.map((event) => {
+                                                    const eventImage = getEventImage(event);
+                                                    return (
                                                         <div
-                                                            className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
-                                                            dangerouslySetInnerHTML={{ __html: event.description }}
-                                                        />
-                                                    </div>
-                                                ))}
+                                                            key={event.id}
+                                                            className="relative p-6 rounded-lg shadow-md bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800"
+                                                        >
+                                                            {eventImage && (
+                                                                <div className="mb-4">
+                                                                    <img
+                                                                        src={eventImage}
+                                                                        alt={event.title}
+                                                                        className="w-full h-48 object-cover rounded-lg"
+                                                                        onError={(e) => {
+                                                                            e.target.style.display = 'none';
+                                                                        }}
+                                                                    />
+                                                                </div>
+                                                            )}
+                                                            <div className="flex items-start mb-4">
+                                                                <FaCalendarAlt className="text-[var(--riafco-orange)] text-lg mt-1 mr-3 flex-shrink-0" />
+                                                                <div>
+                                                                    <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">{event.formattedDate}</h4>
+                                                                </div>
+                                                            </div>
+
+                                                            <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{event.title}</h3>
+
+                                                            <div
+                                                                className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
+                                                                dangerouslySetInnerHTML={{ __html: event.description }}
+                                                            />
+                                                        </div>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     ))}
                                 </div>
+                                )}
 
-                                {/* Version mobile react-chrono */}
-                                <div className="block md:hidden mt-12">
+                                {/* Version Chrono - affichée uniquement si displayType === "chrono" */}
+                                {displayType === "chrono" && (
+                                <div className="mt-12">
                                     {historyItems.length > 0 && (
                                         <div className="h-[600px]">
                                             <Chrono
@@ -363,62 +468,16 @@ export default function HistoriquePage() {
                                                     ))}
                                                 </div>
                                             </Chrono>
-                                    </div>
+                                        </div>
                                     )}
                                 </div>
+                                )}
                         </>
                     )}
                 </div>
             </section>
 
-            {/* Section Chiffres Clés */}
-            <section className="relative md:py-24 py-16">
-                <div className="container relative">
-                    <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.stats.tag")}</h6>
-                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
-                            {t("historique.stats.title")}
-                        </h3>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-                        {[
-                            {
-                                icon: <FaCalendarAlt className="text-4xl text-[var(--riafco-orange)]" />,
-                                number: stats.totalEvents,
-                                title: t("historique.stats.eventsTitle"),
-                                desc: t("historique.stats.eventsDesc"),
-                            },
-                            {
-                                icon: <FaUsers className="text-4xl text-[var(--riafco-orange)]" />,
-                                number: stats.yearsCount,
-                                title: t("historique.stats.yearsTitle"),
-                                desc: t("historique.stats.yearsDesc"),
-                            },
-                            {
-                                icon: <FaGlobeAfrica className="text-4xl text-[var(--riafco-orange)]" />,
-                                number: stats.countriesCount,
-                                title: t("historique.stats.countriesTitle"),
-                                desc: t("historique.stats.countriesDesc"),
-                            },
-                            {
-                                icon: <FaHandshake className="text-4xl text-[var(--riafco-orange)]" />,
-                                number: stats.programsCount,
-                                title: t("historique.stats.programsTitle"),
-                                desc: t("historique.stats.programsDesc"),
-                            },
-                        ].map((item, index) => (
-                            <div key={index} className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md text-center">
-                                <div className="mb-4">{item.icon}</div>
-                                <div className="text-3xl font-bold text-[var(--riafco-blue)] mb-2">{item.number}</div>
-                                <h4 className="font-semibold mb-2">{item.title}</h4>
-                                <p className="text-slate-600 dark:text-slate-400">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+          
             {/* Section Événements marquants */}
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
@@ -431,42 +490,59 @@ export default function HistoriquePage() {
                     </div>
 
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {getHighlightEvents().map((item, index) => (
-                            <div
-                                key={item.id}
-                                className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
-                                onClick={() => openModal(item)}
-                            >
-                                <div className="mb-4 flex justify-center">
-                                    {index % 3 === 0 ? (
-                                        <FaFileAlt className="text-3xl text-[var(--riafco-orange)]" />
-                                    ) : index % 3 === 1 ? (
-                                        <FaHandshake className="text-3xl text-[var(--riafco-orange)]" />
+                        {getHighlightEvents().map((item, index) => {
+                            const eventImage = getEventImage(item);
+                            return (
+                                <div
+                                    key={item.id}
+                                    className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                                    onClick={() => openModal(item)}
+                                >
+                                    {eventImage ? (
+                                        <div className="mb-4">
+                                            <img
+                                                src={eventImage}
+                                                alt={item.title}
+                                                className="w-full h-48 object-cover rounded-lg"
+                                                onError={(e) => {
+                                                    e.target.style.display = 'none';
+                                                }}
+                                            />
+                                        </div>
                                     ) : (
-                                        <FaMapMarkedAlt className="text-3xl text-[var(--riafco-orange)]" />
+                                        <div className="mb-4 flex justify-center">
+                                            {index % 3 === 0 ? (
+                                                <FaFileAlt className="text-3xl text-[var(--riafco-orange)]" />
+                                            ) : index % 3 === 1 ? (
+                                                <FaHandshake className="text-3xl text-[var(--riafco-orange)]" />
+                                            ) : (
+                                                <FaMapMarkedAlt className="text-3xl text-[var(--riafco-orange)]" />
+                                            )}
+                                        </div>
                                     )}
+                                    <div className="text-[var(--riafco-blue)] font-bold text-center mb-2">{item.year}</div>
+                                    <h4 className="font-semibold text-lg mb-2 text-center">
+                                        {item.title.length > 60 ? item.title.substring(0, 60) + "..." : item.title}
+                                    </h4>
+                                    <p className="text-slate-600 dark:text-slate-400 text-center">
+                                        {item.description.replace(/<[^>]*>/g, "").length > 120
+                                            ? item.description.replace(/<[^>]*>/g, "").substring(0, 120) + "..."
+                                            : item.description.replace(/<[^>]*>/g, "")}
+                                    </p>
+                                    <div className="mt-4 text-center">
+                                        <button className="text-[var(--riafco-orange)] font-medium hover:underline flex items-center justify-center mx-auto">
+                                            {t("historique.highlights.seeDetails")} <FaExternalLinkAlt className="ml-2" />
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="text-[var(--riafco-blue)] font-bold text-center mb-2">{item.year}</div>
-                                <h4 className="font-semibold text-lg mb-2 text-center">
-                                    {item.title.length > 60 ? item.title.substring(0, 60) + "..." : item.title}
-                                </h4>
-                                <p className="text-slate-600 dark:text-slate-400 text-center">
-                                    {item.description.replace(/<[^>]*>/g, "").length > 120
-                                        ? item.description.replace(/<[^>]*>/g, "").substring(0, 120) + "..."
-                                        : item.description.replace(/<[^>]*>/g, "")}
-                                </p>
-                                <div className="mt-4 text-center">
-                                    <button className="text-[var(--riafco-orange)] font-medium hover:underline flex items-center justify-center mx-auto">
-                                        {t("historique.highlights.seeDetails")} <FaExternalLinkAlt className="ml-2" />
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </section>
 
-            {/* Section année par année */}
+            {/* Section année par année - Cartes - affichée uniquement si displayType === "cards" */}
+            {displayType === "cards" && (
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center">
@@ -492,32 +568,47 @@ export default function HistoriquePage() {
                                         </div>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                            {yearEvents.map((event) => (
-                                                <div
-                                                    key={event.id}
-                                                    className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-[var(--riafco-blue)] hover:shadow-lg transition-shadow"
-                                                >
-                                                    <div className="flex items-center mb-3">
-                                                        <FaCalendarAlt className="text-[var(--riafco-orange)] mr-2" />
-                                                        <span className="text-sm text-slate-500 dark:text-slate-400">
-                                                            {new Date(event.date).toLocaleDateString(locale, { month: "long" })}
-                                                        </span>
-                                                    </div>
-
-                                                    <h4 className="font-semibold text-lg mb-3 text-slate-800 dark:text-slate-200">{event.title}</h4>
-
-                                                    <p className="text-slate-600 dark:text-slate-400 line-clamp-3">
-                                                        {event.description.replace(/<[^>]*>/g, "").substring(0, 150)}...
-                                                    </p>
-
-                                                    <button
-                                                        className="mt-4 text-[var(--riafco-orange)] font-medium hover:underline flex items-center"
-                                                        onClick={() => openModal(event)}
+                                            {yearEvents.map((event) => {
+                                                const eventImage = getEventImage(event);
+                                                return (
+                                                    <div
+                                                        key={event.id}
+                                                        className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-[var(--riafco-blue)] hover:shadow-lg transition-shadow"
                                                     >
-                                                        {i18n.language === "fr" ? "Voir plus" : "See more"} <FaChevronRight className="ml-1" />
-                                                    </button>
-                                                </div>
-                                            ))}
+                                                        {eventImage && (
+                                                            <div className="mb-4">
+                                                                <img
+                                                                    src={eventImage}
+                                                                    alt={event.title}
+                                                                    className="w-full h-48 object-cover rounded-lg"
+                                                                    onError={(e) => {
+                                                                        e.target.style.display = 'none';
+                                                                    }}
+                                                                />
+                                                            </div>
+                                                        )}
+                                                        <div className="flex items-center mb-3">
+                                                            <FaCalendarAlt className="text-[var(--riafco-orange)] mr-2" />
+                                                            <span className="text-sm text-slate-500 dark:text-slate-400">
+                                                                {new Date(event.date).toLocaleDateString(locale, { month: "long" })}
+                                                            </span>
+                                                        </div>
+
+                                                        <h4 className="font-semibold text-lg mb-3 text-slate-800 dark:text-slate-200">{event.title}</h4>
+
+                                                        <p className="text-slate-600 dark:text-slate-400 line-clamp-3">
+                                                            {event.description.replace(/<[^>]*>/g, "").substring(0, 150)}...
+                                                        </p>
+
+                                                        <button
+                                                            className="mt-4 text-[var(--riafco-orange)] font-medium hover:underline flex items-center"
+                                                            onClick={() => openModal(event)}
+                                                        >
+                                                            {i18n.language === "fr" ? "Voir plus" : "See more"} <FaChevronRight className="ml-1" />
+                                                        </button>
+                                                    </div>
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                 );
@@ -525,8 +616,10 @@ export default function HistoriquePage() {
                     </div>
                 </div>
             </section>
+            )}
 
-            {/* Section timeline alternée */}
+            {/* Section timeline alternée - affichée uniquement si displayType === "alternate" */}
+            {displayType === "alternate" && (
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center">
@@ -540,53 +633,69 @@ export default function HistoriquePage() {
                     <div className="relative mt-12">
                         <div className="absolute left-1/2 h-full w-0.5 bg-[var(--riafco-blue)]/30 transform -translate-x-1/2"></div>
 
-                        {historyItems.map((item, index) => (
-                            <div key={item.id} className={`relative mb-12 ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
-                                <div
-                                    className={`absolute top-0 w-4 h-4 rounded-full bg-[var(--riafco-blue)] -translate-y-1/2 ${index % 2 === 0 ? "md:right-1/2 md:translate-x-1/2" : "md:left-1/2 md:-translate-x-1/2"
-                                        }`}
-                                ></div>
-
-                                <div
-                                    className={`bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                                        }`}
-                                >
-                                    <div className="flex items-center mb-3">
-                                        <div className="w-12 h-12 rounded-full bg-[var(--riafco-blue)]/10 flex items-center justify-center mr-4">
-                                            <FaCalendarAlt className="text-[var(--riafco-blue)] text-xl" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">
-                                                {new Date(item.date).toLocaleDateString(locale, { year: "numeric" })}
-                                            </h4>
-                                            <p className="text-sm text-slate-500 dark:text-slate-400">
-                                                {new Date(item.date).toLocaleDateString(locale, { month: "long" })}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{item.title}</h3>
+                        {historyItems.map((item, index) => {
+                            const eventImage = getEventImage(item);
+                            return (
+                                <div key={item.id} className={`relative mb-12 ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
+                                    <div
+                                        className={`absolute top-0 w-4 h-4 rounded-full bg-[var(--riafco-blue)] -translate-y-1/2 ${index % 2 === 0 ? "md:right-1/2 md:translate-x-1/2" : "md:left-1/2 md:-translate-x-1/2"
+                                            }`}
+                                    ></div>
 
                                     <div
-                                        className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
-                                        dangerouslySetInnerHTML={{ __html: item.description }}
-                                    />
-
-                                    {normalize(item.description).includes("programme") || normalize(item.description).includes("program") ? (
-                                        <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                                            <p className="text-sm text-[var(--riafco-blue)]">
-                                                <FaHandshake className="inline mr-1" />
-                                                {i18n.language === "fr" ? "Programme stratégique du RIAFCO" : "RIAFCO strategic program"}
-                                            </p>
+                                        className={`bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"
+                                            }`}
+                                    >
+                                        {eventImage && (
+                                            <div className="mb-4">
+                                                <img
+                                                    src={eventImage}
+                                                    alt={item.title}
+                                                    className="w-full h-48 object-cover rounded-lg"
+                                                    onError={(e) => {
+                                                        e.target.style.display = 'none';
+                                                    }}
+                                                />
+                                            </div>
+                                        )}
+                                        <div className="flex items-center mb-3">
+                                            <div className="w-12 h-12 rounded-full bg-[var(--riafco-blue)]/10 flex items-center justify-center mr-4">
+                                                <FaCalendarAlt className="text-[var(--riafco-blue)] text-xl" />
+                                            </div>
+                                            <div>
+                                                <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">
+                                                    {new Date(item.date).toLocaleDateString(locale, { year: "numeric" })}
+                                                </h4>
+                                                <p className="text-sm text-slate-500 dark:text-slate-400">
+                                                    {new Date(item.date).toLocaleDateString(locale, { month: "long" })}
+                                                </p>
+                                            </div>
                                         </div>
-                                    ) : null}
+
+                                        <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{item.title}</h3>
+
+                                        <div
+                                            className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
+                                            dangerouslySetInnerHTML={{ __html: item.description }}
+                                        />
+
+                                        {normalize(item.description).includes("programme") || normalize(item.description).includes("program") ? (
+                                            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                                                <p className="text-sm text-[var(--riafco-blue)]">
+                                                    <FaHandshake className="inline mr-1" />
+                                                    {i18n.language === "fr" ? "Programme stratégique du RIAFCO" : "RIAFCO strategic program"}
+                                                </p>
+                                            </div>
+                                        ) : null}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
 
                     </div>
                 </div>
             </section>
+            )}
 
             {/* Modal Détails */}
             <ReactModal
@@ -647,6 +756,56 @@ export default function HistoriquePage() {
                     </>
                 )}
             </ReactModal>
+
+
+  {/* Section Chiffres Clés */}
+            <section className="relative md:py-24 py-16">
+                <div className="container relative">
+                    <div className="grid grid-cols-1 pb-8 text-center">
+                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.stats.tag")}</h6>
+                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
+                            {t("historique.stats.title")}
+                        </h3>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                        {[
+                            {
+                                icon: <FaCalendarAlt className="text-4xl text-[var(--riafco-orange)]" />,
+                                number: stats.totalEvents,
+                                title: t("historique.stats.eventsTitle"),
+                                desc: t("historique.stats.eventsDesc"),
+                            },
+                            {
+                                icon: <FaUsers className="text-4xl text-[var(--riafco-orange)]" />,
+                                number: stats.yearsCount,
+                                title: t("historique.stats.yearsTitle"),
+                                desc: t("historique.stats.yearsDesc"),
+                            },
+                            {
+                                icon: <FaGlobeAfrica className="text-4xl text-[var(--riafco-orange)]" />,
+                                number: stats.countriesCount,
+                                title: t("historique.stats.countriesTitle"),
+                                desc: t("historique.stats.countriesDesc"),
+                            },
+                            {
+                                icon: <FaHandshake className="text-4xl text-[var(--riafco-orange)]" />,
+                                number: stats.programsCount,
+                                title: t("historique.stats.programsTitle"),
+                                desc: t("historique.stats.programsDesc"),
+                            },
+                        ].map((item, index) => (
+                            <div key={index} className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md text-center">
+                                <div className="mb-4">{item.icon}</div>
+                                <div className="text-3xl font-bold text-[var(--riafco-blue)] mb-2">{item.number}</div>
+                                <h4 className="font-semibold mb-2">{item.title}</h4>
+                                <p className="text-slate-600 dark:text-slate-400">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
             <Footer />
         </>

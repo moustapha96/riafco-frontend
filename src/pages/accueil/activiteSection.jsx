@@ -138,6 +138,7 @@ export default function ActiviteSection(props) {
         const fetchActivities = async () => {
             try {
                 const response = await activityService.getAll({ limit: 3 });
+                console.log(response);
                 if (response.activities) {
                     setActivities(response.activities.filter(a => a.status === "PUBLISHED"));
                 }
@@ -195,6 +196,8 @@ export default function ActiviteSection(props) {
                             activity.formattedPublishedAt ||
                             (activity.publishedAt ? formatDate(activity.publishedAt) : '');
 
+                        const imageUrl = activity.image ? buildImageUrl(activity.image) : DEFAULT_IMAGE_URL;
+
                         return (
                             <div
                                 key={activity.id}
@@ -203,7 +206,7 @@ export default function ActiviteSection(props) {
                             >
                                 {activity.image && (
                                     <img
-                                        src={buildImageUrl(activity.image)}
+                                        src={activity.image ? buildImageUrl(activity.image) : DEFAULT_IMAGE_URL}
                                         alt={activity.title_fr || t('activitySection.fallbackTitle')}
                                         className="w-full h-48 object-cover"
                                     />

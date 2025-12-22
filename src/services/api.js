@@ -12,22 +12,28 @@ const axiosInstance = axios.create({
   timeout: 10000, 
 });
 
-// Routes qui nécessitent une authentification (seulement pour les fonctionnalités admin)
-// Toutes les autres routes sont publiques par défaut
-const protectedRoutes = [
-  '/admin',
-  '/auth/me',
-  '/auth/profile',
+const publicRoutes = [
+  '/auth/login',
+  '/auth/register',
+  '/auth/forgot-password',
+  '/auth/reset-password',
+  '/news',
+  '/notre-équipe',
+  '/partners',
 ];
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    // Ajoute le token s'il existe (pour les fonctionnalités optionnelles)
-    // Mais ne bloque pas les requêtes si le token n'existe pas
-    // Toutes les pages sont accessibles sans authentification
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+    // Vérifie si la route est publique
+    const isPublicRoute = publicRoutes.some((route) =>
+      config.url?.startsWith(route)
+    );
+    // Si ce n'est pas une route publique, ajoute le token
+    if (!isPublicRoute) {
+      const token = localStorage.getItem('token');
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
     }
     return config;
   },
@@ -41,17 +47,14 @@ axiosInstance.interceptors.response.use(
   (error) => {
   
     if (error.response?.status === 401) {
-      const isProtectedRoute = protectedRoutes.some((route) =>
+      const isPublicRoute = publicRoutes.some((route) =>
         error.config.url?.startsWith(route)
       );
 
-      // Seulement rediriger si c'est une route protégée
-      // Toutes les autres routes sont publiques et accessibles sans authentification
-      if (isProtectedRoute) {
+      if (!isPublicRoute) {
         localStorage.removeItem('token');
-        window.location.href = '/auth-login';
+        window.location.href = '/';
       }
-      // Pour les autres routes (publiques), on laisse passer l'erreur sans redirection
     }
     return Promise.reject(error.response?.data || error.message);
   }

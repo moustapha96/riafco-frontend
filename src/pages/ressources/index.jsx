@@ -22,22 +22,46 @@ export default function RessourcePage() {
   const { t, i18n } = useTranslation();
 
   const [resources, setResources] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [totalItems, setTotalItems] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
 
   const locale = i18n.language === "fr" ? "fr-FR" : "en-US";
+
+  // Debounce pour la recherche
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm);
+      setCurrentPage(1); // Reset à la page 1 lors d'une nouvelle recherche
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
 
   useEffect(() => {
     document.documentElement.setAttribute("dir", "ltr");
     document.documentElement.classList.add("light");
     document.documentElement.classList.remove("dark");
+    fetchCategories();
     fetchResources();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage, selectedCategory, searchTerm]);
+  }, [currentPage, selectedCategory, debouncedSearchTerm]);
+
+  const fetchCategories = async () => {
+    try {
+      const response = await resourceService.getAllCategories();
+      if (response.success) {
+        setCategories(response.data || []);
+      }
+    } catch (error) {
+      console.error("Erreur lors de la récupération des catégories :", error);
+    }
+  };
 
   const fetchResources = async () => {
     try {
@@ -46,16 +70,17 @@ export default function RessourcePage() {
         page: currentPage,
         limit: 10,
         category: selectedCategory !== "all" ? selectedCategory : undefined,
-        search: searchTerm || undefined,
+        search: debouncedSearchTerm || undefined,
       });
 
       if (response.success) {
-        setResources(response.data);
-        setTotalPages(response.pagination.pages);
-        setTotalItems(response.pagination.total);
+        setResources(response.data || []);
+        setTotalPages(response.pagination?.pages || 1);
+        setTotalItems(response.pagination?.total || 0);
       }
     } catch (error) {
       console.error("Erreur lors de la récupération des ressources :", error);
+      setResources([]);
     } finally {
       setLoading(false);
     }
@@ -82,16 +107,46 @@ export default function RessourcePage() {
   const formatDate = (dateString) =>
     new Date(dateString).toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
 
-  const handleDownload = (resource) => {
-    const link = document.createElement("a");
-    link.href = buildImageUrl(resource.url);
-    link.download = resource.fileName || resource.title || "resource";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownload = async (resource) => {
+    try {
+      // Utiliser l'endpoint de téléchargement si disponible, sinon utiliser l'URL directe
+      if (resource.id) {
+        const response = await resourceService.download(resource.id);
+        const blob = new Blob([response.data]);
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = resource.fileName || resource.title || "resource";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      } else {
+        // Fallback : téléchargement direct via URL
+        const link = document.createElement("a");
+        link.href = buildImageUrl(resource.url || resource.filePath);
+        link.download = resource.fileName || resource.title || "resource";
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    } catch (error) {
+      console.error("Erreur lors du téléchargement :", error);
+      // Fallback : ouvrir dans un nouvel onglet
+      window.open(buildImageUrl(resource.url || resource.filePath), "_blank");
+    }
   };
 
-  const categories = [...new Set(resources.map((r) => r.category?.name).filter(Boolean))];
+  const handlePreview = (resource) => {
+    const previewUrl = buildImageUrl(resource.url || resource.filePath);
+    if (resource.fileType?.includes("pdf") || resource.fileType?.includes("image")) {
+      window.open(previewUrl, "_blank");
+    } else {
+      // Pour les autres types de fichiers, essayer de les ouvrir
+      window.open(previewUrl, "_blank");
+    }
+  };
 
   return (
     <div>
@@ -108,33 +163,44 @@ export default function RessourcePage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             <div className="md:col-span-2 relative">
-              <Icon.Search className="absolute left-3 top-3 h-5 w-10 text-gray-400" />
+              <Icon.Search className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <input
                 type="text"
                 placeholder={t("resources.searchPlaceholder")}
                 value={searchTerm}
                 onChange={(e) => {
-                  setCurrentPage(1);
                   setSearchTerm(e.target.value);
                 }}
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[var(--riafco-blue)] focus:border-transparent"
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    setDebouncedSearchTerm(searchTerm);
+                    setCurrentPage(1);
+                  }
+                }}
+                className="w-full pl-10 pr-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--riafco-blue)] focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white"
                 aria-label={t("resources.searchPlaceholder")}
               />
+              {searchTerm !== debouncedSearchTerm && (
+                <div className="absolute right-3 top-3">
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[var(--riafco-blue)]"></div>
+                </div>
+              )}
             </div>
 
             <div className="md:col-span-1">
               <select
-                className="w-full py-3 px-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[var(--riafco-blue)] focus:border-transparent"
+                className="w-full py-3 px-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--riafco-blue)] focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white"
                 value={selectedCategory}
                 onChange={(e) => {
                   setCurrentPage(1);
                   setSelectedCategory(e.target.value);
                 }}
               >
-                <option value="all">{t("resources.labels.category")}: All</option>
-                {categories.map((cat, idx) => (
-                  <option key={idx} value={cat}>
-                    {cat}
+                <option value="all">{t("resources.labels.category")}: {i18n.language === "fr" ? "Toutes" : "All"}</option>
+                {categories.map((cat) => (
+                  <option key={cat.id} value={cat.id}>
+                    {cat.name}
                   </option>
                 ))}
               </select>
@@ -157,9 +223,15 @@ export default function RessourcePage() {
                     className="group bg-white dark:bg-slate-900 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden"
                   >
                     <div className="h-48 overflow-hidden">
-                      {resource.couverture && (
+                      {resource.couverture ? (
                         <img
-                          src={buildImageUrl(resource.couverture) || "/activities/default-activity.jpg"}
+                          src={buildImageUrl(resource.couverture) || "https://riafco-oi.org/logo.png"}
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          alt={resource.title}
+                        />
+                      ): (
+                        <img
+                          src="https://riafco-oi.org/logo.png"
                           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                           alt={resource.title}
                         />
@@ -234,21 +306,24 @@ export default function RessourcePage() {
                       <div className="flex space-x-3">
                         <button
                           onClick={() => handleDownload(resource)}
-                          className="flex-1 inline-flex items-center justify-center px-4 py-2 ant-btn-primary text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                          className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-[var(--riafco-blue)] hover:bg-[var(--riafco-orange)] text-white text-sm font-medium rounded-lg transition-colors duration-200"
                         >
                           <FaDownload className="h-4 w-4 mr-2" />
                           {t("resources.actions.download")}
                         </button>
 
-                        {resource.fileType?.includes("image") || resource.fileType?.includes("pdf") ? (
+                        {/* {(resource.fileType?.includes("image") || 
+                          resource.fileType?.includes("pdf") || 
+                          resource.url || 
+                          resource.filePath) && (
                           <button
-                            onClick={() => window.open(resource.url, "_blank")}
-                            className="inline-flex items-center justify-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-lg transition-colors duration-200"
+                            onClick={() => handlePreview(resource)}
+                            className="inline-flex items-center justify-center px-4 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200 text-sm font-medium rounded-lg transition-colors duration-200"
                           >
                             <FaEye className="h-4 w-4 mr-2" />
                             {t("resources.actions.preview")}
                           </button>
-                        ) : null}
+                        )} */}
                       </div>
                     </div>
                   </div>

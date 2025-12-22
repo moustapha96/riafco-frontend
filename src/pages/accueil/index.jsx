@@ -39,6 +39,7 @@ export default function Accueil() {
     const fetchCountries = async () => {
         try {
             const response = await ifclService.getAll();
+          
             if (response.datas) {
                 const africanMembers = response.datas;
                 const activeMembers = africanMembers.filter((c) => c.status === "ACTIVE").length;

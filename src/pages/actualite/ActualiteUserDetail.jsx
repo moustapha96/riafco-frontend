@@ -215,7 +215,8 @@ export default function ActualiteUserDetail({
                 };
 
                 const response = await newsService.getAll(params);
-                setActualitesSimilaires(response.news);
+               
+                setActualitesSimilaires(response.news.filter(item => item.id !== actualiteId && item.validated === "VALIDATED"));
             } catch (error) {
                 console.error("Erreur lors de la récupération des actualités similaires:", error);
                 setErreur("Impossible de charger les actualités similaires");

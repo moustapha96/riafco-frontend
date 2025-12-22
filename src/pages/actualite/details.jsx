@@ -30,6 +30,7 @@ export default function ActualitesDetails() {
         try {
             setLoading(true);
             const response = await newsService.getById(id);
+            console.log(response);
             setImages(response.news.galleries || []);
             setNewsItem(response.news);
         } catch (error) {
@@ -49,10 +50,11 @@ export default function ActualitesDetails() {
         try {
             const response = await newsService.getAll({
                 limit: 3,
+                status: "PUBLISHED",
                 authorId: newsItem?.authorId,
                 search: i18n.language === "fr" ? newsItem?.title_fr : newsItem?.title_en
             });
-            setSimilarNews(response.news.filter(item => item.id !== id));
+            setSimilarNews(response.news.filter(item => item.id !== id && item.validated === "VALIDATED"));
         } catch (error) {
             console.error("Erreur lors de la récupération des actualités similaires :", error);
         }
@@ -129,12 +131,12 @@ export default function ActualitesDetails() {
                                     }}
                                 />
 
-                                {images.length > 1 && (
+                                {images.length > 0 && (
                                     <>
                                         <h3 className="mt-10 mb-3 text-xl font-semibold">
-                                            Galerie photos
+                                            {t("actualitesDetails.gallery") || "Galerie photos"}
                                         </h3>
-                                        <Gallery images={images} title={"Galerie"} />
+                                        <Gallery images={images} title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en} />
                                     </>
                                 )}
                             </div>

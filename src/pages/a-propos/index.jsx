@@ -53,6 +53,7 @@ export default function AproposPage() {
   const fetchAboutUs = async () => {
     try {
       const response = await aboutUsService.getAboutUs();
+     
       setAboutUs(response.aboutUs);
     } catch (error) {
       console.error("Erreur lors de la récupération des informations 'À propos' :", error);
@@ -64,9 +65,12 @@ export default function AproposPage() {
   const fetchPartners = async () => {
     try {
       const response = await partnerService.getAll();
-      setPartners(response.data || []);
+      // La réponse peut avoir response.data.data (tableau) ou response.data directement
+      const partnersData = response.data?.data || response.data || [];
+      setPartners(Array.isArray(partnersData) ? partnersData : []);
     } catch (error) {
       console.error("Erreur lors de la récupération des partenaires :", error);
+      setPartners([]);
     }
   };
 
@@ -107,8 +111,8 @@ export default function AproposPage() {
         // background={riafcoAbout}
       />
 
-      {/* Section "Qui Sommes Nous" / "About Us" */}
-      <section className="relative py-12 md:py-16">
+    
+      {/* <section className="relative py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
@@ -138,7 +142,52 @@ export default function AproposPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Section "Qui Sommes Nous" / "About Us" - Contenu dynamique */}
+      {aboutUs && aboutUs.isPublished && (
+        <section className="relative py-12 md:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Image */}
+              {aboutUs.image && (
+                <div className="lg:col-span-5 order-2 lg:order-1">
+                  <div className="relative">
+                    <img
+                      src={buildImageUrl(aboutUs.image)}
+                      alt={i18n.language === "fr" ? (aboutUs.title_fr || aboutUs.title_en) : (aboutUs.title_en || aboutUs.title_fr)}
+                      className="w-full h-auto rounded-lg shadow-lg object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
+                    />
+                  </div>
+                </div>
+              )}
+              
+              {/* Contenu texte */}
+              <div className={`${aboutUs.image ? 'lg:col-span-7' : 'lg:col-span-12'} order-1 lg:order-2`}>
+                <div className={`${aboutUs.image ? 'text-center lg:text-left' : 'text-center'} mb-8`}>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                    {i18n.language === "fr" ? (aboutUs.title_fr || aboutUs.title_en) : (aboutUs.title_en || aboutUs.title_fr)}
+                  </h2>
+                  <div className={`w-20 h-1 bg-[var(--riafco-orange)] ${aboutUs.image ? 'lg:mx-0' : 'mx-auto'} rounded-full`} />
+                </div>
+                <div className={`max-w-4xl ${aboutUs.image ? 'mx-auto lg:mx-0' : 'mx-auto'} space-y-6`}>
+                  <div
+                    className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 leading-relaxed"
+                    dangerouslySetInnerHTML={{
+                      __html: i18n.language === "fr" 
+                        ? (aboutUs.paragraphe_fr || aboutUs.paragraphe_en || '') 
+                        : (aboutUs.paragraphe_en || aboutUs.paragraphe_fr || '')
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Section "Les IFCL" / "LGFIs" */}
       <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-800 dark:to-slate-900">
@@ -153,7 +202,7 @@ export default function AproposPage() {
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative">
                 <img
-                  src={SEO_SVG || "/placeholder.svg"}
+                  src={riafcoAbout || "/placeholder.svg"}
                   alt={t("about.missions.imgAlt")}
                   className="w-full h-auto max-w-md mx-auto lg:max-w-full"
                 />
@@ -186,63 +235,17 @@ export default function AproposPage() {
         </div>
       </section>
 
-      {/* Section "Missions du RIAFCO" / "What RIAFCO does" */}
-      <section className="relative py-16 md:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
-              {i18n.language === "fr" ? "Missions du RIAFCO" : "What RIAFCO does"}
-            </h2>
-            <div className="w-24 h-1 bg-[var(--riafco-orange)] mx-auto rounded-full" />
-          </div>
-          <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              {i18n.language === "fr" ? (
-                <>
-                  Cadre d’échange et de partage d’expériences entre ces institutions, le RIAFCO se donne ainsi pour objectifs de porter ces questions au plus haut niveau et de trouver, à travers une vaste entreprise de capitalisation d’expériences, d’échanges entre pairs, de formations, et d’assistance technique, des réponses appropriées pour chaque membre.
-                  <br /><br />
-                  Plus spécifiquement, les 3 missions du RIAFCO sont les suivantes :
-                </>
-              ) : (
-                <>
-                  RIAFCO is a forum for LGFIs to exchange ideas and share experiences. Its purpose is to raise issues of concern to LGFIs at the very highest level and to find appropriate solutions for each member by drawing on past experience, fostering peer-to-peer exchange, and providing training and technical assistance.
-                  <br /><br />
-                  More specifically, RIAFCO has a three-pronged remit:
-                </>
-              )}
-            </p>
-            <div className="space-y-4">
-              {(i18n.language === "fr"
-                ? [
-                  "Encourager les échanges entre pairs, à travers le partage d’expériences et d’informations sur le cadre dans lequel évolue chaque membre.",
-                  "Renforcer les IFCL, à travers la mise à disposition de ressources documentaires, de formation et d’expertise technique.",
-                  "Porter le plaidoyer en faveur des IFCL, en étant une force de proposition et de représentation aux niveaux local, national et international auprès des acteurs de la décentralisation."
-                ]
-                : [
-                  "Fostering peer-to-peer exchange by encouraging members to share their experiences and information about their environment.",
-                  "Strengthening LGFIs by providing literature, training and technical expertise.",
-                  "Advocating for the cause of LGFIs by lobbying and representing their interests to decentralization partners at the local, national and international levels."
-                ]
-              ).map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start space-x-4 p-4 bg-white dark:bg-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="flex-shrink-0">
-                    <BsCheckCircle className="text-[var(--riafco-orange)] text-xl mt-1" />
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+     
+ 
 
-      {/* Section "Partenaires" / "Partners" */}
-      <section className="relative py-16 md:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 lg:mb-16">
+    
+      {/* Section "Partenaires (slider)" */}
+      {partners.length > 0 && (
+        <section className="relative md:py-24 py-16">
+          <div className="container relative">
+          
+
+            <div className="text-center mb-12 lg:mb-16">
             <p className="text-[var(--riafco-orange)] font-semibold text-lg mb-4">
               {t("about.partners.kicker")}
             </p>
@@ -254,73 +257,59 @@ export default function AproposPage() {
             </p>
             <div className="w-24 h-1 bg-[var(--riafco-orange)] mx-auto rounded-full mt-6"></div>
           </div>
-          {partners && partners.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {partners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
-                >
-                  <div className="p-6 sm:p-8">
-                    <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="relative">
-                        <img
-                          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-orange-100 group-hover:border-orange-200 transition-colors"
-                          src={buildImageUrl(partner.logo) || "/placeholder.svg"}
-                          alt={partner.name}
-                        />
-                      </div>
-                      <div className="space-y-3">
-                        <h4 className="text-xl font-bold text-[var(--riafco-orange)]">{partner.name}</h4>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{partner.country}</p>
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{partner.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="animate-pulse bg-gray-200 dark:bg-slate-700 rounded-2xl h-64"></div>
-              ))}
-              </div>
-          )}
-        </div>
-      </section>
-
-      {/* Section "Partenaires (slider)" */}
-      {partners.length > 0 && (
-        <section className="relative md:py-24 py-16">
-          <div className="container relative">
-            <div className="grid grid-cols-1 pb-8 text-center">
-              <h6 className="mb-4 text-base font-medium text-[var(--riafco-orange)]">
-                {t("about.partners.kicker")}
-              </h6>
-              <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                {t("about.partners.title")}
-              </h3>
-              <p className="text-slate-400 max-w-xl mx-auto">{t("about.partners.desc")}</p>
-            </div>
             <div className="grid relative grid-cols-1 mt-8">
               <div className="tiny-two-item">
                 <TinySlider settings={settings}>
-                  {partners.map((partner, index) => (
-                    <div className="tiny-slide" key={index}>
-                      <div className="lg:flex p-6 lg:p-0 relative rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden m-2">
-                        <img
-                          className="size-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto object-contain"
-                          src={buildImageUrl(partner.logo) || "/placeholder.svg"}
-                          alt={partner.name}
-                        />
-                        <div className="pt-6 lg:p-6 text-center lg:text-start space-y-4">
-                          <p className="text-base text-slate-400">{partner.description}</p>
-                          <div>
-                            <span className="text-[var(--riafco-orange)] block mb-1">{partner.name}</span>
-                            <span className="text-slate-400 text-sm dark:text-white/60 block">
-                              {partner.country}
-                            </span>
+                  {partners.map((partner) => (
+                    <div className="tiny-slide" key={partner.id || partner.name}>
+                      <div className="lg:flex p-6 lg:p-0 relative rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden m-2 bg-white dark:bg-slate-800">
+                        <div className="flex-shrink-0 flex items-center justify-center p-4">
+                          <img
+                            className="size-24 lg:w-48 lg:h-32 object-contain"
+                            src={partner.logo ? buildImageUrl(partner.logo) : "/placeholder.svg"}
+                            alt={partner.name}
+                            onError={(e) => {
+                              e.target.src = "/placeholder.svg";
+                            }}
+                          />
+                        </div>
+                        <div className="pt-6 lg:p-6 text-center lg:text-start space-y-3 flex-1">
+                          <h4 className="text-[var(--riafco-orange)] font-bold text-lg mb-2">{partner.name}</h4>
+                          {partner.country && (
+                            <p className="text-slate-400 text-sm dark:text-white/60 mb-2">
+                              📍 {partner.country}
+                            </p>
+                          )}
+                          {partner.description && (
+                            <p className="text-base text-slate-400 mb-3">{partner.description}</p>
+                          )}
+                          <div className="space-y-1 text-sm">
+                            {partner.email && (
+                              <a
+                                href={`mailto:${partner.email}`}
+                                className="text-[var(--riafco-blue)] hover:text-[var(--riafco-orange)] block transition-colors"
+                              >
+                                ✉️ {partner.email}
+                              </a>
+                            )}
+                            {partner.phone && (
+                              <a
+                                href={`tel:${partner.phone}`}
+                                className="text-[var(--riafco-blue)] hover:text-[var(--riafco-orange)] block transition-colors"
+                              >
+                                📞 {partner.phone}
+                              </a>
+                            )}
+                            {partner.website && (
+                              <a
+                                href={partner.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[var(--riafco-blue)] hover:text-[var(--riafco-orange)] block transition-colors truncate"
+                              >
+                                🌐 {partner.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>
