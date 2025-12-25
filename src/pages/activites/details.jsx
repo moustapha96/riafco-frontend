@@ -31,6 +31,7 @@ export default function ActiviteDetailPage() {
             try {
                 setLoading(true);
                 const response = await activityService.getById(id);
+                console.log(response.activity);
                 setImages(response.activity.galleries || []);
                 setActivity(response.activity);
 

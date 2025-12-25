@@ -106,7 +106,7 @@ export default function HistoriquePage() {
             const response = await organizationService.getHistory();
 
             const sorted = (response?.data || [])
-                .sort((a, b) => new Date(a.date) - new Date(b.date))
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
                 .map((item) => {
                     // Support potentiel *_fr / *_en
                     const title = localizeText(item.title_fr, item.title_en, item.title);
@@ -188,7 +188,11 @@ export default function HistoriquePage() {
             if (!grouped[i.year]) grouped[i.year] = [];
             grouped[i.year].push(i);
         });
-        return Object.entries(grouped).sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
+        // Trier les événements dans chaque année du plus récent au plus ancien
+        Object.keys(grouped).forEach(year => {
+            grouped[year].sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+        return Object.entries(grouped).sort((a, b) => parseInt(b[0]) - parseInt(a[0]));
     };
 
     const toggleYear = (year) => setExpandedYears((prev) => ({ ...prev, [year]: !prev[year] }));
@@ -359,7 +363,7 @@ export default function HistoriquePage() {
                                 <div className="mt-8 overflow-x-auto pb-4">
                                     <div className="flex gap-4 whitespace-nowrap">
                                         {[...new Set(historyItems.map((i) => i.year))]
-                                            .sort()
+                                            .sort((a, b) => b - a)
                                             .map((year) => (
                                                 <button
                                                     key={year}
@@ -472,6 +476,158 @@ export default function HistoriquePage() {
                                     )}
                                 </div>
                                 )}
+
+                                {/* Version Cartes - affichée uniquement si displayType === "cards" */}
+                                {displayType === "cards" && (
+                                <div className="mt-12">
+                                    <div className="grid grid-cols-1 pb-8 text-center">
+                                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.evolution.tag")}</h6>
+                                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
+                                            {t("historique.evolution.title")}
+                                        </h3>
+                                    </div>
+
+                                    {/* Timeline cartes */}
+                                    <div className="mt-12 space-y-12">
+                                        {[...new Set(historyItems.map((i) => i.year))]
+                                            .sort((a, b) => b - a)
+                                            .map((year) => {
+                                                const yearEvents = historyItems.filter((i) => i.year === year).sort((a, b) => new Date(b.date) - new Date(a.date));
+                                                return (
+                                                    <div key={year} className="relative" id={`year-${year}`}>
+                                                        <div className="flex items-center mb-6">
+                                                            <div className="w-16 h-16 rounded-full bg-[var(--riafco-blue)] flex items-center justify-center border-4 border-white dark:border-slate-900 shadow-md mr-4">
+                                                                <span className="text-white font-bold text-xl">{year}</span>
+                                                            </div>
+                                                            <h3 className="text-2xl font-semibold text-[var(--riafco-blue)]">{getYearDescription(year)}</h3>
+                                                        </div>
+
+                                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                            {yearEvents.map((event) => {
+                                                                const eventImage = getEventImage(event);
+                                                                return (
+                                                                    <div
+                                                                        key={event.id}
+                                                                        className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-[var(--riafco-blue)] hover:shadow-lg transition-shadow"
+                                                                    >
+                                                                        {eventImage && (
+                                                                            <div className="mb-4">
+                                                                                <img
+                                                                                    src={eventImage}
+                                                                                    alt={event.title}
+                                                                                    className="w-full h-48 object-cover rounded-lg"
+                                                                                    onError={(e) => {
+                                                                                        e.target.style.display = 'none';
+                                                                                    }}
+                                                                                />
+                                                                            </div>
+                                                                        )}
+                                                                        <div className="flex items-center mb-3">
+                                                                            <FaCalendarAlt className="text-[var(--riafco-orange)] mr-2" />
+                                                                            <span className="text-sm text-slate-500 dark:text-slate-400">
+                                                                                {new Date(event.date).toLocaleDateString(locale, { month: "long" })}
+                                                                            </span>
+                                                                        </div>
+
+                                                                        <h4 className="font-semibold text-lg mb-3 text-slate-800 dark:text-slate-200">{event.title}</h4>
+
+                                                                        <p className="text-slate-600 dark:text-slate-400 line-clamp-3">
+                                                                            {event.description.replace(/<[^>]*>/g, "").substring(0, 150)}...
+                                                                        </p>
+
+                                                                        <button
+                                                                            className="mt-4 text-[var(--riafco-orange)] font-medium hover:underline flex items-center"
+                                                                            onClick={() => openModal(event)}
+                                                                        >
+                                                                            {i18n.language === "fr" ? "Voir plus" : "See more"} <FaChevronRight className="ml-1" />
+                                                                        </button>
+                                                                    </div>
+                                                                );
+                                                            })}
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })}
+                                    </div>
+                                </div>
+                                )}
+
+                                {/* Version Alternée - affichée uniquement si displayType === "alternate" */}
+                                {displayType === "alternate" && (
+                                <div className="mt-12">
+                                    <div className="grid grid-cols-1 pb-8 text-center">
+                                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.timeline2.tag")}</h6>
+                                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
+                                            {t("historique.timeline2.title")}
+                                        </h3>
+                                        <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t("historique.timeline2.desc")}</p>
+                                    </div>
+
+                                    <div className="relative mt-12">
+                                        <div className="absolute left-1/2 h-full w-0.5 bg-[var(--riafco-blue)]/30 transform -translate-x-1/2"></div>
+
+                                        {historyItems.map((item, index) => {
+                                            const eventImage = getEventImage(item);
+                                            return (
+                                                <div key={item.id} className={`relative mb-12 ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
+                                                    <div
+                                                        className={`absolute top-0 w-4 h-4 rounded-full bg-[var(--riafco-blue)] -translate-y-1/2 ${index % 2 === 0 ? "md:right-1/2 md:translate-x-1/2" : "md:left-1/2 md:-translate-x-1/2"
+                                                            }`}
+                                                    ></div>
+
+                                                    <div
+                                                        className={`bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"
+                                                            }`}
+                                                    >
+                                                        {eventImage && (
+                                                            <div className="mb-4">
+                                                                <img
+                                                                    src={eventImage}
+                                                                    alt={item.title}
+                                                                    className="w-full h-48 object-cover rounded-lg"
+                                                                    onError={(e) => {
+                                                                        e.target.style.display = 'none';
+                                                                    }}
+                                                                />
+                                                            </div>
+                                                        )}
+                                                        <div className="flex items-center mb-3">
+                                                            <div className="w-12 h-12 rounded-full bg-[var(--riafco-blue)]/10 flex items-center justify-center mr-4">
+                                                                <FaCalendarAlt className="text-[var(--riafco-blue)] text-xl" />
+                                                            </div>
+                                                            <div>
+                                                                <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">
+                                                                    {new Date(item.date).toLocaleDateString(locale, { year: "numeric" })}
+                                                                </h4>
+                                                                <p className="text-sm text-slate-500 dark:text-slate-400">
+                                                                    {new Date(item.date).toLocaleDateString(locale, { month: "long" })}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{item.title}</h3>
+
+                                                        <div
+                                                            className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
+                                                            dangerouslySetInnerHTML={{ __html: item.description }}
+                                                        />
+
+                                                        {normalize(item.description).includes("programme") || normalize(item.description).includes("program") ? (
+                                                            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                                                                <p className="text-sm text-[var(--riafco-blue)]">
+                                                                    <FaHandshake className="inline mr-1" />
+                                                                    {i18n.language === "fr" ? "Programme stratégique du RIAFCO" : "RIAFCO strategic program"}
+                                                                </p>
+                                                            </div>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+
+                                    </div>
+                                </div>
+                                )}
                         </>
                     )}
                 </div>
@@ -479,7 +635,7 @@ export default function HistoriquePage() {
 
           
             {/* Section Événements marquants */}
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            {/* <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center">
                         <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.highlights.tag")}</h6>
@@ -539,163 +695,8 @@ export default function HistoriquePage() {
                         })}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            {/* Section année par année - Cartes - affichée uniquement si displayType === "cards" */}
-            {displayType === "cards" && (
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
-                <div className="container relative">
-                    <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.evolution.tag")}</h6>
-                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
-                            {t("historique.evolution.title")}
-                        </h3>
-                    </div>
-
-                    {/* Timeline cartes */}
-                    <div className="mt-12 space-y-12">
-                        {[...new Set(historyItems.map((i) => i.year))]
-                            .sort()
-                            .map((year) => {
-                                const yearEvents = historyItems.filter((i) => i.year === year);
-                                return (
-                                    <div key={year} className="relative">
-                                        <div className="flex items-center mb-6">
-                                            <div className="w-16 h-16 rounded-full bg-[var(--riafco-blue)] flex items-center justify-center border-4 border-white dark:border-slate-900 shadow-md mr-4">
-                                                <span className="text-white font-bold text-xl">{year}</span>
-                                            </div>
-                                            <h3 className="text-2xl font-semibold text-[var(--riafco-blue)]">{getYearDescription(year)}</h3>
-                                        </div>
-
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                            {yearEvents.map((event) => {
-                                                const eventImage = getEventImage(event);
-                                                return (
-                                                    <div
-                                                        key={event.id}
-                                                        className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-[var(--riafco-blue)] hover:shadow-lg transition-shadow"
-                                                    >
-                                                        {eventImage && (
-                                                            <div className="mb-4">
-                                                                <img
-                                                                    src={eventImage}
-                                                                    alt={event.title}
-                                                                    className="w-full h-48 object-cover rounded-lg"
-                                                                    onError={(e) => {
-                                                                        e.target.style.display = 'none';
-                                                                    }}
-                                                                />
-                                                            </div>
-                                                        )}
-                                                        <div className="flex items-center mb-3">
-                                                            <FaCalendarAlt className="text-[var(--riafco-orange)] mr-2" />
-                                                            <span className="text-sm text-slate-500 dark:text-slate-400">
-                                                                {new Date(event.date).toLocaleDateString(locale, { month: "long" })}
-                                                            </span>
-                                                        </div>
-
-                                                        <h4 className="font-semibold text-lg mb-3 text-slate-800 dark:text-slate-200">{event.title}</h4>
-
-                                                        <p className="text-slate-600 dark:text-slate-400 line-clamp-3">
-                                                            {event.description.replace(/<[^>]*>/g, "").substring(0, 150)}...
-                                                        </p>
-
-                                                        <button
-                                                            className="mt-4 text-[var(--riafco-orange)] font-medium hover:underline flex items-center"
-                                                            onClick={() => openModal(event)}
-                                                        >
-                                                            {i18n.language === "fr" ? "Voir plus" : "See more"} <FaChevronRight className="ml-1" />
-                                                        </button>
-                                                    </div>
-                                                );
-                                            })}
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                    </div>
-                </div>
-            </section>
-            )}
-
-            {/* Section timeline alternée - affichée uniquement si displayType === "alternate" */}
-            {displayType === "alternate" && (
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
-                <div className="container relative">
-                    <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-[var(--riafco-orange)] text-sm font-bold uppercase mb-2">{t("historique.timeline2.tag")}</h6>
-                        <h3 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-[var(--riafco-blue)]">
-                            {t("historique.timeline2.title")}
-                        </h3>
-                        <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t("historique.timeline2.desc")}</p>
-                    </div>
-
-                    <div className="relative mt-12">
-                        <div className="absolute left-1/2 h-full w-0.5 bg-[var(--riafco-blue)]/30 transform -translate-x-1/2"></div>
-
-                        {historyItems.map((item, index) => {
-                            const eventImage = getEventImage(item);
-                            return (
-                                <div key={item.id} className={`relative mb-12 ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
-                                    <div
-                                        className={`absolute top-0 w-4 h-4 rounded-full bg-[var(--riafco-blue)] -translate-y-1/2 ${index % 2 === 0 ? "md:right-1/2 md:translate-x-1/2" : "md:left-1/2 md:-translate-x-1/2"
-                                            }`}
-                                    ></div>
-
-                                    <div
-                                        className={`bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                                            }`}
-                                    >
-                                        {eventImage && (
-                                            <div className="mb-4">
-                                                <img
-                                                    src={eventImage}
-                                                    alt={item.title}
-                                                    className="w-full h-48 object-cover rounded-lg"
-                                                    onError={(e) => {
-                                                        e.target.style.display = 'none';
-                                                    }}
-                                                />
-                                            </div>
-                                        )}
-                                        <div className="flex items-center mb-3">
-                                            <div className="w-12 h-12 rounded-full bg-[var(--riafco-blue)]/10 flex items-center justify-center mr-4">
-                                                <FaCalendarAlt className="text-[var(--riafco-blue)] text-xl" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold text-lg text-[var(--riafco-blue)]">
-                                                    {new Date(item.date).toLocaleDateString(locale, { year: "numeric" })}
-                                                </h4>
-                                                <p className="text-sm text-slate-500 dark:text-slate-400">
-                                                    {new Date(item.date).toLocaleDateString(locale, { month: "long" })}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <h3 className="text-xl font-semibold mb-3 text-slate-800 dark:text-slate-200">{item.title}</h3>
-
-                                        <div
-                                            className="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-400"
-                                            dangerouslySetInnerHTML={{ __html: item.description }}
-                                        />
-
-                                        {normalize(item.description).includes("programme") || normalize(item.description).includes("program") ? (
-                                            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                                                <p className="text-sm text-[var(--riafco-blue)]">
-                                                    <FaHandshake className="inline mr-1" />
-                                                    {i18n.language === "fr" ? "Programme stratégique du RIAFCO" : "RIAFCO strategic program"}
-                                                </p>
-                                            </div>
-                                        ) : null}
-                                    </div>
-                                </div>
-                            );
-                        })}
-
-                    </div>
-                </div>
-            </section>
-            )}
 
             {/* Modal Détails */}
             <ReactModal

@@ -31,7 +31,11 @@ export default function ActualitesDetails() {
             setLoading(true);
             const response = await newsService.getById(id);
             console.log(response);
-            setImages(response.news.galleries || []);
+            // S'assurer que galleries est un tableau et filtrer les valeurs nulles/vides
+            const galleries = Array.isArray(response.news.galleries) 
+                ? response.news.galleries.filter(img => img && img.trim() !== '')
+                : [];
+            setImages(galleries);
             setNewsItem(response.news);
         } catch (error) {
             console.error("Erreur lors de la récupération de l'actualité :", error);
@@ -131,12 +135,15 @@ export default function ActualitesDetails() {
                                     }}
                                 />
 
-                                {images.length > 0 && (
+                                {images && images.length > 0 && (
                                     <>
                                         <h3 className="mt-10 mb-3 text-xl font-semibold">
                                             {t("actualitesDetails.gallery") || "Galerie photos"}
                                         </h3>
-                                        <Gallery images={images} title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en} />
+                                        <Gallery 
+                                            images={images} 
+                                            title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en} 
+                                        />
                                     </>
                                 )}
                             </div>

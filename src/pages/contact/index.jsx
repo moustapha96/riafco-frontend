@@ -111,17 +111,7 @@ export default function ContactPage() {
                                             </Link>
                                         )}
 
-                                        {/* {config?.socialMedia?.linkedin && (
-                                            <Link
-                                                to={config.socialMedia.linkedin}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="size-12 bg-[var(--riafco-blue)]/10 text-[var(--riafco-orange)] rounded-full flex items-center justify-center hover:bg-[var(--riafco-blue)] hover:text-white transition-colors"
-                                                aria-label={t('contact.social.linkedin')}
-                                            >
-                                                <Icon.Linkedin className="size-5" />
-                                            </Link>
-                                        )} */}
+                                       
                                 </>
                             )}
                         </div>
@@ -141,7 +131,6 @@ export default function ContactPage() {
                             loading="lazy"
                             aria-label={t('contact.map.aria')}
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961.022355998347!2d11.523842793579101!3d3.9142964000000178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc7d7aaaf2e75%3A0xc43b1a8efc0fdfe6!2sSANTA%20Barbara!5e0!3m2!1sfr!2ssn!4v1758617926635!5m2!1sfr!2ssn" ></iframe>
-
 
                     </div>
                 </div>
