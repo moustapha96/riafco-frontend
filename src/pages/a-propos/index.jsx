@@ -266,10 +266,10 @@ export default function AproposPage() {
                         <div className="flex-shrink-0 flex items-center justify-center p-4">
                           <img
                             className="size-24 lg:w-48 lg:h-32 object-contain"
-                            src={partner.logo ? buildImageUrl(partner.logo) : "/placeholder.svg"}
+                            src={partner.logo ? buildImageUrl(partner.logo) : "https://riafco-oi.org/logo.png"}
                             alt={partner.name}
                             onError={(e) => {
-                              e.target.src = "/placeholder.svg";
+                              e.target.src = "https://riafco-oi.org/logo.png";
                             }}
                           />
                         </div>
