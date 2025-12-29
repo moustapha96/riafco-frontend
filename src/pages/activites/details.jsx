@@ -32,7 +32,11 @@ export default function ActiviteDetailPage() {
                 setLoading(true);
                 const response = await activityService.getById(id);
                 console.log(response.activity);
-                setImages(response.activity.galleries || []);
+                // S'assurer que galleries est un tableau et filtrer les valeurs nulles/vides
+                const galleries = Array.isArray(response.activity.galleries) 
+                    ? response.activity.galleries.filter(img => img && img.trim() !== '')
+                    : [];
+                setImages(galleries);
                 setActivity(response.activity);
 
             } catch (error) {
@@ -175,13 +179,15 @@ export default function ActiviteDetailPage() {
                                     dangerouslySetInnerHTML={{ __html: descriptionHtml }}
                                 />
 
-                                {images.length > 1 && (
+                                {images && images.length > 0 && (
                                     <>
                                         <h3 className="mt-10 mb-3 text-xl font-semibold">
-                                            {t('activitesDetails.gallery')}
-
+                                            {t('activitesDetails.gallery') || "Galerie photos"}
                                         </h3>
-                                        <Gallery images={images} title={title} />
+                                        <Gallery 
+                                            images={images} 
+                                            title={title} 
+                                        />
                                     </>
                                 )}
                             </div>
