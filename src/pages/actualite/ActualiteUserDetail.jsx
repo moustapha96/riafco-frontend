@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import newsService from '../../services/newsService';
 import { buildImageUrl } from '../../utils/imageUtils';
 
@@ -13,6 +14,8 @@ export default function ActualiteUserDetail({
     sujetActuel,
     actualiteId
 }) {
+    const { i18n } = useTranslation();
+    const isFr = (i18n.language || 'fr').toLowerCase().startsWith('fr');
     const [actualitesSimilaires, setActualitesSimilaires] = useState([]);
     const [chargement, setChargement] = useState(false);
     const [erreur, setErreur] = useState(null);
@@ -90,7 +93,7 @@ export default function ActualiteUserDetail({
                                         <img
                                             src={actualite.image ? buildImageUrl(actualite.image) : "/news/default-news.jpg"}
                                             className="size-16 rounded-md shadow-sm dark:shadow-gray-800 object-cover"
-                                            alt={actualite.title_fr}
+                                            alt={isFr ? (actualite.title_fr || actualite.title_en) : (actualite.title_en || actualite.title_fr)}
                                         />
                                     </div>
                                     <div className="ms-3 flex-grow">
@@ -98,10 +101,10 @@ export default function ActualiteUserDetail({
                                             to={`/actualités/${actualite.id}/détails`}
                                             className="font-semibold hover:text-[var(--riafco-orange)]  block"
                                         >
-                                            {actualite.title_fr}
+                                            {isFr ? (actualite.title_fr || actualite.title_en) : (actualite.title_en || actualite.title_fr)}
                                         </Link>
                                         <p className="text-sm text-slate-400 mt-1">
-                                            {new Date(actualite.publishedAt).toLocaleDateString('fr-FR', {
+                                            {new Date(actualite.publishedAt ?? actualite.updatedAt).toLocaleDateString(isFr ? 'fr-FR' : 'en-US', {
                                                 day: 'numeric',
                                                 month: 'short',
                                                 year: 'numeric'

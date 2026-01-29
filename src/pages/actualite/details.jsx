@@ -14,6 +14,7 @@ import { buildImageUrl } from '../../utils/imageUtils';
 export default function ActualitesDetails() {
     const { id } = useParams();
     const { t, i18n } = useTranslation();
+    const isFr = (i18n.language || 'fr').toLowerCase().startsWith('fr');
     const [newsItem, setNewsItem] = useState(null);
     const [loading, setLoading] = useState(true);
     const [similarNews, setSimilarNews] = useState([]);
@@ -56,12 +57,31 @@ export default function ActualitesDetails() {
                 limit: 3,
                 status: "PUBLISHED",
                 authorId: newsItem?.authorId,
-                search: i18n.language === "fr" ? newsItem?.title_fr : newsItem?.title_en
+                search: isFr ? (newsItem?.title_fr || newsItem?.title_en) : (newsItem?.title_en || newsItem?.title_fr)
             });
             setSimilarNews(response.news.filter(item => item.id !== id && item.validated === "VALIDATED"));
         } catch (error) {
             console.error("Erreur lors de la récupération des actualités similaires :", error);
         }
+    };
+
+    const formatDate = (d) => {
+        if (d == null || d === '') return '—';
+        let dateInput = d;
+        // Chaîne date seule (YYYY-MM-DD) : interpréter à midi pour éviter le décalage de fuseau
+        if (typeof d === 'string' && /^\d{4}-\d{2}-\d{2}(T|$)/.test(d.trim())) {
+            const datePart = d.trim().split('T')[0];
+            if (datePart && /^\d{4}-\d{2}-\d{2}$/.test(datePart)) {
+                dateInput = `${datePart}T12:00:00`;
+            }
+        }
+        const date = new Date(dateInput);
+        if (Number.isNaN(date.getTime())) return '—';
+        return date.toLocaleDateString(isFr ? 'fr-FR' : 'en-US', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+        });
     };
 
     if (loading) {
@@ -91,7 +111,7 @@ export default function ActualitesDetails() {
             <Navbar navClass="nav-light" />
 
             <HeaderBreakdumb
-                title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
+                title={isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)}
                 background={newsItem?.image ? newsItem.image : null}
 
             />
@@ -106,17 +126,13 @@ export default function ActualitesDetails() {
                                 <img
                                     src={buildImageUrl(newsItem.image)}
                                     className="rounded-md w-full h-64 object-cover mb-6"
-                                    alt={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
+                                    alt={isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)}
                                 />
 
                                 <div className="flex items-center mb-4 text-sm text-slate-400">
                                     <span className="me-4">
                                         {t("actualitesDetails.publishedOn", {
-                                            date: new Date(newsItem.publishedAt).toLocaleDateString(i18n.language === "fr" ? "fr-FR" : "en-US", {
-                                                day: "numeric",
-                                                month: "long",
-                                                year: "numeric"
-                                            })
+                                            date: formatDate(newsItem.publishedAt ?? newsItem.updatedAt)
                                         })}
                                     </span>
                                     <span className="me-4">
@@ -125,13 +141,13 @@ export default function ActualitesDetails() {
                                 </div>
 
                                 <h2 className="text-2xl font-semibold mb-6">
-                                    {i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
+                                    {isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)}
                                 </h2>
 
                                 <div
                                     className="prose max-w-none"
                                     dangerouslySetInnerHTML={{
-                                        __html: i18n.language === "fr" ? newsItem.content_fr : newsItem.content_en
+                                        __html: isFr ? (newsItem.content_fr || newsItem.content_en) : (newsItem.content_en || newsItem.content_fr)
                                     }}
                                 />
 
@@ -142,7 +158,7 @@ export default function ActualitesDetails() {
                                         </h3>
                                         <Gallery 
                                             images={images} 
-                                            title={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en} 
+                                            title={isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)} 
                                         />
                                     </>
                                 )}
@@ -158,17 +174,17 @@ export default function ActualitesDetails() {
                                                 <img
                                                     src={buildImageUrl(item.image)}
                                                     className="w-full h-32 object-cover"
-                                                    alt={i18n.language === "fr" ? item.title_fr : item.title_en}
+                                                    alt={isFr ? (item.title_fr || item.title_en) : (item.title_en || item.title_fr)}
                                                 />
                                                 <div className="p-4">
                                                     <Link
                                                         to={`/actualités/${item.id}/détails`}
                                                         className="font-semibold hover:text-[var(--riafco-orange)]  block mb-2"
                                                     >
-                                                        {i18n.language === "fr" ? item.title_fr : item.title_en}
+                                                        {isFr ? (item.title_fr || item.title_en) : (item.title_en || item.title_fr)}
                                                     </Link>
                                                     <p className="text-sm text-slate-400">
-                                                        {new Date(item.publishedAt).toLocaleDateString(i18n.language === "fr" ? "fr-FR" : "en-US")}
+                                                        {formatDate(item.publishedAt ?? item.updatedAt)}
                                                     </p>
                                                 </div>
                                             </div>
@@ -186,7 +202,7 @@ export default function ActualitesDetails() {
                                 auteurNom={`${newsItem.author.firstName} ${newsItem.author.lastName}`}
                                 auteurPhoto={newsItem.author.profilePic}
                                 auteurId={newsItem.author.id}
-                                sujetActuel={i18n.language === "fr" ? newsItem.title_fr : newsItem.title_en}
+                                sujetActuel={isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)}
                                 actualiteId={newsItem.id}
                             />
                         </div>

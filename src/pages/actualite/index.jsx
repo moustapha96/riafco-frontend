@@ -17,10 +17,9 @@ import { buildImageUrl } from '../../utils/imageUtils';
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 
-import i18next from 'i18next';
-
 export default function ActualitesPage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const isFr = (i18n.language || 'fr').toLowerCase().startsWith('fr');
     const [news, setNews] = useState([]);
     const [pagination, setPagination] = useState({
         page: 1,
@@ -77,12 +76,24 @@ export default function ActualitesPage() {
 
 
 
-    const formatDate = (d) =>
-        new Date(d).toLocaleDateString(i18next.language === 'fr' ? 'fr-FR' : 'en-US', {
+    const formatDate = (d) => {
+        if (d == null || d === '') return '—';
+        let dateInput = d;
+        // Chaîne date seule (YYYY-MM-DD) : interpréter à midi pour éviter le décalage de fuseau
+        if (typeof d === 'string' && /^\d{4}-\d{2}-\d{2}(T|$)/.test(d.trim())) {
+            const datePart = d.trim().split('T')[0];
+            if (datePart && /^\d{4}-\d{2}-\d{2}$/.test(datePart)) {
+                dateInput = `${datePart}T12:00:00`;
+            }
+        }
+        const date = new Date(dateInput);
+        if (Number.isNaN(date.getTime())) return '—';
+        return date.toLocaleDateString(isFr ? 'fr-FR' : 'en-US', {
             day: 'numeric',
             month: 'long',
             year: 'numeric',
         });
+    };
 
     return (
         <>
@@ -147,18 +158,24 @@ export default function ActualitesPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
                             {news.map((item) => (
                                 <div key={item.id} className="blog relative rounded-md shadow-sm dark:shadow-gray-800 overflow-hidden">
-                                    <img src={buildImageUrl(item.image)} alt={item.title_fr} className="w-full h-48 object-cover" />
+                                    <img src={buildImageUrl(item.image)} alt={isFr ? (item.title_fr || item.title_en) : (item.title_en || item.title_fr)} className="w-full h-48 object-cover" />
                                     <div className="content p-6">
                                         <Link
                                             to={`/actualités/${item.id}/détails`}
                                             className="title h5 text-lg font-medium hover:text-[var(--riafco-orange)]  duration-500 ease-in-out"
                                         >
-                                            {item.title_fr}
+                                            {isFr ? (item.title_fr || item.title_en) : (item.title_en || item.title_fr)}
                                         </Link>
                                         <p
                                             className="text-slate-400 mt-3"
                                             dangerouslySetInnerHTML={{
-                                                __html: item.contentPreview_fr || item.content_fr.substring(0, 150) + '...'
+                                                __html: (() => {
+                                                    const content = isFr
+                                                        ? (item.contentPreview_fr || item.content_fr || item.contentPreview_en || item.content_en)
+                                                        : (item.contentPreview_en || item.content_en || item.contentPreview_fr || item.content_fr);
+                                                    const text = typeof content === 'string' ? content.replace(/<[^>]+>/g, '') : '';
+                                                    return text ? (text.length > 150 ? text.substring(0, 150) + '...' : text) : '—';
+                                                })()
                                             }}
                                         />
                                         <div className="mt-4">
@@ -172,7 +189,7 @@ export default function ActualitesPage() {
                                         <div className="mt-4 flex items-center text-sm text-slate-400">
                                             <span className="me-2">
                                                 {t("actualites.newsSection.publishedAt")}
-                                                <span>{formatDate(item.publishedAt)}</span>
+                                                <span>{formatDate(item.publishedAt ?? item.updatedAt)}</span>
                                             </span>
                                         </div>
                                     </div>

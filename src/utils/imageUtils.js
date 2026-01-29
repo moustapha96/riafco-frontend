@@ -13,7 +13,6 @@ const getBackendBaseUrl = () => {
  */
 export const buildImageUrl = (path) => {
   if (!path) return '';
-
   return `${import.meta.env.VITE_API_URL_SIMPLE || 'https://back.riafco-oi.org/'}${path}`;
 
 };
