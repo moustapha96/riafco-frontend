@@ -38,6 +38,7 @@ export default function ConditionGeneralConfidentialitePage() {
             <HeaderBreakdumb
                 title={t("hero.title")}
                 description={t("hero.subtitle")}
+                pageSlug="confidentialite"
                 background={background}
             />
 

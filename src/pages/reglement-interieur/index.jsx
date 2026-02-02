@@ -86,7 +86,7 @@ export default function ReglementInterieurPage() {
                 <HeaderBreakdumb
                     title={t("legal.internalRules.header.title")}
                     description={t("legal.internalRules.header.description")}
-                    // background={riafcoAbout}
+                    pageSlug="reglement-interieur"
                 />
                 <div className="min-h-[40vh] flex items-center justify-center">
                     <div className="text-center text-slate-600">
@@ -106,7 +106,7 @@ export default function ReglementInterieurPage() {
                 <HeaderBreakdumb
                     title={t("legal.internalRules.header.title")}
                     description={t("legal.internalRules.header.description")}
-                    // background={riafcoAbout}
+                    pageSlug="reglement-interieur"
                 />
                 <div className="min-h-[40vh] flex items-center justify-center">
                     <div className="text-center">
@@ -132,7 +132,7 @@ export default function ReglementInterieurPage() {
             <HeaderBreakdumb
                 title={t("legal.internalRules.header.title")}
                 description={t("legal.internalRules.header.description")}
-                // background={riafcoAbout}
+                pageSlug="reglement-interieur"
             />
 
             {/* Fil d’ariane sous le header */}

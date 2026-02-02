@@ -200,7 +200,7 @@ export default defineConfig({
                 secure: false,
             },
             '/teams': {
-                    target: 'https://back.riafco-oi.org',
+                target: 'https://back.riafco-oi.org',
                 changeOrigin: true,
                 secure: false,
             },
@@ -214,6 +214,11 @@ export default defineConfig({
                 changeOrigin: true,
                 secure: false,
             },
-        },
+            '/pages':{
+                target: 'https://back.riafco-oi.org',
+                changeOrigin: true,
+                secure: false,
+            }
+        },                      
     },
 });

@@ -76,7 +76,7 @@ export default function RapportGouvernance() {
             <HeaderBreakdumb
                 title={t("governanceReports.header.title")}
                 description={t("governanceReports.header.description")}
-                // background={riafcoAbout}
+                pageSlug="rapport-gouvernance"
             />
 
             <section className="relative md:py-24 py-16 bg-gray-50">

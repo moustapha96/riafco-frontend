@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FaHome } from 'react-icons/fa'
@@ -7,15 +7,33 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import { buildImageUrl } from "../../utils/imageUtils";
+import pageSettingsService from "../../services/pageSettingsService";
 
-export default function HeaderBreakdumb({ title, description = '', background = '' }) {
+export default function HeaderBreakdumb({ title, description = '', background = '', pageSlug = '' }) {
+    const [pageImage, setPageImage] = useState('')
+
+    useEffect(() => {
+        if (!pageSlug) {
+            setPageImage(background || '')
+            return
+        }
+        pageSettingsService
+            .getBySlug(pageSlug)
+            .then((res) => {
+                const img = res?.data?.image || background || ''
+                setPageImage(img)
+            })
+            .catch(() => setPageImage(background || ''))
+    }, [pageSlug, background])
+
+    const bgUrl = pageImage ? buildImageUrl(pageImage) : riafcoAbout
     return <>
 
 
         <section
             className="relative w-full py-32 lg:py-36  bg-center bg-no-repeat bg-cover"
             style={{
-                backgroundImage: background ? `url(${buildImageUrl(background)})` : `url(${riafcoAbout})`,
+                backgroundImage: `url(${bgUrl})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

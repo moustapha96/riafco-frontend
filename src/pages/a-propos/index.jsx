@@ -108,7 +108,7 @@ export default function AproposPage() {
       <HeaderBreakdumb
         title={t("about.title")}
         description={t("about.cta")}
-        // background={riafcoAbout}
+        pageSlug="a-propos"
       />
 
     

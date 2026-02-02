@@ -80,7 +80,7 @@ export default function ActivitePage() {
             <HeaderBreakdumb
                 title={t("activites.pageTitle")}
                 description={t("activites.pageDescription")}
-                // background={riafcoAbout}
+                pageSlug="activites"
             />
 
             {/* Section de filtrage et de recherche */}

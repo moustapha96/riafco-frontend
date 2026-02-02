@@ -276,7 +276,7 @@ export default function MembrePage() {
       <HeaderBreakdumb
         title={t("members.header.title")}
         description={t("members.header.description")}
-        // background={riafcoAbout}
+        pageSlug="membres"
       />
 
 

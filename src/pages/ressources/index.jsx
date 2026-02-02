@@ -155,7 +155,7 @@ export default function RessourcePage() {
       <HeaderBreakdumb
         title={t("resources.header.title")}
         description={t("resources.header.description")}
-        // background={riafcoAbout}
+        pageSlug="ressources"
       />
 
       <section className="relative md:py-24 py-16">
