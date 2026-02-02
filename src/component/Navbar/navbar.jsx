@@ -176,9 +176,9 @@ export default function Navbar(props) {
 
                     <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                         <ul className={`navigation-menu ${navClass} ${navJustify}`}>
-                            <li className={manu === "/" ? "active" : ""}>
+                            {/* <li className={manu === "/" ? "active" : ""}>
                                 <Link to="/" className="sub-menu-item">{t('header.accueil')}</Link>
-                            </li>
+                            </li> */}
 
                               <li className={`${[ "/réglement-interieur", "/a-propos", "/notre-équipe"].includes(manu) ? "active" : ""} has-submenu parent-menu-item`}>
                                 <Link to="#">{t('header.apropos')}</Link><span className="menu-arrow"></span>
