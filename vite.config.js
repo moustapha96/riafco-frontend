@@ -27,6 +27,12 @@ export default defineConfig({
             ],
             workbox: {
                 globPatterns: ["**/*.{js,css,html,ico,png,jpg,jpeg,svg,woff2}"],
+                // Nouvelle version active tout de suite après déploiement
+                skipWaiting: true,
+                clientsClaim: true,
+                // Préférer le réseau pour la navigation (index.html) = voir les dernières modifs
+                navigateFallback: "/index.html",
+                navigationPreload: true,
                 runtimeCaching: [{
                         urlPattern: /^https:\/\/www\.riafco\.org\/.*\.(png|jpg|jpeg|svg|webp|ico|woff2?)$/i,
                         handler: "StaleWhileRevalidate",
@@ -57,7 +63,6 @@ export default defineConfig({
                         },
                     },
                 ],
-                navigateFallback: "/index.html",
                 maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
             },
             manifest: {
@@ -138,6 +143,12 @@ export default defineConfig({
         host: true,
         port: 3030,
         open: true,
+        // Pas de cache : les modifications sont visibles immédiatement
+        headers: {
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
         proxy: {
             '/api': {
                 target: 'https://back.riafco-oi.org',
