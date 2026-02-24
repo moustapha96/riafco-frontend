@@ -23,7 +23,9 @@ export default defineConfig({
                 "apple-touch-icon.png",
                 "robots.txt",
                 "logo-color.svg",
-                "logo.png"
+                "logo.png",
+                "google74b7998e1a2cce8e.html",
+                "sitemap.xml"
             ],
             workbox: {
                 globPatterns: ["**/*.{js,css,html,ico,png,jpg,jpeg,svg,woff2}"],
