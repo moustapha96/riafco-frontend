@@ -11,6 +11,7 @@ import HeaderBreakdumb from '../components/hearder-breakdumb';
 import background from '../../assets/images/corporate/1.jpg';
 import Gallery from '../../component/Gallery';
 import { buildImageUrl } from '../../utils/imageUtils';
+import Seo from '../../component/Seo';
 export default function ActualitesDetails() {
     const { id } = useParams();
     const { t, i18n } = useTranslation();
@@ -106,12 +107,28 @@ export default function ActualitesDetails() {
         );
     }
 
+    const currentTitle = isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr);
+    const seoTitle = `${currentTitle} | RIAFCO`;
+    const seoDescription =
+        (isFr ? newsItem.content_fr : newsItem.content_en)?.replace(/<[^>]+>/g, '').slice(0, 160) ||
+        (isFr ? newsItem.content_en : newsItem.content_fr)?.replace(/<[^>]+>/g, '').slice(0, 160) ||
+        (isFr
+            ? 'Détail d’une actualité du RIAFCO concernant les institutions africaines de financement des collectivités locales.'
+            : 'RIAFCO news detail about African local government financing institutions.');
+
     return (
         <>
+            <Seo
+                title={seoTitle}
+                description={seoDescription}
+                canonicalPath={`/actualités/${newsItem.id}/détails`}
+                lang={i18n.language}
+                ogType="article"
+            />
             <Navbar navClass="nav-light" />
 
             <HeaderBreakdumb
-                title={isFr ? (newsItem.title_fr || newsItem.title_en) : (newsItem.title_en || newsItem.title_fr)}
+                title={currentTitle}
                 background={newsItem?.image ? newsItem.image : null}
 
             />

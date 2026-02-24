@@ -13,6 +13,7 @@ import { FaArrowRight } from 'react-icons/fa6';
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import newsService from '../../services/newsService';
 import { buildImageUrl } from '../../utils/imageUtils';
+import Seo from '../../component/Seo';
 
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
@@ -95,8 +96,22 @@ export default function ActualitesPage() {
         });
     };
 
+    const seoTitle = isFr
+        ? 'Actualités | RIAFCO - Réseau des Institutions Africaines de Financement des Collectivités locales'
+        : 'News | RIAFCO - African Local Government Financing Institutions Network';
+    const seoDescription = isFr
+        ? 'Découvrez les actualités du RIAFCO, les initiatives des institutions africaines de financement des collectivités locales et les temps forts de la décentralisation financière.'
+        : 'Discover RIAFCO news, initiatives of African local government financing institutions and key moments of fiscal decentralisation.';
+
     return (
         <>
+            <Seo
+                title={seoTitle}
+                description={seoDescription}
+                canonicalPath="/actualités"
+                lang={i18n.language}
+                ogType="website"
+            />
             <Navbar navClass="nav-light" />
 
             <HeaderBreakdumb

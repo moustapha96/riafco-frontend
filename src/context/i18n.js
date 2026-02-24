@@ -88,4 +88,16 @@ i18n
     },
   });
 
+// Synchroniser l'attribut lang du document avec la langue active
+if (typeof document !== 'undefined') {
+  const lng = i18n.language || 'fr';
+  document.documentElement.lang = lng.startsWith('fr') ? 'fr' : 'en';
+}
+
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng.startsWith('fr') ? 'fr' : 'en';
+  }
+});
+
 export default i18n;

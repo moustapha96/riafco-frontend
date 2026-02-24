@@ -25,10 +25,11 @@ import * as Icon from 'react-feather';
 import DashboardIfcl from '../membre/dashboad';
 import ifclService from '../../services/ifclService';
 import { useTranslation } from 'react-i18next';
+import Seo from '../../component/Seo';
 
 
 export default function Accueil() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [stats, setStats] = useState({
         totalMembers: 0,
         activeMembers: 0,
@@ -63,8 +64,23 @@ export default function Accueil() {
         htmlTag.classList.remove('dark');
     }, []);
 
+    const isFr = (i18n.language || 'fr').toLowerCase().startsWith('fr');
+    const seoTitle = isFr
+        ? 'RIAFCO | Réseau des Institutions Africaines de Financement des Collectivités locales'
+        : 'RIAFCO | African Local Government Financing Institutions Network';
+    const seoDescription = isFr
+        ? 'RIAFCO rassemble les institutions africaines de financement des collectivités locales pour renforcer la décentralisation financière et le développement territorial.'
+        : 'RIAFCO brings together African local government financing institutions to strengthen fiscal decentralisation and territorial development.';
+
     return (
         <div>
+            <Seo
+                title={seoTitle}
+                description={seoDescription}
+                canonicalPath="/"
+                lang={i18n.language}
+                ogType="website"
+            />
             <Navbar navClass="nav-light" />
 
             <section className="swiper-slider-hero relative block h-screen" id="home">

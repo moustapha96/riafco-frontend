@@ -9,13 +9,14 @@ import settingsService from '../../services/settingsService';
 import ContactSection from '../accueil/contactSection';
 import HeaderBreakdumb from '../components/hearder-breakdumb';
 import { useTranslation } from 'react-i18next';
+import Seo from '../../component/Seo';
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 
 
 
 export default function ContactPage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [config, setConfig] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -38,8 +39,23 @@ export default function ContactPage() {
         fetchConfig();
     }, []);
 
+    const isFr = (i18n.language || 'fr').toLowerCase().startsWith('fr');
+    const seoTitle = isFr
+        ? 'Contact | RIAFCO - Réseau des Institutions Africaines de Financement des Collectivités locales'
+        : 'Contact | RIAFCO - African Local Government Financing Institutions Network';
+    const seoDescription = isFr
+        ? 'Contactez le RIAFCO pour toute question sur le financement des collectivités locales, les adhésions ou les partenariats.'
+        : 'Contact RIAFCO for any question about local governments financing, memberships or partnerships.';
+
     return (
         <>
+            <Seo
+                title={seoTitle}
+                description={seoDescription}
+                canonicalPath="/contact"
+                lang={i18n.language}
+                ogType="website"
+            />
             <Navbar navClass="nav-light" />
 
             <HeaderBreakdumb

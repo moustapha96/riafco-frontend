@@ -14,6 +14,7 @@ import resourceService from "../../services/resourceService";
 import { buildImageUrl } from "../../utils/imageUtils";
 import HeaderBreakdumb from "../components/hearder-breakdumb";
 import { useTranslation } from "react-i18next";
+import Seo from "../../component/Seo";
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import Footer from "../../component/Footer/footer";
@@ -148,8 +149,23 @@ export default function RessourcePage() {
     }
   };
 
+  const isFr = (i18n.language || "fr").toLowerCase().startsWith("fr");
+  const seoTitle = isFr
+    ? "Ressources | RIAFCO - Documents, rapports et outils pour les collectivités locales"
+    : "Resources | RIAFCO - Documents, reports and tools for local governments";
+  const seoDescription = isFr
+    ? "Consultez les ressources du RIAFCO : rapports, guides, études et outils dédiés au financement des collectivités locales."
+    : "Browse RIAFCO resources: reports, guides, studies and tools dedicated to local government financing.";
+
   return (
     <div>
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath="/ressources"
+        lang={i18n.language}
+        ogType="website"
+      />
       <Navbar navClass="nav-light" />
 
       <HeaderBreakdumb

@@ -14,6 +14,7 @@ import partnerService from "../../services/partnerService";
 import TinySlider from "tiny-slider-react";
 import background from "../../assets/images/corporate/1.jpg";
 import { useTranslation } from "react-i18next";
+import Seo from "../../component/Seo";
 
 import riafcoAbout from "../../assets/images/riafco-about.jpg";
 import { buildImageUrl } from "../../utils/imageUtils";
@@ -102,8 +103,23 @@ export default function AproposPage() {
     );
   }
 
+  const isFr = (i18n.language || "fr").toLowerCase().startsWith("fr");
+  const seoTitle = isFr
+    ? "À propos | RIAFCO - Réseau des Institutions Africaines de Financement des Collectivités locales"
+    : "About | RIAFCO - African Local Government Financing Institutions Network";
+  const seoDescription = isFr
+    ? "Découvrez la mission, la vision et la gouvernance du RIAFCO, réseau africain dédié au financement des collectivités locales."
+    : "Learn more about RIAFCO’s mission, vision and governance as a pan-African network dedicated to financing local authorities.";
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath="/a-propos"
+        lang={i18n.language}
+        ogType="website"
+      />
       <Navbar navClass="nav-light" />
       <HeaderBreakdumb
         title={t("about.title")}
